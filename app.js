@@ -7,7 +7,8 @@
     "use strict";
 
     var STORE_KEY = "avphys_rebuttal_verdicts_v1";
-    var AUTOSAVE_URL = "http://localhost:8321/save";
+    var SAVE_ENDPOINTS = ["https://eve.tail5cf4e4.ts.net/api/verdicts", "api/verdicts", "http://localhost:8321/save"];
+    var saveEndpointIdx = null;
     var autosaveTimer = null;
     var lastAutosave = null;
     var ASPECT_LABELS = {
@@ -46,17 +47,25 @@
     function setAutosaveStatus(ok, detail) {
         var el = document.getElementById("autosave-status");
         if (!el) return;
-        if (ok === null) { el.textContent = "eve: connecting…"; el.className = "badge"; return; }
-        if (ok) { el.textContent = "eve saved " + detail; el.className = "badge autosave-ok"; }
-        else { el.textContent = "eve UNREACHABLE — use Export!"; el.className = "badge autosave-bad"; }
+        if (ok === null) { el.textContent = "autosave: connecting…"; el.className = "badge"; el.style.display = ""; return; }
+        if (ok) { el.textContent = "saved to eve " + detail; el.className = "badge autosave-ok"; el.style.display = ""; }
+        else if (ok === false && saveEndpointIdx !== null) { el.textContent = "eve UNREACHABLE — use Export!"; el.className = "badge autosave-bad"; el.style.display = ""; }
+        else { el.style.display = "none"; } /* viewer mode: no save backend, chip hidden */
+    }
+    function trySave(idx, body, done) {
+        if (idx >= SAVE_ENDPOINTS.length) { done(false); return; }
+        fetch(SAVE_ENDPOINTS[idx], { method: "POST", headers: { "Content-Type": "application/json" }, body: body })
+        .then(function (r) { if (!r.ok) throw new Error(r.status); saveEndpointIdx = idx; done(true); })
+        .catch(function () { trySave(idx + 1, body, done); });
     }
     function pushAutosave() {
         if (!entries.length) return;
-        fetch(AUTOSAVE_URL, { method: "POST", headers: { "Content-Type": "application/json" },
-            body: JSON.stringify(exportPayload()) })
-        .then(function (r) { if (!r.ok) throw new Error(r.status);
-            lastAutosave = new Date(); setAutosaveStatus(true, lastAutosave.toLocaleTimeString()); })
-        .catch(function () { setAutosaveStatus(false); });
+        var body = JSON.stringify(exportPayload());
+        var start = saveEndpointIdx === null ? 0 : saveEndpointIdx;
+        trySave(start, body, function (ok) {
+            if (ok) { lastAutosave = new Date(); setAutosaveStatus(true, lastAutosave.toLocaleTimeString()); }
+            else { var had = saveEndpointIdx !== null; saveEndpointIdx = null; setAutosaveStatus(had ? false : undefined); }
+        });
     }
     function scheduleAutosave() {
         if (autosaveTimer) clearTimeout(autosaveTimer);
@@ -235,6 +244,37 @@
     }
 
     /* ---------------- boot ---------------- */
+    function hydrateFromServer(done) {
+        var GETS = ["https://eve.tail5cf4e4.ts.net/api/verdicts", "api/verdicts"];
+        function tryGet(i) {
+            if (i >= GETS.length) return Promise.resolve(null);
+            return fetch(GETS[i]).then(function (r) { return r.ok ? r.json() : tryGet(i + 1); })
+                .catch(function () { return tryGet(i + 1); });
+        }
+        tryGet(0)
+        .then(function (saved) {
+            if (saved && saved.verdicts) {
+                var added = 0;
+                entries.forEach(function (e) {
+                    if (store[e.index]) return; /* local edits win — never overwritten */
+                    var rec = saved.verdicts[e.index];
+                    if (!rec || !rec.scores) return;
+                    e.statements.forEach(function (st) {
+                        var v = rec.scores[st.key];
+                        if ((v === "yes" || v === "no") && v !== st.old) {
+                            if (!store[e.index]) store[e.index] = {};
+                            store[e.index][st.key] = v; added++;
+                        }
+                    });
+                });
+                if (added > 0) {
+                    try { localStorage.setItem(STORE_KEY, JSON.stringify(store)); } catch (err) { /* ignore */ }
+                    toast("Merged " + added + " saved verdicts from eve.", "success");
+                }
+            }
+            done();
+        }).catch(function () { done(); });
+    }
     function boot() {
         fetch("data.json").then(function (r) { return r.json(); }).then(function (d) {
             DATA = d;
@@ -243,7 +283,7 @@
             entries.forEach(function (e) { if (subs.indexOf(e.subcategory_id) < 0) subs.push(e.subcategory_id); });
             $("filter-subcategory").innerHTML = '<option value="">All subcategories</option>' +
                 subs.map(function (s) { return '<option value="' + s + '">' + s + "</option>"; }).join("");
-            applyFilter();
+            hydrateFromServer(applyFilter);
         }).catch(function (e) {
             $("main-content").innerHTML = '<div class="loading">Failed to load data.json: ' + escapeHtml(e.message) + "</div>";
         });
