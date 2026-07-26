@@ -7,6 +7,9 @@
     "use strict";
 
     var STORE_KEY = "avphys_rebuttal_verdicts_v1";
+    var AUTOSAVE_URL = "http://localhost:8321/save";
+    var autosaveTimer = null;
+    var lastAutosave = null;
     var ASPECT_LABELS = {
         video_sa: "Video — Semantic Adherence",
         audio_sa: "Audio — Semantic Adherence",
@@ -29,6 +32,35 @@
     function saveStore() {
         try { localStorage.setItem(STORE_KEY, JSON.stringify(store)); }
         catch (e) { toast("localStorage unavailable — edits will not persist!", "error"); }
+        scheduleAutosave();
+    }
+    function exportPayload() {
+        var out = { exported_at: new Date().toISOString(), model: DATA ? DATA.model : "", autosave: true, verdicts: {} };
+        entries.forEach(function (e) {
+            var full = {};
+            e.statements.forEach(function (st) { full[st.key] = verdictFor(e, st.key); });
+            out.verdicts[e.index] = { edited: isEdited(e), scores: full };
+        });
+        return out;
+    }
+    function setAutosaveStatus(ok, detail) {
+        var el = document.getElementById("autosave-status");
+        if (!el) return;
+        if (ok === null) { el.textContent = "eve: connecting…"; el.className = "badge"; return; }
+        if (ok) { el.textContent = "eve saved " + detail; el.className = "badge autosave-ok"; }
+        else { el.textContent = "eve UNREACHABLE — use Export!"; el.className = "badge autosave-bad"; }
+    }
+    function pushAutosave() {
+        if (!entries.length) return;
+        fetch(AUTOSAVE_URL, { method: "POST", headers: { "Content-Type": "application/json" },
+            body: JSON.stringify(exportPayload()) })
+        .then(function (r) { if (!r.ok) throw new Error(r.status);
+            lastAutosave = new Date(); setAutosaveStatus(true, lastAutosave.toLocaleTimeString()); })
+        .catch(function () { setAutosaveStatus(false); });
+    }
+    function scheduleAutosave() {
+        if (autosaveTimer) clearTimeout(autosaveTimer);
+        autosaveTimer = setTimeout(pushAutosave, 1500);
     }
     function verdictFor(entry, key) {
         var rec = store[entry.index];
@@ -214,6 +246,12 @@
             applyFilter();
         }).catch(function (e) {
             $("main-content").innerHTML = '<div class="loading">Failed to load data.json: ' + escapeHtml(e.message) + "</div>";
+        });
+        setAutosaveStatus(null);
+        setInterval(pushAutosave, 60000);
+        setTimeout(pushAutosave, 3000);
+        document.addEventListener("visibilitychange", function () {
+            if (document.visibilityState === "hidden") pushAutosave();
         });
 
         $("btn-prev").addEventListener("click", function () { go(cur - 1); });

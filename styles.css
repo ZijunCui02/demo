@@ -1092,3 +1092,6 @@ select.evaluator-input option {
 .tbtn-no.on { background: #c04343; border-color: #c04343; color: #fff; }
 .edited-mark { font-size: 0.7rem; color: #b8860b; font-weight: 700; text-transform: uppercase; }
 .toggle-changed .tbtn.on { box-shadow: 0 0 0 2px rgba(184,134,11,0.45); }
+
+.autosave-ok { background: #d9efe1 !important; color: #1f6f43 !important; }
+.autosave-bad { background: #f6dcdc !important; color: #9c2b2b !important; font-weight: 700; }
