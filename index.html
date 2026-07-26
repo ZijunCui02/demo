@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AV-Phys Bench — Implicit-Prompt Comparison (Seedance 2.0)</title>
+    <script>
+    (function () {
+        try {
+            var t = localStorage.getItem("phyomnibench_theme");
+            if (t === "dark") document.documentElement.setAttribute("data-theme", "dark");
+        } catch (e) { /* localStorage disabled — light default */ }
+    })();
+    </script>
+    <link rel="stylesheet" href="styles.css?v=rebuttal-1">
+</head>
+<body>
+
+<header class="header">
+    <div class="header-title">
+        AV-Phys Bench — Original vs Implicit Prompts (Seedance 2.0, 195 revised)
+    </div>
+    <div class="header-meta">
+        <span id="header-prompt-id" class="badge">--</span>
+        <span id="header-category">--</span>
+        <span id="header-progress">0 / 0 reviewed</span>
+        <button id="btn-export" class="btn-next-uneval" title="Download all implicit-side verdicts as JSON">Export JSON</button>
+        <label class="btn-next-uneval" style="cursor:pointer;" title="Restore verdicts from an exported JSON">
+            Import<input id="input-import" type="file" accept="application/json" style="display:none;">
+        </label>
+    </div>
+</header>
+
+<div class="headphones-notice">
+    Please use <span class="headphones-notice-emphasis">stereo headphones</span>.
+    Left: original prompt &amp; released video with the <b>locked</b> human-majority verdicts.
+    Right: implicit prompt (physics outcome removed) &amp; new video — verdicts are <b>editable</b>, pre-filled from the original as placeholders.
+</div>
+
+<nav class="nav-bar">
+    <button id="btn-prev" title="Previous (Left arrow)">Previous</button>
+    <button id="btn-next" title="Next (Right arrow)">Next</button>
+    <button id="btn-next-unreviewed" class="btn-next-uneval" title="Jump to next prompt with no edits yet (U)">Next Unreviewed</button>
+    <div class="nav-separator"></div>
+    <select id="select-prompt" title="Jump to prompt"></select>
+    <label style="font-size:0.85rem;">Sub:</label>
+    <select id="filter-subcategory"><option value="">All subcategories</option></select>
+    <span class="progress-text" id="nav-progress">Loading...</span>
+    <div class="nav-separator"></div>
+    <button id="btn-toggle-theme" class="btn-theme-toggle" title="Toggle dark mode" aria-label="Toggle dark mode">
+        <span class="theme-icon" aria-hidden="true">&#9790;</span>
+    </button>
+</nav>
+
+<main class="main-content" id="main-content">
+    <div class="loading" id="loading-screen">Loading&hellip;</div>
+</main>
+
+<div class="toast-container" id="toast-container"></div>
+
+<div class="shortcuts-hint">
+    <kbd>&larr;</kbd> Prev &nbsp; <kbd>&rarr;</kbd> Next &nbsp; <kbd>U</kbd> Next Unreviewed &nbsp; <kbd>P</kbd> Play Both
+</div>
+
+<script src="app.js?v=rebuttal-1"></script>
+</body>
+</html>

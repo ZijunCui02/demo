@@ -1,0 +1,1094 @@
+/* ===================================================================
+   PhyOmniBench Evaluation UI -- Styles
+   =================================================================== */
+
+/* --- Reset & Base -------------------------------------------------- */
+*, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+
+:root {
+    color-scheme: light;
+
+    /* Surfaces */
+    --bg: #f5f6f8;
+    --surface: #ffffff;
+    --surface-alt: #f9fafb;       /* prompt-text bg, card sub-headers */
+    --surface-sunken: #f3f4f6;    /* hover bg, placeholder backgrounds */
+    --rubric-box-bg: #fafbfc;
+    --summary-bg: #f0f4ff;
+    --video-bg: #000000;          /* letterbox behind video; stays black in dark too */
+    --thead-bg: rgba(255, 255, 255, 0.6);
+
+    /* Header (dark in both themes) */
+    --header-bg: #1a1d23;
+    --header-fg: #f0f0f0;
+
+    /* Accent + semantic */
+    --accent: #3b82f6;
+    --accent-hover: #2563eb;
+    --success: #22c55e;
+    --success-hover: #16a34a;
+    --success-bg: #dcfce7;
+    --success-fg: #166534;
+    --success-border: #bbf7d0;
+    --danger: #ef4444;
+    --danger-hover: #dc2626;
+    --danger-bg: #fee2e2;
+    --danger-fg: #991b1b;
+    --danger-border: #fecaca;
+    --warn: #f59e0b;
+    --warn-hover: #d97706;
+    --warn-bg: #fef3c7;
+    --warn-fg: #92400e;
+    --info-bg: #dbeafe;
+    --info-fg: #1e40af;
+    --info-border: #93c5fd;
+
+    /* Text */
+    --text: #1f2937;
+    --text-muted: #6b7280;
+    --text-on-color: #ffffff;     /* text on solid colored buttons */
+
+    /* Borders */
+    --border: #e5e7eb;
+    --border-soft: rgba(0, 0, 0, 0.04);
+    --border-focus: #93c5fd;
+
+    /* Prompt tags (light theme) */
+    --tag-default-bg: #e0e7ff;  --tag-default-fg: #3730a3;
+    --tag-level-bg: #dbeafe;    --tag-level-fg: #1e40af;
+    --tag-cat-bg: #fce7f3;      --tag-cat-fg: #9d174d;
+    --tag-sub-bg: #e0e7ff;      --tag-sub-fg: #4338ca;
+    --tag-eval-bg: #dcfce7;     --tag-eval-fg: #166534;
+    --next-uneval-bg: #f0fdf4;  --next-uneval-border: #86efac;
+
+    /* Misc */
+    --na-bg: #f3f4f6;
+    --na-fg: #aaaaaa;
+    --na-border: #e5e7eb;
+
+    --radius: 8px;
+    --shadow: 0 1px 3px rgba(0,0,0,0.1);
+    --shadow-lg: 0 4px 12px rgba(0,0,0,0.12);
+    --focus-ring: 0 0 0 3px rgba(59,130,246,0.1);
+}
+
+[data-theme="dark"] {
+    color-scheme: dark;
+
+    /* Surfaces */
+    --bg: #0f1216;
+    --surface: #161a20;
+    --surface-alt: #1c2027;
+    --surface-sunken: #10141a;
+    --rubric-box-bg: #1a1e24;
+    --summary-bg: #141c2e;
+    --video-bg: #000000;
+    --thead-bg: rgba(255, 255, 255, 0.03);
+
+    /* Header (keep dark, slightly darker than surface for separation) */
+    --header-bg: #0a0c10;
+    --header-fg: #e5e7eb;
+
+    /* Accent + semantic (brighter for dark backgrounds) */
+    --accent: #60a5fa;
+    --accent-hover: #3b82f6;
+    --success: #4ade80;
+    --success-hover: #22c55e;
+    --success-bg: #0e3321;
+    --success-fg: #86efac;
+    --success-border: #14532d;
+    --danger: #f87171;
+    --danger-hover: #ef4444;
+    --danger-bg: #3b1218;
+    --danger-fg: #fca5a5;
+    --danger-border: #7f1d1d;
+    --warn: #fbbf24;
+    --warn-hover: #f59e0b;
+    --warn-bg: #3a2510;
+    --warn-fg: #fcd34d;
+    --info-bg: #172554;
+    --info-fg: #93c5fd;
+    --info-border: #1e3a8a;
+
+    /* Text */
+    --text: #e5e7eb;
+    --text-muted: #9ca3af;
+    --text-on-color: #0a0c10;
+
+    /* Borders */
+    --border: #2a2f38;
+    --border-soft: rgba(255, 255, 255, 0.06);
+    --border-focus: #60a5fa;
+
+    /* Prompt tags (dark theme) */
+    --tag-default-bg: #2e2b6e;  --tag-default-fg: #c7d2fe;
+    --tag-level-bg: #1e3a8a;    --tag-level-fg: #bfdbfe;
+    --tag-cat-bg: #4a1d3c;      --tag-cat-fg: #f9a8d4;
+    --tag-sub-bg: #2e2b6e;      --tag-sub-fg: #c7d2fe;
+    --tag-eval-bg: #14532d;     --tag-eval-fg: #bbf7d0;
+    --next-uneval-bg: #0c2a16;  --next-uneval-border: #166534;
+
+    /* Misc */
+    --na-bg: #1c2027;
+    --na-fg: #4b5563;
+    --na-border: #2a2f38;
+
+    --shadow: 0 1px 3px rgba(0,0,0,0.5);
+    --shadow-lg: 0 4px 16px rgba(0,0,0,0.6);
+    --focus-ring: 0 0 0 3px rgba(96,165,250,0.25);
+}
+
+html { font-size: 15px; }
+body {
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+                 "Helvetica Neue", Arial, sans-serif;
+    background: var(--bg);
+    color: var(--text);
+    line-height: 1.5;
+    min-height: 100vh;
+}
+
+a { color: var(--accent); text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* --- Header -------------------------------------------------------- */
+.header {
+    background: var(--header-bg);
+    color: var(--header-fg);
+    padding: 12px 24px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: sticky;
+    top: 0;
+    z-index: 100;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.25);
+}
+
+.header-title {
+    font-size: 1.2rem;
+    font-weight: 700;
+    letter-spacing: 0.02em;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+}
+
+.header-title span { color: var(--accent); }
+
+.header-paper-link {
+    background: var(--accent);
+    color: var(--text-on-color);
+    padding: 3px 12px;
+    border-radius: 12px;
+    font-size: 0.8rem;
+    font-weight: 600;
+    letter-spacing: 0;
+    text-decoration: none;
+}
+
+.header-paper-link:hover { filter: brightness(1.1); }
+
+.headphones-notice {
+    background: var(--info-bg);
+    color: var(--info-fg);
+    border-bottom: 1px solid var(--info-border);
+    padding: 8px 24px;
+    text-align: center;
+    font-size: 0.9rem;
+    font-weight: 600;
+    letter-spacing: 0.02em;
+    position: sticky;
+    top: 0;
+    z-index: 99;
+}
+
+.headphones-notice-emphasis {
+    color: #ff3b30;
+    font-weight: 800;
+    text-transform: uppercase;
+}
+
+.header-meta {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+    font-size: 0.85rem;
+}
+
+.header-meta .badge {
+    background: var(--accent);
+    color: var(--text-on-color);
+    padding: 2px 10px;
+    border-radius: 12px;
+    font-weight: 600;
+    font-size: 0.8rem;
+}
+
+.evaluator-input {
+    background: rgba(255,255,255,0.1);
+    border: 1px solid rgba(255,255,255,0.2);
+    color: var(--header-fg);
+    padding: 4px 10px;
+    border-radius: 4px;
+    font-size: 0.85rem;
+    min-width: 180px;
+}
+.evaluator-input::placeholder { color: rgba(255,255,255,0.4); }
+.evaluator-input:focus {
+    outline: none;
+    border-color: var(--accent);
+    background: rgba(255,255,255,0.15);
+}
+/* Selects need an explicit option color so dark themes don't show black-on-black */
+select.evaluator-input option {
+    color: #111;
+    background: #fff;
+}
+
+/* --- Navigation bar ------------------------------------------------ */
+.nav-bar {
+    background: var(--surface);
+    border-bottom: 1px solid var(--border);
+    padding: 10px 24px;
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    flex-wrap: wrap;
+    box-shadow: var(--shadow);
+}
+
+.nav-bar button {
+    padding: 6px 14px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    color: var(--text);
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.15s;
+}
+.nav-bar button:hover {
+    background: var(--accent);
+    color: var(--text-on-color);
+    border-color: var(--accent);
+}
+.nav-bar button:disabled {
+    opacity: 0.4;
+    cursor: not-allowed;
+}
+
+.nav-bar select {
+    padding: 6px 10px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    font-size: 0.85rem;
+    color: var(--text);
+    cursor: pointer;
+    max-width: 280px;
+}
+.nav-bar select:focus { outline: none; border-color: var(--border-focus); }
+
+.nav-separator {
+    width: 1px;
+    height: 24px;
+    background: var(--border);
+}
+
+.nav-bar .progress-text {
+    font-size: 0.82rem;
+    color: var(--text-muted);
+    margin-left: auto;
+}
+
+/* --- Main Content Area --------------------------------------------- */
+.main-content {
+    max-width: 1600px;
+    margin: 0 auto;
+    padding: 12px 20px;
+}
+
+/* --- Prompt Section ------------------------------------------------ */
+.prompt-section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 12px 20px;
+    margin-bottom: 12px;
+    box-shadow: var(--shadow);
+}
+
+.prompt-header {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+    flex-wrap: wrap;
+}
+
+.prompt-id {
+    font-size: 1.1rem;
+    font-weight: 700;
+    color: var(--accent);
+}
+
+.prompt-tag {
+    display: inline-block;
+    padding: 2px 8px;
+    border-radius: 4px;
+    font-size: 0.75rem;
+    font-weight: 600;
+    background: var(--tag-default-bg);
+    color: var(--tag-default-fg);
+}
+
+.prompt-tag.level { background: var(--tag-level-bg); color: var(--tag-level-fg); }
+.prompt-tag.category { background: var(--tag-cat-bg); color: var(--tag-cat-fg); }
+.prompt-tag.subcategory { background: var(--tag-sub-bg); color: var(--tag-sub-fg); }
+.prompt-tag.anti-physics { background: var(--danger-bg); color: var(--danger-fg); }
+.prompt-tag.template { background: var(--warn-bg); color: var(--warn-fg); }
+.prompt-tag.evaluated { background: var(--tag-eval-bg); color: var(--tag-eval-fg); }
+
+.prompt-text {
+    font-size: 1.02rem;
+    line-height: 1.5;
+    color: var(--text);
+    padding: 8px 14px;
+    background: var(--surface-alt);
+    border-radius: var(--radius);
+    border-left: 4px solid var(--accent);
+}
+
+/* --- Video Grid ---------------------------------------------------- */
+.video-section {
+    margin-bottom: 14px;
+}
+
+.video-controls {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 8px;
+}
+
+.video-controls h3 {
+    font-size: 1rem;
+    font-weight: 600;
+}
+
+.btn {
+    padding: 6px 14px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    color: var(--text);
+    cursor: pointer;
+    font-size: 0.85rem;
+    font-weight: 500;
+    transition: all 0.15s;
+}
+.btn:hover { background: var(--surface-sunken); }
+.btn-primary {
+    background: var(--accent);
+    color: var(--text-on-color);
+    border-color: var(--accent);
+}
+.btn-primary:hover { background: var(--accent-hover); }
+.btn-success {
+    background: var(--success);
+    color: var(--text-on-color);
+    border-color: var(--success);
+}
+.btn-success:hover { background: var(--success-hover); }
+.btn-danger {
+    background: var(--danger);
+    color: var(--text-on-color);
+    border-color: var(--danger);
+}
+.btn-danger:hover { background: var(--danger-hover); }
+.btn-warn {
+    background: var(--warn);
+    color: var(--text-on-color);
+    border-color: var(--warn);
+}
+.btn-warn:hover { background: var(--warn-hover); }
+
+/* Next Unevaluated: stands out in the nav, themed per mode.
+   Specificity must beat ".nav-bar button" (0,1,1), so we scope to .nav-bar. */
+.nav-bar .btn-next-uneval {
+    background: var(--next-uneval-bg);
+    border-color: var(--next-uneval-border);
+}
+.nav-bar .btn-next-uneval:hover {
+    background: var(--success);
+    border-color: var(--success);
+    color: var(--text-on-color);
+}
+
+.video-grid {
+    display: grid;
+    /* 12-col grid: row 1 = 3 cards × 4 cols (proprietary models),
+       row 2 = 4 cards × 3 cols (open-source models). */
+    grid-template-columns: repeat(12, 1fr);
+    gap: 16px;
+}
+
+.video-grid .video-card { grid-column: span 3; }
+.video-grid .video-card:nth-child(-n+3) { grid-column: span 4; }
+
+.video-card {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+    box-shadow: var(--shadow);
+}
+
+.video-card-header {
+    padding: 8px 12px;
+    background: var(--surface-alt);
+    border-bottom: 1px solid var(--border);
+    font-weight: 600;
+    font-size: 0.9rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.video-card-header .model-name { color: var(--text); }
+
+.video-card .video-wrapper {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 aspect ratio */
+    background: var(--video-bg);
+    overflow: hidden;
+}
+
+.video-card .video-wrapper video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+    background: var(--video-bg);
+}
+
+.video-card .no-video {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%; /* 16:9 */
+    background: var(--surface-sunken);
+}
+.video-card .no-video span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: var(--text-muted);
+    font-size: 0.9rem;
+}
+
+/* --- Rubric Section ------------------------------------------------ */
+.rubric-section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 12px 18px;
+    margin-bottom: 14px;
+    box-shadow: var(--shadow);
+    overflow-x: auto;
+}
+
+.rubric-box { overflow-x: auto; }
+
+.rubric-section h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: var(--text);
+}
+
+.rubric-grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+}
+
+/* Shared model-name header strip (one row above both rubric boxes).
+   Padding matches .rubric-box so the inner table columns align vertically
+   with the columns inside the Basic/Key tables below. */
+.rubric-model-header {
+    padding: 0 14px;
+    margin-bottom: 4px;
+}
+.rubric-model-header .rubric-matrix-table thead th {
+    background: transparent;
+    border-bottom: 2px solid var(--border);
+    padding-bottom: 4px;
+}
+
+.rubric-box {
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 8px 14px;
+    background: var(--rubric-box-bg);
+}
+
+.rubric-box h4 {
+    font-size: 0.92rem;
+    font-weight: 700;
+    margin-bottom: 6px;
+    color: var(--text);
+    border-bottom: 1px solid var(--border);
+    padding-bottom: 4px;
+}
+
+.rubric-meta {
+    color: var(--text-muted);
+    font-weight: normal;
+    font-size: 0.76rem;
+    font-style: italic;
+}
+
+.rubric-basic { border-left: 4px solid var(--warn); }
+.rubric-key-standards { border-left: 4px solid var(--accent); }
+
+.rubric-scoring-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    flex-wrap: wrap;
+    margin-bottom: 6px;
+}
+.rubric-scoring-header h3 {
+    font-size: 1.05rem;
+    font-weight: 700;
+    color: var(--text);
+}
+
+.rubric-key {
+    font-weight: 700;
+    color: var(--text-muted);
+    font-size: 0.78rem;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.rubric-val {
+    font-size: 0.92rem;
+    line-height: 1.4;
+    color: var(--text);
+}
+
+.obj-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: inline;
+}
+.obj-list li {
+    display: inline;
+    margin: 0;
+}
+.obj-list li:not(:last-child)::after {
+    content: ", ";
+    color: var(--text-muted);
+}
+
+.key-aspect {
+    display: inline-block;
+    color: var(--text-muted);
+    font-size: 0.74rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+
+.key-index {
+    display: inline-block;
+    margin-right: 6px;
+    color: var(--text);
+    font-weight: 700;
+    font-size: 0.85rem;
+}
+
+.stmt-label-row {
+    display: inline-flex;
+    align-items: baseline;
+    gap: 4px;
+    margin-right: 8px;
+    margin-bottom: 0;
+    flex-wrap: wrap;
+    vertical-align: baseline;
+}
+
+.muted { color: var(--text-muted); }
+
+/* --- Rubric matrix table (statement + Y/N per model) -------------- */
+.rubric-matrix-table {
+    width: 100%;
+    border-collapse: collapse;
+    font-size: 0.88rem;
+    table-layout: fixed;
+}
+
+.rubric-matrix-table thead th {
+    background: var(--thead-bg);
+    font-weight: 600;
+    font-size: 0.7rem;
+    text-transform: uppercase;
+    letter-spacing: 0.03em;
+    color: var(--text-muted);
+    padding: 6px 6px;
+    border-bottom: 1px solid var(--border);
+    text-align: center;
+    vertical-align: bottom;
+    word-break: break-word;
+    line-height: 1.2;
+}
+
+.rubric-matrix-table thead th.stmt-col {
+    text-align: left;
+    min-width: 320px;
+}
+
+.rubric-matrix-table th.model-col {
+    width: 80px;
+    border-left: 1px solid var(--border);
+}
+
+.rubric-matrix-table tbody td {
+    padding: 4px 6px;
+    border-bottom: 1px solid var(--border-soft);
+    vertical-align: middle;
+    text-align: center;
+}
+
+.rubric-matrix-table tbody tr:last-child td {
+    border-bottom: none;
+}
+
+.rubric-matrix-table td.stmt-col {
+    text-align: left;
+    padding: 5px 10px 5px 4px;
+    vertical-align: top;
+    line-height: 1.4;
+}
+
+.rubric-matrix-table td.stmt-col .rubric-val {
+    display: inline;
+    line-height: 1.4;
+}
+
+.rubric-matrix-table td.score-cell {
+    width: 80px;
+    border-left: 1px solid var(--border);
+}
+
+.rubric-matrix-table .q-edit-input {
+    width: 100%;
+    min-height: 60px;
+    padding: 6px 8px;
+    border: 1px solid var(--border-focus);
+    border-radius: 4px;
+    background: var(--surface);
+    color: var(--text);
+    font-size: 0.88rem;
+    font-family: inherit;
+    line-height: 1.4;
+    resize: vertical;
+    box-sizing: border-box;
+}
+
+/* Bulk action row: one ALL Y / ALL N pair per model column.
+   Sits between the rubric grid and the summary, with column widths matched
+   to the basic/key matrix tables so the buttons sit directly below their
+   model column. */
+.rubric-bulk-actions {
+    margin-top: 6px;
+    padding: 0 14px;
+}
+.rubric-bulk-actions .rubric-matrix-table tbody td {
+    padding: 6px 6px;
+    border-top: 2px solid var(--border);
+    border-bottom: none;
+    text-align: center;
+}
+.rubric-bulk-actions td.stmt-col {
+    min-width: 320px;
+    text-align: right;
+    padding-right: 12px;
+    color: var(--text-muted);
+    font-size: 0.74rem;
+    font-weight: 700;
+    text-transform: uppercase;
+    letter-spacing: 0.04em;
+}
+.rubric-bulk-actions td.score-cell {
+    width: 80px;
+    border-left: 1px solid var(--border);
+}
+.bulk-btn-group {
+    gap: 3px;
+    justify-content: center;
+}
+.score-btn.bulk-btn {
+    width: auto;
+    min-width: 36px;
+    padding: 0 4px;
+    height: 24px;
+    font-size: 0.7rem;
+    letter-spacing: 0.02em;
+    color: var(--text);
+}
+.score-btn.bulk-btn.yes:hover {
+    background: var(--success);
+    border-color: var(--success);
+    color: var(--text-on-color);
+}
+.score-btn.bulk-btn.no:hover {
+    background: var(--danger);
+    border-color: var(--danger);
+    color: var(--text-on-color);
+}
+
+/* Summary table shares column widths with the matrix tables above */
+.rubric-summary {
+    margin-top: 8px;
+    background: var(--summary-bg);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    overflow: hidden;
+}
+
+.rubric-summary .summary-table {
+    width: 100%;
+    table-layout: fixed;
+}
+
+.rubric-summary .summary-table td {
+    padding: 6px 6px;
+    text-align: center;
+    font-weight: 700;
+    font-size: 0.85rem;
+    border-bottom: none;
+}
+
+.rubric-summary .summary-table td.stmt-col {
+    min-width: 320px;
+    text-align: left;
+    padding-left: 16px;
+}
+
+.rubric-summary .summary-table td.score-cell {
+    width: 80px;
+}
+
+.rubric-summary .score-value { font-size: 0.85rem; }
+.rubric-summary .score-value.good { color: var(--success); }
+.rubric-summary .score-value.bad { color: var(--danger); }
+.rubric-summary .score-value.partial { color: var(--warn); }
+
+/* --- Score buttons (Y/N toggles used inside the matrix) ------------ */
+.score-btn-group {
+    display: inline-flex;
+    gap: 4px;
+}
+
+.score-btn {
+    width: 32px;
+    height: 26px;
+    border: 1px solid var(--border);
+    border-radius: 4px;
+    background: var(--surface);
+    cursor: pointer;
+    font-size: 0.78rem;
+    font-weight: 600;
+    transition: all 0.12s;
+    color: var(--text-muted);
+}
+
+.score-btn:hover { background: var(--surface-sunken); }
+
+.score-btn.yes.active {
+    background: var(--success);
+    color: var(--text-on-color);
+    border-color: var(--success);
+    font-weight: 700;
+}
+
+.score-btn.no.active {
+    background: var(--danger);
+    color: var(--text-on-color);
+    border-color: var(--danger);
+    font-weight: 700;
+}
+
+.score-btn.na {
+    background: var(--na-bg);
+    color: var(--na-fg);
+    cursor: default;
+    border-color: var(--na-border);
+}
+
+/* --- Notes Section ------------------------------------------------- */
+.notes-section {
+    background: var(--surface);
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    padding: 16px 20px;
+    margin-bottom: 20px;
+    box-shadow: var(--shadow);
+}
+
+.notes-section h3 {
+    font-size: 1rem;
+    font-weight: 600;
+    margin-bottom: 8px;
+}
+
+.notes-textarea {
+    width: 100%;
+    min-height: 80px;
+    padding: 10px 12px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    font-family: inherit;
+    font-size: 0.9rem;
+    line-height: 1.5;
+    resize: vertical;
+    color: var(--text);
+}
+.notes-textarea:focus {
+    outline: none;
+    border-color: var(--border-focus);
+    box-shadow: var(--focus-ring);
+}
+
+/* --- Action Bar ---------------------------------------------------- */
+.action-bar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 12px;
+    padding: 16px 0;
+    flex-wrap: wrap;
+}
+
+.action-bar .status-msg {
+    font-size: 0.88rem;
+    color: var(--success);
+    font-weight: 500;
+}
+
+.action-bar .status-msg.error { color: var(--danger); }
+
+/* --- Loading / Empty States ---------------------------------------- */
+.loading {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-muted);
+    font-size: 1.1rem;
+}
+
+.loading::after {
+    content: "";
+    display: block;
+    margin: 16px auto 0;
+    width: 32px;
+    height: 32px;
+    border: 3px solid var(--border);
+    border-top-color: var(--accent);
+    border-radius: 50%;
+    animation: spin 0.8s linear infinite;
+}
+
+@keyframes spin { to { transform: rotate(360deg); } }
+
+.empty-state {
+    text-align: center;
+    padding: 60px 20px;
+    color: var(--text-muted);
+}
+
+/* --- Toast Notifications ------------------------------------------- */
+.toast-container {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    z-index: 200;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.toast {
+    padding: 10px 16px;
+    border-radius: var(--radius);
+    font-size: 0.88rem;
+    font-weight: 500;
+    box-shadow: var(--shadow-lg);
+    animation: slideIn 0.25s ease-out;
+    max-width: 360px;
+}
+
+.toast.success { background: var(--success-bg); color: var(--success-fg); border: 1px solid var(--success-border); }
+.toast.error { background: var(--danger-bg); color: var(--danger-fg); border: 1px solid var(--danger-border); }
+.toast.info { background: var(--info-bg); color: var(--info-fg); border: 1px solid var(--info-border); }
+
+@keyframes slideIn {
+    from { transform: translateX(100%); opacity: 0; }
+    to   { transform: translateX(0);    opacity: 1; }
+}
+
+/* --- Keyboard shortcuts hint --------------------------------------- */
+.shortcuts-hint {
+    position: fixed;
+    bottom: 16px;
+    right: 16px;
+    background: var(--header-bg);
+    color: var(--header-fg);
+    padding: 8px 14px;
+    border-radius: var(--radius);
+    font-size: 0.75rem;
+    opacity: 0.7;
+    z-index: 50;
+    line-height: 1.6;
+}
+
+.shortcuts-hint kbd {
+    display: inline-block;
+    padding: 1px 5px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 3px;
+    font-family: monospace;
+    font-size: 0.8rem;
+}
+
+/* --- Bionic Reading ------------------------------------------------ */
+.btn-bionic {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    padding: 4px 12px;
+    border: 2px solid var(--accent);
+    border-radius: var(--radius);
+    background: transparent;
+    color: var(--accent);
+    font-size: 0.82rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.15s;
+    white-space: nowrap;
+}
+.btn-bionic:hover {
+    background: var(--accent);
+    color: #fff;
+}
+.btn-bionic.active {
+    background: var(--accent);
+    color: #fff;
+}
+.btn-bionic .bionic-icon {
+    font-weight: 900;
+    font-size: 0.95rem;
+    font-family: Georgia, 'Times New Roman', serif;
+}
+
+/* Theme toggle button in nav bar.
+   Scope to .nav-bar to win specificity against ".nav-bar button". */
+.nav-bar .btn-theme-toggle {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5px;
+    padding: 4px 10px;
+    border: 1px solid var(--border);
+    border-radius: var(--radius);
+    background: var(--surface);
+    color: var(--text);
+    cursor: pointer;
+    font-size: 0.95rem;
+    line-height: 1;
+    transition: background 0.15s, border-color 0.15s, color 0.15s;
+    min-width: 36px;
+    white-space: nowrap;
+}
+.nav-bar .btn-theme-toggle:hover {
+    background: var(--surface-sunken);
+    border-color: var(--border-focus);
+    color: var(--text);
+}
+.nav-bar .btn-theme-toggle .theme-icon {
+    font-size: 1rem;
+    line-height: 1;
+}
+
+/* Bionic text: the bold fixation points */
+.bionic-text b {
+    font-weight: 700;
+    color: var(--text);
+}
+.bionic-text {
+    letter-spacing: 0.01em;
+    line-height: 1.65;
+}
+
+/* --- Responsive ---------------------------------------------------- */
+@media (max-width: 1100px) {
+    .video-grid {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .header { flex-direction: column; gap: 8px; }
+    .nav-bar { flex-direction: column; align-items: stretch; }
+    .main-content { padding: 12px; }
+    .video-grid { grid-template-columns: 1fr; }
+    .rubric-section { padding: 14px 16px; }
+}
+
+/* ============ rebuttal comparison layout (appended) ============ */
+.cmp-grid { display: grid; grid-template-columns: 1fr 1fr; gap: 18px; margin: 14px 0 20px; }
+@media (max-width: 900px) { .cmp-grid { grid-template-columns: 1fr; } }
+.cmp-col { background: var(--card-bg, #fff); border: 1px solid var(--border-color, #ddd); border-radius: 10px; padding: 12px; }
+[data-theme="dark"] .cmp-col { background: #1d232b; border-color: #333c47; }
+.cmp-head { font-weight: 600; font-size: 0.92rem; margin-bottom: 8px; }
+.cmp-old .cmp-head { color: #7a6320; }
+.cmp-new .cmp-head { color: #1f6f43; }
+.cmp-video { width: 100%; max-height: 46vh; background: #000; border-radius: 6px; }
+.video-missing { display: flex; align-items: center; justify-content: center; height: 220px;
+  border: 2px dashed var(--border-color, #ccc); border-radius: 6px; color: #888; font-size: 0.95rem; }
+.cmp-prompt { margin-top: 10px; font-size: 0.95rem; line-height: 1.45; }
+.rubric-table { width: 100%; border-collapse: collapse; margin-bottom: 44px; }
+.rubric-table th { text-align: left; font-size: 0.85rem; padding: 8px 10px;
+  border-bottom: 2px solid var(--border-color, #ccc); }
+.rubric-table td { padding: 8px 10px; border-bottom: 1px solid var(--border-color, #e4e4e4);
+  vertical-align: middle; font-size: 0.92rem; }
+.rubric-table .aspect-row td { background: rgba(120,120,140,0.09); font-weight: 600; font-size: 0.85rem; }
+.stmt-text { max-width: 60%; line-height: 1.4; }
+.cell-old { width: 170px; }
+.cell-new { width: 220px; }
+.verdict-chip { display: inline-block; min-width: 46px; text-align: center; padding: 3px 10px;
+  border-radius: 999px; font-size: 0.8rem; font-weight: 700; letter-spacing: 0.03em; }
+.chip-yes { background: #d9efe1; color: #1f6f43; }
+.chip-no { background: #f6dcdc; color: #9c2b2b; }
+.chip-na { background: #eee; color: #777; }
+[data-theme="dark"] .chip-yes { background: #17402a; color: #7fd6a4; }
+[data-theme="dark"] .chip-no { background: #47201f; color: #e79c9c; }
+.chip-locked { opacity: 0.95; box-shadow: inset 0 0 0 1px rgba(0,0,0,0.12); cursor: not-allowed; }
+.verdict-toggle { display: inline-flex; align-items: center; gap: 6px; }
+.tbtn { padding: 4px 12px; border-radius: 999px; border: 1px solid var(--border-color, #bbb);
+  background: transparent; cursor: pointer; font-size: 0.8rem; font-weight: 700; }
+.tbtn-yes.on { background: #1f9d5b; border-color: #1f9d5b; color: #fff; }
+.tbtn-no.on { background: #c04343; border-color: #c04343; color: #fff; }
+.edited-mark { font-size: 0.7rem; color: #b8860b; font-weight: 700; text-transform: uppercase; }
+.toggle-changed .tbtn.on { box-shadow: 0 0 0 2px rgba(184,134,11,0.45); }
