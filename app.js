@@ -7,7 +7,7 @@
     "use strict";
 
     var STORE_KEY = "avphys_rebuttal_verdicts_v1";
-    var SAVE_ENDPOINTS = ["https://demo.zijuncui.com/api/verdicts", "api/verdicts", "https://eve.tail5cf4e4.ts.net/api/verdicts", "http://localhost:8321/save"];
+    var SAVE_ENDPOINTS = ["https://avphys.zijuncui.com/api/verdicts", "api/verdicts", "https://eve.tail5cf4e4.ts.net/api/verdicts", "http://localhost:8321/save"];
     var saveEndpointIdx = null;
     var autosaveTimer = null;
     var lastAutosave = null;
@@ -245,7 +245,7 @@
 
     /* ---------------- boot ---------------- */
     function hydrateFromServer(done) {
-        var GETS = ["https://demo.zijuncui.com/api/verdicts", "api/verdicts", "https://eve.tail5cf4e4.ts.net/api/verdicts"];
+        var GETS = ["https://avphys.zijuncui.com/api/verdicts", "api/verdicts", "https://eve.tail5cf4e4.ts.net/api/verdicts"];
         function tryGet(i) {
             if (i >= GETS.length) return Promise.resolve(null);
             return fetch(GETS[i]).then(function (r) { return r.ok ? r.json() : tryGet(i + 1); })
