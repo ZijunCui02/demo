@@ -286,6 +286,8 @@
     }
     function boot() {
         document.title = "AV-Phys Bench — Implicit-Prompt Comparison (" + MODEL + ")";
+        var ht = document.getElementById("header-title");
+        if (ht) { ht.textContent = "AV-Phys Bench — Original vs Implicit Prompts (" + MODEL + ", 195 revised)"; }
         var mchip = document.getElementById("model-chip");
         if (mchip) { mchip.textContent = MODEL; }
         fetch(DATA_URL).then(function (r) { return r.json(); }).then(function (d) {
