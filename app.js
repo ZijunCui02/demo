@@ -6,8 +6,13 @@
 (function () {
     "use strict";
 
-    var STORE_KEY = "avphys_rebuttal_verdicts_v1";
-    var SAVE_ENDPOINTS = ["https://avphys.zijuncui.com/api/verdicts", "api/verdicts", "https://eve.tail5cf4e4.ts.net/api/verdicts", "http://localhost:8321/save"];
+    var MODEL = (new URLSearchParams(location.search)).get("model") === "LTX-2.3" ? "LTX-2.3" : "Seedance-2.0";
+    var IS_LTX = MODEL === "LTX-2.3";
+    var DATA_URL = IS_LTX ? "data_LTX-2.3.json" : "data.json";
+    var VID_BASE_OLD = IS_LTX ? "https://avphys.zijuncui.com/videos_old_ltx/" : "videos_old/";
+    var VID_BASE_NEW = IS_LTX ? "https://avphys.zijuncui.com/videos_new_ltx/" : "videos_new/";
+    var STORE_KEY = IS_LTX ? "avphys_rebuttal_verdicts_LTX-2.3_v1" : "avphys_rebuttal_verdicts_v1";
+    var SAVE_ENDPOINTS = ["https://avphys.zijuncui.com/api/verdicts?model=" + MODEL, "api/verdicts?model=" + MODEL, "https://eve.tail5cf4e4.ts.net/api/verdicts?model=" + MODEL];
     var saveEndpointIdx = null;
     var autosaveTimer = null;
     var lastAutosave = null;
@@ -121,7 +126,7 @@
     }
     function videoPanel(kind, entry) {
         var isOld = kind === "old";
-        var src = (isOld ? "videos_old/" : "videos_new/") + entry.index + ".mp4";
+        var src = (isOld ? VID_BASE_OLD : VID_BASE_NEW) + entry.index + ".mp4";
         var promptText = isOld ? entry.old_prompt : entry.new_prompt;
         var head = isOld ? "Original prompt (released video, physics outcome stated)"
                          : "Implicit prompt (new video, physics outcome removed)";
@@ -178,11 +183,15 @@
         window.scrollTo(0, 0);
     }
     function nextUnreviewed() {
-        for (var k = 1; k <= filtered.length; k++) {
-            var j = (cur + k) % filtered.length;
-            if (!isEdited(filtered[j])) { go(j); return; }
+        /* jump to the entry AFTER the last edited one (in order); review
+           position = furthest edit, since confirming placeholders leaves no trace */
+        var last = -1;
+        for (var j = 0; j < filtered.length; j++) {
+            if (isEdited(filtered[j])) last = j;
         }
-        toast("All prompts in this filter have edits.", "info");
+        if (last < 0) { go(0); return; }
+        if (last >= filtered.length - 1) { toast("Last edit is at the final prompt — all done?", "info"); go(last); return; }
+        go(last + 1);
     }
     function applyFilter() {
         var sub = $("filter-subcategory").value;
@@ -245,7 +254,7 @@
 
     /* ---------------- boot ---------------- */
     function hydrateFromServer(done) {
-        var GETS = ["https://avphys.zijuncui.com/api/verdicts", "api/verdicts", "https://eve.tail5cf4e4.ts.net/api/verdicts"];
+        var GETS = ["https://avphys.zijuncui.com/api/verdicts?model=" + MODEL, "api/verdicts?model=" + MODEL, "https://eve.tail5cf4e4.ts.net/api/verdicts?model=" + MODEL];
         function tryGet(i) {
             if (i >= GETS.length) return Promise.resolve(null);
             return fetch(GETS[i]).then(function (r) { return r.ok ? r.json() : tryGet(i + 1); })
@@ -276,7 +285,10 @@
         }).catch(function () { done(); });
     }
     function boot() {
-        fetch("data.json").then(function (r) { return r.json(); }).then(function (d) {
+        document.title = "AV-Phys Bench — Implicit-Prompt Comparison (" + MODEL + ")";
+        var mchip = document.getElementById("model-chip");
+        if (mchip) { mchip.textContent = MODEL; }
+        fetch(DATA_URL).then(function (r) { return r.json(); }).then(function (d) {
             DATA = d;
             entries = d.entries;
             var subs = [];
