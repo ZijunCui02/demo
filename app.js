@@ -1,342 +1,212 @@
-/* AV-Phys Bench rebuttal demo — original vs implicit prompts, Seedance 2.0.
- * Static build: data.json + videos_old/ + videos_new/, no backend.
- * Left column verdicts are the released human-majority labels (immutable).
- * Right column verdicts are editable, pre-filled from the left as placeholders,
- * persisted in localStorage and exportable as a single JSON file. */
+/* Case gallery: category picker, subcategory chips, one card per case, spectrogram players. */
+
 (function () {
-    "use strict";
+  const catalog = window.CATALOG || [];
+  const MEDIA = "media";
+  const DUR = 5.0; // seconds spanned by every spectrogram canvas
 
-    var MODEL = (new URLSearchParams(location.search)).get("model") === "LTX-2.3" ? "LTX-2.3" : "Seedance-2.0";
-    var IS_LTX = MODEL === "LTX-2.3";
-    var DATA_URL = IS_LTX ? "data_LTX-2.3.json" : "data.json";
-    var VID_BASE_OLD = IS_LTX ? "https://avphys.zijuncui.com/videos_old_ltx/" : "videos_old/";
-    var VID_BASE_NEW = IS_LTX ? "https://avphys.zijuncui.com/videos_new_ltx/" : "videos_new/";
-    var STORE_KEY = IS_LTX ? "avphys_rebuttal_verdicts_LTX-2.3_v1" : "avphys_rebuttal_verdicts_v1";
-    var SAVE_ENDPOINTS = ["https://avphys.zijuncui.com/api/verdicts?model=" + MODEL, "api/verdicts?model=" + MODEL, "https://eve.tail5cf4e4.ts.net/api/verdicts?model=" + MODEL];
-    var saveEndpointIdx = null;
-    var autosaveTimer = null;
-    var lastAutosave = null;
-    var ASPECT_LABELS = {
-        video_sa: "Video — Semantic Adherence",
-        audio_sa: "Audio — Semantic Adherence",
-        video_pc: "Video — Physical Commonsense",
-        audio_pc: "Audio — Physical Commonsense",
-        av_pc: "Audio-Visual — Physical Commonsense"
-    };
+  const LABELS = {
+    ref: { name: "Reference (No edits)", code: "" },
+    tar: { name: "Ground Truth", code: "" },
+    m1: { name: "Reference-only Baseline (No Mask)", code: "M1" },
+    m2: { name: "Baseline Concat w/o Conditions", code: "M2" },
+    m13: { name: "M2 + VAE Embedded Audio Mask", code: "M13" },
+    m14: { name: "M2 + Learned Audio Mask Embeddings", code: "M14" },
+    m12: { name: "Baseline w/ Video Control Net", code: "M12" },
+    m15: { name: "M12 + VAE Embedded Audio Mask", code: "M15" },
+    m16: { name: "M12 + Learned Audio Mask Embeddings", code: "M16" }
+  };
 
-    var DATA = null;
-    var entries = [];
-    var filtered = [];
-    var cur = 0;
-    var store = loadStore();
+  // Mel-scale positions (fraction of the plot height from the bottom) of the frequency ticks.
+  const FTICKS = [[500, 0.1356], [2000, 0.4533], [8000, 0.8178]];
 
-    /* ---------------- persistence ---------------- */
-    function loadStore() {
-        try { return JSON.parse(localStorage.getItem(STORE_KEY) || "{}"); }
-        catch (e) { return {}; }
-    }
-    function saveStore() {
-        try { localStorage.setItem(STORE_KEY, JSON.stringify(store)); }
-        catch (e) { toast("localStorage unavailable — edits will not persist!", "error"); }
-        scheduleAutosave();
-    }
-    function exportPayload() {
-        var out = { exported_at: new Date().toISOString(), model: DATA ? DATA.model : "", autosave: true, verdicts: {} };
-        entries.forEach(function (e) {
-            var full = {};
-            e.statements.forEach(function (st) { full[st.key] = verdictFor(e, st.key); });
-            out.verdicts[e.index] = { edited: isEdited(e), scores: full };
-        });
-        return out;
-    }
-    function setAutosaveStatus(ok, detail) {
-        var el = document.getElementById("autosave-status");
-        if (!el) return;
-        if (ok === null) { el.textContent = "autosave: connecting…"; el.className = "badge"; el.style.display = ""; return; }
-        if (ok) { el.textContent = "saved to eve " + detail; el.className = "badge autosave-ok"; el.style.display = ""; }
-        else if (ok === false && saveEndpointIdx !== null) { el.textContent = "eve UNREACHABLE — use Export!"; el.className = "badge autosave-bad"; el.style.display = ""; }
-        else { el.style.display = "none"; } /* viewer mode: no save backend, chip hidden */
-    }
-    function trySave(idx, body, done) {
-        if (idx >= SAVE_ENDPOINTS.length) { done(false); return; }
-        fetch(SAVE_ENDPOINTS[idx], { method: "POST", headers: { "Content-Type": "application/json" }, body: body })
-        .then(function (r) { if (!r.ok) throw new Error(r.status); saveEndpointIdx = idx; done(true); })
-        .catch(function () { trySave(idx + 1, body, done); });
-    }
-    function pushAutosave() {
-        if (!entries.length) return;
-        var body = JSON.stringify(exportPayload());
-        var start = saveEndpointIdx === null ? 0 : saveEndpointIdx;
-        trySave(start, body, function (ok) {
-            if (ok) { lastAutosave = new Date(); setAutosaveStatus(true, lastAutosave.toLocaleTimeString()); }
-            else { var had = saveEndpointIdx !== null; saveEndpointIdx = null; setAutosaveStatus(had ? false : undefined); }
-        });
-    }
-    function scheduleAutosave() {
-        if (autosaveTimer) clearTimeout(autosaveTimer);
-        autosaveTimer = setTimeout(pushAutosave, 1500);
-    }
-    function verdictFor(entry, key) {
-        var rec = store[entry.index];
-        if (rec && Object.prototype.hasOwnProperty.call(rec, key)) return rec[key];
-        var st = entry.statements.find(function (s) { return s.key === key; });
-        return st ? st.old : null; /* placeholder = original majority */
-    }
-    function isEdited(entry) {
-        return !!store[entry.index] && Object.keys(store[entry.index]).length > 0;
-    }
-    function setVerdict(entry, key, val) {
-        if (!store[entry.index]) store[entry.index] = {};
-        var st = entry.statements.find(function (s) { return s.key === key; });
-        if (st && st.old === val) { delete store[entry.index][key]; }
-        else { store[entry.index][key] = val; }
-        if (Object.keys(store[entry.index]).length === 0) delete store[entry.index];
-        saveStore();
-    }
+  const cats = [];
+  const subsOf = new Map();
+  catalog.forEach(c => {
+    if (!subsOf.has(c.cat)) { cats.push(c.cat); subsOf.set(c.cat, []); }
+    if (!subsOf.get(c.cat).includes(c.sub)) subsOf.get(c.cat).push(c.sub);
+  });
 
-    /* ---------------- helpers ---------------- */
-    function $(id) { return document.getElementById(id); }
-    function escapeHtml(s) {
-        return String(s).replace(/[&<>"']/g, function (c) {
-            return { "&": "&amp;", "<": "&lt;", ">": "&gt;", '"': "&quot;", "'": "&#39;" }[c];
-        });
-    }
-    function toast(msg, type) {
-        var el = document.createElement("div");
-        el.className = "toast " + (type || "info");
-        el.textContent = msg;
-        $("toast-container").appendChild(el);
-        setTimeout(function () { el.remove(); }, 3200);
-    }
+  const params = new URLSearchParams(window.location.search);
+  let activeCat = cats.includes(params.get("cat")) ? params.get("cat") : cats[0];
+  let activeSub = (subsOf.get(activeCat) || []).includes(params.get("sub")) ? params.get("sub") : (subsOf.get(activeCat) || [])[0];
 
-    /* ---------------- rendering ---------------- */
-    function chip(val, locked) {
-        var v = val === "yes" ? "yes" : val === "no" ? "no" : "na";
-        var label = v === "na" ? "—" : v.toUpperCase();
-        return '<span class="verdict-chip chip-' + v + (locked ? " chip-locked" : "") + '">' + label + "</span>";
-    }
-    function toggleHtml(entry, st) {
-        var v = verdictFor(entry, st.key);
-        var changed = store[entry.index] && Object.prototype.hasOwnProperty.call(store[entry.index], st.key);
-        return '<div class="verdict-toggle' + (changed ? " toggle-changed" : "") + '" data-key="' + st.key + '">' +
-            '<button class="tbtn tbtn-yes' + (v === "yes" ? " on" : "") + '" data-val="yes">YES</button>' +
-            '<button class="tbtn tbtn-no' + (v === "no" ? " on" : "") + '" data-val="no">NO</button>' +
-            (changed ? '<span class="edited-mark" title="differs from original placeholder">edited</span>' : "") +
-            "</div>";
-    }
-    function videoPanel(kind, entry) {
-        var isOld = kind === "old";
-        var src = (isOld ? VID_BASE_OLD : VID_BASE_NEW) + entry.index + ".mp4";
-        var promptText = isOld ? entry.old_prompt : entry.new_prompt;
-        var head = isOld ? "Original prompt (released video, physics outcome stated)"
-                         : "Implicit prompt (new video, physics outcome removed)";
-        return '<div class="cmp-col cmp-' + kind + '">' +
-            '<div class="cmp-head">' + head + "</div>" +
-            '<video class="cmp-video" controls preload="metadata" src="' + src + '"' +
-            ' onerror="this.outerHTML=\'<div class=&quot;video-missing&quot;>video not yet generated</div>\'"></video>' +
-            '<div class="cmp-prompt">' + escapeHtml(promptText) + "</div>" +
-            "</div>";
-    }
-    function render() {
-        var entry = filtered[cur];
-        if (!entry) { $("main-content").innerHTML = '<div class="loading">No prompts match the filter.</div>'; return; }
-        $("header-prompt-id").textContent = entry.index;
-        $("header-category").textContent = entry.subcategory_id + " · " + entry.subcategory_name + " · " + entry.principle;
-        var reviewed = entries.filter(isEdited).length;
-        $("header-progress").textContent = reviewed + " / " + entries.length + " edited";
-        $("nav-progress").textContent = (cur + 1) + " / " + filtered.length;
-        $("select-prompt").value = entry.index;
+  function title(s) { return s.replace(/_/g, " ").replace(/\b\w/g, m => m.toUpperCase()); }
+  function esc(s) { return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"); }
 
-        var rows = "";
-        var lastAspect = "";
-        entry.statements.forEach(function (st) {
-            if (st.aspect !== lastAspect) {
-                rows += '<tr class="aspect-row"><td colspan="3">' + ASPECT_LABELS[st.aspect] + "</td></tr>";
-                lastAspect = st.aspect;
-            }
-            rows += "<tr>" +
-                '<td class="stmt-text">' + escapeHtml(st.text) + "</td>" +
-                '<td class="cell-old">' + chip(st.old, true) + "</td>" +
-                '<td class="cell-new">' + toggleHtml(entry, st) + "</td>" +
-                "</tr>";
-        });
+  function syncUrl() {
+    const url = new URL(window.location);
+    url.searchParams.set("cat", activeCat);
+    url.searchParams.set("sub", activeSub);
+    history.replaceState(null, "", url.toString());
+  }
 
-        $("main-content").innerHTML =
-            '<div class="cmp-grid">' + videoPanel("old", entry) + videoPanel("new", entry) + "</div>" +
-            '<table class="rubric-table"><thead><tr>' +
-            "<th>Rubric statement</th><th>Original (human majority, locked)</th><th>Implicit (editable)</th>" +
-            "</tr></thead><tbody>" + rows + "</tbody></table>";
+  function renderPicker() {
+    const el = document.getElementById("cat-picker");
+    el.innerHTML = cats.map(c => {
+      const n = catalog.filter(x => x.cat === c).length;
+      return `<button class="cat-btn${c === activeCat ? " on" : ""}" data-cat="${c}">${title(c)}<span class="count">${n} cases</span></button>`;
+    }).join("");
+    el.querySelectorAll(".cat-btn").forEach(b => b.addEventListener("click", () => {
+      activeCat = b.dataset.cat;
+      activeSub = subsOf.get(activeCat)[0];
+      syncUrl();
+      render();
+    }));
+  }
 
-        Array.prototype.forEach.call(document.querySelectorAll(".verdict-toggle .tbtn"), function (btn) {
-            btn.addEventListener("click", function () {
-                var key = btn.parentElement.getAttribute("data-key");
-                setVerdict(entry, key, btn.getAttribute("data-val"));
-                render();
-            });
-        });
+  function renderChips() {
+    const row = document.getElementById("sub-chip-row");
+    row.innerHTML = subsOf.get(activeCat).map(s => {
+      const n = catalog.filter(x => x.cat === activeCat && x.sub === s).length;
+      return `<button class="sub-chip${s === activeSub ? " on" : ""}" data-sub="${s}">${title(s)}<span class="count">${n}</span></button>`;
+    }).join("");
+    row.querySelectorAll(".sub-chip").forEach(b => b.addEventListener("click", () => {
+      activeSub = b.dataset.sub;
+      syncUrl();
+      render();
+    }));
+  }
+
+  function label(key, kind) {
+    const l = LABELS[key];
+    const code = l.code ? `<span class="code">${l.code}</span>` : "";
+    return `<div class="cell-label">${code}<span class="name">${esc(l.name)}</span><span class="kind">${kind}</span></div>`;
+  }
+
+  function videoCell(dir, key) {
+    return `<div class="cell">${label(key, "video")}
+      <video controls preload="none" playsinline poster="${dir}/${key}_poster.webp" src="${dir}/${key}.mp4"></video></div>`;
+  }
+
+  function specCell(dir, key) {
+    const ticks = FTICKS.map(([f, y]) => `<div class="spec-ftick" style="bottom:${(y * 100).toFixed(2)}%"><span>${f >= 1000 ? (f / 1000) + " kHz" : f + " Hz"}</span></div>`).join("");
+    const axis = [0, 1, 2, 3, 4, 5].map(t => `<span style="left:${t / DUR * 100}%">${t === 5 ? "5 s" : t}</span>`).join("");
+    return `<div class="cell">${label(key, "audio")}
+      <div class="spec">
+        <div class="spec-plot"><img src="${dir}/${key}_spec.webp" alt="" loading="lazy" draggable="false">${ticks}<div class="spec-head"></div></div>
+        <div class="spec-axis">${axis}</div>
+        <div class="spec-ctrl">
+          <button class="spec-play" type="button" aria-label="Play"><svg class="i-play"><use href="#i-play"/></svg><svg class="i-pause"><use href="#i-pause"/></svg></button>
+          <span class="spec-time">0.00 s</span>
+        </div>
+        <audio preload="none" src="${dir}/${key}.m4a"></audio>
+      </div></div>`;
+  }
+
+  function captionCell(text) {
+    return `<div class="cell"><div class="cell-label"><span>Caption</span></div><div class="caption">${esc(text)}</div></div>`;
+  }
+
+  function caseCard(c) {
+    const dir = `${MEDIA}/${c.cat}/${c.sub}/${c.id}`;
+    return `<article class="case" id="${c.cat}-${c.sub}-${c.id}">
+      <div class="case-head"><span class="case-idx">${c.id}</span><span class="case-path">${title(c.cat)} / ${title(c.sub)}</span></div>
+      <div class="case-body">
+        <div class="block left">
+          ${videoCell(dir, "ref")}${videoCell(dir, "tar")}
+          ${specCell(dir, "ref")}${specCell(dir, "tar")}
+          ${captionCell(c.caption)}${videoCell(dir, "m1")}
+        </div>
+        <div class="block right">
+          ${videoCell(dir, "m2")}${videoCell(dir, "m13")}${videoCell(dir, "m14")}
+          ${specCell(dir, "m2")}${specCell(dir, "m13")}${specCell(dir, "m14")}
+          <div class="rule"></div>
+          ${videoCell(dir, "m12")}${videoCell(dir, "m15")}${videoCell(dir, "m16")}
+          ${specCell(dir, "m12")}${specCell(dir, "m15")}${specCell(dir, "m16")}
+        </div>
+      </div>
+    </article>`;
+  }
+
+  function render() {
+    renderPicker();
+    renderChips();
+    const list = document.getElementById("case-list");
+    const items = catalog.filter(c => c.cat === activeCat && c.sub === activeSub);
+    list.innerHTML = items.length ? items.map(caseCard).join("") : `<p class="empty-note">No cases in this subcategory.</p>`;
+    list.querySelectorAll(".spec").forEach(initSpec);
+  }
+
+  /* ---------- spectrogram player ---------- */
+  function initSpec(root) {
+    const audio = root.querySelector("audio");
+    const plot = root.querySelector(".spec-plot");
+    const head = root.querySelector(".spec-head");
+    const time = root.querySelector(".spec-time");
+    const btn = root.querySelector(".spec-play");
+    let pending = null;
+    let raf = 0;
+    let wasPlaying = false;
+
+    function place(t) {
+      head.style.left = (Math.max(0, Math.min(DUR, t)) / DUR * 100) + "%";
+      time.textContent = t.toFixed(2) + " s";
     }
 
-    /* ---------------- navigation ---------------- */
-    function go(i) {
-        cur = Math.max(0, Math.min(filtered.length - 1, i));
-        render();
-        window.scrollTo(0, 0);
-    }
-    function nextUnreviewed() {
-        /* jump to the entry AFTER the last edited one (in order); review
-           position = furthest edit, since confirming placeholders leaves no trace */
-        var last = -1;
-        for (var j = 0; j < filtered.length; j++) {
-            if (isEdited(filtered[j])) last = j;
-        }
-        if (last < 0) { go(0); return; }
-        if (last >= filtered.length - 1) { toast("Last edit is at the final prompt — all done?", "info"); go(last); return; }
-        go(last + 1);
-    }
-    function applyFilter() {
-        var sub = $("filter-subcategory").value;
-        filtered = entries.filter(function (e) { return !sub || e.subcategory_id === sub; });
-        var sel = $("select-prompt");
-        sel.innerHTML = filtered.map(function (e) {
-            return '<option value="' + e.index + '">' + e.index + "</option>";
-        }).join("");
-        go(0);
+    function seek(t) {
+      t = Math.max(0, Math.min(DUR, t));
+      if (audio.readyState >= 1) {
+        audio.currentTime = Math.min(t, audio.duration || t);
+      } else {
+        pending = t;
+        audio.preload = "auto";
+        audio.load();
+      }
+      place(t);
     }
 
-    /* ---------------- export / import ---------------- */
-    function doExport() {
-        var out = {
-            exported_at: new Date().toISOString(),
-            model: DATA.model,
-            note: "implicit-side verdicts; scores include placeholders, 'edited' marks prompts with deviations",
-            verdicts: {}
-        };
-        entries.forEach(function (e) {
-            var full = {};
-            e.statements.forEach(function (st) { full[st.key] = verdictFor(e, st.key); });
-            out.verdicts[e.index] = { edited: isEdited(e), scores: full };
-        });
-        var blob = new Blob([JSON.stringify(out, null, 2)], { type: "application/json" });
-        var a = document.createElement("a");
-        a.href = URL.createObjectURL(blob);
-        a.download = "implicit_verdicts_" + new Date().toISOString().slice(0, 10) + ".json";
-        a.click();
-        toast("Exported " + entries.length + " prompts.", "success");
-    }
-    function doImport(file) {
-        var reader = new FileReader();
-        reader.onload = function () {
-            try {
-                var data = JSON.parse(reader.result);
-                var n = 0;
-                entries.forEach(function (e) {
-                    var rec = data.verdicts && data.verdicts[e.index];
-                    if (!rec || !rec.scores) return;
-                    e.statements.forEach(function (st) {
-                        var v = rec.scores[st.key];
-                        if (v === "yes" || v === "no") {
-                            if (v !== st.old) {
-                                if (!store[e.index]) store[e.index] = {};
-                                store[e.index][st.key] = v; n++;
-                            } else if (store[e.index]) {
-                                delete store[e.index][st.key];
-                            }
-                        }
-                    });
-                    if (store[e.index] && Object.keys(store[e.index]).length === 0) delete store[e.index];
-                });
-                saveStore(); render();
-                toast("Imported (" + n + " deviations from placeholders).", "success");
-            } catch (err) { toast("Import failed: " + err.message, "error"); }
-        };
-        reader.readAsText(file);
+    audio.addEventListener("loadedmetadata", () => {
+      if (pending !== null) { audio.currentTime = Math.min(pending, audio.duration || pending); pending = null; }
+    });
+
+    function tick() {
+      place(audio.currentTime);
+      if (!audio.paused && !audio.ended) raf = requestAnimationFrame(tick);
     }
 
-    /* ---------------- boot ---------------- */
-    function hydrateFromServer(done) {
-        var GETS = ["https://avphys.zijuncui.com/api/verdicts?model=" + MODEL, "api/verdicts?model=" + MODEL, "https://eve.tail5cf4e4.ts.net/api/verdicts?model=" + MODEL];
-        function tryGet(i) {
-            if (i >= GETS.length) return Promise.resolve(null);
-            return fetch(GETS[i]).then(function (r) { return r.ok ? r.json() : tryGet(i + 1); })
-                .catch(function () { return tryGet(i + 1); });
-        }
-        tryGet(0)
-        .then(function (saved) {
-            if (saved && saved.verdicts) {
-                var added = 0;
-                entries.forEach(function (e) {
-                    if (store[e.index]) return; /* local edits win — never overwritten */
-                    var rec = saved.verdicts[e.index];
-                    if (!rec || !rec.scores) return;
-                    e.statements.forEach(function (st) {
-                        var v = rec.scores[st.key];
-                        if ((v === "yes" || v === "no") && v !== st.old) {
-                            if (!store[e.index]) store[e.index] = {};
-                            store[e.index][st.key] = v; added++;
-                        }
-                    });
-                });
-                if (added > 0) {
-                    try { localStorage.setItem(STORE_KEY, JSON.stringify(store)); } catch (err) { /* ignore */ }
-                    toast("Merged " + added + " saved verdicts from eve.", "success");
-                }
-            }
-            done();
-        }).catch(function () { done(); });
-    }
-    function boot() {
-        document.title = "AV-Phys Bench — Implicit-Prompt Comparison (" + MODEL + ")";
-        var ht = document.getElementById("header-title");
-        if (ht) { ht.textContent = "AV-Phys Bench — Original vs Implicit Prompts (" + MODEL + ", 195 revised)"; }
-        var mchip = document.getElementById("model-chip");
-        if (mchip) { mchip.textContent = MODEL; }
-        fetch(DATA_URL).then(function (r) { return r.json(); }).then(function (d) {
-            DATA = d;
-            entries = d.entries;
-            var subs = [];
-            entries.forEach(function (e) { if (subs.indexOf(e.subcategory_id) < 0) subs.push(e.subcategory_id); });
-            $("filter-subcategory").innerHTML = '<option value="">All subcategories</option>' +
-                subs.map(function (s) { return '<option value="' + s + '">' + s + "</option>"; }).join("");
-            hydrateFromServer(applyFilter);
-        }).catch(function (e) {
-            $("main-content").innerHTML = '<div class="loading">Failed to load data.json: ' + escapeHtml(e.message) + "</div>";
-        });
-        setAutosaveStatus(null);
-        setInterval(pushAutosave, 60000);
-        setTimeout(pushAutosave, 3000);
-        document.addEventListener("visibilitychange", function () {
-            if (document.visibilityState === "hidden") pushAutosave();
-        });
+    audio.addEventListener("play", () => { root.classList.add("playing"); cancelAnimationFrame(raf); raf = requestAnimationFrame(tick); });
+    audio.addEventListener("pause", () => { root.classList.remove("playing"); cancelAnimationFrame(raf); place(audio.currentTime); });
+    audio.addEventListener("ended", () => { root.classList.remove("playing"); cancelAnimationFrame(raf); place(audio.currentTime); });
 
-        $("btn-prev").addEventListener("click", function () { go(cur - 1); });
-        $("btn-next").addEventListener("click", function () { go(cur + 1); });
-        $("btn-next-unreviewed").addEventListener("click", nextUnreviewed);
-        $("select-prompt").addEventListener("change", function () {
-            var self = this;
-            var i = filtered.findIndex(function (e) { return e.index === self.value; });
-            if (i >= 0) go(i);
-        });
-        $("filter-subcategory").addEventListener("change", applyFilter);
-        $("btn-export").addEventListener("click", doExport);
-        $("input-import").addEventListener("change", function () {
-            if (this.files[0]) doImport(this.files[0]);
-            this.value = "";
-        });
-        $("btn-toggle-theme").addEventListener("click", function () {
-            var dark = document.documentElement.getAttribute("data-theme") === "dark";
-            if (dark) document.documentElement.removeAttribute("data-theme");
-            else document.documentElement.setAttribute("data-theme", "dark");
-            try { localStorage.setItem("phyomnibench_theme", dark ? "light" : "dark"); } catch (e) { /* ignore */ }
-        });
-        document.addEventListener("keydown", function (ev) {
-            if (ev.target.tagName === "INPUT" || ev.target.tagName === "SELECT" || ev.target.tagName === "TEXTAREA") return;
-            if (ev.key === "ArrowLeft") go(cur - 1);
-            else if (ev.key === "ArrowRight") go(cur + 1);
-            else if (ev.key === "u" || ev.key === "U") nextUnreviewed();
-            else if (ev.key === "p" || ev.key === "P") {
-                Array.prototype.forEach.call(document.querySelectorAll("video"), function (v) { v.play(); });
-            }
-        });
+    btn.addEventListener("click", () => {
+      if (audio.paused || audio.ended) audio.play().catch(() => {});
+      else audio.pause();
+    });
+
+    function fracOf(e) {
+      const r = plot.getBoundingClientRect();
+      return (e.clientX - r.left) / r.width;
     }
-    boot();
+
+    plot.addEventListener("pointerdown", e => {
+      e.preventDefault();
+      plot.setPointerCapture(e.pointerId);
+      wasPlaying = !audio.paused && !audio.ended;
+      if (wasPlaying) audio.pause();
+      root.classList.add("dragging");
+      seek(fracOf(e) * DUR);
+    });
+    plot.addEventListener("pointermove", e => {
+      if (!root.classList.contains("dragging")) return;
+      seek(fracOf(e) * DUR);
+    });
+    function release(e) {
+      if (!root.classList.contains("dragging")) return;
+      root.classList.remove("dragging");
+      if (wasPlaying) audio.play().catch(() => {});
+      wasPlaying = false;
+    }
+    plot.addEventListener("pointerup", release);
+    plot.addEventListener("pointercancel", release);
+  }
+
+  // One sound at a time: starting any player pauses every other audio or video on the page.
+  document.addEventListener("play", e => {
+    const me = e.target;
+    if (!(me instanceof HTMLMediaElement)) return;
+    document.querySelectorAll("audio, video").forEach(m => { if (m !== me && !m.paused) m.pause(); });
+  }, true);
+
+  render();
 })();
