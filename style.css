@@ -1384,6 +1384,10 @@ html.dark .tax-card:hover {
   }
 }
 
+.block.left .caption-cell {
+  grid-row: span 2;
+}
+
 .block .rule {
   grid-column: 1 / -1;
   border-top: 1px dashed hsl(var(--border-strong));
@@ -1440,6 +1444,35 @@ html.dark .tax-card:hover {
   background: #000;
   border-radius: 4px;
   border: 1px solid hsl(var(--border));
+  cursor: pointer;
+  display: block;
+}
+
+.pl {
+  font-family: var(--font-ui);
+  user-select: none;
+  -webkit-user-select: none;
+}
+
+.vid-bar {
+  position: relative;
+  height: 6px;
+  margin-top: 6px;
+  border-radius: 3px;
+  background: hsl(var(--bg-dark));
+  cursor: ew-resize;
+  touch-action: none;
+}
+
+.pl-fill {
+  position: absolute;
+  left: 0;
+  top: 0;
+  bottom: 0;
+  width: 0;
+  border-radius: 3px;
+  background: hsl(var(--primary));
+  pointer-events: none;
 }
 
 .caption {
@@ -1456,12 +1489,6 @@ html.dark .tax-card:hover {
 }
 
 /* ===================== SPECTROGRAM PLAYER ===================== */
-.spec {
-  font-family: var(--font-ui);
-  user-select: none;
-  -webkit-user-select: none;
-}
-
 .spec-plot {
   position: relative;
   aspect-ratio: 1000 / 384;
@@ -1570,7 +1597,7 @@ html.dark .tax-card:hover {
   right: 0;
 }
 
-.spec-ctrl {
+.pl-ctrl {
   display: flex;
   align-items: center;
   gap: 0.5rem;
@@ -1579,7 +1606,7 @@ html.dark .tax-card:hover {
   color: hsl(var(--fg-light));
 }
 
-.spec-play {
+.pl-play {
   width: 22px;
   height: 22px;
   border-radius: 50%;
@@ -1594,20 +1621,20 @@ html.dark .tax-card:hover {
   flex: none;
 }
 
-.spec-play:hover {
+.pl-play:hover {
   background: hsl(var(--bg-dark));
 }
 
-.spec-play svg {
+.pl-play svg {
   width: 10px;
   height: 10px;
 }
 
-.spec-play .i-pause { display: none; }
-.spec.playing .spec-play .i-play { display: none; }
-.spec.playing .spec-play .i-pause { display: block; }
+.pl-play .i-pause { display: none; }
+.pl.playing .pl-play .i-play { display: none; }
+.pl.playing .pl-play .i-pause { display: block; }
 
-.spec-time {
+.pl-time {
   font-family: var(--font-mono);
   font-variant-numeric: tabular-nums;
 }

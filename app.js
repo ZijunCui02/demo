@@ -1,4 +1,4 @@
-/* Case gallery: category picker, subcategory chips, one card per case, spectrogram players. */
+/* Case gallery: category picker, subcategory chips, one card per case, video and spectrogram players. */
 
 (function () {
   const catalog = window.CATALOG || [];
@@ -74,28 +74,34 @@
     return `<div class="cell-label">${code}<span class="name">${esc(l.name)}</span><span class="kind">${kind}</span></div>`;
   }
 
+  const CTRL = `<div class="pl-ctrl">
+      <button class="pl-play" type="button" aria-label="Play"><svg class="i-play"><use href="#i-play"/></svg><svg class="i-pause"><use href="#i-pause"/></svg></button>
+      <span class="pl-time">0.00 s</span>
+    </div>`;
+
   function videoCell(dir, key) {
     return `<div class="cell">${label(key, "video")}
-      <video controls preload="none" playsinline poster="${dir}/${key}_poster.webp" src="${dir}/${key}.mp4"></video></div>`;
+      <div class="pl vid">
+        <video class="pl-media" preload="none" playsinline poster="${dir}/${key}_poster.webp" src="${dir}/${key}.mp4"></video>
+        <div class="pl-track vid-bar"><div class="pl-fill"></div></div>
+        ${CTRL}
+      </div></div>`;
   }
 
   function specCell(dir, key) {
     const ticks = FTICKS.map(([f, y]) => `<div class="spec-ftick" style="bottom:${(y * 100).toFixed(2)}%"><span>${f >= 1000 ? (f / 1000) + " kHz" : f + " Hz"}</span></div>`).join("");
     const axis = [0, 1, 2, 3, 4, 5].map(t => `<span style="left:${t / DUR * 100}%">${t === 5 ? "5 s" : t}</span>`).join("");
     return `<div class="cell">${label(key, "audio")}
-      <div class="spec">
-        <div class="spec-plot"><img src="${dir}/${key}_spec.webp" alt="" loading="lazy" draggable="false">${ticks}<div class="spec-head"></div></div>
+      <div class="pl spec" data-span="fixed">
+        <div class="pl-track spec-plot"><img src="${dir}/${key}_spec.webp" alt="" loading="lazy" draggable="false">${ticks}<div class="pl-head spec-head"></div></div>
         <div class="spec-axis">${axis}</div>
-        <div class="spec-ctrl">
-          <button class="spec-play" type="button" aria-label="Play"><svg class="i-play"><use href="#i-play"/></svg><svg class="i-pause"><use href="#i-pause"/></svg></button>
-          <span class="spec-time">0.00 s</span>
-        </div>
-        <audio preload="none" src="${dir}/${key}.m4a"></audio>
+        ${CTRL}
+        <audio class="pl-media" preload="none" src="${dir}/${key}.m4a"></audio>
       </div></div>`;
   }
 
   function captionCell(text) {
-    return `<div class="cell"><div class="cell-label"><span>Caption</span></div><div class="caption">${esc(text)}</div></div>`;
+    return `<div class="cell caption-cell"><div class="cell-label"><span class="name">Caption</span></div><div class="caption">${esc(text)}</div></div>`;
   }
 
   function caseCard(c) {
@@ -106,7 +112,7 @@
         <div class="block left">
           ${videoCell(dir, "ref")}${videoCell(dir, "tar")}
           ${specCell(dir, "ref")}${specCell(dir, "tar")}
-          ${captionCell(c.caption)}${videoCell(dir, "m1")}
+          ${captionCell(c.caption)}${videoCell(dir, "m1")}${specCell(dir, "m1")}
         </div>
         <div class="block right">
           ${videoCell(dir, "m2")}${videoCell(dir, "m13")}${videoCell(dir, "m14")}
@@ -125,80 +131,93 @@
     const list = document.getElementById("case-list");
     const items = catalog.filter(c => c.cat === activeCat && c.sub === activeSub);
     list.innerHTML = items.length ? items.map(caseCard).join("") : `<p class="empty-note">No cases in this subcategory.</p>`;
-    list.querySelectorAll(".spec").forEach(initSpec);
+    list.querySelectorAll(".pl").forEach(initPlayer);
   }
 
-  /* ---------- spectrogram player ---------- */
-  function initSpec(root) {
-    const audio = root.querySelector("audio");
-    const plot = root.querySelector(".spec-plot");
-    const head = root.querySelector(".spec-head");
-    const time = root.querySelector(".spec-time");
-    const btn = root.querySelector(".spec-play");
+  /* ---------- player: a video with a seek bar below the frame, or a spectrogram with a draggable marker ---------- */
+  function initPlayer(root) {
+    const media = root.querySelector(".pl-media");
+    const track = root.querySelector(".pl-track");
+    const head = root.querySelector(".pl-head");
+    const fill = root.querySelector(".pl-fill");
+    const time = root.querySelector(".pl-time");
+    const btn = root.querySelector(".pl-play");
+    const fixed = root.dataset.span === "fixed";
     let pending = null;
     let raf = 0;
     let wasPlaying = false;
 
+    function span() {
+      if (fixed) return DUR;
+      const d = media.duration;
+      return (d && isFinite(d)) ? d : DUR;
+    }
+
     function place(t) {
-      head.style.left = (Math.max(0, Math.min(DUR, t)) / DUR * 100) + "%";
+      const pct = (Math.max(0, Math.min(span(), t)) / span() * 100) + "%";
+      if (head) head.style.left = pct;
+      if (fill) fill.style.width = pct;
       time.textContent = t.toFixed(2) + " s";
     }
 
     function seek(t) {
-      t = Math.max(0, Math.min(DUR, t));
-      if (audio.readyState >= 1) {
-        audio.currentTime = Math.min(t, audio.duration || t);
+      t = Math.max(0, Math.min(span(), t));
+      if (media.readyState >= 1) {
+        media.currentTime = Math.min(t, media.duration || t);
       } else {
         pending = t;
-        audio.preload = "auto";
-        audio.load();
+        media.preload = "auto";
+        media.load();
       }
       place(t);
     }
 
-    audio.addEventListener("loadedmetadata", () => {
-      if (pending !== null) { audio.currentTime = Math.min(pending, audio.duration || pending); pending = null; }
+    media.addEventListener("loadedmetadata", () => {
+      if (pending !== null) { media.currentTime = Math.min(pending, media.duration || pending); pending = null; }
+      place(media.currentTime);
     });
 
     function tick() {
-      place(audio.currentTime);
-      if (!audio.paused && !audio.ended) raf = requestAnimationFrame(tick);
+      place(media.currentTime);
+      if (!media.paused && !media.ended) raf = requestAnimationFrame(tick);
     }
 
-    audio.addEventListener("play", () => { root.classList.add("playing"); cancelAnimationFrame(raf); raf = requestAnimationFrame(tick); });
-    audio.addEventListener("pause", () => { root.classList.remove("playing"); cancelAnimationFrame(raf); place(audio.currentTime); });
-    audio.addEventListener("ended", () => { root.classList.remove("playing"); cancelAnimationFrame(raf); place(audio.currentTime); });
+    media.addEventListener("play", () => { root.classList.add("playing"); cancelAnimationFrame(raf); raf = requestAnimationFrame(tick); });
+    media.addEventListener("pause", () => { root.classList.remove("playing"); cancelAnimationFrame(raf); place(media.currentTime); });
+    media.addEventListener("ended", () => { root.classList.remove("playing"); cancelAnimationFrame(raf); place(media.currentTime); });
 
-    btn.addEventListener("click", () => {
-      if (audio.paused || audio.ended) audio.play().catch(() => {});
-      else audio.pause();
-    });
+    function toggle() {
+      if (media.paused || media.ended) media.play().catch(() => {});
+      else media.pause();
+    }
+    btn.addEventListener("click", toggle);
+    if (media.tagName === "VIDEO") media.addEventListener("click", toggle);
 
     function fracOf(e) {
-      const r = plot.getBoundingClientRect();
+      const r = track.getBoundingClientRect();
       return (e.clientX - r.left) / r.width;
     }
 
-    plot.addEventListener("pointerdown", e => {
+    track.addEventListener("pointerdown", e => {
       e.preventDefault();
-      plot.setPointerCapture(e.pointerId);
-      wasPlaying = !audio.paused && !audio.ended;
-      if (wasPlaying) audio.pause();
+      track.setPointerCapture(e.pointerId);
+      wasPlaying = !media.paused && !media.ended;
+      if (wasPlaying) media.pause();
       root.classList.add("dragging");
-      seek(fracOf(e) * DUR);
+      seek(fracOf(e) * span());
     });
-    plot.addEventListener("pointermove", e => {
+    track.addEventListener("pointermove", e => {
       if (!root.classList.contains("dragging")) return;
-      seek(fracOf(e) * DUR);
+      seek(fracOf(e) * span());
     });
-    function release(e) {
+    function release() {
       if (!root.classList.contains("dragging")) return;
       root.classList.remove("dragging");
-      if (wasPlaying) audio.play().catch(() => {});
+      if (wasPlaying) media.play().catch(() => {});
       wasPlaying = false;
     }
-    plot.addEventListener("pointerup", release);
-    plot.addEventListener("pointercancel", release);
+    track.addEventListener("pointerup", release);
+    track.addEventListener("pointercancel", release);
   }
 
   // One sound at a time: starting any player pauses every other audio or video on the page.
