@@ -132,7 +132,60 @@
     const items = catalog.filter(c => c.cat === activeCat && c.sub === activeSub);
     list.innerHTML = items.length ? items.map(caseCard).join("") : `<p class="empty-note">No cases in this subcategory.</p>`;
     list.querySelectorAll(".pl").forEach(initPlayer);
+    fitSpacer();
+    updateNav();
   }
+
+  /* ---------- previous / next case: scroll so the case headline sits at the top of the viewport ---------- */
+  const NAV_OFFSET = 64; // px kept above the card, room for the auto-hiding navbar
+  const TOL = 4;
+  const prevBtn = document.getElementById("case-prev");
+  const nextBtn = document.getElementById("case-next");
+  const posEl = document.getElementById("case-pos");
+
+  function cases() { return Array.from(document.querySelectorAll("#case-list .case")); }
+  function anchorOf(el) { return el.getBoundingClientRect().top + window.scrollY - NAV_OFFSET; }
+
+  function fitSpacer() {
+    // Bottom padding so that the last case can be scrolled to the anchor position as well.
+    const list = document.getElementById("case-list");
+    list.style.paddingBottom = "0px";
+    const all = cases();
+    if (!all.length) return;
+    const need = anchorOf(all[all.length - 1]) + window.innerHeight - document.documentElement.scrollHeight;
+    list.style.paddingBottom = Math.max(0, Math.ceil(need)) + "px";
+  }
+
+  function goTo(el) {
+    window.scrollTo({ top: Math.max(0, anchorOf(el)), behavior: "smooth" });
+  }
+
+  function updateNav() {
+    const all = cases();
+    const y = window.scrollY;
+    // The current case is the last one whose headline is at or above the viewport top; above the first headline it is the first case.
+    let current = 0;
+    all.forEach((el, i) => { if (anchorOf(el) <= y + TOL) current = i; });
+    // Previous returns to the current headline when the page is scrolled below it, otherwise it goes one case up.
+    const prev = all.length && anchorOf(all[current]) < y - TOL ? current : current - 1;
+    const next = current + 1 < all.length ? current + 1 : -1;
+    prevBtn.disabled = prev < 0;
+    nextBtn.disabled = next < 0;
+    prevBtn.dataset.target = prev;
+    nextBtn.dataset.target = next;
+    posEl.textContent = all.length ? `case ${current + 1} / ${all.length}` : "";
+  }
+
+  prevBtn.addEventListener("click", () => { const i = +prevBtn.dataset.target; if (i >= 0) goTo(cases()[i]); });
+  nextBtn.addEventListener("click", () => { const i = +nextBtn.dataset.target; if (i >= 0) goTo(cases()[i]); });
+
+  let navTick = false;
+  window.addEventListener("scroll", () => {
+    if (navTick) return;
+    navTick = true;
+    requestAnimationFrame(() => { updateNav(); navTick = false; });
+  }, { passive: true });
+  window.addEventListener("resize", () => { fitSpacer(); updateNav(); });
 
   /* ---------- player: a video with a seek bar below the frame, or a spectrogram with a draggable marker ---------- */
   function initPlayer(root) {

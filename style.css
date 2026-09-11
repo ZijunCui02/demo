@@ -1288,6 +1288,70 @@ html.dark .tax-card:hover {
   }
 }
 
+.cat-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.1rem;
+}
+
+@media (max-width: 768px) {
+  .cat-list {
+    flex-direction: row;
+    gap: 0.5rem;
+  }
+}
+
+.case-nav {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 0.4rem;
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  padding-top: 0.9rem;
+  border-top: 1px solid hsl(var(--border));
+}
+
+@media (max-width: 768px) {
+  .case-nav {
+    display: flex;
+    align-items: center;
+    padding-top: 0;
+    border-top: 0;
+    margin-left: auto;
+    white-space: nowrap;
+  }
+}
+
+.case-nav .pos {
+  grid-column: 1 / -1;
+  font-family: var(--font-mono);
+  font-size: 0.74rem;
+  color: hsl(var(--fg-light));
+  font-variant-numeric: tabular-nums;
+}
+
+.case-nav button {
+  padding: 0.28rem 0.4rem;
+  border: 1px solid hsl(var(--border));
+  border-radius: 4px;
+  background: hsl(var(--bg));
+  color: hsl(var(--fg));
+  cursor: pointer;
+  font-family: var(--font-ui);
+  font-size: 0.8rem;
+  transition: color 0.15s ease, border-color 0.15s ease;
+}
+
+.case-nav button:hover:not(:disabled) {
+  color: hsl(var(--fg-dark));
+  border-color: hsl(var(--border-strong));
+}
+
+.case-nav button:disabled {
+  opacity: 0.4;
+  cursor: default;
+}
+
 .nav-item.nav-static {
   background: none;
   border: 0;

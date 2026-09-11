@@ -51,7 +51,14 @@
 <p class="muted">Validation cases, one card per case. The left block holds the reference clip and the ground truth beside the edit instruction; the right block holds the compared models. Video cells: press play or click the frame, and drag the bar under the frame to seek. Spectrogram cells play the audio: press play, or drag the marker along the time axis.</p>
 
 <div class="gallery cases">
-  <aside class="category-picker" id="cat-picker"></aside>
+  <aside class="category-picker">
+    <div class="cat-list" id="cat-picker"></div>
+    <div class="case-nav" id="case-nav">
+      <span class="pos" id="case-pos"></span>
+      <button type="button" id="case-prev" aria-label="Previous case">&lsaquo; Previous</button>
+      <button type="button" id="case-next" aria-label="Next case">Next &rsaquo;</button>
+    </div>
+  </aside>
   <section>
     <div class="sub-chip-row" id="sub-chip-row"></div>
     <div class="case-list" id="case-list"></div>
