@@ -68,10 +68,10 @@
     }));
   }
 
-  function label(key, kind) {
+  function label(key) {
     const l = LABELS[key];
     const code = l.code ? `<span class="code">${l.code}</span>` : "";
-    return `<div class="cell-label">${code}<span class="name">${esc(l.name)}</span><span class="kind">${kind}</span></div>`;
+    return `<div class="cell-label">${code}<span class="name">${esc(l.name)}</span></div>`;
   }
 
   const CTRL = `<div class="pl-ctrl">
@@ -80,7 +80,7 @@
     </div>`;
 
   function videoCell(dir, key) {
-    return `<div class="cell">${label(key, "video")}
+    return `<div class="cell">${label(key)}
       <div class="pl vid">
         <video class="pl-media" preload="none" playsinline poster="${dir}/${key}_poster.webp" src="${dir}/${key}.mp4"></video>
         <div class="pl-track vid-bar"><div class="pl-fill"></div></div>
@@ -91,7 +91,7 @@
   function specCell(dir, key) {
     const ticks = FTICKS.map(([f, y]) => `<div class="spec-ftick" style="bottom:${(y * 100).toFixed(2)}%"><span>${f >= 1000 ? (f / 1000) + " kHz" : f + " Hz"}</span></div>`).join("");
     const axis = [0, 1, 2, 3, 4, 5].map(t => `<span style="left:${t / DUR * 100}%">${t === 5 ? "5 s" : t}</span>`).join("");
-    return `<div class="cell">${label(key, "audio")}
+    return `<div class="cell cell-audio">
       <div class="pl spec" data-span="fixed">
         <div class="pl-track spec-plot"><img src="${dir}/${key}_spec.webp" alt="" loading="lazy" draggable="false">${ticks}<div class="pl-head spec-head"></div></div>
         <div class="spec-axis">${axis}</div>
