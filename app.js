@@ -229,3 +229,80 @@
 
   render();
 })();
+
+/* Case-by-case scrolling: one wheel gesture or one arrow key moves the page to the next or previous case with a damped animation. */
+(function () {
+  const OFFSET = 64;    // px between the viewport top and the aligned case top (clears the fixed navbar)
+  const DURATION = 520; // ms of the damped scroll animation
+  const QUIET = 160;    // ms of wheel silence that separates two gestures (absorbs trackpad inertia)
+  let animating = false;
+  let quietUntil = 0;
+
+  function cases() {
+    return Array.from(document.querySelectorAll(".case")).map(el => ({ el, top: el.getBoundingClientRect().top + window.scrollY }));
+  }
+
+  function animateTo(target) {
+    const start = window.scrollY;
+    const max = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
+    target = Math.max(0, Math.min(max, target));
+    const dist = target - start;
+    if (Math.abs(dist) < 1) return;
+    animating = true;
+    const root = document.documentElement;
+    const prev = root.style.scrollBehavior;
+    root.style.scrollBehavior = "auto";
+    const t0 = performance.now();
+    function frame(now) {
+      const p = Math.min(1, (now - t0) / DURATION);
+      const eased = 1 - Math.pow(1 - p, 4); // ease-out: quick start, damped settle
+      window.scrollTo(0, start + dist * eased);
+      if (p < 1) requestAnimationFrame(frame);
+      else { animating = false; root.style.scrollBehavior = prev; }
+    }
+    requestAnimationFrame(frame);
+  }
+
+  // Move to the next (dir > 0) or previous (dir < 0) case. Returns false when native scrolling should handle the event.
+  function step(dir) {
+    const list = cases();
+    if (!list.length) return false;
+    const y = window.scrollY + OFFSET;
+    let cur = -1;
+    list.forEach((c, i) => { if (c.top <= y + 2) cur = i; });
+    // A card taller than the viewport is scrolled through natively; stepping resumes at the next card.
+    if (cur >= 0 && list[cur].el.getBoundingClientRect().height + OFFSET > window.innerHeight + 2) return false;
+    const aligned = cur >= 0 && Math.abs(list[cur].top - y) <= 2;
+    let target;
+    if (dir > 0) {
+      if (cur + 1 >= list.length) return false; // past the last case the footer scrolls natively
+      target = list[cur + 1].top - OFFSET;
+    } else {
+      const i = aligned ? cur - 1 : cur;
+      target = i < 0 ? 0 : list[i].top - OFFSET;
+    }
+    animateTo(target);
+    return true;
+  }
+
+  window.addEventListener("wheel", e => {
+    if (e.ctrlKey || e.defaultPrevented) return;
+    const now = performance.now();
+    if (animating || now < quietUntil) { quietUntil = now + QUIET; e.preventDefault(); return; }
+    if (!e.deltaY) return;
+    if (step(Math.sign(e.deltaY))) { quietUntil = now + DURATION + QUIET; e.preventDefault(); }
+  }, { passive: false });
+
+  window.addEventListener("keydown", e => {
+    if (e.defaultPrevented || e.altKey || e.ctrlKey || e.metaKey) return;
+    const t = e.target;
+    if (t && t.closest && t.closest("input, textarea, select, [contenteditable]")) return;
+    const space = e.key === " ";
+    if (space && t && t.closest && t.closest("button")) return; // space activates a focused button
+    const down = e.key === "ArrowDown" || e.key === "PageDown" || (space && !e.shiftKey);
+    const up = e.key === "ArrowUp" || e.key === "PageUp" || (space && e.shiftKey);
+    if (!down && !up) return;
+    if (animating) { e.preventDefault(); return; }
+    if (step(down ? 1 : -1)) e.preventDefault();
+  });
+})();
