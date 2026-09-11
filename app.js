@@ -230,22 +230,37 @@
   render();
 })();
 
-/* Case-by-case scrolling: one wheel gesture or one arrow key moves the page to the next or previous case with a damped animation. */
+/* Case-by-case scrolling: one wheel gesture or one arrow key moves the page to the next stop with a damped animation.
+   A case that fits in the viewport is one stop at its top. A taller case (small window, high zoom, stacked layout) is
+   split into the minimum number of evenly spaced pages, the last one ending at its bottom edge, so every part of every
+   case is reachable and the next gesture after the last page lands on the next case. */
 (function () {
-  const OFFSET = 64;    // px between the viewport top and the aligned case top (clears the fixed navbar)
+  const OFFSET = 64;    // px between the viewport top and an aligned case top (clears the fixed navbar)
+  const MARGIN = 16;    // px kept visible under a case's bottom edge on its last page
   const DURATION = 520; // ms of the damped scroll animation
   const QUIET = 160;    // ms of wheel silence that separates two gestures (absorbs trackpad inertia)
   let animating = false;
   let quietUntil = 0;
 
-  function cases() {
-    return Array.from(document.querySelectorAll(".case")).map(el => ({ el, top: el.getBoundingClientRect().top + window.scrollY }));
+  function stops() {
+    const V = window.innerHeight;
+    const U = V - OFFSET; // content height available below an aligned case top
+    const max = Math.max(0, document.documentElement.scrollHeight - V);
+    const out = [0];
+    document.querySelectorAll(".case").forEach(el => {
+      const r = el.getBoundingClientRect();
+      const top = r.top + window.scrollY;
+      const h = r.height + MARGIN;
+      const first = top - OFFSET;
+      const last = top + h - V;
+      const n = Math.max(1, Math.ceil(h / U));
+      for (let k = 0; k < n; k++) out.push(n === 1 ? first : first + (last - first) * k / (n - 1));
+    });
+    return out.map(s => Math.max(0, Math.min(max, s))).filter((s, i, a) => i === 0 || s > a[i - 1] + 1);
   }
 
   function animateTo(target) {
     const start = window.scrollY;
-    const max = Math.max(0, document.documentElement.scrollHeight - window.innerHeight);
-    target = Math.max(0, Math.min(max, target));
     const dist = target - start;
     if (Math.abs(dist) < 1) return;
     animating = true;
@@ -263,24 +278,14 @@
     requestAnimationFrame(frame);
   }
 
-  // Move to the next (dir > 0) or previous (dir < 0) case. Returns false when native scrolling should handle the event.
+  // Move to the next (dir > 0) or previous (dir < 0) stop. Returns false when there is none in that direction.
   function step(dir) {
-    const list = cases();
-    if (!list.length) return false;
-    const y = window.scrollY + OFFSET;
-    let cur = -1;
-    list.forEach((c, i) => { if (c.top <= y + 2) cur = i; });
-    // A card taller than the viewport is scrolled through natively; stepping resumes at the next card.
-    if (cur >= 0 && list[cur].el.getBoundingClientRect().height + OFFSET > window.innerHeight + 2) return false;
-    const aligned = cur >= 0 && Math.abs(list[cur].top - y) <= 2;
+    const list = stops();
+    const y = window.scrollY;
     let target;
-    if (dir > 0) {
-      if (cur + 1 >= list.length) return false; // past the last case the footer scrolls natively
-      target = list[cur + 1].top - OFFSET;
-    } else {
-      const i = aligned ? cur - 1 : cur;
-      target = i < 0 ? 0 : list[i].top - OFFSET;
-    }
+    if (dir > 0) target = list.find(s => s > y + 2);
+    else target = list.filter(s => s < y - 2).pop();
+    if (target === undefined) return false;
     animateTo(target);
     return true;
   }
