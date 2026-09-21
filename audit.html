@@ -2,10 +2,10 @@
 <html lang="en" class="theme-auto">
 <head>
 <meta charset="UTF-8">
-<title>Gallery</title>
+<title>Physics Invariant Audit - AVOID</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex">
-<link rel="stylesheet" href="style.css?v=d81aa3aa">
+<link rel="stylesheet" href="style.css?v=d81aa3ab">
 <script>
 (function () {
   var s = localStorage.getItem("color-scheme") || "auto";
@@ -34,8 +34,8 @@
     <span>&gt;_AVOID</span><span class="blink">_</span>
   </a>
   <nav class="nav-links">
-      <a class="nav-item nav-active" href="./">Gallery</a>
-      <a class="nav-item" href="audit.html">Audit</a>
+      <a class="nav-item" href="./">Gallery</a>
+      <a class="nav-item nav-active" href="audit.html">Audit</a>
       <button class="nav-item nav-static" type="button">Coming Soon...</button>
       <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
         <svg class="icon icon-auto" aria-hidden="true"><use href="#i-auto"/></svg>
@@ -48,12 +48,12 @@
 <main>
 <article class="content wide">
 
-<h1 style="font-size:1.8em;margin-top:0;">Gallery</h1>
-<p class="muted">Validation cases, one card per case. The left block holds the reference clip and the ground truth beside the edit instruction; the right block holds the compared models. Each title covers the video and, below it, the spectrogram of its audio. Videos: press play or click the frame, and drag the bar under the frame to seek. Spectrograms: press play, or drag the marker along the time axis.</p>
+<h1 style="font-size:1.8em;margin-top:0;">Physics Invariant Audit</h1>
+<p class="muted">Human verification of physical ground truth and invariant consistency across percentiles. Select an audit metric on the left, choose a percentile bin (P0 to P100), and inspect Reference vs. Target trajectories alongside the per-step energy injection telemetries.</p>
 
 <div class="gallery cases">
   <aside class="category-picker">
-    <div class="cat-list" id="cat-picker"></div>
+    <div class="cat-list" id="metric-picker"></div>
     <div class="case-nav" id="case-nav">
       <span class="pos" id="case-pos"></span>
       <button type="button" id="case-prev" aria-label="Previous case">&lsaquo; Previous</button>
@@ -61,7 +61,7 @@
     </div>
   </aside>
   <section>
-    <div class="sub-chip-row" id="sub-chip-row"></div>
+    <div class="sub-chip-row" id="percentile-chip-row"></div>
     <div class="case-list" id="case-list"></div>
   </section>
 </div>
@@ -71,8 +71,9 @@
   <span>© AVOID 2026. Theme forked from <a href="https://github.com/Renovamen/renovamen.github.io" target="_blank" rel="noopener noreferrer">renovamen</a>.</span>
 </footer>
 </main>
-<script src="catalog.js?v=653c1f81"></script>
-<script src="app.js?v=54e92c88"></script>
+<script src="audit_catalog.js?v=20260921"></script>
+<script src="audit_app.js?v=20260921"></script>
 <script src="theme.js?v=c2d9b2fa"></script>
 </body>
 </html>
+
