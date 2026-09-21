@@ -154,7 +154,9 @@
     renderPercentileChips();
     const list = document.getElementById("case-list");
     const currentBins = auditData.metrics[activeMetric].bins;
-    const items = currentBins[activeP] || [];
+    const items = (currentBins[activeP] || []).slice();
+    const sortKey = activeMetric === "max_spike" ? "max_spike_mJ" : activeMetric === "ratio" ? "ratio_pct" : "tot_inj_mJ";
+    items.sort((a, b) => (b[sortKey] || 0) - (a[sortKey] || 0));
     list.innerHTML = items.length ? items.map(auditCard).join("") : `<p class="empty-note">No cases sampled in ${activeP}.</p>`;
     list.querySelectorAll(".pl").forEach(initPlayer);
     fitSpacer();
