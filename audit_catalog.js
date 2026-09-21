@@ -77,19 +77,6 @@ window.AUDIT_DATA = {
           {
             "cat": "collision",
             "sub": "overshoot",
-            "id": "00400016_v0",
-            "caption": "Remove the white plastic bucket from the scene. This eliminates the plastic-on-plastic collision and its corresponding sound as the white plastic packer bottle slides across the wet stone floor. Instead of stopping early, the bottle now slides further across the floor and strikes the brown barrier, producing a plastic impact sound before coming to rest.",
-            "max_spike_mJ": 0.0,
-            "tot_inj_mJ": 0.0,
-            "ratio_pct": 0.0,
-            "poswork_steps": 0,
-            "accepted": true,
-            "health": "healthy",
-            "media_dir": "media/collision/overshoot/00400016_v0"
-          },
-          {
-            "cat": "collision",
-            "sub": "overshoot",
             "id": "00400016_v1",
             "caption": "Remove the white plastic bucket from the scene. This eliminates the plastic-on-plastic collision and its corresponding sound as the white plastic packer bottle slides across the wet stone floor. Instead of stopping early, the bottle now slides further across the floor and strikes the brown barrier, producing a plastic impact sound before coming to rest.",
             "max_spike_mJ": 0.0,
@@ -138,112 +125,6 @@ window.AUDIT_DATA = {
             "accepted": true,
             "health": "healthy",
             "media_dir": "media/collision/preserve/00400032_v0"
-          }
-        ],
-        "P25": [
-          {
-            "cat": "collision",
-            "sub": "trim",
-            "id": "00350009",
-            "caption": "Remove the dark brass bowl from the scene. Eliminate the metallic clink from when the white milk jug hits the bowl, as well as the subsequent metallic thump of the bowl settling on the floor. Allow the white milk jug to slide uninterrupted across the wooden floor and go off-screen to the right, and let the orange traffic cone slide further rightward to a halt.",
-            "max_spike_mJ": 0.0233,
-            "tot_inj_mJ": 0.1043,
-            "ratio_pct": 0.0028,
-            "poswork_steps": 0,
-            "accepted": true,
-            "health": "healthy",
-            "media_dir": "media/collision/trim/00350009"
-          },
-          {
-            "cat": "collision",
-            "sub": "trim",
-            "id": "00300932",
-            "caption": "Remove the standing translucent white plastic milk jug from the scene. As a result, when the falling yellow sugar box collides with the small brown pudding box, the pudding box slides freely across the floor instead of hitting the milk jug. The hollow plastic knock and rattle of the milk jug being struck and falling onto the stone floor are completely removed from the audio.",
-            "max_spike_mJ": 0.0214,
-            "tot_inj_mJ": 0.0214,
-            "ratio_pct": 0.0039,
-            "poswork_steps": 1,
-            "accepted": true,
-            "health": "warning",
-            "media_dir": "media/collision/trim/00300932"
-          },
-          {
-            "cat": "collision",
-            "sub": "trim",
-            "id": "00400036_v1",
-            "caption": "Remove the white plastic pail from the left of the scene. The brown steel geosphere, after being struck by the sliding white packer bottle, rolls to the left across the open concrete floor without hitting any obstacles. The sound of the geosphere colliding with the plastic pail is removed, leaving only the initial impact sound of the bottle striking the geosphere.",
-            "max_spike_mJ": 0.0214,
-            "tot_inj_mJ": 0.0398,
-            "ratio_pct": 0.0006,
-            "poswork_steps": 0,
-            "accepted": true,
-            "health": "healthy",
-            "media_dir": "media/collision/trim/00400036_v1"
-          },
-          {
-            "cat": "collision",
-            "sub": "overshoot",
-            "id": "00350103",
-            "caption": "Remove the yellow plastic banana and its collision sounds. The cardboard box, which previously struck the banana, now slides unimpeded across the concrete floor until it directly impacts the white barrier, creating a new cardboard-on-barrier impact sound instead of the previous banana collisions.",
-            "max_spike_mJ": 0.0195,
-            "tot_inj_mJ": 1.7969,
-            "ratio_pct": 0.4267,
-            "poswork_steps": 38,
-            "accepted": true,
-            "health": "severe",
-            "media_dir": "media/collision/overshoot/00350103"
-          },
-          {
-            "cat": "collision",
-            "sub": "preserve",
-            "id": "00300090",
-            "caption": "Remove the stationary white plastic jug from the right side of the concrete floor. The sliding motion of the orange traffic cone, its collision with the black and white whiteboard marker, and the marker's subsequent slight movement and slide to rest remain entirely unchanged, along with all associated sharp plastic clicking and tapping sounds.",
-            "max_spike_mJ": 0.0118,
-            "tot_inj_mJ": 0.0806,
-            "ratio_pct": 0.0038,
-            "poswork_steps": 0,
-            "accepted": true,
-            "health": "healthy",
-            "media_dir": "media/collision/preserve/00300090"
-          },
-          {
-            "cat": "collision",
-            "sub": "preserve",
-            "id": "00300495",
-            "caption": "Remove the static Jell-O chocolate pudding box from the right side of the wood floor. The sliding motion, tip-over, and wooden clatter of the candlestick hitting the wooden bird figurine block and the floor remain unchanged, leaving only the two wooden objects colliding on the empty floor.",
-            "max_spike_mJ": 0.0069,
-            "tot_inj_mJ": 0.3153,
-            "ratio_pct": 0.1106,
-            "poswork_steps": 0,
-            "accepted": true,
-            "health": "healthy",
-            "media_dir": "media/collision/preserve/00300495"
-          },
-          {
-            "cat": "collision",
-            "sub": "reroute",
-            "id": "00300346",
-            "caption": "Remove the black wooden bird figurine and its supporting wooden block from the center of the cork floor, along with the sharp clacking sound of the marker colliding with it. Instead, allow the black and white whiteboard marker to slide further forward, colliding with the cardboard pudding box to produce a soft, muffled tap as it comes to a stop.",
-            "max_spike_mJ": 0.005,
-            "tot_inj_mJ": 0.7365,
-            "ratio_pct": 1.1602,
-            "poswork_steps": 0,
-            "accepted": true,
-            "health": "warning",
-            "media_dir": "media/collision/reroute/00300346"
-          },
-          {
-            "cat": "collision",
-            "sub": "preserve",
-            "id": "00300322",
-            "caption": "Remove the orange-and-black plastic power drill from the scene. This eliminates its quick drop and the associated plastic thud sound near the beginning of the video, leaving only the wooden chess piece tipping over to hit the cardboard pudding box and the floor with a wooden click.",
-            "max_spike_mJ": 0.0036,
-            "tot_inj_mJ": 0.0216,
-            "ratio_pct": 0.0226,
-            "poswork_steps": 0,
-            "accepted": true,
-            "health": "healthy",
-            "media_dir": "media/collision/preserve/00300322"
           },
           {
             "cat": "collision",
@@ -257,113 +138,9 @@ window.AUDIT_DATA = {
             "accepted": true,
             "health": "healthy",
             "media_dir": "media/collision/preserve/00400032_v1"
-          },
-          {
-            "cat": "collision",
-            "sub": "trim",
-            "id": "00350253",
-            "caption": "Remove the cardboard chocolate pudding box from the scene. As the white plastic packer bottle tips over and strikes the white spoon, the spoon slides across the floor without hitting the pudding box, eliminating the subsequent cardboard thud from the audio.",
-            "max_spike_mJ": 0.0,
-            "tot_inj_mJ": 0.0,
-            "ratio_pct": 0.0,
-            "poswork_steps": 0,
-            "accepted": true,
-            "health": "healthy",
-            "media_dir": "media/collision/trim/00350253"
           }
         ],
-        "P50": [
-          {
-            "cat": "collision",
-            "sub": "overshoot",
-            "id": "00300622",
-            "caption": "Remove the cardboard cubebox from the center of the wooden floor. This prevents the initial collision, allowing the sliding red spoon to travel further left until it strikes the triangular barrier on the left, replacing the early cardboard thud with a later metallic clink.",
-            "max_spike_mJ": 0.1409,
-            "tot_inj_mJ": 51.1198,
-            "ratio_pct": 8.561,
-            "poswork_steps": 0,
-            "accepted": true,
-            "health": "severe",
-            "media_dir": "media/collision/overshoot/00300622"
-          },
-          {
-            "cat": "collision",
-            "sub": "fork",
-            "id": "00300286",
-            "caption": "Remove the light brown cardboard cubebox. The sliding chocolate pudding box now only collides with the red serving bowl, removing the cardboard-on-cardboard and cardboard-on-floor impact sounds, leaving only the clean metallic sound of the bowl being struck.",
-            "max_spike_mJ": 0.1282,
-            "tot_inj_mJ": 0.4787,
-            "ratio_pct": 0.0498,
-            "poswork_steps": 0,
-            "accepted": true,
-            "health": "healthy",
-            "media_dir": "media/collision/fork/00300286"
-          },
-          {
-            "cat": "collision",
-            "sub": "overshoot",
-            "id": "00300224",
-            "caption": "Remove the cardboard pudding box from the scene. As a result, the sliding plastic jug no longer collides with it. This eliminates the initial plastic-on-cardboard collision sound, the cardboard-on-floor strike sound, and the final impact sound of the pudding box hitting the barrier. Instead, the plastic jug slides unimpeded, tipping over to strike the stone floor and the barrier directly with a single delayed impact sound.",
-            "max_spike_mJ": 0.0995,
-            "tot_inj_mJ": 2.9895,
-            "ratio_pct": 0.3366,
-            "poswork_steps": 19,
-            "accepted": true,
-            "health": "severe",
-            "media_dir": "media/collision/overshoot/00300224"
-          },
-          {
-            "cat": "collision",
-            "sub": "trim",
-            "id": "00300084",
-            "caption": "Remove the glossy red pomegranate from the scene. The pomegranate no longer falls and hits the floor, and its soft landing thud is gone. The orange traffic cone still gets tipped over by the falling white packer bottle and hits the concrete, but it no longer collides with the pomegranate, eliminating the final quiet tapping sound.",
-            "max_spike_mJ": 0.0852,
-            "tot_inj_mJ": 12.52,
-            "ratio_pct": 0.8436,
-            "poswork_steps": 0,
-            "accepted": true,
-            "health": "healthy",
-            "media_dir": "media/collision/trim/00300084"
-          },
-          {
-            "cat": "collision",
-            "sub": "reroute",
-            "id": "00300258",
-            "caption": "Remove the orange-red shallow metal bowl from the scene. The falling wooden chess piece now drops further down, bypassing the empty space where the bowl was, and collides with the base of the plastic traffic cone and the concrete floor. The sharp clatter of wood hitting metal is removed, replaced instead by a delayed, clean clack of wood striking plastic and concrete as the chess piece lands and rests beside the cone.",
-            "max_spike_mJ": 0.0693,
-            "tot_inj_mJ": 0.5995,
-            "ratio_pct": 0.0901,
-            "poswork_steps": 1,
-            "accepted": true,
-            "health": "warning",
-            "media_dir": "media/collision/reroute/00300258"
-          },
-          {
-            "cat": "collision",
-            "sub": "trim",
-            "id": "00300686",
-            "caption": "Remove the matte red bowl from the scene. The red cube no longer hits the bowl, meaning its metallic clinking sound is entirely removed from the audio, and the cube slides freely to a stop without any secondary collision.",
-            "max_spike_mJ": 0.0347,
-            "tot_inj_mJ": 9.4209,
-            "ratio_pct": 2.1996,
-            "poswork_steps": 0,
-            "accepted": true,
-            "health": "warning",
-            "media_dir": "media/collision/trim/00300686"
-          },
-          {
-            "cat": "collision",
-            "sub": "overshoot",
-            "id": "00350163",
-            "caption": "Remove the light grey plastic bucket from the center of the wooden floor. Delete the cardboard-on-plastic collision sound. Modify the motion of the cardboard box so that it slides uninterrupted across the open floor and collides with the long cardboard beam on the left, producing a cardboard impact thud.",
-            "max_spike_mJ": 0.0341,
-            "tot_inj_mJ": 5.8784,
-            "ratio_pct": 1.0341,
-            "poswork_steps": 0,
-            "accepted": true,
-            "health": "warning",
-            "media_dir": "media/collision/overshoot/00350163"
-          },
+        "P25": [
           {
             "cat": "collision",
             "sub": "fork",
@@ -402,22 +179,232 @@ window.AUDIT_DATA = {
             "accepted": true,
             "health": "healthy",
             "media_dir": "media/falling/preserve/00005163"
-          }
-        ],
-        "P75": [
+          },
           {
-            "cat": "falling",
-            "sub": "solo_preserve",
-            "id": "00002429",
-            "caption": "Remove the black plastic square bucket from the scene. This deletes the falling bucket, its impact on the concrete floor, its subsequent rolling motion, and the plastic clattering sound. Only the red cardboard box remains, falling and landing with a thud.",
-            "max_spike_mJ": 2.4199,
-            "tot_inj_mJ": 189.5207,
-            "ratio_pct": 0.4744,
+            "cat": "collision",
+            "sub": "trim",
+            "id": "00300932",
+            "caption": "Remove the standing translucent white plastic milk jug from the scene. As a result, when the falling yellow sugar box collides with the small brown pudding box, the pudding box slides freely across the floor instead of hitting the milk jug. The hollow plastic knock and rattle of the milk jug being struck and falling onto the stone floor are completely removed from the audio.",
+            "max_spike_mJ": 0.0214,
+            "tot_inj_mJ": 0.0214,
+            "ratio_pct": 0.0039,
+            "poswork_steps": 1,
+            "accepted": true,
+            "health": "warning",
+            "media_dir": "media/collision/trim/00300932"
+          },
+          {
+            "cat": "collision",
+            "sub": "overshoot",
+            "id": "00350103",
+            "caption": "Remove the yellow plastic banana and its collision sounds. The cardboard box, which previously struck the banana, now slides unimpeded across the concrete floor until it directly impacts the white barrier, creating a new cardboard-on-barrier impact sound instead of the previous banana collisions.",
+            "max_spike_mJ": 0.0195,
+            "tot_inj_mJ": 1.7969,
+            "ratio_pct": 0.4267,
+            "poswork_steps": 38,
+            "accepted": true,
+            "health": "severe",
+            "media_dir": "media/collision/overshoot/00350103"
+          },
+          {
+            "cat": "collision",
+            "sub": "preserve",
+            "id": "00300090",
+            "caption": "Remove the stationary white plastic jug from the right side of the concrete floor. The sliding motion of the orange traffic cone, its collision with the black and white whiteboard marker, and the marker's subsequent slight movement and slide to rest remain entirely unchanged, along with all associated sharp plastic clicking and tapping sounds.",
+            "max_spike_mJ": 0.0118,
+            "tot_inj_mJ": 0.0806,
+            "ratio_pct": 0.0038,
+            "poswork_steps": 0,
+            "accepted": true,
+            "health": "healthy",
+            "media_dir": "media/collision/preserve/00300090"
+          },
+          {
+            "cat": "collision",
+            "sub": "preserve",
+            "id": "00300082",
+            "caption": "Remove the orange and black plastic power drill from the scene. This removes the power drill from the left side of the floor and eliminates its early, soft plastic tap sound, leaving only the red cardboard cube falling to knock over the brown wooden candlestick, with their corresponding wooden and cardboard collision sounds.",
+            "max_spike_mJ": 0.0074,
+            "tot_inj_mJ": 0.0403,
+            "ratio_pct": 0.006,
+            "poswork_steps": 0,
+            "accepted": true,
+            "health": "healthy",
+            "media_dir": "media/collision/preserve/00300082"
+          },
+          {
+            "cat": "collision",
+            "sub": "reroute",
+            "id": "00300346",
+            "caption": "Remove the black wooden bird figurine and its supporting wooden block from the center of the cork floor, along with the sharp clacking sound of the marker colliding with it. Instead, allow the black and white whiteboard marker to slide further forward, colliding with the cardboard pudding box to produce a soft, muffled tap as it comes to a stop.",
+            "max_spike_mJ": 0.005,
+            "tot_inj_mJ": 0.7365,
+            "ratio_pct": 1.1602,
+            "poswork_steps": 0,
+            "accepted": true,
+            "health": "warning",
+            "media_dir": "media/collision/reroute/00300346"
+          },
+          {
+            "cat": "collision",
+            "sub": "preserve",
+            "id": "00300322",
+            "caption": "Remove the orange-and-black plastic power drill from the scene. This eliminates its quick drop and the associated plastic thud sound near the beginning of the video, leaving only the wooden chess piece tipping over to hit the cardboard pudding box and the floor with a wooden click.",
+            "max_spike_mJ": 0.0036,
+            "tot_inj_mJ": 0.0216,
+            "ratio_pct": 0.0226,
+            "poswork_steps": 0,
+            "accepted": true,
+            "health": "healthy",
+            "media_dir": "media/collision/preserve/00300322"
+          },
+          {
+            "cat": "collision",
+            "sub": "trim",
+            "id": "00300126",
+            "caption": "Remove the red serving bowl from the right side of the scene. With the bowl removed, the wooden candlestick, after being struck by the falling spoon, tips over and falls directly onto the wooden floor rather than colliding with the bowl. Eliminate the subsequent thud sound of the candlestick striking the bowl.",
+            "max_spike_mJ": 0.0,
+            "tot_inj_mJ": 0.0,
+            "ratio_pct": 0.0,
             "poswork_steps": 3,
             "accepted": true,
             "health": "warning",
-            "media_dir": "media/falling/solo_preserve/00002429"
+            "media_dir": "media/collision/trim/00300126"
+          }
+        ],
+        "P50": [
+          {
+            "cat": "falling",
+            "sub": "spared",
+            "id": "00002201",
+            "caption": "Remove the dark grey metal interlocking ring sculpture from the scene. The white plastic jug now falls and lands upright on the concrete floor, making a soft plastic thud, and remains standing still without being struck. This eliminates the subsequent metal-on-plastic collision and the metal-on-concrete clattering sounds, leaving the jug completely undisturbed after its landing.",
+            "max_spike_mJ": 0.2139,
+            "tot_inj_mJ": 68.6429,
+            "ratio_pct": 1.4957,
+            "poswork_steps": 709,
+            "accepted": true,
+            "health": "severe",
+            "media_dir": "media/falling/spared/00002201"
           },
+          {
+            "cat": "collision",
+            "sub": "preserve",
+            "id": "00300200",
+            "caption": "Remove the flat square brown cardboard box and its motion from the video. Its initial fall and impact sound against the dark stone floor should be entirely gone. The yellow cardboard box and the white plastic tote should continue to drop, collide, and come to rest exactly as before, preserving all their visual details and impact sounds.",
+            "max_spike_mJ": 0.1524,
+            "tot_inj_mJ": 19.8442,
+            "ratio_pct": 2.8699,
+            "poswork_steps": 0,
+            "accepted": true,
+            "health": "warning",
+            "media_dir": "media/collision/preserve/00300200"
+          },
+          {
+            "cat": "collision",
+            "sub": "fork",
+            "id": "00300035",
+            "caption": "Remove the white plastic tote from the scene. Consequently, its landing sound on the floor and its collision sound with the orange plastic traffic cone are gone. Without the tote in the way, the orange traffic cone now strikes the sliding cardboard box first before falling to make a delayed landing directly on the floor.",
+            "max_spike_mJ": 0.1384,
+            "tot_inj_mJ": 0.6816,
+            "ratio_pct": 0.0275,
+            "poswork_steps": 0,
+            "accepted": false,
+            "health": "healthy",
+            "media_dir": "media/collision/fork/00300035"
+          },
+          {
+            "cat": "falling",
+            "sub": "spared",
+            "id": "00002065",
+            "caption": "Remove the dark olive green plastic square pail from the scene. This removes the plastic pail entirely, including its collision with the metal link and its subsequent impact on the wood floor, along with all associated dull plastic thumping and clattering sounds.",
+            "max_spike_mJ": 0.1116,
+            "tot_inj_mJ": 153.5129,
+            "ratio_pct": 0.6004,
+            "poswork_steps": 617,
+            "accepted": true,
+            "health": "severe",
+            "media_dir": "media/falling/spared/00002065"
+          },
+          {
+            "cat": "falling",
+            "sub": "solo_preserve",
+            "id": "00005033",
+            "caption": "Remove the small white rectangular plastic container from the scene. Its descent and its subsequent light plastic thud on the polished stone floor should be entirely gone, leaving only the dark interlocking steel square links to fall, bounce, and produce a sharp metallic clinking sound.",
+            "max_spike_mJ": 0.0868,
+            "tot_inj_mJ": 47.5828,
+            "ratio_pct": 0.3535,
+            "poswork_steps": 29,
+            "accepted": true,
+            "health": "severe",
+            "media_dir": "media/falling/solo_preserve/00005033"
+          },
+          {
+            "cat": "collision",
+            "sub": "reroute",
+            "id": "00300258",
+            "caption": "Remove the orange-red shallow metal bowl from the scene. The falling wooden chess piece now drops further down, bypassing the empty space where the bowl was, and collides with the base of the plastic traffic cone and the concrete floor. The sharp clatter of wood hitting metal is removed, replaced instead by a delayed, clean clack of wood striking plastic and concrete as the chess piece lands and rests beside the cone.",
+            "max_spike_mJ": 0.0693,
+            "tot_inj_mJ": 0.5995,
+            "ratio_pct": 0.0901,
+            "poswork_steps": 1,
+            "accepted": true,
+            "health": "warning",
+            "media_dir": "media/collision/reroute/00300258"
+          },
+          {
+            "cat": "collision",
+            "sub": "preserve",
+            "id": "00300128",
+            "caption": "Remove the stationary hollow brown metal geosphere from the foreground of the scene. The motion and plastic clinking sound of the sliding white plastic milkjug colliding with the white bottle remain completely unchanged.",
+            "max_spike_mJ": 0.0371,
+            "tot_inj_mJ": 16.345,
+            "ratio_pct": 1.8072,
+            "poswork_steps": 0,
+            "accepted": true,
+            "health": "warning",
+            "media_dir": "media/collision/preserve/00300128"
+          },
+          {
+            "cat": "collision",
+            "sub": "reroute",
+            "id": "00400010_v0",
+            "caption": "Remove the dark metal bowl from the scene. This prevents the initial metallic impact. The sliding cardboard box will instead continue onward to strike the white plastic milk jug, tipping it over with a dull thud.",
+            "max_spike_mJ": 0.0357,
+            "tot_inj_mJ": 6.1192,
+            "ratio_pct": 0.3444,
+            "poswork_steps": 0,
+            "accepted": true,
+            "health": "healthy",
+            "media_dir": "media/collision/reroute/00400010_v0"
+          },
+          {
+            "cat": "collision",
+            "sub": "preserve",
+            "id": "00300444",
+            "caption": "Remove the macaroni and cheese box from the scene. Its initial drop and soft landing sound on the stone floor are gone, while the sliding and collision between the remaining orange bowl and sugar box remain unchanged.",
+            "max_spike_mJ": 0.0342,
+            "tot_inj_mJ": 0.8584,
+            "ratio_pct": 0.0149,
+            "poswork_steps": 0,
+            "accepted": true,
+            "health": "healthy",
+            "media_dir": "media/collision/preserve/00300444"
+          },
+          {
+            "cat": "collision",
+            "sub": "fork",
+            "id": "00400032_v1",
+            "caption": "Remove the red textured pomegranate from the scene. The sliding chocolate pudding box now misses where the pomegranate used to be, skipping the organic impact sound, and instead slides straight into the white plastic bucket with a sharp cardboard-on-plastic click before coming to rest.",
+            "max_spike_mJ": 0.0293,
+            "tot_inj_mJ": 0.4068,
+            "ratio_pct": 0.058,
+            "poswork_steps": 0,
+            "accepted": true,
+            "health": "healthy",
+            "media_dir": "media/collision/fork/00400032_v1"
+          }
+        ],
+        "P75": [
           {
             "cat": "falling",
             "sub": "solo_reroute",
@@ -482,6 +469,71 @@ window.AUDIT_DATA = {
             "accepted": true,
             "health": "severe",
             "media_dir": "media/falling/overshoot/00002087"
+          },
+          {
+            "cat": "falling",
+            "sub": "spared",
+            "id": "00005001",
+            "caption": "Remove the yellow and white cardboard sugar box from the scene. The box should no longer fall from above, strike the rim of the blue plastic barrel, or bounce onto the stone floor. Its associated cardboard tap and slide sounds must be completely removed from the audio, leaving only the initial plastic thud of the falling barrel.",
+            "max_spike_mJ": 0.8938,
+            "tot_inj_mJ": 5.754,
+            "ratio_pct": 0.1755,
+            "poswork_steps": 0,
+            "accepted": true,
+            "health": "healthy",
+            "media_dir": "media/falling/spared/00005001"
+          },
+          {
+            "cat": "falling",
+            "sub": "overshoot",
+            "id": "00010008_v0",
+            "caption": "Remove the blue plastic jerrican and its associated collision sounds. Instead of falling onto the jerrican, the orange traffic cone now drops uninterrupted through the air and strikes the wooden floor directly, creating a single plastic thud as it bounces and settles to a rest.",
+            "max_spike_mJ": 0.7591,
+            "tot_inj_mJ": 19.4379,
+            "ratio_pct": 0.1601,
+            "poswork_steps": 575,
+            "accepted": true,
+            "health": "severe",
+            "media_dir": "media/falling/overshoot/00010008_v0"
+          },
+          {
+            "cat": "falling",
+            "sub": "overshoot",
+            "id": "00010008_v1",
+            "caption": "Remove the blue plastic jerrican and its associated collision sounds. Instead of falling onto the jerrican, the orange traffic cone now drops uninterrupted through the air and strikes the wooden floor directly, creating a single plastic thud as it bounces and settles to a rest.",
+            "max_spike_mJ": 0.7591,
+            "tot_inj_mJ": 19.4379,
+            "ratio_pct": 0.1601,
+            "poswork_steps": 575,
+            "accepted": true,
+            "health": "severe",
+            "media_dir": "media/falling/overshoot/00010008_v1"
+          },
+          {
+            "cat": "collision",
+            "sub": "trim",
+            "id": "00400036_v0",
+            "caption": "Remove the white plastic pail from the left of the scene. The brown steel geosphere, after being struck by the sliding white packer bottle, rolls to the left across the open concrete floor without hitting any obstacles. The sound of the geosphere colliding with the plastic pail is removed, leaving only the initial impact sound of the bottle striking the geosphere.",
+            "max_spike_mJ": 0.6024,
+            "tot_inj_mJ": 4.7856,
+            "ratio_pct": 0.1426,
+            "poswork_steps": 0,
+            "accepted": true,
+            "health": "healthy",
+            "media_dir": "media/collision/trim/00400036_v0"
+          },
+          {
+            "cat": "collision",
+            "sub": "trim",
+            "id": "00400036_v1",
+            "caption": "Remove the white plastic pail from the left of the scene. The brown steel geosphere, after being struck by the sliding white packer bottle, rolls to the left across the open concrete floor without hitting any obstacles. The sound of the geosphere colliding with the plastic pail is removed, leaving only the initial impact sound of the bottle striking the geosphere.",
+            "max_spike_mJ": 0.6024,
+            "tot_inj_mJ": 4.7856,
+            "ratio_pct": 0.1426,
+            "poswork_steps": 0,
+            "accepted": true,
+            "health": "healthy",
+            "media_dir": "media/collision/trim/00400036_v1"
           },
           {
             "cat": "falling",
@@ -573,74 +625,9 @@ window.AUDIT_DATA = {
             "accepted": true,
             "health": "warning",
             "media_dir": "media/collision/trim/00300671"
-          },
-          {
-            "cat": "falling",
-            "sub": "spared",
-            "id": "00002201",
-            "caption": "Remove the dark grey metal interlocking ring sculpture from the scene. The white plastic jug now falls and lands upright on the concrete floor, making a soft plastic thud, and remains standing still without being struck. This eliminates the subsequent metal-on-plastic collision and the metal-on-concrete clattering sounds, leaving the jug completely undisturbed after its landing.",
-            "max_spike_mJ": 0.2139,
-            "tot_inj_mJ": 68.6429,
-            "ratio_pct": 1.4957,
-            "poswork_steps": 709,
-            "accepted": true,
-            "health": "severe",
-            "media_dir": "media/falling/spared/00002201"
-          },
-          {
-            "cat": "falling",
-            "sub": "overshoot",
-            "id": "00005077",
-            "caption": "Remove the orange and black cordless power drill from the scene. Its initial heavy impact with the floor and the subsequent plastic collision sound of the white marker landing on it are removed. Instead, the white marker falls directly onto the concrete floor, creating a light plastic tap sound as it lands and rolls slightly to a stop.",
-            "max_spike_mJ": 0.1534,
-            "tot_inj_mJ": 22.7638,
-            "ratio_pct": 2.7154,
-            "poswork_steps": 6,
-            "accepted": true,
-            "health": "severe",
-            "media_dir": "media/falling/overshoot/00005077"
-          },
-          {
-            "cat": "collision",
-            "sub": "preserve",
-            "id": "00300200",
-            "caption": "Remove the flat square brown cardboard box and its motion from the video. Its initial fall and impact sound against the dark stone floor should be entirely gone. The yellow cardboard box and the white plastic tote should continue to drop, collide, and come to rest exactly as before, preserving all their visual details and impact sounds.",
-            "max_spike_mJ": 0.1524,
-            "tot_inj_mJ": 19.8442,
-            "ratio_pct": 2.8699,
-            "poswork_steps": 0,
-            "accepted": true,
-            "health": "warning",
-            "media_dir": "media/collision/preserve/00300200"
           }
         ],
         "P90": [
-          {
-            "cat": "collision",
-            "sub": "reroute",
-            "id": "00300544",
-            "caption": "Remove the white plastic jug from the center of the scene. The black marker, instead of hitting the jug and stopping early, now slides further to the right across the stone floor and collides with the yellow banana. The slow falling motion of the jug and its delayed hollow impact sound are replaced by a direct collision between the marker and the banana, producing a light plastic clacking sound.",
-            "max_spike_mJ": 22.8275,
-            "tot_inj_mJ": 50.6084,
-            "ratio_pct": 13.6831,
-            "poswork_steps": 4,
-            "accepted": true,
-            "health": "severe",
-            "media_dir": "media/collision/reroute/00300544"
-          },
-          {
-            "cat": "falling",
-            "sub": "solo_reroute",
-            "id": "00005312",
-            "caption": "Remove the small black and brass bowl that is resting on top of the cardboard box. As a result, the falling dark gray ceramic obelisk will no longer strike the bowl or bounce onto the floor. Instead, it will fall directly onto the flat top of the cardboard box, replacing the sharp metallic clink and the subsequent floor tap with a single dull thud as it lands and stays on the box.",
-            "max_spike_mJ": 16.6504,
-            "tot_inj_mJ": 173.1604,
-            "ratio_pct": 0.9565,
-            "poswork_steps": 22,
-            "accepted": true,
-            "health": "severe",
-            "media_dir": "media/falling/solo_reroute/00005312"
-          },
           {
             "cat": "falling",
             "sub": "solo_preserve",
@@ -681,6 +668,19 @@ window.AUDIT_DATA = {
             "media_dir": "media/falling/preserve/00005186"
           },
           {
+            "cat": "falling",
+            "sub": "spared",
+            "id": "00002342",
+            "caption": "Remove the brown cylindrical cardboard fiber drum and all of its motion. In doing so, eliminate the soft scraping sound of it brushing against the pink ball and the hollow cardboard thud of its impact with the stone floor, leaving only the pink plastic ball falling, bouncing, and settling with its single light clack.",
+            "max_spike_mJ": 5.9826,
+            "tot_inj_mJ": 87.0364,
+            "ratio_pct": 8.7581,
+            "poswork_steps": 727,
+            "accepted": true,
+            "health": "severe",
+            "media_dir": "media/falling/spared/00002342"
+          },
+          {
             "cat": "collision",
             "sub": "reroute",
             "id": "00300172",
@@ -718,6 +718,19 @@ window.AUDIT_DATA = {
             "accepted": true,
             "health": "severe",
             "media_dir": "media/falling/solo_preserve/00002404"
+          },
+          {
+            "cat": "falling",
+            "sub": "solo_preserve",
+            "id": "00002429",
+            "caption": "Remove the black plastic square bucket from the scene. This deletes the falling bucket, its impact on the concrete floor, its subsequent rolling motion, and the plastic clattering sound. Only the red cardboard box remains, falling and landing with a thud.",
+            "max_spike_mJ": 2.4199,
+            "tot_inj_mJ": 189.5207,
+            "ratio_pct": 0.4744,
+            "poswork_steps": 3,
+            "accepted": true,
+            "health": "warning",
+            "media_dir": "media/falling/solo_preserve/00002429"
           }
         ],
         "P95": [
@@ -748,30 +761,30 @@ window.AUDIT_DATA = {
             "media_dir": "media/falling/solo_reroute/00005045"
           },
           {
-            "cat": "falling",
-            "sub": "overshoot",
-            "id": "00010008_v0",
-            "caption": "Remove the blue plastic jerrican and its associated collision sounds. Instead of falling onto the jerrican, the orange traffic cone now drops uninterrupted through the air and strikes the wooden floor directly, creating a single plastic thud as it bounces and settles to a rest.",
-            "max_spike_mJ": 32.2517,
-            "tot_inj_mJ": 35.6079,
-            "ratio_pct": 3.5057,
-            "poswork_steps": 2,
-            "accepted": false,
+            "cat": "collision",
+            "sub": "reroute",
+            "id": "00300544",
+            "caption": "Remove the white plastic jug from the center of the scene. The black marker, instead of hitting the jug and stopping early, now slides further to the right across the stone floor and collides with the yellow banana. The slow falling motion of the jug and its delayed hollow impact sound are replaced by a direct collision between the marker and the banana, producing a light plastic clacking sound.",
+            "max_spike_mJ": 22.8275,
+            "tot_inj_mJ": 50.6084,
+            "ratio_pct": 13.6831,
+            "poswork_steps": 4,
+            "accepted": true,
             "health": "severe",
-            "media_dir": "media/falling/overshoot/00010008_v0"
+            "media_dir": "media/collision/reroute/00300544"
           },
           {
             "cat": "falling",
-            "sub": "overshoot",
-            "id": "00010008_v1",
-            "caption": "Remove the blue plastic jerrican and its associated collision sounds. Instead of falling onto the jerrican, the orange traffic cone now drops uninterrupted through the air and strikes the wooden floor directly, creating a single plastic thud as it bounces and settles to a rest.",
-            "max_spike_mJ": 32.2517,
-            "tot_inj_mJ": 35.6079,
-            "ratio_pct": 3.5057,
-            "poswork_steps": 2,
-            "accepted": false,
+            "sub": "solo_reroute",
+            "id": "00005312",
+            "caption": "Remove the small black and brass bowl that is resting on top of the cardboard box. As a result, the falling dark gray ceramic obelisk will no longer strike the bowl or bounce onto the floor. Instead, it will fall directly onto the flat top of the cardboard box, replacing the sharp metallic clink and the subsequent floor tap with a single dull thud as it lands and stays on the box.",
+            "max_spike_mJ": 16.6504,
+            "tot_inj_mJ": 173.1604,
+            "ratio_pct": 0.9565,
+            "poswork_steps": 22,
+            "accepted": true,
             "health": "severe",
-            "media_dir": "media/falling/overshoot/00010008_v1"
+            "media_dir": "media/falling/solo_reroute/00005312"
           }
         ],
         "P99": [
@@ -780,10 +793,10 @@ window.AUDIT_DATA = {
             "sub": "spared",
             "id": "00002228",
             "caption": "Remove the red ceramic seahorn that falls from above. This eliminates its landing on top of the red cardboard box and its associated sharp ceramic clinking sound. The cardboard box still falls and strikes the wooden floor, making its soft cardboard thud.",
-            "max_spike_mJ": 3880.0486,
-            "tot_inj_mJ": 4794.9965,
-            "ratio_pct": 1.1178,
-            "poswork_steps": 515,
+            "max_spike_mJ": 3155.7373,
+            "tot_inj_mJ": 37490.7893,
+            "ratio_pct": 28.8869,
+            "poswork_steps": 2290,
             "accepted": true,
             "health": "severe",
             "media_dir": "media/falling/spared/00002228"
@@ -895,19 +908,6 @@ window.AUDIT_DATA = {
           {
             "cat": "collision",
             "sub": "overshoot",
-            "id": "00400016_v0",
-            "caption": "Remove the white plastic bucket from the scene. This eliminates the plastic-on-plastic collision and its corresponding sound as the white plastic packer bottle slides across the wet stone floor. Instead of stopping early, the bottle now slides further across the floor and strikes the brown barrier, producing a plastic impact sound before coming to rest.",
-            "max_spike_mJ": 0.0,
-            "tot_inj_mJ": 0.0,
-            "ratio_pct": 0.0,
-            "poswork_steps": 0,
-            "accepted": true,
-            "health": "healthy",
-            "media_dir": "media/collision/overshoot/00400016_v0"
-          },
-          {
-            "cat": "collision",
-            "sub": "overshoot",
             "id": "00400016_v1",
             "caption": "Remove the white plastic bucket from the scene. This eliminates the plastic-on-plastic collision and its corresponding sound as the white plastic packer bottle slides across the wet stone floor. Instead of stopping early, the bottle now slides further across the floor and strikes the brown barrier, producing a plastic impact sound before coming to rest.",
             "max_spike_mJ": 0.0,
@@ -956,21 +956,60 @@ window.AUDIT_DATA = {
             "accepted": true,
             "health": "healthy",
             "media_dir": "media/collision/preserve/00400032_v0"
+          },
+          {
+            "cat": "collision",
+            "sub": "preserve",
+            "id": "00400032_v1",
+            "caption": "Remove the stationary cardboard shipping box from the left side of the scene. The motion of the white plastic packer bottle sliding in and colliding with the steel teaspoon, along with the resulting sharp plastic-on-metal clinking sound, remains completely unchanged.",
+            "max_spike_mJ": 0.0,
+            "tot_inj_mJ": 0.0,
+            "ratio_pct": 0.0,
+            "poswork_steps": 0,
+            "accepted": true,
+            "health": "healthy",
+            "media_dir": "media/collision/preserve/00400032_v1"
           }
         ],
         "P25": [
           {
             "cat": "collision",
             "sub": "fork",
-            "id": "00300035",
-            "caption": "Remove the white plastic tote from the scene. Consequently, its landing sound on the floor and its collision sound with the orange plastic traffic cone are gone. Without the tote in the way, the orange traffic cone now strikes the sliding cardboard box first before falling to make a delayed landing directly on the floor.",
-            "max_spike_mJ": 0.1384,
-            "tot_inj_mJ": 0.6816,
-            "ratio_pct": 0.0275,
+            "id": "00400032_v0",
+            "caption": "Remove the red textured pomegranate from the scene. The sliding chocolate pudding box now misses where the pomegranate used to be, skipping the organic impact sound, and instead slides straight into the white plastic bucket with a sharp cardboard-on-plastic click before coming to rest.",
+            "max_spike_mJ": 0.0293,
+            "tot_inj_mJ": 0.4068,
+            "ratio_pct": 0.058,
             "poswork_steps": 0,
-            "accepted": false,
+            "accepted": true,
             "health": "healthy",
-            "media_dir": "media/collision/fork/00300035"
+            "media_dir": "media/collision/fork/00400032_v0"
+          },
+          {
+            "cat": "collision",
+            "sub": "fork",
+            "id": "00300286",
+            "caption": "Remove the light brown cardboard cubebox. The sliding chocolate pudding box now only collides with the red serving bowl, removing the cardboard-on-cardboard and cardboard-on-floor impact sounds, leaving only the clean metallic sound of the bowl being struck.",
+            "max_spike_mJ": 0.1282,
+            "tot_inj_mJ": 0.4787,
+            "ratio_pct": 0.0498,
+            "poswork_steps": 0,
+            "accepted": true,
+            "health": "healthy",
+            "media_dir": "media/collision/fork/00300286"
+          },
+          {
+            "cat": "falling",
+            "sub": "overshoot",
+            "id": "00002087",
+            "caption": "Remove the modern wooden lounge chair from the scene, eliminating its early wooden landing sound and its contact with the falling white plastic bucket. The plastic bucket now drops straight down to strike the stone floor directly, causing its hollow plastic impact and rolling sounds to occur much earlier in the sequence.",
+            "max_spike_mJ": 1.0949,
+            "tot_inj_mJ": 19.2877,
+            "ratio_pct": 0.0474,
+            "poswork_steps": 2207,
+            "accepted": true,
+            "health": "severe",
+            "media_dir": "media/falling/overshoot/00002087"
           },
           {
             "cat": "collision",
@@ -1053,56 +1092,30 @@ window.AUDIT_DATA = {
           {
             "cat": "collision",
             "sub": "trim",
-            "id": "00400036_v0",
-            "caption": "Remove the white plastic pail from the left of the scene. The brown steel geosphere, after being struck by the sliding white packer bottle, rolls to the left across the open concrete floor without hitting any obstacles. The sound of the geosphere colliding with the plastic pail is removed, leaving only the initial impact sound of the bottle striking the geosphere.",
-            "max_spike_mJ": 0.0214,
-            "tot_inj_mJ": 0.0398,
-            "ratio_pct": 0.0006,
-            "poswork_steps": 0,
-            "accepted": true,
-            "health": "healthy",
-            "media_dir": "media/collision/trim/00400036_v0"
-          },
-          {
-            "cat": "collision",
-            "sub": "preserve",
-            "id": "00400032_v1",
-            "caption": "Remove the stationary cardboard shipping box from the left side of the scene. The motion of the white plastic packer bottle sliding in and colliding with the steel teaspoon, along with the resulting sharp plastic-on-metal clinking sound, remains completely unchanged.",
+            "id": "00300126",
+            "caption": "Remove the red serving bowl from the right side of the scene. With the bowl removed, the wooden candlestick, after being struck by the falling spoon, tips over and falls directly onto the wooden floor rather than colliding with the bowl. Eliminate the subsequent thud sound of the candlestick striking the bowl.",
             "max_spike_mJ": 0.0,
             "tot_inj_mJ": 0.0,
             "ratio_pct": 0.0,
-            "poswork_steps": 0,
+            "poswork_steps": 3,
             "accepted": true,
-            "health": "healthy",
-            "media_dir": "media/collision/preserve/00400032_v1"
-          },
-          {
-            "cat": "collision",
-            "sub": "trim",
-            "id": "00350253",
-            "caption": "Remove the cardboard chocolate pudding box from the scene. As the white plastic packer bottle tips over and strikes the white spoon, the spoon slides across the floor without hitting the pudding box, eliminating the subsequent cardboard thud from the audio.",
-            "max_spike_mJ": 0.0,
-            "tot_inj_mJ": 0.0,
-            "ratio_pct": 0.0,
-            "poswork_steps": 0,
-            "accepted": true,
-            "health": "healthy",
-            "media_dir": "media/collision/trim/00350253"
+            "health": "warning",
+            "media_dir": "media/collision/trim/00300126"
           }
         ],
         "P50": [
           {
             "cat": "collision",
-            "sub": "overshoot",
-            "id": "00350103",
-            "caption": "Remove the yellow plastic banana and its collision sounds. The cardboard box, which previously struck the banana, now slides unimpeded across the concrete floor until it directly impacts the white barrier, creating a new cardboard-on-barrier impact sound instead of the previous banana collisions.",
-            "max_spike_mJ": 0.0195,
-            "tot_inj_mJ": 1.7969,
-            "ratio_pct": 0.4267,
-            "poswork_steps": 38,
+            "sub": "reroute",
+            "id": "00400010_v1",
+            "caption": "Remove the dark metal bowl from the scene. This prevents the initial metallic impact. The sliding cardboard box will instead continue onward to strike the white plastic milk jug, tipping it over with a dull thud.",
+            "max_spike_mJ": 0.0357,
+            "tot_inj_mJ": 6.1192,
+            "ratio_pct": 0.3444,
+            "poswork_steps": 0,
             "accepted": true,
-            "health": "severe",
-            "media_dir": "media/collision/overshoot/00350103"
+            "health": "healthy",
+            "media_dir": "media/collision/reroute/00400010_v1"
           },
           {
             "cat": "collision",
@@ -1144,6 +1157,32 @@ window.AUDIT_DATA = {
             "media_dir": "media/collision/overshoot/00300671"
           },
           {
+            "cat": "collision",
+            "sub": "preserve",
+            "id": "00300393",
+            "caption": "Remove the static cardboard box from the right side of the scene. The falling motion and collisions of the orange and black power drill and the red pomegranate remain exactly the same, along with all of their sliding and impact sounds.",
+            "max_spike_mJ": 0.3219,
+            "tot_inj_mJ": 3.2432,
+            "ratio_pct": 0.1651,
+            "poswork_steps": 8,
+            "accepted": true,
+            "health": "severe",
+            "media_dir": "media/collision/preserve/00300393"
+          },
+          {
+            "cat": "collision",
+            "sub": "trim",
+            "id": "00400036_v1",
+            "caption": "Remove the white plastic pail from the left of the scene. The brown steel geosphere, after being struck by the sliding white packer bottle, rolls to the left across the open concrete floor without hitting any obstacles. The sound of the geosphere colliding with the plastic pail is removed, leaving only the initial impact sound of the bottle striking the geosphere.",
+            "max_spike_mJ": 0.6024,
+            "tot_inj_mJ": 4.7856,
+            "ratio_pct": 0.1426,
+            "poswork_steps": 0,
+            "accepted": true,
+            "health": "healthy",
+            "media_dir": "media/collision/trim/00400036_v1"
+          },
+          {
             "cat": "falling",
             "sub": "overshoot",
             "id": "00005098",
@@ -1158,34 +1197,34 @@ window.AUDIT_DATA = {
           },
           {
             "cat": "collision",
-            "sub": "reroute",
-            "id": "00300258",
-            "caption": "Remove the orange-red shallow metal bowl from the scene. The falling wooden chess piece now drops further down, bypassing the empty space where the bowl was, and collides with the base of the plastic traffic cone and the concrete floor. The sharp clatter of wood hitting metal is removed, replaced instead by a delayed, clean clack of wood striking plastic and concrete as the chess piece lands and rests beside the cone.",
-            "max_spike_mJ": 0.0693,
-            "tot_inj_mJ": 0.5995,
-            "ratio_pct": 0.0901,
-            "poswork_steps": 1,
+            "sub": "preserve",
+            "id": "00300495",
+            "caption": "Remove the static Jell-O chocolate pudding box from the right side of the wood floor. The sliding motion, tip-over, and wooden clatter of the candlestick hitting the wooden bird figurine block and the floor remain unchanged, leaving only the two wooden objects colliding on the empty floor.",
+            "max_spike_mJ": 0.0069,
+            "tot_inj_mJ": 0.3153,
+            "ratio_pct": 0.1106,
+            "poswork_steps": 0,
             "accepted": true,
-            "health": "warning",
-            "media_dir": "media/collision/reroute/00300258"
+            "health": "healthy",
+            "media_dir": "media/collision/preserve/00300495"
           },
           {
             "cat": "collision",
-            "sub": "reroute",
-            "id": "00300336",
-            "caption": "Remove the textured red pomegranate and its impact sounds from the scene. As a result, when the wooden candlestick falls, it no longer strikes the pomegranate but instead lands further left, hitting the yellow cardboard sugar box and the concrete floor with a wood-on-cardboard collision sound and a wooden impact. The candlestick then bounces off the box and slides to rest on the concrete surface.",
-            "max_spike_mJ": 0.0212,
-            "tot_inj_mJ": 0.496,
-            "ratio_pct": 0.0794,
-            "poswork_steps": 1,
+            "sub": "overshoot",
+            "id": "00350190",
+            "caption": "Remove the dark wooden bird on its small pedestal from the center of the scene. The cardboard longbox now slides all the way to the left without any mid-way obstacle, striking the long grey metal barrier directly and producing a late cardboard-on-metal collision sound instead of the early wooden impact sound.",
+            "max_spike_mJ": 0.0119,
+            "tot_inj_mJ": 0.4106,
+            "ratio_pct": 0.0839,
+            "poswork_steps": 0,
             "accepted": true,
-            "health": "warning",
-            "media_dir": "media/collision/reroute/00300336"
+            "health": "healthy",
+            "media_dir": "media/collision/overshoot/00350190"
           },
           {
             "cat": "collision",
             "sub": "fork",
-            "id": "00400032_v0",
+            "id": "00400032_v1",
             "caption": "Remove the red textured pomegranate from the scene. The sliding chocolate pudding box now misses where the pomegranate used to be, skipping the organic impact sound, and instead slides straight into the white plastic bucket with a sharp cardboard-on-plastic click before coming to rest.",
             "max_spike_mJ": 0.0293,
             "tot_inj_mJ": 0.4068,
@@ -1193,33 +1232,7 @@ window.AUDIT_DATA = {
             "poswork_steps": 0,
             "accepted": true,
             "health": "healthy",
-            "media_dir": "media/collision/fork/00400032_v0"
-          },
-          {
-            "cat": "collision",
-            "sub": "fork",
-            "id": "00300286",
-            "caption": "Remove the light brown cardboard cubebox. The sliding chocolate pudding box now only collides with the red serving bowl, removing the cardboard-on-cardboard and cardboard-on-floor impact sounds, leaving only the clean metallic sound of the bowl being struck.",
-            "max_spike_mJ": 0.1282,
-            "tot_inj_mJ": 0.4787,
-            "ratio_pct": 0.0498,
-            "poswork_steps": 0,
-            "accepted": true,
-            "health": "healthy",
-            "media_dir": "media/collision/fork/00300286"
-          },
-          {
-            "cat": "falling",
-            "sub": "overshoot",
-            "id": "00002087",
-            "caption": "Remove the modern wooden lounge chair from the scene, eliminating its early wooden landing sound and its contact with the falling white plastic bucket. The plastic bucket now drops straight down to strike the stone floor directly, causing its hollow plastic impact and rolling sounds to occur much earlier in the sequence.",
-            "max_spike_mJ": 1.0949,
-            "tot_inj_mJ": 19.2877,
-            "ratio_pct": 0.0474,
-            "poswork_steps": 2207,
-            "accepted": true,
-            "health": "severe",
-            "media_dir": "media/falling/overshoot/00002087"
+            "media_dir": "media/collision/fork/00400032_v1"
           }
         ],
         "P75": [
@@ -1300,19 +1313,6 @@ window.AUDIT_DATA = {
             "accepted": true,
             "health": "warning",
             "media_dir": "media/collision/reroute/00300346"
-          },
-          {
-            "cat": "falling",
-            "sub": "spared",
-            "id": "00002228",
-            "caption": "Remove the red ceramic seahorn that falls from above. This eliminates its landing on top of the red cardboard box and its associated sharp ceramic clinking sound. The cardboard box still falls and strikes the wooden floor, making its soft cardboard thud.",
-            "max_spike_mJ": 3880.0486,
-            "tot_inj_mJ": 4794.9965,
-            "ratio_pct": 1.1178,
-            "poswork_steps": 515,
-            "accepted": true,
-            "health": "severe",
-            "media_dir": "media/falling/spared/00002228"
           },
           {
             "cat": "falling",
@@ -1430,21 +1430,47 @@ window.AUDIT_DATA = {
             "accepted": true,
             "health": "warning",
             "media_dir": "media/collision/trim/00300671"
+          },
+          {
+            "cat": "collision",
+            "sub": "overshoot",
+            "id": "00350103",
+            "caption": "Remove the yellow plastic banana and its collision sounds. The cardboard box, which previously struck the banana, now slides unimpeded across the concrete floor until it directly impacts the white barrier, creating a new cardboard-on-barrier impact sound instead of the previous banana collisions.",
+            "max_spike_mJ": 0.0195,
+            "tot_inj_mJ": 1.7969,
+            "ratio_pct": 0.4267,
+            "poswork_steps": 38,
+            "accepted": true,
+            "health": "severe",
+            "media_dir": "media/collision/overshoot/00350103"
+          },
+          {
+            "cat": "falling",
+            "sub": "solo_preserve",
+            "id": "00005033",
+            "caption": "Remove the small white rectangular plastic container from the scene. Its descent and its subsequent light plastic thud on the polished stone floor should be entirely gone, leaving only the dark interlocking steel square links to fall, bounce, and produce a sharp metallic clinking sound.",
+            "max_spike_mJ": 0.0868,
+            "tot_inj_mJ": 47.5828,
+            "ratio_pct": 0.3535,
+            "poswork_steps": 29,
+            "accepted": true,
+            "health": "severe",
+            "media_dir": "media/falling/solo_preserve/00005033"
           }
         ],
         "P90": [
           {
             "cat": "falling",
             "sub": "overshoot",
-            "id": "00010008_v0",
-            "caption": "Remove the blue plastic jerrican and its associated collision sounds. Instead of falling onto the jerrican, the orange traffic cone now drops uninterrupted through the air and strikes the wooden floor directly, creating a single plastic thud as it bounces and settles to a rest.",
-            "max_spike_mJ": 32.2517,
-            "tot_inj_mJ": 35.6079,
-            "ratio_pct": 3.5057,
-            "poswork_steps": 2,
-            "accepted": false,
+            "id": "00002279",
+            "caption": "Remove the small brass grinder from the scene. The brass grinder no longer falls or strikes the tiled floor, removing its metallic clinking sound. The falling red garden planter now drops completely unobstructed, hitting the tiled floor slightly sooner with a single clean ceramic impact sound rather than colliding mid-air.",
+            "max_spike_mJ": 11624.9709,
+            "tot_inj_mJ": 46489.5852,
+            "ratio_pct": 3.7707,
+            "poswork_steps": 3668,
+            "accepted": true,
             "health": "severe",
-            "media_dir": "media/falling/overshoot/00010008_v0"
+            "media_dir": "media/falling/overshoot/00002279"
           },
           {
             "cat": "falling",
@@ -1541,6 +1567,32 @@ window.AUDIT_DATA = {
         "P95": [
           {
             "cat": "falling",
+            "sub": "spared",
+            "id": "00002342",
+            "caption": "Remove the brown cylindrical cardboard fiber drum and all of its motion. In doing so, eliminate the soft scraping sound of it brushing against the pink ball and the hollow cardboard thud of its impact with the stone floor, leaving only the pink plastic ball falling, bouncing, and settling with its single light clack.",
+            "max_spike_mJ": 5.9826,
+            "tot_inj_mJ": 87.0364,
+            "ratio_pct": 8.7581,
+            "poswork_steps": 727,
+            "accepted": true,
+            "health": "severe",
+            "media_dir": "media/falling/spared/00002342"
+          },
+          {
+            "cat": "collision",
+            "sub": "overshoot",
+            "id": "00300622",
+            "caption": "Remove the cardboard cubebox from the center of the wooden floor. This prevents the initial collision, allowing the sliding red spoon to travel further left until it strikes the triangular barrier on the left, replacing the early cardboard thud with a later metallic clink.",
+            "max_spike_mJ": 0.1409,
+            "tot_inj_mJ": 51.1198,
+            "ratio_pct": 8.561,
+            "poswork_steps": 0,
+            "accepted": true,
+            "health": "severe",
+            "media_dir": "media/collision/overshoot/00300622"
+          },
+          {
+            "cat": "falling",
             "sub": "solo_reroute",
             "id": "00005045",
             "caption": "Remove the red pomegranate from the top of the mac and cheese box. As a result, the falling wooden bird figurine misses the pomegranate entirely and falls directly onto the cardboard box, producing a hollow wood-on-cardboard thud. The wooden bird then bounces off the box and hits the stone floor earlier, generating a sharp wooden click, and the sound of the bird striking the pomegranate is completely removed.",
@@ -1564,63 +1616,9 @@ window.AUDIT_DATA = {
             "accepted": true,
             "health": "severe",
             "media_dir": "media/falling/spared/00002128"
-          },
-          {
-            "cat": "falling",
-            "sub": "overshoot",
-            "id": "00002279",
-            "caption": "Remove the small brass grinder from the scene. The brass grinder no longer falls or strikes the tiled floor, removing its metallic clinking sound. The falling red garden planter now drops completely unobstructed, hitting the tiled floor slightly sooner with a single clean ceramic impact sound rather than colliding mid-air.",
-            "max_spike_mJ": 11624.9709,
-            "tot_inj_mJ": 46489.5852,
-            "ratio_pct": 3.7707,
-            "poswork_steps": 3668,
-            "accepted": true,
-            "health": "severe",
-            "media_dir": "media/falling/overshoot/00002279"
-          },
-          {
-            "cat": "falling",
-            "sub": "overshoot",
-            "id": "00010008_v1",
-            "caption": "Remove the blue plastic jerrican and its associated collision sounds. Instead of falling onto the jerrican, the orange traffic cone now drops uninterrupted through the air and strikes the wooden floor directly, creating a single plastic thud as it bounces and settles to a rest.",
-            "max_spike_mJ": 32.2517,
-            "tot_inj_mJ": 35.6079,
-            "ratio_pct": 3.5057,
-            "poswork_steps": 2,
-            "accepted": false,
-            "health": "severe",
-            "media_dir": "media/falling/overshoot/00010008_v1"
           }
         ],
         "P99": [
-          {
-            "cat": "collision",
-            "sub": "reroute",
-            "id": "00300544",
-            "caption": "Remove the white plastic jug from the center of the scene. The black marker, instead of hitting the jug and stopping early, now slides further to the right across the stone floor and collides with the yellow banana. The slow falling motion of the jug and its delayed hollow impact sound are replaced by a direct collision between the marker and the banana, producing a light plastic clacking sound.",
-            "max_spike_mJ": 22.8275,
-            "tot_inj_mJ": 50.6084,
-            "ratio_pct": 13.6831,
-            "poswork_steps": 4,
-            "accepted": true,
-            "health": "severe",
-            "media_dir": "media/collision/reroute/00300544"
-          },
-          {
-            "cat": "collision",
-            "sub": "overshoot",
-            "id": "00300622",
-            "caption": "Remove the cardboard cubebox from the center of the wooden floor. This prevents the initial collision, allowing the sliding red spoon to travel further left until it strikes the triangular barrier on the left, replacing the early cardboard thud with a later metallic clink.",
-            "max_spike_mJ": 0.1409,
-            "tot_inj_mJ": 51.1198,
-            "ratio_pct": 8.561,
-            "poswork_steps": 0,
-            "accepted": true,
-            "health": "severe",
-            "media_dir": "media/collision/overshoot/00300622"
-          }
-        ],
-        "P100": [
           {
             "cat": "falling",
             "sub": "overshoot",
@@ -1633,6 +1631,34 @@ window.AUDIT_DATA = {
             "accepted": true,
             "health": "severe",
             "media_dir": "media/falling/overshoot/00002290"
+          },
+          {
+            "cat": "collision",
+            "sub": "reroute",
+            "id": "00300544",
+            "caption": "Remove the white plastic jug from the center of the scene. The black marker, instead of hitting the jug and stopping early, now slides further to the right across the stone floor and collides with the yellow banana. The slow falling motion of the jug and its delayed hollow impact sound are replaced by a direct collision between the marker and the banana, producing a light plastic clacking sound.",
+            "max_spike_mJ": 22.8275,
+            "tot_inj_mJ": 50.6084,
+            "ratio_pct": 13.6831,
+            "poswork_steps": 4,
+            "accepted": true,
+            "health": "severe",
+            "media_dir": "media/collision/reroute/00300544"
+          }
+        ],
+        "P100": [
+          {
+            "cat": "falling",
+            "sub": "spared",
+            "id": "00002228",
+            "caption": "Remove the red ceramic seahorn that falls from above. This eliminates its landing on top of the red cardboard box and its associated sharp ceramic clinking sound. The cardboard box still falls and strikes the wooden floor, making its soft cardboard thud.",
+            "max_spike_mJ": 3155.7373,
+            "tot_inj_mJ": 37490.7893,
+            "ratio_pct": 28.8869,
+            "poswork_steps": 2290,
+            "accepted": true,
+            "health": "severe",
+            "media_dir": "media/falling/spared/00002228"
           }
         ]
       }
@@ -1713,19 +1739,6 @@ window.AUDIT_DATA = {
           {
             "cat": "collision",
             "sub": "overshoot",
-            "id": "00400016_v0",
-            "caption": "Remove the white plastic bucket from the scene. This eliminates the plastic-on-plastic collision and its corresponding sound as the white plastic packer bottle slides across the wet stone floor. Instead of stopping early, the bottle now slides further across the floor and strikes the brown barrier, producing a plastic impact sound before coming to rest.",
-            "max_spike_mJ": 0.0,
-            "tot_inj_mJ": 0.0,
-            "ratio_pct": 0.0,
-            "poswork_steps": 0,
-            "accepted": true,
-            "health": "healthy",
-            "media_dir": "media/collision/overshoot/00400016_v0"
-          },
-          {
-            "cat": "collision",
-            "sub": "overshoot",
             "id": "00400016_v1",
             "caption": "Remove the white plastic bucket from the scene. This eliminates the plastic-on-plastic collision and its corresponding sound as the white plastic packer bottle slides across the wet stone floor. Instead of stopping early, the bottle now slides further across the floor and strikes the brown barrier, producing a plastic impact sound before coming to rest.",
             "max_spike_mJ": 0.0,
@@ -1774,21 +1787,60 @@ window.AUDIT_DATA = {
             "accepted": true,
             "health": "healthy",
             "media_dir": "media/collision/preserve/00400032_v0"
+          },
+          {
+            "cat": "collision",
+            "sub": "preserve",
+            "id": "00400032_v1",
+            "caption": "Remove the stationary cardboard shipping box from the left side of the scene. The motion of the white plastic packer bottle sliding in and colliding with the steel teaspoon, along with the resulting sharp plastic-on-metal clinking sound, remains completely unchanged.",
+            "max_spike_mJ": 0.0,
+            "tot_inj_mJ": 0.0,
+            "ratio_pct": 0.0,
+            "poswork_steps": 0,
+            "accepted": true,
+            "health": "healthy",
+            "media_dir": "media/collision/preserve/00400032_v1"
           }
         ],
         "P25": [
           {
             "cat": "collision",
             "sub": "reroute",
-            "id": "00300336",
-            "caption": "Remove the textured red pomegranate and its impact sounds from the scene. As a result, when the wooden candlestick falls, it no longer strikes the pomegranate but instead lands further left, hitting the yellow cardboard sugar box and the concrete floor with a wood-on-cardboard collision sound and a wooden impact. The candlestick then bounces off the box and slides to rest on the concrete surface.",
-            "max_spike_mJ": 0.0212,
-            "tot_inj_mJ": 0.496,
-            "ratio_pct": 0.0794,
-            "poswork_steps": 1,
+            "id": "00300346",
+            "caption": "Remove the black wooden bird figurine and its supporting wooden block from the center of the cork floor, along with the sharp clacking sound of the marker colliding with it. Instead, allow the black and white whiteboard marker to slide further forward, colliding with the cardboard pudding box to produce a soft, muffled tap as it comes to a stop.",
+            "max_spike_mJ": 0.005,
+            "tot_inj_mJ": 0.7365,
+            "ratio_pct": 1.1602,
+            "poswork_steps": 0,
             "accepted": true,
             "health": "warning",
-            "media_dir": "media/collision/reroute/00300336"
+            "media_dir": "media/collision/reroute/00300346"
+          },
+          {
+            "cat": "collision",
+            "sub": "fork",
+            "id": "00300035",
+            "caption": "Remove the white plastic tote from the scene. Consequently, its landing sound on the floor and its collision sound with the orange plastic traffic cone are gone. Without the tote in the way, the orange traffic cone now strikes the sliding cardboard box first before falling to make a delayed landing directly on the floor.",
+            "max_spike_mJ": 0.1384,
+            "tot_inj_mJ": 0.6816,
+            "ratio_pct": 0.0275,
+            "poswork_steps": 0,
+            "accepted": false,
+            "health": "healthy",
+            "media_dir": "media/collision/fork/00300035"
+          },
+          {
+            "cat": "collision",
+            "sub": "reroute",
+            "id": "00300356",
+            "caption": "Remove the glossy red pomegranate from the countertop. The falling wooden spindle will now descend past the empty space and directly strike the cardboard pudding box and the floor, shifting the wooden collision sound to a later moment. This new impact causes the cardboard box to tip and rustle as it settles, while the original fruit rolling and thumping sounds are completely deleted.",
+            "max_spike_mJ": 0.0282,
+            "tot_inj_mJ": 0.5595,
+            "ratio_pct": 0.2361,
+            "poswork_steps": 2,
+            "accepted": true,
+            "health": "warning",
+            "media_dir": "media/collision/reroute/00300356"
           },
           {
             "cat": "collision",
@@ -1858,19 +1910,6 @@ window.AUDIT_DATA = {
           {
             "cat": "collision",
             "sub": "trim",
-            "id": "00400036_v0",
-            "caption": "Remove the white plastic pail from the left of the scene. The brown steel geosphere, after being struck by the sliding white packer bottle, rolls to the left across the open concrete floor without hitting any obstacles. The sound of the geosphere colliding with the plastic pail is removed, leaving only the initial impact sound of the bottle striking the geosphere.",
-            "max_spike_mJ": 0.0214,
-            "tot_inj_mJ": 0.0398,
-            "ratio_pct": 0.0006,
-            "poswork_steps": 0,
-            "accepted": true,
-            "health": "healthy",
-            "media_dir": "media/collision/trim/00400036_v0"
-          },
-          {
-            "cat": "collision",
-            "sub": "trim",
             "id": "00300932",
             "caption": "Remove the standing translucent white plastic milk jug from the scene. As a result, when the falling yellow sugar box collides with the small brown pudding box, the pudding box slides freely across the floor instead of hitting the milk jug. The hollow plastic knock and rattle of the milk jug being struck and falling onto the stone floor are completely removed from the audio.",
             "max_spike_mJ": 0.0214,
@@ -1883,29 +1922,16 @@ window.AUDIT_DATA = {
           },
           {
             "cat": "collision",
-            "sub": "preserve",
-            "id": "00400032_v1",
-            "caption": "Remove the stationary cardboard shipping box from the left side of the scene. The motion of the white plastic packer bottle sliding in and colliding with the steel teaspoon, along with the resulting sharp plastic-on-metal clinking sound, remains completely unchanged.",
-            "max_spike_mJ": 0.0,
-            "tot_inj_mJ": 0.0,
-            "ratio_pct": 0.0,
-            "poswork_steps": 0,
-            "accepted": true,
-            "health": "healthy",
-            "media_dir": "media/collision/preserve/00400032_v1"
-          },
-          {
-            "cat": "collision",
             "sub": "trim",
-            "id": "00350253",
-            "caption": "Remove the cardboard chocolate pudding box from the scene. As the white plastic packer bottle tips over and strikes the white spoon, the spoon slides across the floor without hitting the pudding box, eliminating the subsequent cardboard thud from the audio.",
+            "id": "00300126",
+            "caption": "Remove the red serving bowl from the right side of the scene. With the bowl removed, the wooden candlestick, after being struck by the falling spoon, tips over and falls directly onto the wooden floor rather than colliding with the bowl. Eliminate the subsequent thud sound of the candlestick striking the bowl.",
             "max_spike_mJ": 0.0,
             "tot_inj_mJ": 0.0,
             "ratio_pct": 0.0,
-            "poswork_steps": 0,
+            "poswork_steps": 3,
             "accepted": true,
-            "health": "healthy",
-            "media_dir": "media/collision/trim/00350253"
+            "health": "warning",
+            "media_dir": "media/collision/trim/00300126"
           }
         ],
         "P50": [
@@ -1936,17 +1962,43 @@ window.AUDIT_DATA = {
             "media_dir": "media/falling/solo_reroute/00005758"
           },
           {
-            "cat": "falling",
-            "sub": "overshoot",
-            "id": "00005098",
-            "caption": "Remove the orange and white plastic traffic cone from the scene. This deletion eliminates the traffic cone's initial landing sound on the wood floor and its subsequent clinking collision sound with the falling white utility jug. Without the cone in its path, the white plastic utility jug now falls straight down to strike the wood tile floor slightly earlier, producing a single plastic clattering sound upon impact before sliding to a stop.",
-            "max_spike_mJ": 1.5609,
-            "tot_inj_mJ": 5.2831,
-            "ratio_pct": 0.1253,
-            "poswork_steps": 643,
+            "cat": "collision",
+            "sub": "reroute",
+            "id": "00400010_v0",
+            "caption": "Remove the dark metal bowl from the scene. This prevents the initial metallic impact. The sliding cardboard box will instead continue onward to strike the white plastic milk jug, tipping it over with a dull thud.",
+            "max_spike_mJ": 0.0357,
+            "tot_inj_mJ": 6.1192,
+            "ratio_pct": 0.3444,
+            "poswork_steps": 0,
             "accepted": true,
-            "health": "severe",
-            "media_dir": "media/falling/overshoot/00005098"
+            "health": "healthy",
+            "media_dir": "media/collision/reroute/00400010_v0"
+          },
+          {
+            "cat": "falling",
+            "sub": "spared",
+            "id": "00005001",
+            "caption": "Remove the yellow and white cardboard sugar box from the scene. The box should no longer fall from above, strike the rim of the blue plastic barrel, or bounce onto the stone floor. Its associated cardboard tap and slide sounds must be completely removed from the audio, leaving only the initial plastic thud of the falling barrel.",
+            "max_spike_mJ": 0.8938,
+            "tot_inj_mJ": 5.754,
+            "ratio_pct": 0.1755,
+            "poswork_steps": 0,
+            "accepted": true,
+            "health": "healthy",
+            "media_dir": "media/falling/spared/00005001"
+          },
+          {
+            "cat": "collision",
+            "sub": "trim",
+            "id": "00400036_v1",
+            "caption": "Remove the white plastic pail from the left of the scene. The brown steel geosphere, after being struck by the sliding white packer bottle, rolls to the left across the open concrete floor without hitting any obstacles. The sound of the geosphere colliding with the plastic pail is removed, leaving only the initial impact sound of the bottle striking the geosphere.",
+            "max_spike_mJ": 0.6024,
+            "tot_inj_mJ": 4.7856,
+            "ratio_pct": 0.1426,
+            "poswork_steps": 0,
+            "accepted": true,
+            "health": "healthy",
+            "media_dir": "media/collision/trim/00400036_v1"
           },
           {
             "cat": "falling",
@@ -1975,72 +2027,59 @@ window.AUDIT_DATA = {
             "media_dir": "media/collision/overshoot/00300224"
           },
           {
-            "cat": "falling",
-            "sub": "preserve",
-            "id": "00005018",
-            "caption": "Remove the yellow plastic banana from the scene. This eliminates its fall, its soft plastic thud as it strikes the ground, and its subsequent bouncing motion, leaving only the wooden spatula to fall, make its wooden clacking sound, and settle on the stone floor.",
-            "max_spike_mJ": 0.0041,
-            "tot_inj_mJ": 1.5448,
-            "ratio_pct": 0.4701,
-            "poswork_steps": 94,
+            "cat": "collision",
+            "sub": "overshoot",
+            "id": "00350103",
+            "caption": "Remove the yellow plastic banana and its collision sounds. The cardboard box, which previously struck the banana, now slides unimpeded across the concrete floor until it directly impacts the white barrier, creating a new cardboard-on-barrier impact sound instead of the previous banana collisions.",
+            "max_spike_mJ": 0.0195,
+            "tot_inj_mJ": 1.7969,
+            "ratio_pct": 0.4267,
+            "poswork_steps": 38,
             "accepted": true,
             "health": "severe",
-            "media_dir": "media/falling/preserve/00005018"
+            "media_dir": "media/collision/overshoot/00350103"
           },
           {
-            "cat": "collision",
+            "cat": "falling",
+            "sub": "solo_reroute",
+            "id": "00005198",
+            "caption": "Remove the small orange pumpkin from the scene. The falling wooden chess pawn now falls directly onto the white spatula rather than hitting the pumpkin first. This removes the first dull impact sound and causes the wooden pawn to strike the spatula and the stone floor slightly earlier than before, resulting in a rapid sequence of wooden click and clack sounds.",
+            "max_spike_mJ": 0.0278,
+            "tot_inj_mJ": 0.8863,
+            "ratio_pct": 0.2629,
+            "poswork_steps": 3,
+            "accepted": true,
+            "health": "warning",
+            "media_dir": "media/falling/solo_reroute/00005198"
+          },
+          {
+            "cat": "falling",
             "sub": "preserve",
-            "id": "00300444",
-            "caption": "Remove the macaroni and cheese box from the scene. Its initial drop and soft landing sound on the stone floor are gone, while the sliding and collision between the remaining orange bowl and sugar box remain unchanged.",
-            "max_spike_mJ": 0.0342,
-            "tot_inj_mJ": 0.8584,
-            "ratio_pct": 0.0149,
+            "id": "00005115",
+            "caption": "Remove the orange traffic cone from the scene. This eliminates the cone's descent, its landing on the dark polished stone floor, and its hollow plastic clack sound. The white plastic bleach cleanser bottle should still fall, hit the stone floor, and come to rest on its side, with only its single plastic thud sound remaining audible.",
+            "max_spike_mJ": 0.5317,
+            "tot_inj_mJ": 0.8222,
+            "ratio_pct": 0.011,
             "poswork_steps": 0,
             "accepted": true,
             "health": "healthy",
-            "media_dir": "media/collision/preserve/00300444"
-          },
-          {
-            "cat": "collision",
-            "sub": "reroute",
-            "id": "00300346",
-            "caption": "Remove the black wooden bird figurine and its supporting wooden block from the center of the cork floor, along with the sharp clacking sound of the marker colliding with it. Instead, allow the black and white whiteboard marker to slide further forward, colliding with the cardboard pudding box to produce a soft, muffled tap as it comes to a stop.",
-            "max_spike_mJ": 0.005,
-            "tot_inj_mJ": 0.7365,
-            "ratio_pct": 1.1602,
-            "poswork_steps": 0,
-            "accepted": true,
-            "health": "warning",
-            "media_dir": "media/collision/reroute/00300346"
-          },
-          {
-            "cat": "collision",
-            "sub": "fork",
-            "id": "00300035",
-            "caption": "Remove the white plastic tote from the scene. Consequently, its landing sound on the floor and its collision sound with the orange plastic traffic cone are gone. Without the tote in the way, the orange traffic cone now strikes the sliding cardboard box first before falling to make a delayed landing directly on the floor.",
-            "max_spike_mJ": 0.1384,
-            "tot_inj_mJ": 0.6816,
-            "ratio_pct": 0.0275,
-            "poswork_steps": 0,
-            "accepted": false,
-            "health": "healthy",
-            "media_dir": "media/collision/fork/00300035"
-          },
-          {
-            "cat": "collision",
-            "sub": "reroute",
-            "id": "00300356",
-            "caption": "Remove the glossy red pomegranate from the countertop. The falling wooden spindle will now descend past the empty space and directly strike the cardboard pudding box and the floor, shifting the wooden collision sound to a later moment. This new impact causes the cardboard box to tip and rustle as it settles, while the original fruit rolling and thumping sounds are completely deleted.",
-            "max_spike_mJ": 0.0282,
-            "tot_inj_mJ": 0.5595,
-            "ratio_pct": 0.2361,
-            "poswork_steps": 2,
-            "accepted": true,
-            "health": "warning",
-            "media_dir": "media/collision/reroute/00300356"
+            "media_dir": "media/falling/preserve/00005115"
           }
         ],
         "P75": [
+          {
+            "cat": "falling",
+            "sub": "preserve",
+            "id": "00005163",
+            "caption": "Remove the light brown cardboard flatbox from the scene. This deletion removes the cardboard box as it falls from the air and its subsequent dull cardboard landing thump, leaving only the white plastic tote to drop, bounce slightly, and settle with its distinct clacking sound.",
+            "max_spike_mJ": 0.0243,
+            "tot_inj_mJ": 53.42,
+            "ratio_pct": 0.4495,
+            "poswork_steps": 0,
+            "accepted": true,
+            "health": "healthy",
+            "media_dir": "media/falling/preserve/00005163"
+          },
           {
             "cat": "collision",
             "sub": "overshoot",
@@ -2079,32 +2118,6 @@ window.AUDIT_DATA = {
             "accepted": true,
             "health": "severe",
             "media_dir": "media/falling/solo_preserve/00005033"
-          },
-          {
-            "cat": "falling",
-            "sub": "overshoot",
-            "id": "00010008_v0",
-            "caption": "Remove the blue plastic jerrican and its associated collision sounds. Instead of falling onto the jerrican, the orange traffic cone now drops uninterrupted through the air and strikes the wooden floor directly, creating a single plastic thud as it bounces and settles to a rest.",
-            "max_spike_mJ": 32.2517,
-            "tot_inj_mJ": 35.6079,
-            "ratio_pct": 3.5057,
-            "poswork_steps": 2,
-            "accepted": false,
-            "health": "severe",
-            "media_dir": "media/falling/overshoot/00010008_v0"
-          },
-          {
-            "cat": "falling",
-            "sub": "overshoot",
-            "id": "00010008_v1",
-            "caption": "Remove the blue plastic jerrican and its associated collision sounds. Instead of falling onto the jerrican, the orange traffic cone now drops uninterrupted through the air and strikes the wooden floor directly, creating a single plastic thud as it bounces and settles to a rest.",
-            "max_spike_mJ": 32.2517,
-            "tot_inj_mJ": 35.6079,
-            "ratio_pct": 3.5057,
-            "poswork_steps": 2,
-            "accepted": false,
-            "health": "severe",
-            "media_dir": "media/falling/overshoot/00010008_v1"
           },
           {
             "cat": "falling",
@@ -2170,6 +2183,32 @@ window.AUDIT_DATA = {
             "accepted": true,
             "health": "warning",
             "media_dir": "media/collision/preserve/00300200"
+          },
+          {
+            "cat": "falling",
+            "sub": "overshoot",
+            "id": "00010008_v0",
+            "caption": "Remove the blue plastic jerrican and its associated collision sounds. Instead of falling onto the jerrican, the orange traffic cone now drops uninterrupted through the air and strikes the wooden floor directly, creating a single plastic thud as it bounces and settles to a rest.",
+            "max_spike_mJ": 0.7591,
+            "tot_inj_mJ": 19.4379,
+            "ratio_pct": 0.1601,
+            "poswork_steps": 575,
+            "accepted": true,
+            "health": "severe",
+            "media_dir": "media/falling/overshoot/00010008_v0"
+          },
+          {
+            "cat": "falling",
+            "sub": "overshoot",
+            "id": "00010008_v1",
+            "caption": "Remove the blue plastic jerrican and its associated collision sounds. Instead of falling onto the jerrican, the orange traffic cone now drops uninterrupted through the air and strikes the wooden floor directly, creating a single plastic thud as it bounces and settles to a rest.",
+            "max_spike_mJ": 0.7591,
+            "tot_inj_mJ": 19.4379,
+            "ratio_pct": 0.1601,
+            "poswork_steps": 575,
+            "accepted": true,
+            "health": "severe",
+            "media_dir": "media/falling/overshoot/00010008_v1"
           },
           {
             "cat": "falling",
@@ -2319,6 +2358,19 @@ window.AUDIT_DATA = {
           {
             "cat": "falling",
             "sub": "spared",
+            "id": "00002342",
+            "caption": "Remove the brown cylindrical cardboard fiber drum and all of its motion. In doing so, eliminate the soft scraping sound of it brushing against the pink ball and the hollow cardboard thud of its impact with the stone floor, leaving only the pink plastic ball falling, bouncing, and settling with its single light clack.",
+            "max_spike_mJ": 5.9826,
+            "tot_inj_mJ": 87.0364,
+            "ratio_pct": 8.7581,
+            "poswork_steps": 727,
+            "accepted": true,
+            "health": "severe",
+            "media_dir": "media/falling/spared/00002342"
+          },
+          {
+            "cat": "falling",
+            "sub": "spared",
             "id": "00002201",
             "caption": "Remove the dark grey metal interlocking ring sculpture from the scene. The white plastic jug now falls and lands upright on the concrete floor, making a soft plastic thud, and remains standing still without being struck. This eliminates the subsequent metal-on-plastic collision and the metal-on-concrete clattering sounds, leaving the jug completely undisturbed after its landing.",
             "max_spike_mJ": 0.2139,
@@ -2341,34 +2393,21 @@ window.AUDIT_DATA = {
             "accepted": true,
             "health": "severe",
             "media_dir": "media/falling/overshoot/00002238"
-          },
-          {
-            "cat": "falling",
-            "sub": "preserve",
-            "id": "00005163",
-            "caption": "Remove the light brown cardboard flatbox from the scene. This deletion removes the cardboard box as it falls from the air and its subsequent dull cardboard landing thump, leaving only the white plastic tote to drop, bounce slightly, and settle with its distinct clacking sound.",
-            "max_spike_mJ": 0.0243,
-            "tot_inj_mJ": 53.42,
-            "ratio_pct": 0.4495,
-            "poswork_steps": 0,
-            "accepted": true,
-            "health": "healthy",
-            "media_dir": "media/falling/preserve/00005163"
           }
         ],
         "P95": [
           {
             "cat": "falling",
             "sub": "spared",
-            "id": "00002228",
-            "caption": "Remove the red ceramic seahorn that falls from above. This eliminates its landing on top of the red cardboard box and its associated sharp ceramic clinking sound. The cardboard box still falls and strikes the wooden floor, making its soft cardboard thud.",
-            "max_spike_mJ": 3880.0486,
-            "tot_inj_mJ": 4794.9965,
-            "ratio_pct": 1.1178,
-            "poswork_steps": 515,
+            "id": "00002128",
+            "caption": "Remove the beige cardboard cubebox from the scene. This removes its descent, its landing on top of the red cardboard cardbox, and the corresponding cardboard impact sound. The red cardboard cardbox continues to fall, land on the wood floor with a soft thud, and remain still.",
+            "max_spike_mJ": 471.4554,
+            "tot_inj_mJ": 4984.7084,
+            "ratio_pct": 5.3608,
+            "poswork_steps": 60,
             "accepted": true,
             "health": "severe",
-            "media_dir": "media/falling/spared/00002228"
+            "media_dir": "media/falling/spared/00002128"
           },
           {
             "cat": "falling",
@@ -2413,6 +2452,19 @@ window.AUDIT_DATA = {
         "P99": [
           {
             "cat": "falling",
+            "sub": "spared",
+            "id": "00002228",
+            "caption": "Remove the red ceramic seahorn that falls from above. This eliminates its landing on top of the red cardboard box and its associated sharp ceramic clinking sound. The cardboard box still falls and strikes the wooden floor, making its soft cardboard thud.",
+            "max_spike_mJ": 3155.7373,
+            "tot_inj_mJ": 37490.7893,
+            "ratio_pct": 28.8869,
+            "poswork_steps": 2290,
+            "accepted": true,
+            "health": "severe",
+            "media_dir": "media/falling/spared/00002228"
+          },
+          {
+            "cat": "falling",
             "sub": "overshoot",
             "id": "00002290",
             "caption": "Remove the white plastic container from the scene. The large red cardboard block now falls directly onto the gray stone floor instead of landing on the container. It strikes the floor flat and comes to an immediate stop, producing a single thud. The sounds of the white container hitting the floor and the block landing on top of it are completely removed.",
@@ -2423,19 +2475,6 @@ window.AUDIT_DATA = {
             "accepted": true,
             "health": "severe",
             "media_dir": "media/falling/overshoot/00002290"
-          },
-          {
-            "cat": "falling",
-            "sub": "spared",
-            "id": "00002128",
-            "caption": "Remove the beige cardboard cubebox from the scene. This removes its descent, its landing on top of the red cardboard cardbox, and the corresponding cardboard impact sound. The red cardboard cardbox continues to fall, land on the wood floor with a soft thud, and remain still.",
-            "max_spike_mJ": 471.4554,
-            "tot_inj_mJ": 4984.7084,
-            "ratio_pct": 5.3608,
-            "poswork_steps": 60,
-            "accepted": true,
-            "health": "severe",
-            "media_dir": "media/falling/spared/00002128"
           }
         ],
         "P100": [
