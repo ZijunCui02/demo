@@ -67,9 +67,21 @@
       <span class="pl-time">0.00 s</span>
     </div>`;
 
-  function videoCell(dir, key, labelName, c) {
-    if (!dir) {
-      const isRef = key === "ref";
+  function resolveMediaSrc(p) {
+    if (!p) return "";
+    if (window.location.protocol.startsWith("http") && p.includes("runs_v7/")) {
+      return p.substring(p.indexOf("runs_v7/"));
+    }
+    return p;
+  }
+
+  function videoCell(c, key, labelName) {
+    const isRef = key === "ref";
+    const rawVid = isRef ? (c.video_before || (c.media_dir ? `${c.media_dir}/ref.mp4` : "")) : (c.video_after || (c.media_dir ? `${c.media_dir}/tar.mp4` : ""));
+    const vidSrc = resolveMediaSrc(rawVid);
+    const posterSrc = c.media_dir ? `${c.media_dir}/${key}_poster.webp` : "";
+
+    if (!vidSrc) {
       return `<div class="cell cell-telemetry-notice">
         <div class="cell-label"><span class="name">${esc(labelName)}</span></div>
         <div class="telemetry-box">
@@ -80,42 +92,60 @@
         </div>
       </div>`;
     }
+
     return `<div class="cell">
       <div class="cell-label"><span class="name">${esc(labelName)}</span></div>
       <div class="pl vid">
-        <video class="pl-media" preload="none" playsinline poster="${dir}/${key}_poster.webp" src="${dir}/${key}.mp4"></video>
+        <video class="pl-media" preload="none" playsinline poster="${posterSrc}" src="${vidSrc}"></video>
         <div class="pl-track vid-bar"><div class="pl-fill"></div></div>
         ${CTRL}
       </div></div>`;
   }
 
-  function specCell(dir, key, c) {
-    if (!dir) {
-      const isRef = key === "ref";
-      return `<div class="cell cell-telemetry-notice">
-        <div class="cell-label"><span class="name">${isRef ? 'Energy Profile' : 'Contact Work Profile'}</span></div>
-        <div class="telemetry-box">
-          <span class="badge-tag ${c.health === 'severe' ? 'badge-fail' : c.health === 'warning' ? 'badge-warn' : 'badge-pass'}">
-            ${c.health === 'severe' ? 'High Energy Spike' : c.health === 'warning' ? 'Moderate Energy Defect' : 'Clean Physical Contact'}
-          </span>
-          <div class="t-bodies-label">Single-Step Peak:</div>
-          <div class="t-bodies-val font-mono">${c.max_spike_mJ.toFixed(2)} mJ</div>
-        </div>
-      </div>`;
+  function specCell(c, key) {
+    const isRef = key === "ref";
+    const rawAud = isRef ? (c.audio_before || (c.media_dir ? `${c.media_dir}/ref.m4a` : "")) : (c.audio_after || (c.media_dir ? `${c.media_dir}/tar.m4a` : ""));
+    const audSrc = resolveMediaSrc(rawAud);
+    const specImg = c.media_dir ? `${c.media_dir}/${key}_spec.webp` : "";
+
+    if (specImg) {
+      const ticks = FTICKS.map(([f, y]) => `<div class="spec-ftick" style="bottom:${(y * 100).toFixed(2)}%"><span>${f >= 1000 ? (f / 1000) + " kHz" : f + " Hz"}</span></div>`).join("");
+      const axis = [0, 1, 2, 3, 4, 5].map(t => `<span style="left:${t / DUR * 100}%">${t === 5 ? "5 s" : t}</span>`).join("");
+      return `<div class="cell cell-audio">
+        <div class="pl spec" data-span="fixed">
+          <div class="pl-track spec-plot"><img src="${specImg}" alt="" loading="lazy" draggable="false">${ticks}<div class="pl-head spec-head"></div></div>
+          <div class="spec-axis">${axis}</div>
+          ${CTRL}
+          <audio class="pl-media" preload="none" src="${audSrc}"></audio>
+        </div></div>`;
     }
-    const ticks = FTICKS.map(([f, y]) => `<div class="spec-ftick" style="bottom:${(y * 100).toFixed(2)}%"><span>${f >= 1000 ? (f / 1000) + " kHz" : f + " Hz"}</span></div>`).join("");
-    const axis = [0, 1, 2, 3, 4, 5].map(t => `<span style="left:${t / DUR * 100}%">${t === 5 ? "5 s" : t}</span>`).join("");
-    return `<div class="cell cell-audio">
-      <div class="pl spec" data-span="fixed">
-        <div class="pl-track spec-plot"><img src="${dir}/${key}_spec.webp" alt="" loading="lazy" draggable="false">${ticks}<div class="pl-head spec-head"></div></div>
-        <div class="spec-axis">${axis}</div>
-        ${CTRL}
-        <audio class="pl-media" preload="none" src="${dir}/${key}.m4a"></audio>
-      </div></div>`;
+
+    if (audSrc) {
+      return `<div class="cell cell-audio">
+        <div class="cell-label"><span class="name">${isRef ? 'Reference Audio (48kHz)' : 'Target Audio (48kHz)'}</span></div>
+        <div class="pl aud" style="display:flex; flex-direction:column; justify-content:center; align-items:center; background:hsl(var(--bg-card)); border:1px solid hsl(var(--border)); border-radius:6px; min-height:86px; padding:0.75rem 1rem;">
+          <div style="font-family:var(--font-mono); font-size:0.75rem; color:hsl(var(--fg-light)); width:100%; text-align:left; margin-bottom:6px;">Native Audio (48kHz WAV)</div>
+          <div class="pl-track vid-bar" style="width:100%; height:4px; background:hsl(var(--border)); border-radius:2px; cursor:pointer; position:relative; margin-bottom:8px;">
+            <div class="pl-fill" style="height:100%; width:0%; background:hsl(var(--primary)); border-radius:2px;"></div>
+          </div>
+          ${CTRL}
+          <audio class="pl-media" preload="none" src="${audSrc}"></audio>
+        </div></div>`;
+    }
+
+    return `<div class="cell cell-telemetry-notice">
+      <div class="cell-label"><span class="name">${isRef ? 'Energy Profile' : 'Contact Work Profile'}</span></div>
+      <div class="telemetry-box">
+        <span class="badge-tag ${c.health === 'severe' ? 'badge-fail' : c.health === 'warning' ? 'badge-warn' : 'badge-pass'}">
+          ${c.health === 'severe' ? 'High Energy Spike' : c.health === 'warning' ? 'Moderate Energy Defect' : 'Clean Physical Contact'}
+        </span>
+        <div class="t-bodies-label">Single-Step Peak:</div>
+        <div class="t-bodies-val font-mono">${c.max_spike_mJ.toFixed(2)} mJ</div>
+      </div>
+    </div>`;
   }
 
   function auditCard(c) {
-    const dir = c.media_dir;
     const m = auditData.metrics[activeMetric];
     let metricDisplayVal = "";
     if (activeMetric === "max_spike") metricDisplayVal = `${c.max_spike_mJ.toFixed(2)} mJ`;
@@ -136,12 +166,12 @@
       </div>
       <div class="case-body audit-case-body">
         <div class="audit-col">
-          ${videoCell(dir, "ref", "Reference (Before)", c)}
-          ${specCell(dir, "ref", c)}
+          ${videoCell(c, "ref", "Reference (Before)")}
+          ${specCell(c, "ref")}
         </div>
         <div class="audit-col">
-          ${videoCell(dir, "tar", "Target (Ground Truth)", c)}
-          ${specCell(dir, "tar", c)}
+          ${videoCell(c, "tar", "Target (Ground Truth)")}
+          ${specCell(c, "tar")}
         </div>
         <div class="audit-col audit-telemetry-col">
           <div class="telemetry-panel">
