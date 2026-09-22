@@ -31,13 +31,14 @@
       const totalCases = Object.values(m.bins).reduce((acc, list) => acc + list.length, 0);
       return `<button class="cat-btn${mId === activeMetric ? " on" : ""}" data-metric="${mId}">
         <div class="cat-btn-title">${esc(m.name)}</div>
-        <span class="count">${totalCases} sampled</span>
+        <span class="count">${totalCases} pairs</span>
       </button>`;
     }).join("");
 
     el.querySelectorAll(".cat-btn").forEach(b => b.addEventListener("click", () => {
       activeMetric = b.dataset.metric;
-      activeP = "P0";
+      activeP = "P100";
+      visibleCount = PAGE_SIZE;
       syncUrl();
       render();
     }));
@@ -55,6 +56,7 @@
 
     row.querySelectorAll(".sub-chip").forEach(b => b.addEventListener("click", () => {
       activeP = b.dataset.p;
+      visibleCount = PAGE_SIZE;
       syncUrl();
       render();
     }));
@@ -65,7 +67,19 @@
       <span class="pl-time">0.00 s</span>
     </div>`;
 
-  function videoCell(dir, key, labelName) {
+  function videoCell(dir, key, labelName, c) {
+    if (!dir) {
+      const isRef = key === "ref";
+      return `<div class="cell cell-telemetry-notice">
+        <div class="cell-label"><span class="name">${esc(labelName)}</span></div>
+        <div class="telemetry-box">
+          <span class="badge-tag">${isRef ? 'Reference State' : 'Ground Truth Target'}</span>
+          <div class="t-gen">${esc(c.gen || 'runs_v7')}</div>
+          <div class="t-bodies-label">Interacting Bodies:</div>
+          <div class="t-bodies-val">${esc((c.bodies && c.bodies.length) ? c.bodies.join(', ') : 'Solid rigid bodies')}</div>
+        </div>
+      </div>`;
+    }
     return `<div class="cell">
       <div class="cell-label"><span class="name">${esc(labelName)}</span></div>
       <div class="pl vid">
@@ -75,7 +89,20 @@
       </div></div>`;
   }
 
-  function specCell(dir, key) {
+  function specCell(dir, key, c) {
+    if (!dir) {
+      const isRef = key === "ref";
+      return `<div class="cell cell-telemetry-notice">
+        <div class="cell-label"><span class="name">${isRef ? 'Energy Profile' : 'Contact Work Profile'}</span></div>
+        <div class="telemetry-box">
+          <span class="badge-tag ${c.health === 'severe' ? 'badge-fail' : c.health === 'warning' ? 'badge-warn' : 'badge-pass'}">
+            ${c.health === 'severe' ? 'High Energy Spike' : c.health === 'warning' ? 'Moderate Energy Defect' : 'Clean Physical Contact'}
+          </span>
+          <div class="t-bodies-label">Single-Step Peak:</div>
+          <div class="t-bodies-val font-mono">${c.max_spike_mJ.toFixed(2)} mJ</div>
+        </div>
+      </div>`;
+    }
     const ticks = FTICKS.map(([f, y]) => `<div class="spec-ftick" style="bottom:${(y * 100).toFixed(2)}%"><span>${f >= 1000 ? (f / 1000) + " kHz" : f + " Hz"}</span></div>`).join("");
     const axis = [0, 1, 2, 3, 4, 5].map(t => `<span style="left:${t / DUR * 100}%">${t === 5 ? "5 s" : t}</span>`).join("");
     return `<div class="cell cell-audio">
@@ -109,12 +136,12 @@
       </div>
       <div class="case-body audit-case-body">
         <div class="audit-col">
-          ${videoCell(dir, "ref", "Reference (Before)")}
-          ${specCell(dir, "ref")}
+          ${videoCell(dir, "ref", "Reference (Before)", c)}
+          ${specCell(dir, "ref", c)}
         </div>
         <div class="audit-col">
-          ${videoCell(dir, "tar", "Target (Ground Truth)")}
-          ${specCell(dir, "tar")}
+          ${videoCell(dir, "tar", "Target (Ground Truth)", c)}
+          ${specCell(dir, "tar", c)}
         </div>
         <div class="audit-col audit-telemetry-col">
           <div class="telemetry-panel">
@@ -149,18 +176,65 @@
     </article>`;
   }
 
-  function render() {
-    renderMetricPicker();
-    renderPercentileChips();
+  const PAGE_SIZE = 30;
+  let visibleCount = PAGE_SIZE;
+
+  function renderList() {
     const list = document.getElementById("case-list");
     const currentBins = auditData.metrics[activeMetric].bins;
     const items = (currentBins[activeP] || []).slice();
     const sortKey = activeMetric === "max_spike" ? "max_spike_mJ" : activeMetric === "ratio" ? "ratio_pct" : "tot_inj_mJ";
     items.sort((a, b) => (b[sortKey] || 0) - (a[sortKey] || 0));
-    list.innerHTML = items.length ? items.map(auditCard).join("") : `<p class="empty-note">No cases sampled in ${activeP}.</p>`;
+
+    if (!items.length) {
+      list.innerHTML = `<p class="empty-note">No cases available in ${activeP}.</p>`;
+      fitSpacer();
+      updateNav();
+      return;
+    }
+
+    const visibleItems = items.slice(0, visibleCount);
+    let html = visibleItems.map(auditCard).join("");
+
+    if (items.length > visibleCount) {
+      const remaining = items.length - visibleCount;
+      html += `<div class="load-more-container" style="text-align:center; padding: 2.5rem 1rem; margin-top: 1rem;">
+        <button id="btn-load-more" class="load-more-btn" type="button">
+          Load More (50 of ${remaining} remaining)
+        </button>
+        <button id="btn-load-all" class="load-more-btn" type="button" style="margin-left: 12px; background: hsl(var(--fg-light) / 0.1); color: hsl(var(--fg)); border-color: hsl(var(--border));">
+          Display All (${items.length} pairs)
+        </button>
+      </div>`;
+    }
+
+    list.innerHTML = html;
     list.querySelectorAll(".pl").forEach(initPlayer);
+
+    const btnMore = document.getElementById("btn-load-more");
+    if (btnMore) {
+      btnMore.addEventListener("click", () => {
+        visibleCount += 50;
+        renderList();
+      });
+    }
+
+    const btnAll = document.getElementById("btn-load-all");
+    if (btnAll) {
+      btnAll.addEventListener("click", () => {
+        visibleCount = items.length;
+        renderList();
+      });
+    }
+
     fitSpacer();
     updateNav();
+  }
+
+  function render() {
+    renderMetricPicker();
+    renderPercentileChips();
+    renderList();
   }
 
   /* Navigation & scrolling */

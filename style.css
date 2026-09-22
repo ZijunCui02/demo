@@ -1861,3 +1861,78 @@ html.dark .t-val.val-warn {
   line-height: 1.45;
   color: hsl(var(--fg));
 }
+
+.cell-telemetry-notice {
+  min-height: 180px;
+  display: flex;
+  flex-direction: column;
+}
+
+.telemetry-box {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: hsl(var(--bg-card));
+  border: 1px dashed hsl(var(--border));
+  border-radius: 6px;
+  padding: 1.5rem 1rem;
+  text-align: center;
+  gap: 0.4rem;
+}
+
+.telemetry-box .badge-tag {
+  font-family: var(--font-ui);
+  font-size: 0.75rem;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.04em;
+  padding: 0.2rem 0.6rem;
+  border-radius: 999px;
+  background: hsl(var(--fg-light) / 0.12);
+  color: hsl(var(--fg));
+}
+
+.telemetry-box .t-gen {
+  font-family: var(--font-mono);
+  font-size: 0.82rem;
+  font-weight: 600;
+  color: hsl(var(--primary));
+}
+
+.telemetry-box .t-bodies-label {
+  font-size: 0.76rem;
+  color: hsl(var(--fg-light));
+  margin-top: 0.2rem;
+}
+
+.telemetry-box .t-bodies-val {
+  font-size: 0.82rem;
+  font-weight: 500;
+  color: hsl(var(--fg-dark));
+  max-width: 90%;
+  word-break: break-word;
+}
+
+.load-more-btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0.65rem 1.4rem;
+  font-family: var(--font-ui);
+  font-size: 0.9rem;
+  font-weight: 600;
+  border-radius: 6px;
+  background: hsl(var(--primary) / 0.12);
+  color: hsl(var(--primary));
+  border: 1px solid hsl(var(--primary) / 0.35);
+  cursor: pointer;
+  transition: all 0.15s ease;
+}
+
+.load-more-btn:hover {
+  background: hsl(var(--primary));
+  color: #fff;
+}
+
