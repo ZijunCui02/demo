@@ -106,6 +106,19 @@
 
   function caseCard(c) {
     const dir = `${MEDIA}/${c.cat}/${c.sub}/${c.id}`;
+    const isGtOnly = c.cat === "bridge" || c.only_gt;
+    if (isGtOnly) {
+      return `<article class="case case-gt-only" id="${c.cat}-${c.sub}-${c.id}">
+        <div class="case-head"><span class="case-idx">${c.id}</span><span class="case-path">${title(c.cat)} / ${title(c.sub)}</span></div>
+        <div class="case-body case-body-gt-only">
+          <div class="block left gt-only">
+            ${videoCell(dir, "ref")}${videoCell(dir, "tar")}
+            ${specCell(dir, "ref")}${specCell(dir, "tar")}
+            ${captionCell(c.caption)}
+          </div>
+        </div>
+      </article>`;
+    }
     return `<article class="case" id="${c.cat}-${c.sub}-${c.id}">
       <div class="case-head"><span class="case-idx">${c.id}</span><span class="case-path">${title(c.cat)} / ${title(c.sub)}</span></div>
       <div class="case-body">
