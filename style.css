@@ -1406,7 +1406,7 @@ html.dark .tax-card:hover {
 
 .case-body {
   display: grid;
-  grid-template-columns: 2fr 3fr;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
   gap: 0 1.25rem;
 }
 
@@ -1430,7 +1430,7 @@ html.dark .tax-card:hover {
 }
 
 .block.right {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
 @media (max-width: 1000px) {
@@ -1468,6 +1468,21 @@ html.dark .tax-card:hover {
   grid-column: 1 / -1;
   grid-row: auto;
   margin-top: 0.25rem;
+}
+
+.mask-img {
+  display: block;
+  border: 1px solid hsl(var(--border));
+  border-radius: 4px;
+  overflow: hidden;
+  background: #fff;
+  cursor: zoom-in;
+}
+
+.mask-img img {
+  display: block;
+  width: 100%;
+  aspect-ratio: 16 / 9;
 }
 
 .block .rule {

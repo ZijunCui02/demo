@@ -8,13 +8,12 @@
   const LABELS = {
     ref: { name: "Reference (No edits)", code: "" },
     tar: { name: "Ground Truth", code: "" },
-    m1: { name: "Reference-only Baseline (No Mask)", code: "M1" },
-    m2: { name: "Baseline Concat w/o Conditions", code: "M2" },
-    m13: { name: "M2 + VAE Embedded Audio Mask", code: "M13" },
-    m14: { name: "M2 + Learned Audio Mask Embeddings", code: "M14" },
-    m12: { name: "Baseline w/ Video Control Net", code: "M12" },
-    m15: { name: "M12 + VAE Embedded Audio Mask", code: "M15" },
-    m16: { name: "M12 + Learned Audio Mask Embeddings", code: "M16" }
+    aud_mask: { name: "Audio Mask", code: "" },
+    vid_mask: { name: "Video Mask", code: "" },
+    baseline: { name: "Baseline (No Masks)", code: "" },
+    vmask: { name: "w/ Video Mask", code: "" },
+    amask: { name: "w/ Audio Mask", code: "" },
+    avmask: { name: "w/ Audio + Video Mask", code: "" }
   };
 
   // Mel-scale positions (fraction of the plot height from the bottom) of the frequency ticks.
@@ -104,8 +103,13 @@
     return `<div class="cell caption-cell"><div class="cell-label"><span class="name">Caption</span></div><div class="caption">${esc(text)}</div></div>`;
   }
 
+  function maskImageCell(dir, key) {
+    const src = `${dir}/${key}.webp`;
+    return `<div class="cell">${label(key)}<a class="mask-img" href="${src}" target="_blank" rel="noopener"><img src="${src}" alt="${esc(LABELS[key].name)}" loading="lazy"></a></div>`;
+  }
+
   function caseCard(c) {
-    const dir = `${MEDIA}/${c.cat}/${c.sub}/${c.id}`;
+    const dir = c.dir || `${MEDIA}/${c.cat}/${c.sub}/${c.id}`;
     const isGtOnly = c.cat === "bridge" || c.only_gt;
     if (isGtOnly) {
       return `<article class="case case-gt-only" id="${c.cat}-${c.sub}-${c.id}">
@@ -119,20 +123,21 @@
         </div>
       </article>`;
     }
+    // Left: reference and ground truth, the caption beside the audio and video masks. Right: the four models, the pair without the audio mask above the dashed rule and the pair with it below.
     return `<article class="case" id="${c.cat}-${c.sub}-${c.id}">
       <div class="case-head"><span class="case-idx">${c.id}</span><span class="case-path">${title(c.cat)} / ${title(c.sub)}</span></div>
       <div class="case-body">
         <div class="block left">
           ${videoCell(dir, "ref")}${videoCell(dir, "tar")}
           ${specCell(dir, "ref")}${specCell(dir, "tar")}
-          ${captionCell(c.caption)}${videoCell(dir, "m1")}${specCell(dir, "m1")}
+          ${captionCell(c.caption)}${maskImageCell(dir, "aud_mask")}${videoCell(dir, "vid_mask")}
         </div>
         <div class="block right">
-          ${videoCell(dir, "m2")}${videoCell(dir, "m13")}${videoCell(dir, "m14")}
-          ${specCell(dir, "m2")}${specCell(dir, "m13")}${specCell(dir, "m14")}
+          ${videoCell(dir, "baseline")}${videoCell(dir, "vmask")}
+          ${specCell(dir, "baseline")}${specCell(dir, "vmask")}
           <div class="rule"></div>
-          ${videoCell(dir, "m12")}${videoCell(dir, "m15")}${videoCell(dir, "m16")}
-          ${specCell(dir, "m12")}${specCell(dir, "m15")}${specCell(dir, "m16")}
+          ${videoCell(dir, "amask")}${videoCell(dir, "avmask")}
+          ${specCell(dir, "amask")}${specCell(dir, "avmask")}
         </div>
       </div>
     </article>`;

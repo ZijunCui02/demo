@@ -5,7 +5,7 @@
 <title>Gallery</title>
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <meta name="robots" content="noindex">
-<link rel="stylesheet" href="style.css?v=347be795">
+<link rel="stylesheet" href="style.css?v=f0b8e998">
 <script>
 (function () {
   var s = localStorage.getItem("color-scheme") || "auto";
@@ -49,7 +49,7 @@
 <article class="content wide">
 
 <h1 style="font-size:1.8em;margin-top:0;">Gallery</h1>
-<p class="muted">Validation cases, one card per case. The left block holds the reference clip and the ground truth beside the edit instruction; the right block holds the compared models. Each title covers the video and, below it, the spectrogram of its audio. Videos: press play or click the frame, and drag the bar under the frame to seek. Spectrograms: press play, or drag the marker along the time axis.</p>
+<p class="muted">Validation cases, one card per case. The left block holds the reference clip and the ground truth, the edit instruction, and the audio and video masks given to the models; the right block holds the four compared models, the baseline and the video mask model above the dashed line, the audio mask model and the audio + video mask model below it. Each title covers the video and, below it, the spectrogram of its audio. The audio mask colors mark the time spans to preserve, to remove, to rewrite, and their intersection; click it for the full-size picture. Videos: press play or click the frame, and drag the bar under the frame to seek. Spectrograms: press play, or drag the marker along the time axis.</p>
 
 <div class="gallery cases">
   <aside class="category-picker">
@@ -71,8 +71,8 @@
   <span>© AVOID 2026. Theme forked from <a href="https://github.com/Renovamen/renovamen.github.io" target="_blank" rel="noopener noreferrer">renovamen</a>.</span>
 </footer>
 </main>
-<script src="catalog.js?v=1ee4556a"></script>
-<script src="app.js?v=59566506"></script>
+<script src="catalog.js?v=a9cb014f"></script>
+<script src="app.js?v=c8076f5f"></script>
 <script src="theme.js?v=c2d9b2fa"></script>
 </body>
 </html>
