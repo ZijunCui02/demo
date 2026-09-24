@@ -1158,8 +1158,32 @@ window.CATALOG = [
 {
 "cat": "bridge",
 "sub": "bridge",
+"id": "00001019",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the plastic red grinder at endpoint A. With the bridge removed, the ball falls through the gap directly into the wood dominoes at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001020",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the steel dominoes at endpoint A. With the bridge removed, the ball falls through the gap directly into the plastic red grinder at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001022",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the steel dominoes at endpoint A. With the bridge removed, the ball falls through the gap directly into the plastic trafficcone at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
 "id": "00001023",
 "caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the steel stack at endpoint A. With the bridge removed, the ball falls through the gap directly into the ceramic stack at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001024",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the plastic whitepackerbottle at endpoint A. With the bridge removed, the ball falls through the gap directly into the wood dominoes at endpoint B."
 },
 {
 "cat": "bridge",
@@ -1170,8 +1194,62 @@ window.CATALOG = [
 {
 "cat": "bridge",
 "sub": "bridge",
+"id": "00001026",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the plastic nvidia cube at endpoint A. With the bridge removed, the ball falls through the gap directly into the steel bowling at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001027",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the ceramic prime doublegourd at endpoint A. With the bridge removed, the ball falls through the gap directly into the ceramic single at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001028",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the ceramic dominoes at endpoint A. With the bridge removed, the ball falls through the gap directly into the ceramic cellvase04 at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001030",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the wood woodenbird tall at endpoint A. With the bridge removed, the ball falls through the gap directly into the ceramic stack at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001031",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the plastic whitepackerbottle at endpoint A. With the bridge removed, the ball falls through the gap directly into the plastic nvidia cube at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
 "id": "00001032",
 "caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the wood bowling at endpoint A. With the bridge removed, the ball falls through the gap directly into the steel stack at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001033",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the steel dominoes at endpoint A. With the bridge removed, the ball falls through the gap directly into the wood dominoes at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001034",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the wood dominoes at endpoint A. With the bridge removed, the ball falls through the gap directly into the plastic bowling at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001035",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the wood dominoes at endpoint A. With the bridge removed, the ball falls through the gap directly into the plastic single at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001036",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the plastic whitepackerbottle at endpoint A. With the bridge removed, the ball falls through the gap directly into the ceramic bottles at endpoint B."
 },
 {
 "cat": "bridge",
@@ -1188,8 +1266,50 @@ window.CATALOG = [
 {
 "cat": "bridge",
 "sub": "bridge",
+"id": "00001039",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the plastic stack at endpoint A. With the bridge removed, the ball falls through the gap directly into the steel single at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001040",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the plastic fstylejug at endpoint A. With the bridge removed, the ball falls through the gap directly into the plastic coffee grinder at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001041",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the plastic bowling at endpoint A. With the bridge removed, the ball falls through the gap directly into the plastic bottles at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001042",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the steel dominoes at endpoint A. With the bridge removed, the ball falls through the gap directly into the steel bowling at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001043",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the wood woodenbird tall at endpoint A. With the bridge removed, the ball falls through the gap directly into the ceramic ycb mug at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001044",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the steel dominoes at endpoint A. With the bridge removed, the ball falls through the gap directly into the wood single at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
 "id": "00001045",
 "caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the steel stack at endpoint A. With the bridge removed, the ball falls through the gap directly into the steel stack at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001046",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the ceramic prime2layer at endpoint A. With the bridge removed, the ball falls through the gap directly into the wood dominoes at endpoint B."
 },
 {
 "cat": "bridge",
@@ -1200,8 +1320,20 @@ window.CATALOG = [
 {
 "cat": "bridge",
 "sub": "bridge",
+"id": "00001060",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the plastic bowling at endpoint A. With the bridge removed, the ball falls through the gap directly into the plastic stack at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
 "id": "00001061",
 "caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the steel single at endpoint A. With the bridge removed, the ball falls through the gap directly into the ceramic single at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001063",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the steel bowling at endpoint A. With the bridge removed, the ball falls through the gap directly into the plastic whitepackerbottle at endpoint B."
 },
 {
 "cat": "bridge",
@@ -1212,8 +1344,194 @@ window.CATALOG = [
 {
 "cat": "bridge",
 "sub": "bridge",
+"id": "00001068",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the plastic single at endpoint A. With the bridge removed, the ball falls through the gap directly into the ceramic bottles at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001069",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the steel stack at endpoint A. With the bridge removed, the ball falls through the gap directly into the plastic fstylejug at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001071",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the ceramic single at endpoint A. With the bridge removed, the ball falls through the gap directly into the wood dominoes at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001072",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the plastic dominoes at endpoint A. With the bridge removed, the ball falls through the gap directly into the ceramic abstractface small at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001074",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the ceramic dominoes at endpoint A. With the bridge removed, the ball falls through the gap directly into the steel bowling at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001075",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the ceramic stack at endpoint A. With the bridge removed, the ball falls through the gap directly into the ceramic bottles at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001076",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the ceramic stack at endpoint A. With the bridge removed, the ball falls through the gap directly into the wood single at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001077",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the ceramic single at endpoint A. With the bridge removed, the ball falls through the gap directly into the plastic fstylejug at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001079",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the ceramic bowling at endpoint A. With the bridge removed, the ball falls through the gap directly into the ceramic abstractface small at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001080",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the steel single at endpoint A. With the bridge removed, the ball falls through the gap directly into the steel dart greenstripe at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001082",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the plastic single at endpoint A. With the bridge removed, the ball falls through the gap directly into the plastic stack at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001083",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the plastic bowling at endpoint A. With the bridge removed, the ball falls through the gap directly into the plastic nvidia cube at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001085",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the wood bowling at endpoint A. With the bridge removed, the ball falls through the gap directly into the steel geosphere medium at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001087",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the steel single at endpoint A. With the bridge removed, the ball falls through the gap directly into the plastic fstylejug at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
 "id": "00001089",
 "caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the plastic bottles at endpoint A. With the bridge removed, the ball falls through the gap directly into the plastic single at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001090",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the wood single at endpoint A. With the bridge removed, the ball falls through the gap directly into the steel dominoes at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001095",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the wood bowling at endpoint A. With the bridge removed, the ball falls through the gap directly into the plastic bottles at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001096",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the steel single at endpoint A. With the bridge removed, the ball falls through the gap directly into the plastic stack at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001098",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the steel single at endpoint A. With the bridge removed, the ball falls through the gap directly into the plastic dominoes at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001102",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the wood bottles at endpoint A. With the bridge removed, the ball falls through the gap directly into the steel bottles at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001104",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the plastic stack at endpoint A. With the bridge removed, the ball falls through the gap directly into the steel stack at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001106",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the ceramic bowling at endpoint A. With the bridge removed, the ball falls through the gap directly into the ceramic prime doublegourd at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001108",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the plastic stack at endpoint A. With the bridge removed, the ball falls through the gap directly into the wood single at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001111",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the wood stack at endpoint A. With the bridge removed, the ball falls through the gap directly into the ceramic bottles at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001112",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the plastic single at endpoint A. With the bridge removed, the ball falls through the gap directly into the steel single at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001117",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the ceramic stack at endpoint A. With the bridge removed, the ball falls through the gap directly into the plastic single at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001120",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the steel bottles at endpoint A. With the bridge removed, the ball falls through the gap directly into the plastic whitepackerbottle at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001121",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the wood stack at endpoint A. With the bridge removed, the ball falls through the gap directly into the plastic bowling at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001123",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the plastic single at endpoint A. With the bridge removed, the ball falls through the gap directly into the plastic single at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001128",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the wood single at endpoint A. With the bridge removed, the ball falls through the gap directly into the ceramic stack at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001129",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the steel single at endpoint A. With the bridge removed, the ball falls through the gap directly into the plastic bottles at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bridge",
+"id": "00001130",
+"caption": "Remove the bridge plank spanning the upper gap. In the reference scene, the rolling steel ball crosses the bridge to strike the ceramic bottles at endpoint A. With the bridge removed, the ball falls through the gap directly into the plastic milkjug at endpoint B."
 },
 {
 "cat": "bridge",
@@ -1284,6 +1602,12 @@ window.CATALOG = [
 {
 "cat": "bridge",
 "sub": "bank",
+"id": "00001015",
+"caption": "Remove the diagonal banking post from the back lane. In the reference scene, the rolling ball deflects off the banking post into the plastic coffee grinder at endpoint A. With the post removed, the ball rolls straight down the back lane into the ceramic prime doublegourd at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bank",
 "id": "00001016",
 "caption": "Remove the diagonal banking post from the back lane. In the reference scene, the rolling ball deflects off the banking post into the plastic utilityjug at endpoint A. With the post removed, the ball rolls straight down the back lane into the wood dominoes at endpoint B."
 },
@@ -1308,6 +1632,12 @@ window.CATALOG = [
 {
 "cat": "bridge",
 "sub": "bank",
+"id": "00001020",
+"caption": "Remove the diagonal banking post from the back lane. In the reference scene, the rolling ball deflects off the banking post into the plastic nvidia cube at endpoint A. With the post removed, the ball rolls straight down the back lane into the steel dominoes at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bank",
 "id": "00001022",
 "caption": "Remove the diagonal banking post from the back lane. In the reference scene, the rolling ball deflects off the banking post into the wood stack at endpoint A. With the post removed, the ball rolls straight down the back lane into the plastic single at endpoint B."
 },
@@ -1320,8 +1650,38 @@ window.CATALOG = [
 {
 "cat": "bridge",
 "sub": "bank",
+"id": "00001029",
+"caption": "Remove the diagonal banking post from the back lane. In the reference scene, the rolling ball deflects off the banking post into the ceramic stack at endpoint A. With the post removed, the ball rolls straight down the back lane into the wood stack at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bank",
+"id": "00001031",
+"caption": "Remove the diagonal banking post from the back lane. In the reference scene, the rolling ball deflects off the banking post into the wood woodenbird medium at endpoint A. With the post removed, the ball rolls straight down the back lane into the steel dominoes at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bank",
+"id": "00001032",
+"caption": "Remove the diagonal banking post from the back lane. In the reference scene, the rolling ball deflects off the banking post into the wood woodenbird medium at endpoint A. With the post removed, the ball rolls straight down the back lane into the plastic dominoes at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bank",
 "id": "00001033",
 "caption": "Remove the diagonal banking post from the back lane. In the reference scene, the rolling ball deflects off the banking post into the steel bottles at endpoint A. With the post removed, the ball rolls straight down the back lane into the plastic dominoes at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bank",
+"id": "00001034",
+"caption": "Remove the diagonal banking post from the back lane. In the reference scene, the rolling ball deflects off the banking post into the steel stack at endpoint A. With the post removed, the ball rolls straight down the back lane into the plastic milkjug at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bank",
+"id": "00001035",
+"caption": "Remove the diagonal banking post from the back lane. In the reference scene, the rolling ball deflects off the banking post into the wood dominoes at endpoint A. With the post removed, the ball rolls straight down the back lane into the plastic milkjug at endpoint B."
 },
 {
 "cat": "bridge",
@@ -1332,8 +1692,188 @@ window.CATALOG = [
 {
 "cat": "bridge",
 "sub": "bank",
+"id": "00001039",
+"caption": "Remove the diagonal banking post from the back lane. In the reference scene, the rolling ball deflects off the banking post into the plastic whitepackerbottle at endpoint A. With the post removed, the ball rolls straight down the back lane into the ceramic bowling at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bank",
 "id": "00001041",
 "caption": "Remove the diagonal banking post from the back lane. In the reference scene, the rolling ball deflects off the banking post into the wood single at endpoint A. With the post removed, the ball rolls straight down the back lane into the plastic whitepackerbottle at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bank",
+"id": "00001043",
+"caption": "Remove the diagonal banking post from the back lane. In the reference scene, the rolling ball deflects off the banking post into the steel stack at endpoint A. With the post removed, the ball rolls straight down the back lane into the plastic dominoes at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bank",
+"id": "00001044",
+"caption": "Remove the diagonal banking post from the back lane. In the reference scene, the rolling ball deflects off the banking post into the plastic dominoes at endpoint A. With the post removed, the ball rolls straight down the back lane into the wood single at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bank",
+"id": "00001046",
+"caption": "Remove the diagonal banking post from the back lane. In the reference scene, the rolling ball deflects off the banking post into the ceramic obelisksmall at endpoint A. With the post removed, the ball rolls straight down the back lane into the plastic fstylejug at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bank",
+"id": "00001048",
+"caption": "Remove the diagonal banking post from the back lane. In the reference scene, the rolling ball deflects off the banking post into the wood stack at endpoint A. With the post removed, the ball rolls straight down the back lane into the steel bowling at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bank",
+"id": "00001049",
+"caption": "Remove the diagonal banking post from the back lane. In the reference scene, the rolling ball deflects off the banking post into the wood stack at endpoint A. With the post removed, the ball rolls straight down the back lane into the ceramic bottles at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bank",
+"id": "00001050",
+"caption": "Remove the diagonal banking post from the back lane. In the reference scene, the rolling ball deflects off the banking post into the steel single at endpoint A. With the post removed, the ball rolls straight down the back lane into the steel stack at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bank",
+"id": "00001053",
+"caption": "Remove the diagonal banking post from the back lane. In the reference scene, the rolling ball deflects off the banking post into the plastic bowling at endpoint A. With the post removed, the ball rolls straight down the back lane into the wood single at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bank",
+"id": "00001054",
+"caption": "Remove the diagonal banking post from the back lane. In the reference scene, the rolling ball deflects off the banking post into the plastic dominoes at endpoint A. With the post removed, the ball rolls straight down the back lane into the wood woodenbird medium at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bank",
+"id": "00001055",
+"caption": "Remove the diagonal banking post from the back lane. In the reference scene, the rolling ball deflects off the banking post into the plastic milkjug at endpoint A. With the post removed, the ball rolls straight down the back lane into the ceramic bowling at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bank",
+"id": "00001056",
+"caption": "Remove the diagonal banking post from the back lane. In the reference scene, the rolling ball deflects off the banking post into the ceramic bowling at endpoint A. With the post removed, the ball rolls straight down the back lane into the steel single at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bank",
+"id": "00001057",
+"caption": "Remove the diagonal banking post from the back lane. In the reference scene, the rolling ball deflects off the banking post into the plastic whitepackerbottle at endpoint A. With the post removed, the ball rolls straight down the back lane into the plastic coffee grinder at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bank",
+"id": "00001058",
+"caption": "Remove the diagonal banking post from the back lane. In the reference scene, the rolling ball deflects off the banking post into the wood stack at endpoint A. With the post removed, the ball rolls straight down the back lane into the wood bottles at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bank",
+"id": "00001059",
+"caption": "Remove the diagonal banking post from the back lane. In the reference scene, the rolling ball deflects off the banking post into the plastic fstylejug at endpoint A. With the post removed, the ball rolls straight down the back lane into the ceramic single at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bank",
+"id": "00001063",
+"caption": "Remove the diagonal banking post from the back lane. In the reference scene, the rolling ball deflects off the banking post into the steel bottles at endpoint A. With the post removed, the ball rolls straight down the back lane into the ceramic bottles at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bank",
+"id": "00001065",
+"caption": "Remove the diagonal banking post from the back lane. In the reference scene, the rolling ball deflects off the banking post into the wood dominoes at endpoint A. With the post removed, the ball rolls straight down the back lane into the plastic salt box at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bank",
+"id": "00001070",
+"caption": "Remove the diagonal banking post from the back lane. In the reference scene, the rolling ball deflects off the banking post into the wood single at endpoint A. With the post removed, the ball rolls straight down the back lane into the plastic dominoes at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bank",
+"id": "00001071",
+"caption": "Remove the diagonal banking post from the back lane. In the reference scene, the rolling ball deflects off the banking post into the steel single at endpoint A. With the post removed, the ball rolls straight down the back lane into the wood woodenbird tall at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bank",
+"id": "00001072",
+"caption": "Remove the diagonal banking post from the back lane. In the reference scene, the rolling ball deflects off the banking post into the plastic stack at endpoint A. With the post removed, the ball rolls straight down the back lane into the steel bowling at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bank",
+"id": "00001077",
+"caption": "Remove the diagonal banking post from the back lane. In the reference scene, the rolling ball deflects off the banking post into the ceramic bowling at endpoint A. With the post removed, the ball rolls straight down the back lane into the steel dominoes at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bank",
+"id": "00001080",
+"caption": "Remove the diagonal banking post from the back lane. In the reference scene, the rolling ball deflects off the banking post into the ceramic bowling at endpoint A. With the post removed, the ball rolls straight down the back lane into the plastic stack at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bank",
+"id": "00001081",
+"caption": "Remove the diagonal banking post from the back lane. In the reference scene, the rolling ball deflects off the banking post into the steel dominoes at endpoint A. With the post removed, the ball rolls straight down the back lane into the plastic dominoes at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bank",
+"id": "00001082",
+"caption": "Remove the diagonal banking post from the back lane. In the reference scene, the rolling ball deflects off the banking post into the ceramic single at endpoint A. With the post removed, the ball rolls straight down the back lane into the steel stack at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bank",
+"id": "00001083",
+"caption": "Remove the diagonal banking post from the back lane. In the reference scene, the rolling ball deflects off the banking post into the steel bowling at endpoint A. With the post removed, the ball rolls straight down the back lane into the wood dominoes at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bank",
+"id": "00001086",
+"caption": "Remove the diagonal banking post from the back lane. In the reference scene, the rolling ball deflects off the banking post into the wood bowling at endpoint A. With the post removed, the ball rolls straight down the back lane into the steel bowling at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bank",
+"id": "00001087",
+"caption": "Remove the diagonal banking post from the back lane. In the reference scene, the rolling ball deflects off the banking post into the ceramic stack at endpoint A. With the post removed, the ball rolls straight down the back lane into the steel metalfstylecan at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bank",
+"id": "00001094",
+"caption": "Remove the diagonal banking post from the back lane. In the reference scene, the rolling ball deflects off the banking post into the wood bottles at endpoint A. With the post removed, the ball rolls straight down the back lane into the ceramic stack at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bank",
+"id": "00001101",
+"caption": "Remove the diagonal banking post from the back lane. In the reference scene, the rolling ball deflects off the banking post into the ceramic bottles at endpoint A. With the post removed, the ball rolls straight down the back lane into the ceramic stack at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bank",
+"id": "00001112",
+"caption": "Remove the diagonal banking post from the back lane. In the reference scene, the rolling ball deflects off the banking post into the steel single at endpoint A. With the post removed, the ball rolls straight down the back lane into the wood bowling at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "bank",
+"id": "00001123",
+"caption": "Remove the diagonal banking post from the back lane. In the reference scene, the rolling ball deflects off the banking post into the steel single at endpoint A. With the post removed, the ball rolls straight down the back lane into the plastic dominoes at endpoint B."
 },
 {
 "cat": "bridge",
@@ -1356,8 +1896,50 @@ window.CATALOG = [
 {
 "cat": "bridge",
 "sub": "catch",
+"id": "00001006",
+"caption": "Remove the catch shelf suspended below the ramp end. In the reference scene, the catch shelf catches the ball and directs it to the steel bottles at endpoint A. With the catch shelf removed, the ball drops straight to the lower floor bin into the steel stack at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "catch",
+"id": "00001009",
+"caption": "Remove the catch shelf suspended below the ramp end. In the reference scene, the catch shelf catches the ball and directs it to the ceramic abstractface small at endpoint A. With the catch shelf removed, the ball drops straight to the lower floor bin into the wood single at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "catch",
+"id": "00001010",
+"caption": "Remove the catch shelf suspended below the ramp end. In the reference scene, the catch shelf catches the ball and directs it to the plastic bottles at endpoint A. With the catch shelf removed, the ball drops straight to the lower floor bin into the wood woodenbird tall at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "catch",
 "id": "00001013",
 "caption": "Remove the catch shelf suspended below the ramp end. In the reference scene, the catch shelf catches the ball and directs it to the wood single at endpoint A. With the catch shelf removed, the ball drops straight to the lower floor bin into the ceramic stack at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "catch",
+"id": "00001014",
+"caption": "Remove the catch shelf suspended below the ramp end. In the reference scene, the catch shelf catches the ball and directs it to the plastic dominoes at endpoint A. With the catch shelf removed, the ball drops straight to the lower floor bin into the plastic dominoes at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "catch",
+"id": "00001016",
+"caption": "Remove the catch shelf suspended below the ramp end. In the reference scene, the catch shelf catches the ball and directs it to the plastic dominoes at endpoint A. With the catch shelf removed, the ball drops straight to the lower floor bin into the ceramic dominoes at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "catch",
+"id": "00001019",
+"caption": "Remove the catch shelf suspended below the ramp end. In the reference scene, the catch shelf catches the ball and directs it to the steel dart greenstripe at endpoint A. With the catch shelf removed, the ball drops straight to the lower floor bin into the plastic whitepackerbottle at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "catch",
+"id": "00001024",
+"caption": "Remove the catch shelf suspended below the ramp end. In the reference scene, the catch shelf catches the ball and directs it to the plastic single at endpoint A. With the catch shelf removed, the ball drops straight to the lower floor bin into the ceramic bowling at endpoint B."
 },
 {
 "cat": "bridge",
@@ -1368,8 +1950,56 @@ window.CATALOG = [
 {
 "cat": "bridge",
 "sub": "catch",
+"id": "00001028",
+"caption": "Remove the catch shelf suspended below the ramp end. In the reference scene, the catch shelf catches the ball and directs it to the steel single at endpoint A. With the catch shelf removed, the ball drops straight to the lower floor bin into the wood dominoes at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "catch",
 "id": "00001029",
 "caption": "Remove the catch shelf suspended below the ramp end. In the reference scene, the catch shelf catches the ball and directs it to the plastic single at endpoint A. With the catch shelf removed, the ball drops straight to the lower floor bin into the ceramic single at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "catch",
+"id": "00001032",
+"caption": "Remove the catch shelf suspended below the ramp end. In the reference scene, the catch shelf catches the ball and directs it to the ceramic dominoes at endpoint A. With the catch shelf removed, the ball drops straight to the lower floor bin into the steel bottles at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "catch",
+"id": "00001036",
+"caption": "Remove the catch shelf suspended below the ramp end. In the reference scene, the catch shelf catches the ball and directs it to the steel bowling at endpoint A. With the catch shelf removed, the ball drops straight to the lower floor bin into the plastic red grinder at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "catch",
+"id": "00001037",
+"caption": "Remove the catch shelf suspended below the ramp end. In the reference scene, the catch shelf catches the ball and directs it to the ceramic single at endpoint A. With the catch shelf removed, the ball drops straight to the lower floor bin into the plastic fstylejug at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "catch",
+"id": "00001042",
+"caption": "Remove the catch shelf suspended below the ramp end. In the reference scene, the catch shelf catches the ball and directs it to the steel single at endpoint A. With the catch shelf removed, the ball drops straight to the lower floor bin into the ceramic single at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "catch",
+"id": "00001045",
+"caption": "Remove the catch shelf suspended below the ramp end. In the reference scene, the catch shelf catches the ball and directs it to the wood bowling at endpoint A. With the catch shelf removed, the ball drops straight to the lower floor bin into the wood single at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "catch",
+"id": "00001049",
+"caption": "Remove the catch shelf suspended below the ramp end. In the reference scene, the catch shelf catches the ball and directs it to the steel stack at endpoint A. With the catch shelf removed, the ball drops straight to the lower floor bin into the plastic milkjug at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "catch",
+"id": "00001052",
+"caption": "Remove the catch shelf suspended below the ramp end. In the reference scene, the catch shelf catches the ball and directs it to the steel single at endpoint A. With the catch shelf removed, the ball drops straight to the lower floor bin into the steel dominoes at endpoint B."
 },
 {
 "cat": "bridge",
@@ -1392,6 +2022,12 @@ window.CATALOG = [
 {
 "cat": "bridge",
 "sub": "kicker",
+"id": "00001004",
+"caption": "Remove the 45-degree kicker paddle from the mid shelf. In the reference scene, the ball deflects off the kicker paddle onto the mid-shelf plastic single at endpoint A. With the paddle removed, the ball free-falls to the floor deck into the wood woodenbird tall at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "kicker",
 "id": "00001006",
 "caption": "Remove the 45-degree kicker paddle from the mid shelf. In the reference scene, the ball deflects off the kicker paddle onto the mid-shelf wood bowling at endpoint A. With the paddle removed, the ball free-falls to the floor deck into the ceramic stack at endpoint B."
 },
@@ -1404,8 +2040,20 @@ window.CATALOG = [
 {
 "cat": "bridge",
 "sub": "kicker",
+"id": "00001008",
+"caption": "Remove the 45-degree kicker paddle from the mid shelf. In the reference scene, the ball deflects off the kicker paddle onto the mid-shelf wood single at endpoint A. With the paddle removed, the ball free-falls to the floor deck into the plastic dominoes at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "kicker",
 "id": "00001009",
 "caption": "Remove the 45-degree kicker paddle from the mid shelf. In the reference scene, the ball deflects off the kicker paddle onto the mid-shelf plastic whitepackerbottle at endpoint A. With the paddle removed, the ball free-falls to the floor deck into the plastic fstylejug at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "kicker",
+"id": "00001010",
+"caption": "Remove the 45-degree kicker paddle from the mid shelf. In the reference scene, the ball deflects off the kicker paddle onto the mid-shelf ceramic cellvase02 at endpoint A. With the paddle removed, the ball free-falls to the floor deck into the plastic whitepackerbottle at endpoint B."
 },
 {
 "cat": "bridge",
@@ -1428,6 +2076,72 @@ window.CATALOG = [
 {
 "cat": "bridge",
 "sub": "kicker",
+"id": "00001014",
+"caption": "Remove the 45-degree kicker paddle from the mid shelf. In the reference scene, the ball deflects off the kicker paddle onto the mid-shelf ceramic single at endpoint A. With the paddle removed, the ball free-falls to the floor deck into the wood dominoes at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "kicker",
+"id": "00001017",
+"caption": "Remove the 45-degree kicker paddle from the mid shelf. In the reference scene, the ball deflects off the kicker paddle onto the mid-shelf plastic whitepackerbottle at endpoint A. With the paddle removed, the ball free-falls to the floor deck into the ceramic dominoes at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "kicker",
+"id": "00001018",
+"caption": "Remove the 45-degree kicker paddle from the mid shelf. In the reference scene, the ball deflects off the kicker paddle onto the mid-shelf plastic whitepackerbottle at endpoint A. With the paddle removed, the ball free-falls to the floor deck into the plastic fstylejug at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "kicker",
+"id": "00001020",
+"caption": "Remove the 45-degree kicker paddle from the mid shelf. In the reference scene, the ball deflects off the kicker paddle onto the mid-shelf plastic whitepackerbottle at endpoint A. With the paddle removed, the ball free-falls to the floor deck into the steel bottles at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "kicker",
+"id": "00001021",
+"caption": "Remove the 45-degree kicker paddle from the mid shelf. In the reference scene, the ball deflects off the kicker paddle onto the mid-shelf ceramic stack at endpoint A. With the paddle removed, the ball free-falls to the floor deck into the plastic whitepackerbottle at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "kicker",
+"id": "00001022",
+"caption": "Remove the 45-degree kicker paddle from the mid shelf. In the reference scene, the ball deflects off the kicker paddle onto the mid-shelf wood stack at endpoint A. With the paddle removed, the ball free-falls to the floor deck into the plastic bowling at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "kicker",
+"id": "00001024",
+"caption": "Remove the 45-degree kicker paddle from the mid shelf. In the reference scene, the ball deflects off the kicker paddle onto the mid-shelf plastic single at endpoint A. With the paddle removed, the ball free-falls to the floor deck into the ceramic single at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "kicker",
+"id": "00001025",
+"caption": "Remove the 45-degree kicker paddle from the mid shelf. In the reference scene, the ball deflects off the kicker paddle onto the mid-shelf ceramic stack at endpoint A. With the paddle removed, the ball free-falls to the floor deck into the ceramic dominoes at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "kicker",
+"id": "00001026",
+"caption": "Remove the 45-degree kicker paddle from the mid shelf. In the reference scene, the ball deflects off the kicker paddle onto the mid-shelf steel dominoes at endpoint A. With the paddle removed, the ball free-falls to the floor deck into the plastic bowling at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "kicker",
+"id": "00001027",
+"caption": "Remove the 45-degree kicker paddle from the mid shelf. In the reference scene, the ball deflects off the kicker paddle onto the mid-shelf steel bowling at endpoint A. With the paddle removed, the ball free-falls to the floor deck into the wood woodenbird tall at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "kicker",
+"id": "00001028",
+"caption": "Remove the 45-degree kicker paddle from the mid shelf. In the reference scene, the ball deflects off the kicker paddle onto the mid-shelf wood single at endpoint A. With the paddle removed, the ball free-falls to the floor deck into the wood single at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "kicker",
 "id": "00001029",
 "caption": "Remove the 45-degree kicker paddle from the mid shelf. In the reference scene, the ball deflects off the kicker paddle onto the mid-shelf plastic bottles at endpoint A. With the paddle removed, the ball free-falls to the floor deck into the plastic bowling at endpoint B."
 },
@@ -1436,6 +2150,90 @@ window.CATALOG = [
 "sub": "kicker",
 "id": "00001031",
 "caption": "Remove the 45-degree kicker paddle from the mid shelf. In the reference scene, the ball deflects off the kicker paddle onto the mid-shelf wood dominoes at endpoint A. With the paddle removed, the ball free-falls to the floor deck into the plastic stack at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "kicker",
+"id": "00001033",
+"caption": "Remove the 45-degree kicker paddle from the mid shelf. In the reference scene, the ball deflects off the kicker paddle onto the mid-shelf wood single at endpoint A. With the paddle removed, the ball free-falls to the floor deck into the wood woodenbird tall at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "kicker",
+"id": "00001036",
+"caption": "Remove the 45-degree kicker paddle from the mid shelf. In the reference scene, the ball deflects off the kicker paddle onto the mid-shelf wood stack at endpoint A. With the paddle removed, the ball free-falls to the floor deck into the wood stack at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "kicker",
+"id": "00001037",
+"caption": "Remove the 45-degree kicker paddle from the mid shelf. In the reference scene, the ball deflects off the kicker paddle onto the mid-shelf ceramic bottles at endpoint A. With the paddle removed, the ball free-falls to the floor deck into the wood dominoes at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "kicker",
+"id": "00001038",
+"caption": "Remove the 45-degree kicker paddle from the mid shelf. In the reference scene, the ball deflects off the kicker paddle onto the mid-shelf steel dominoes at endpoint A. With the paddle removed, the ball free-falls to the floor deck into the wood single at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "kicker",
+"id": "00001040",
+"caption": "Remove the 45-degree kicker paddle from the mid shelf. In the reference scene, the ball deflects off the kicker paddle onto the mid-shelf wood bottles at endpoint A. With the paddle removed, the ball free-falls to the floor deck into the wood dominoes at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "kicker",
+"id": "00001041",
+"caption": "Remove the 45-degree kicker paddle from the mid shelf. In the reference scene, the ball deflects off the kicker paddle onto the mid-shelf steel dominoes at endpoint A. With the paddle removed, the ball free-falls to the floor deck into the steel bowling at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "kicker",
+"id": "00001043",
+"caption": "Remove the 45-degree kicker paddle from the mid shelf. In the reference scene, the ball deflects off the kicker paddle onto the mid-shelf wood bowling at endpoint A. With the paddle removed, the ball free-falls to the floor deck into the wood stack at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "kicker",
+"id": "00001045",
+"caption": "Remove the 45-degree kicker paddle from the mid shelf. In the reference scene, the ball deflects off the kicker paddle onto the mid-shelf ceramic dominoes at endpoint A. With the paddle removed, the ball free-falls to the floor deck into the ceramic dominoes at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "kicker",
+"id": "00001050",
+"caption": "Remove the 45-degree kicker paddle from the mid shelf. In the reference scene, the ball deflects off the kicker paddle onto the mid-shelf wood bottles at endpoint A. With the paddle removed, the ball free-falls to the floor deck into the ceramic dominoes at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "kicker",
+"id": "00001051",
+"caption": "Remove the 45-degree kicker paddle from the mid shelf. In the reference scene, the ball deflects off the kicker paddle onto the mid-shelf ceramic bowling at endpoint A. With the paddle removed, the ball free-falls to the floor deck into the steel geosphere medium at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "kicker",
+"id": "00001058",
+"caption": "Remove the 45-degree kicker paddle from the mid shelf. In the reference scene, the ball deflects off the kicker paddle onto the mid-shelf plastic bottles at endpoint A. With the paddle removed, the ball free-falls to the floor deck into the steel stack at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "kicker",
+"id": "00001079",
+"caption": "Remove the 45-degree kicker paddle from the mid shelf. In the reference scene, the ball deflects off the kicker paddle onto the mid-shelf ceramic bottles at endpoint A. With the paddle removed, the ball free-falls to the floor deck into the wood dominoes at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "kicker",
+"id": "00001088",
+"caption": "Remove the 45-degree kicker paddle from the mid shelf. In the reference scene, the ball deflects off the kicker paddle onto the mid-shelf wood bottles at endpoint A. With the paddle removed, the ball free-falls to the floor deck into the wood single at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "kicker",
+"id": "00001106",
+"caption": "Remove the 45-degree kicker paddle from the mid shelf. In the reference scene, the ball deflects off the kicker paddle onto the mid-shelf ceramic bottles at endpoint A. With the paddle removed, the ball free-falls to the floor deck into the ceramic bowling at endpoint B."
 },
 {
 "cat": "bridge",
@@ -1458,8 +2256,20 @@ window.CATALOG = [
 {
 "cat": "bridge",
 "sub": "plug",
+"id": "00001010",
+"caption": "Remove the flush plug block filling the track chasm. In the reference scene, the ball rolls smoothly across the plugged chasm into the ceramic abstractface small at endpoint A. With the plug removed, the ball drops into the open chasm toward the plastic whitepackerbottle at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "plug",
 "id": "00001015",
 "caption": "Remove the flush plug block filling the track chasm. In the reference scene, the ball rolls smoothly across the plugged chasm into the ceramic bottles at endpoint A. With the plug removed, the ball drops into the open chasm toward the plastic bowling at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "plug",
+"id": "00001018",
+"caption": "Remove the flush plug block filling the track chasm. In the reference scene, the ball rolls smoothly across the plugged chasm into the steel bottles at endpoint A. With the plug removed, the ball drops into the open chasm toward the plastic stack at endpoint B."
 },
 {
 "cat": "bridge",
@@ -1476,8 +2286,20 @@ window.CATALOG = [
 {
 "cat": "bridge",
 "sub": "plug",
+"id": "00001027",
+"caption": "Remove the flush plug block filling the track chasm. In the reference scene, the ball rolls smoothly across the plugged chasm into the ceramic dominoes at endpoint A. With the plug removed, the ball drops into the open chasm toward the plastic red grinder at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "plug",
 "id": "00001028",
 "caption": "Remove the flush plug block filling the track chasm. In the reference scene, the ball rolls smoothly across the plugged chasm into the steel bowling at endpoint A. With the plug removed, the ball drops into the open chasm toward the ceramic bowling at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "plug",
+"id": "00001029",
+"caption": "Remove the flush plug block filling the track chasm. In the reference scene, the ball rolls smoothly across the plugged chasm into the ceramic dominoes at endpoint A. With the plug removed, the ball drops into the open chasm toward the plastic dominoes at endpoint B."
 },
 {
 "cat": "bridge",
@@ -1490,6 +2312,66 @@ window.CATALOG = [
 "sub": "plug",
 "id": "00001036",
 "caption": "Remove the flush plug block filling the track chasm. In the reference scene, the ball rolls smoothly across the plugged chasm into the steel single at endpoint A. With the plug removed, the ball drops into the open chasm toward the steel bottles at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "plug",
+"id": "00001039",
+"caption": "Remove the flush plug block filling the track chasm. In the reference scene, the ball rolls smoothly across the plugged chasm into the wood bowling at endpoint A. With the plug removed, the ball drops into the open chasm toward the plastic bowling at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "plug",
+"id": "00001040",
+"caption": "Remove the flush plug block filling the track chasm. In the reference scene, the ball rolls smoothly across the plugged chasm into the steel bowling at endpoint A. With the plug removed, the ball drops into the open chasm toward the plastic fstylejug at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "plug",
+"id": "00001041",
+"caption": "Remove the flush plug block filling the track chasm. In the reference scene, the ball rolls smoothly across the plugged chasm into the ceramic stack at endpoint A. With the plug removed, the ball drops into the open chasm toward the wood dominoes at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "plug",
+"id": "00001047",
+"caption": "Remove the flush plug block filling the track chasm. In the reference scene, the ball rolls smoothly across the plugged chasm into the steel single at endpoint A. With the plug removed, the ball drops into the open chasm toward the plastic stack at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "plug",
+"id": "00001049",
+"caption": "Remove the flush plug block filling the track chasm. In the reference scene, the ball rolls smoothly across the plugged chasm into the wood bottles at endpoint A. With the plug removed, the ball drops into the open chasm toward the ceramic dominoes at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "plug",
+"id": "00001051",
+"caption": "Remove the flush plug block filling the track chasm. In the reference scene, the ball rolls smoothly across the plugged chasm into the ceramic single at endpoint A. With the plug removed, the ball drops into the open chasm toward the ceramic dominoes at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "plug",
+"id": "00001055",
+"caption": "Remove the flush plug block filling the track chasm. In the reference scene, the ball rolls smoothly across the plugged chasm into the steel bowling at endpoint A. With the plug removed, the ball drops into the open chasm toward the steel dominoes at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "plug",
+"id": "00001057",
+"caption": "Remove the flush plug block filling the track chasm. In the reference scene, the ball rolls smoothly across the plugged chasm into the wood bowling at endpoint A. With the plug removed, the ball drops into the open chasm toward the ceramic single at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "plug",
+"id": "00001061",
+"caption": "Remove the flush plug block filling the track chasm. In the reference scene, the ball rolls smoothly across the plugged chasm into the steel bowling at endpoint A. With the plug removed, the ball drops into the open chasm toward the steel single at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "plug",
+"id": "00001067",
+"caption": "Remove the flush plug block filling the track chasm. In the reference scene, the ball rolls smoothly across the plugged chasm into the steel stack at endpoint A. With the plug removed, the ball drops into the open chasm toward the ceramic prime doublegourd at endpoint B."
 },
 {
 "cat": "bridge",
@@ -1548,13 +2430,127 @@ window.CATALOG = [
 {
 "cat": "bridge",
 "sub": "roof",
+"id": "00001013",
+"caption": "Remove the inclined roof wedge above the floor track. In the reference scene, the falling ball strikes the roof wedge and is redirected into the wood dominoes at endpoint A. With the roof removed, the ball drops directly to the floor rolling into the ceramic bottles at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "roof",
+"id": "00001014",
+"caption": "Remove the inclined roof wedge above the floor track. In the reference scene, the falling ball strikes the roof wedge and is redirected into the wood single at endpoint A. With the roof removed, the ball drops directly to the floor rolling into the wood single at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "roof",
+"id": "00001015",
+"caption": "Remove the inclined roof wedge above the floor track. In the reference scene, the falling ball strikes the roof wedge and is redirected into the wood single at endpoint A. With the roof removed, the ball drops directly to the floor rolling into the plastic whitepackerbottle at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "roof",
 "id": "00001016",
 "caption": "Remove the inclined roof wedge above the floor track. In the reference scene, the falling ball strikes the roof wedge and is redirected into the wood bottles at endpoint A. With the roof removed, the ball drops directly to the floor rolling into the plastic dominoes at endpoint B."
 },
 {
 "cat": "bridge",
 "sub": "roof",
+"id": "00001017",
+"caption": "Remove the inclined roof wedge above the floor track. In the reference scene, the falling ball strikes the roof wedge and is redirected into the plastic stack at endpoint A. With the roof removed, the ball drops directly to the floor rolling into the steel geosphere medium at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "roof",
+"id": "00001018",
+"caption": "Remove the inclined roof wedge above the floor track. In the reference scene, the falling ball strikes the roof wedge and is redirected into the plastic stack at endpoint A. With the roof removed, the ball drops directly to the floor rolling into the plastic stack at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "roof",
+"id": "00001019",
+"caption": "Remove the inclined roof wedge above the floor track. In the reference scene, the falling ball strikes the roof wedge and is redirected into the wood bottles at endpoint A. With the roof removed, the ball drops directly to the floor rolling into the steel stack at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "roof",
 "id": "00001020",
 "caption": "Remove the inclined roof wedge above the floor track. In the reference scene, the falling ball strikes the roof wedge and is redirected into the plastic utilityjug at endpoint A. With the roof removed, the ball drops directly to the floor rolling into the plastic dominoes at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "roof",
+"id": "00001023",
+"caption": "Remove the inclined roof wedge above the floor track. In the reference scene, the falling ball strikes the roof wedge and is redirected into the wood bottles at endpoint A. With the roof removed, the ball drops directly to the floor rolling into the steel dominoes at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "roof",
+"id": "00001025",
+"caption": "Remove the inclined roof wedge above the floor track. In the reference scene, the falling ball strikes the roof wedge and is redirected into the ceramic bottles at endpoint A. With the roof removed, the ball drops directly to the floor rolling into the steel stack at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "roof",
+"id": "00001026",
+"caption": "Remove the inclined roof wedge above the floor track. In the reference scene, the falling ball strikes the roof wedge and is redirected into the plastic single at endpoint A. With the roof removed, the ball drops directly to the floor rolling into the plastic fstylejug at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "roof",
+"id": "00001027",
+"caption": "Remove the inclined roof wedge above the floor track. In the reference scene, the falling ball strikes the roof wedge and is redirected into the steel bowling at endpoint A. With the roof removed, the ball drops directly to the floor rolling into the plastic dominoes at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "roof",
+"id": "00001028",
+"caption": "Remove the inclined roof wedge above the floor track. In the reference scene, the falling ball strikes the roof wedge and is redirected into the plastic trafficcone at endpoint A. With the roof removed, the ball drops directly to the floor rolling into the steel stack at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "roof",
+"id": "00001032",
+"caption": "Remove the inclined roof wedge above the floor track. In the reference scene, the falling ball strikes the roof wedge and is redirected into the ceramic dominoes at endpoint A. With the roof removed, the ball drops directly to the floor rolling into the plastic bowling at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "roof",
+"id": "00001035",
+"caption": "Remove the inclined roof wedge above the floor track. In the reference scene, the falling ball strikes the roof wedge and is redirected into the steel bottles at endpoint A. With the roof removed, the ball drops directly to the floor rolling into the ceramic abstractface small at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "roof",
+"id": "00001036",
+"caption": "Remove the inclined roof wedge above the floor track. In the reference scene, the falling ball strikes the roof wedge and is redirected into the ceramic bowling at endpoint A. With the roof removed, the ball drops directly to the floor rolling into the plastic fstylejug at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "roof",
+"id": "00001038",
+"caption": "Remove the inclined roof wedge above the floor track. In the reference scene, the falling ball strikes the roof wedge and is redirected into the plastic stack at endpoint A. With the roof removed, the ball drops directly to the floor rolling into the plastic milkjug at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "roof",
+"id": "00001040",
+"caption": "Remove the inclined roof wedge above the floor track. In the reference scene, the falling ball strikes the roof wedge and is redirected into the plastic dominoes at endpoint A. With the roof removed, the ball drops directly to the floor rolling into the ceramic cellvase02 at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "roof",
+"id": "00001041",
+"caption": "Remove the inclined roof wedge above the floor track. In the reference scene, the falling ball strikes the roof wedge and is redirected into the steel bottles at endpoint A. With the roof removed, the ball drops directly to the floor rolling into the steel bowling at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "roof",
+"id": "00001044",
+"caption": "Remove the inclined roof wedge above the floor track. In the reference scene, the falling ball strikes the roof wedge and is redirected into the steel stack at endpoint A. With the roof removed, the ball drops directly to the floor rolling into the plastic bottles at endpoint B."
+},
+{
+"cat": "bridge",
+"sub": "roof",
+"id": "00001050",
+"caption": "Remove the inclined roof wedge above the floor track. In the reference scene, the falling ball strikes the roof wedge and is redirected into the wood stack at endpoint A. With the roof removed, the ball drops directly to the floor rolling into the plastic fstylejug at endpoint B."
 }
 ];
