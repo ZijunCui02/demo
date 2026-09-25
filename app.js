@@ -19,12 +19,23 @@
   // Mel-scale positions (fraction of the plot height from the bottom) of the frequency ticks.
   const FTICKS = [[500, 0.1356], [2000, 0.4533], [8000, 0.8178]];
 
+  // Case Study: selected validation cases, in this order, listed above the categories; each card keeps its own category and subcategory in the headline.
+  const CASE_STUDY_CAT = "case_study";
+  const CASE_STUDY = ["collision/fork/00300333", "falling/overshoot/00005112", "collision/overshoot/00300096"];
+  const caseStudy = CASE_STUDY.map(k => catalog.find(c => `${c.cat}/${c.sub}/${c.id}` === k)).filter(Boolean);
+
   const cats = [];
   const subsOf = new Map();
+  if (caseStudy.length) { cats.push(CASE_STUDY_CAT); subsOf.set(CASE_STUDY_CAT, ["all"]); }
   catalog.forEach(c => {
     if (!subsOf.has(c.cat)) { cats.push(c.cat); subsOf.set(c.cat, []); }
     if (!subsOf.get(c.cat).includes(c.sub)) subsOf.get(c.cat).push(c.sub);
   });
+
+  function casesOf(cat, sub) {
+    if (cat === CASE_STUDY_CAT) return caseStudy;
+    return catalog.filter(x => x.cat === cat && (sub === undefined || x.sub === sub));
+  }
 
   const params = new URLSearchParams(window.location.search);
   let activeCat = cats.includes(params.get("cat")) ? params.get("cat") : cats[0];
@@ -43,7 +54,7 @@
   function renderPicker() {
     const el = document.getElementById("cat-picker");
     el.innerHTML = cats.map(c => {
-      const n = catalog.filter(x => x.cat === c).length;
+      const n = casesOf(c).length;
       return `<button class="cat-btn${c === activeCat ? " on" : ""}" data-cat="${c}">${title(c)}<span class="count">${n} cases</span></button>`;
     }).join("");
     el.querySelectorAll(".cat-btn").forEach(b => b.addEventListener("click", () => {
@@ -56,6 +67,7 @@
 
   function renderChips() {
     const row = document.getElementById("sub-chip-row");
+    if (activeCat === CASE_STUDY_CAT) { row.innerHTML = ""; return; }
     row.innerHTML = subsOf.get(activeCat).map(s => {
       const n = catalog.filter(x => x.cat === activeCat && x.sub === s).length;
       return `<button class="sub-chip${s === activeSub ? " on" : ""}" data-sub="${s}">${title(s)}<span class="count">${n}</span></button>`;
@@ -147,7 +159,7 @@
     renderPicker();
     renderChips();
     const list = document.getElementById("case-list");
-    const items = catalog.filter(c => c.cat === activeCat && c.sub === activeSub);
+    const items = casesOf(activeCat, activeSub);
     list.innerHTML = items.length ? items.map(caseCard).join("") : `<p class="empty-note">No cases in this subcategory.</p>`;
     list.querySelectorAll(".pl").forEach(initPlayer);
     fitSpacer();
