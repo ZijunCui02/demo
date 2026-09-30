@@ -19,18 +19,21 @@
   // Mel-scale positions (fraction of the plot height from the bottom) of the frequency ticks.
   const FTICKS = [[500, 0.1356], [2000, 0.4533], [8000, 0.8178]];
 
-  // Case Study: selected validation cases, in this order, listed above the categories; each card keeps its own category and subcategory in the headline.
+  // Case Study: selected validation cases, in this order, listed below the categories; each card keeps its own category and subcategory in the headline.
   const CASE_STUDY_CAT = "case_study";
   const CASE_STUDY = ["collision/fork/00300333", "falling/overshoot/00005112", "collision/overshoot/00300096"];
   const caseStudy = CASE_STUDY.map(k => catalog.find(c => `${c.cat}/${c.sub}/${c.id}` === k)).filter(Boolean);
 
+  // Category titles that the key alone does not spell.
+  const CAT_TITLES = { bowling_dominoes: "Bowling + Dominoes" };
+
   const cats = [];
   const subsOf = new Map();
-  if (caseStudy.length) { cats.push(CASE_STUDY_CAT); subsOf.set(CASE_STUDY_CAT, ["all"]); }
   catalog.forEach(c => {
     if (!subsOf.has(c.cat)) { cats.push(c.cat); subsOf.set(c.cat, []); }
     if (!subsOf.get(c.cat).includes(c.sub)) subsOf.get(c.cat).push(c.sub);
   });
+  if (caseStudy.length) { cats.push(CASE_STUDY_CAT); subsOf.set(CASE_STUDY_CAT, ["all"]); }
 
   function casesOf(cat, sub) {
     if (cat === CASE_STUDY_CAT) return caseStudy;
@@ -42,6 +45,7 @@
   let activeSub = (subsOf.get(activeCat) || []).includes(params.get("sub")) ? params.get("sub") : (subsOf.get(activeCat) || [])[0];
 
   function title(s) { return s.replace(/_/g, " ").replace(/\b\w/g, m => m.toUpperCase()); }
+  function catTitle(c) { return CAT_TITLES[c] || title(c); }
   function esc(s) { return s.replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;").replace(/"/g, "&quot;"); }
 
   function syncUrl() {
@@ -55,7 +59,7 @@
     const el = document.getElementById("cat-picker");
     el.innerHTML = cats.map(c => {
       const n = casesOf(c).length;
-      return `<button class="cat-btn${c === activeCat ? " on" : ""}" data-cat="${c}">${title(c)}<span class="count">${n} cases</span></button>`;
+      return `<button class="cat-btn${c === activeCat ? " on" : ""}" data-cat="${c}">${catTitle(c)}<span class="count">${n} cases</span></button>`;
     }).join("");
     el.querySelectorAll(".cat-btn").forEach(b => b.addEventListener("click", () => {
       activeCat = b.dataset.cat;
@@ -124,8 +128,10 @@
     const dir = c.dir || `${MEDIA}/${c.cat}/${c.sub}/${c.id}`;
     const isGtOnly = c.cat === "bridge" || c.only_gt;
     if (isGtOnly) {
-      return `<article class="case case-gt-only" id="${c.cat}-${c.sub}-${c.id}">
-        <div class="case-head"><span class="case-idx">${c.id}</span><span class="case-path">${title(c.cat)} / ${title(c.sub)}</span></div>
+      // A catalog case names its variant after the category and the outcome subcategory; the variant also keeps the element id unique.
+      const variant = c.variant ? ` / ${title(c.variant)}` : "";
+      return `<article class="case case-gt-only" id="${c.cat}-${c.sub}-${c.variant ? c.variant + "-" : ""}${c.id}">
+        <div class="case-head"><span class="case-idx">${c.id}</span><span class="case-path">${catTitle(c.cat)} / ${title(c.sub)}${variant}</span></div>
         <div class="case-body case-body-gt-only">
           <div class="block left gt-only">
             ${videoCell(dir, "ref")}${videoCell(dir, "tar")}
@@ -137,7 +143,7 @@
     }
     // Left: reference and ground truth, the caption beside the audio and video masks. Right: the four models, the pair without the audio mask above the dashed rule and the pair with it below.
     return `<article class="case" id="${c.cat}-${c.sub}-${c.id}">
-      <div class="case-head"><span class="case-idx">${c.id}</span><span class="case-path">${title(c.cat)} / ${title(c.sub)}</span></div>
+      <div class="case-head"><span class="case-idx">${c.id}</span><span class="case-path">${catTitle(c.cat)} / ${title(c.sub)}</span></div>
       <div class="case-body">
         <div class="block left">
           ${videoCell(dir, "ref")}${videoCell(dir, "tar")}
