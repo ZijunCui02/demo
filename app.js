@@ -6,8 +6,8 @@
   const DUR = 5.0; // seconds spanned by every spectrogram canvas
 
   const LABELS = {
-    ref: { name: "Reference (No edits)", code: "" },
-    tar: { name: "Ground Truth", code: "" },
+    ref: { name: "Reference", code: "" },
+    tar: { name: "Target", code: "" },
     aud_mask: { name: "Audio Mask", code: "" },
     vid_mask: { name: "Video Mask", code: "" },
     baseline: { name: "Baseline (No Masks)", code: "" },
@@ -141,7 +141,7 @@
         </div>
       </article>`;
     }
-    // Left: reference and ground truth, the caption beside the audio and video masks. Right: the four models, the pair without the audio mask above the dashed rule and the pair with it below.
+    // Left: reference and target, the caption beside the audio and video masks. Right: the four models, the pair without the audio mask above the dashed rule and the pair with it below.
     return `<article class="case" id="${c.cat}-${c.sub}-${c.id}">
       <div class="case-head"><span class="case-idx">${c.id}</span><span class="case-path">${catTitle(c.cat)} / ${title(c.sub)}</span></div>
       <div class="case-body">

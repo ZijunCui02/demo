@@ -1971,17 +1971,19 @@ html.dark .t-val.val-warn {
 
 
 /* ===================== DATASET STATISTICS (gallery header) ===================== */
+/* Borders drawn per cell (the grid's top and left, each cell's right and bottom), so a short last row ends cleanly at any width. */
 .stats {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-  gap: 1px;
-  background: hsl(var(--border));
-  border: 1px solid hsl(var(--border));
+  border-top: 1px solid hsl(var(--border));
+  border-left: 1px solid hsl(var(--border));
   margin: 0.25rem 0 1.75rem;
 }
 
 .stat {
   background: hsl(var(--bg));
+  border-right: 1px solid hsl(var(--border));
+  border-bottom: 1px solid hsl(var(--border));
   padding: 0.9rem 1rem;
   display: flex;
   flex-direction: column;
