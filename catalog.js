@@ -2286,6 +2286,861 @@ window.CATALOG = [
 "only_gt": true
 },
 {
+"cat": "guide",
+"sub": "other_target",
+"id": "00005000",
+"variant": "bevel_bottles_column",
+"dir": "media/guide/bevel_bottles_column/00005000",
+"caption": "Remove the beveled block. A beveled block turns the ball into three bottles. Without it the ball runs straight on into a two-pin column.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005000",
+"variant": "bevel_can_pair",
+"dir": "media/guide/bevel_can_pair/00005000",
+"caption": "Remove the beveled block. A beveled block turns the ball into a can. Without it the ball runs straight on into a pin pair.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005000",
+"variant": "bevel_cans_bottles",
+"dir": "media/guide/bevel_cans_bottles/00005000",
+"caption": "Remove the beveled block. A beveled block turns the ball into three cans. Without it the ball runs straight on into three bottles.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005000",
+"variant": "bevel_cans_relay_bottle",
+"dir": "media/guide/bevel_cans_relay_bottle/00005000",
+"caption": "Remove the beveled block. A beveled block turns the ball into three cans. Without it the ball runs straight on into a lead pin that topples a domino and a tall domino onto a bottle.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005007",
+"variant": "bevel_chain_triangle",
+"dir": "media/guide/bevel_chain_triangle/00005007",
+"caption": "Remove the beveled block. A beveled block turns the ball into a resting ball in front of a pin pair. Without it the ball runs straight on into a pin triangle.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005000",
+"variant": "bevel_column_cans",
+"dir": "media/guide/bevel_column_cans/00005000",
+"caption": "Remove the beveled block. A beveled block turns the ball into a two-pin column. Without it the ball runs straight on into three cans.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005002",
+"variant": "bevel_late_bottles_triangle",
+"dir": "media/guide/bevel_late_bottles_triangle/00005002",
+"caption": "Remove the beveled block. A fixed curved bend turns the ball, then a beveled block turns it again into three bottles. Without it the ball runs on along the bend's line into a pin triangle.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005000",
+"variant": "bevel_mediate_column_bottles",
+"dir": "media/guide/bevel_mediate_column_bottles/00005000",
+"caption": "Remove the beveled block. A beveled block turns the ball into a resting ball, which rolls on into a two-pin column. Without it the ball runs straight on into three bottles.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005000",
+"variant": "bevel_pyramid_column",
+"dir": "media/guide/bevel_pyramid_column/00005000",
+"caption": "Remove the beveled block. A beveled block turns the ball into a can pyramid. Without it the ball runs straight on into a two-pin column.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005012",
+"variant": "bevel_triangle_pair",
+"dir": "media/guide/bevel_triangle_pair/00005012",
+"caption": "Remove the beveled block. A beveled block turns the ball into a pin triangle. Without it the ball runs straight on into a pin pair.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005003",
+"variant": "bumper_bottles_cans",
+"dir": "media/guide/bumper_bottles_cans/00005003",
+"caption": "Remove the round bumper. A round bumper turns the ball into three bottles. Without it the ball runs straight on into three cans.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005001",
+"variant": "bumper_can_column",
+"dir": "media/guide/bumper_can_column/00005001",
+"caption": "Remove the round bumper. A round bumper turns the ball into a can. Without it the ball runs straight on into a two-pin column.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005011",
+"variant": "bumper_chain_pair",
+"dir": "media/guide/bumper_chain_pair/00005011",
+"caption": "Remove the round bumper. A round bumper turns the ball into a resting ball in front of a pin pair. Without it the ball runs straight on into a pin pair.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005000",
+"variant": "bumper_column_bottles",
+"dir": "media/guide/bumper_column_bottles/00005000",
+"caption": "Remove the round bumper. A round bumper turns the ball into a two-pin column. Without it the ball runs straight on into three bottles.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005000",
+"variant": "bumper_late_pair_bottles",
+"dir": "media/guide/bumper_late_pair_bottles/00005000",
+"caption": "Remove the round bumper. A fixed curved bend turns the ball, then a round bumper turns it again into a pin pair. Without it the ball runs on along the bend's line into three bottles.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005002",
+"variant": "bumper_mediate_triangle_pair",
+"dir": "media/guide/bumper_mediate_triangle_pair/00005002",
+"caption": "Remove the round bumper. A round bumper turns the ball into a resting ball, which rolls on into a pin triangle. Without it the ball runs straight on into a pin pair.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005001",
+"variant": "bumper_pyramid_pair",
+"dir": "media/guide/bumper_pyramid_pair/00005001",
+"caption": "Remove the round bumper. A round bumper turns the ball into a can pyramid. Without it the ball runs straight on into a pin pair.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005019",
+"variant": "bumper_triangle_pair",
+"dir": "media/guide/bumper_triangle_pair/00005019",
+"caption": "Remove the round bumper. A round bumper turns the ball into a pin triangle. Without it the ball runs straight on into a pin pair.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005002",
+"variant": "cup_bottles_cans",
+"dir": "media/guide/cup_bottles_cans/00005002",
+"caption": "Remove the U-turn cup. A U-turn cup turns the ball into three bottles. Without it the ball runs straight on into three cans.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005000",
+"variant": "cup_can_relay",
+"dir": "media/guide/cup_can_relay/00005000",
+"caption": "Remove the U-turn cup. A U-turn cup turns the ball into a can. Without it the ball runs straight on into a lead pin that topples two dominoes onto a pin.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005000",
+"variant": "cup_cans_column",
+"dir": "media/guide/cup_cans_column/00005000",
+"caption": "Remove the U-turn cup. A U-turn cup turns the ball into three cans. Without it the ball runs straight on into a two-pin column.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005013",
+"variant": "cup_column_bottles",
+"dir": "media/guide/cup_column_bottles/00005013",
+"caption": "Remove the U-turn cup. A U-turn cup turns the ball into a two-pin column. Without it the ball runs straight on into three bottles.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005009",
+"variant": "cup_pyramid_pair",
+"dir": "media/guide/cup_pyramid_pair/00005009",
+"caption": "Remove the U-turn cup. A U-turn cup turns the ball into a can pyramid. Without it the ball runs straight on into a pin pair.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005000",
+"variant": "curve_bottles_cans",
+"dir": "media/guide/curve_bottles_cans/00005000",
+"caption": "Remove the curved wedge. A curved wedge turns the ball into three bottles. Without it the ball runs straight on into three cans.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005000",
+"variant": "curve_can_bottles",
+"dir": "media/guide/curve_can_bottles/00005000",
+"caption": "Remove the curved wedge. A curved wedge turns the ball into a can. Without it the ball runs straight on into three bottles.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005004",
+"variant": "curve_cans_triangle",
+"dir": "media/guide/curve_cans_triangle/00005004",
+"caption": "Remove the curved wedge. A curved wedge turns the ball into three cans. Without it the ball runs straight on into a pin triangle.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005001",
+"variant": "curve_column_bottles",
+"dir": "media/guide/curve_column_bottles/00005001",
+"caption": "Remove the curved wedge. A curved wedge turns the ball into a two-pin column. Without it the ball runs straight on into three bottles.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005000",
+"variant": "curve_double_bottles_cans",
+"dir": "media/guide/curve_double_bottles_cans/00005000",
+"caption": "Remove the curved wedge. A curved wedge turns the ball aside and a fixed twin turns it back, so it runs on a parallel line into three bottles. Without it the ball runs straight on into three cans.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005000",
+"variant": "curve_mediate_cans_bottles",
+"dir": "media/guide/curve_mediate_cans_bottles/00005000",
+"caption": "Remove the curved wedge. A curved wedge turns the ball into a resting ball, which rolls on into three cans. Without it the ball runs straight on into three bottles.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005000",
+"variant": "curve_mediate_pair_triangle",
+"dir": "media/guide/curve_mediate_pair_triangle/00005000",
+"caption": "Remove the curved wedge. A curved wedge turns the ball into a resting ball, which rolls on into a pin pair. Without it the ball runs straight on into a pin triangle.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005001",
+"variant": "curve_pair_column",
+"dir": "media/guide/curve_pair_column/00005001",
+"caption": "Remove the curved wedge. A curved wedge turns the ball into a pin pair. Without it the ball runs straight on into a two-pin column.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005000",
+"variant": "curve_pair_relay",
+"dir": "media/guide/curve_pair_relay/00005000",
+"caption": "Remove the curved wedge. A curved wedge turns the ball into a pin pair. Without it the ball runs straight on into a lead pin that topples two dominoes onto a pin.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005003",
+"variant": "curve_pyramid_bottles",
+"dir": "media/guide/curve_pyramid_bottles/00005003",
+"caption": "Remove the curved wedge. A curved wedge turns the ball into a can pyramid. Without it the ball runs straight on into three bottles.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005000",
+"variant": "curve_triangle_pair",
+"dir": "media/guide/curve_triangle_pair/00005000",
+"caption": "Remove the curved wedge. A curved wedge turns the ball into a pin triangle. Without it the ball runs straight on into a pin pair.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005000",
+"variant": "diagonal_bottles_cans",
+"dir": "media/guide/diagonal_bottles_cans/00005000",
+"caption": "Remove the long diagonal wedge. A long diagonal wedge turns the ball into three bottles. Without it the ball runs straight on into three cans.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005000",
+"variant": "diagonal_can_pair",
+"dir": "media/guide/diagonal_can_pair/00005000",
+"caption": "Remove the long diagonal wedge. A long diagonal wedge turns the ball into a can. Without it the ball runs straight on into a pin pair.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005000",
+"variant": "diagonal_cans_bottles",
+"dir": "media/guide/diagonal_cans_bottles/00005000",
+"caption": "Remove the long diagonal wedge. A long diagonal wedge turns the ball into three cans. Without it the ball runs straight on into three bottles.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005000",
+"variant": "diagonal_cans_chain",
+"dir": "media/guide/diagonal_cans_chain/00005000",
+"caption": "Remove the long diagonal wedge. A long diagonal wedge turns the ball into three cans. Without it the ball runs straight on into a resting ball in front of a pin pair.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005003",
+"variant": "diagonal_column_pair",
+"dir": "media/guide/diagonal_column_pair/00005003",
+"caption": "Remove the long diagonal wedge. A long diagonal wedge turns the ball into a two-pin column. Without it the ball runs straight on into a pin pair.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005001",
+"variant": "diagonal_column_triangle",
+"dir": "media/guide/diagonal_column_triangle/00005001",
+"caption": "Remove the long diagonal wedge. A long diagonal wedge turns the ball into a two-pin column. Without it the ball runs straight on into a pin triangle.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005002",
+"variant": "diagonal_mediate_pair_cans",
+"dir": "media/guide/diagonal_mediate_pair_cans/00005002",
+"caption": "Remove the long diagonal wedge. A long diagonal wedge turns the ball into a resting ball, which rolls on into a pin pair. Without it the ball runs straight on into three cans.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005001",
+"variant": "diagonal_pair_cans",
+"dir": "media/guide/diagonal_pair_cans/00005001",
+"caption": "Remove the long diagonal wedge. A long diagonal wedge turns the ball into a pin pair. Without it the ball runs straight on into three cans.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005000",
+"variant": "diagonal_pyramid_column",
+"dir": "media/guide/diagonal_pyramid_column/00005000",
+"caption": "Remove the long diagonal wedge. A long diagonal wedge turns the ball into a can pyramid. Without it the ball runs straight on into a two-pin column.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005007",
+"variant": "diagonal_triangle_pair",
+"dir": "media/guide/diagonal_triangle_pair/00005007",
+"caption": "Remove the long diagonal wedge. A long diagonal wedge turns the ball into a pin triangle. Without it the ball runs straight on into a pin pair.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005000",
+"variant": "prism_bottles_cans",
+"dir": "media/guide/prism_bottles_cans/00005000",
+"caption": "Remove the triangular deflector. A triangular deflector turns the ball into three bottles. Without it the ball runs straight on into three cans.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005000",
+"variant": "prism_can_column",
+"dir": "media/guide/prism_can_column/00005000",
+"caption": "Remove the triangular deflector. A triangular deflector turns the ball into a can. Without it the ball runs straight on into a two-pin column.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005001",
+"variant": "prism_can_relay",
+"dir": "media/guide/prism_can_relay/00005001",
+"caption": "Remove the triangular deflector. A triangular deflector turns the ball into a can. Without it the ball runs straight on into a lead pin that topples two dominoes onto a pin.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005009",
+"variant": "prism_cans_pair",
+"dir": "media/guide/prism_cans_pair/00005009",
+"caption": "Remove the triangular deflector. A triangular deflector turns the ball into three cans. Without it the ball runs straight on into a pin pair.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005001",
+"variant": "prism_chain_cans",
+"dir": "media/guide/prism_chain_cans/00005001",
+"caption": "Remove the triangular deflector. A triangular deflector turns the ball into a resting ball in front of a pin pair. Without it the ball runs straight on into three cans.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005003",
+"variant": "prism_column_triangle",
+"dir": "media/guide/prism_column_triangle/00005003",
+"caption": "Remove the triangular deflector. A triangular deflector turns the ball into a two-pin column. Without it the ball runs straight on into a pin triangle.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005004",
+"variant": "prism_late_triangle_pair",
+"dir": "media/guide/prism_late_triangle_pair/00005004",
+"caption": "Remove the triangular deflector. A fixed curved bend turns the ball, then a triangular deflector turns it again into a pin triangle. Without it the ball runs on along the bend's line into a pin pair.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005008",
+"variant": "prism_mediate_pyramid_pair",
+"dir": "media/guide/prism_mediate_pyramid_pair/00005008",
+"caption": "Remove the triangular deflector. A triangular deflector turns the ball into a resting ball, which rolls on into a can pyramid. Without it the ball runs straight on into a pin pair.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005000",
+"variant": "prism_mediate_triangle_cans",
+"dir": "media/guide/prism_mediate_triangle_cans/00005000",
+"caption": "Remove the triangular deflector. A triangular deflector turns the ball into a resting ball, which rolls on into a pin triangle. Without it the ball runs straight on into three cans.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005001",
+"variant": "prism_pair_column",
+"dir": "media/guide/prism_pair_column/00005001",
+"caption": "Remove the triangular deflector. A triangular deflector turns the ball into a pin pair. Without it the ball runs straight on into a two-pin column.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005000",
+"variant": "prism_pyramid_cans",
+"dir": "media/guide/prism_pyramid_cans/00005000",
+"caption": "Remove the triangular deflector. A triangular deflector turns the ball into a can pyramid. Without it the ball runs straight on into three cans.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005001",
+"variant": "prism_relay_bottles",
+"dir": "media/guide/prism_relay_bottles/00005001",
+"caption": "Remove the triangular deflector. A triangular deflector turns the ball into a lead pin that topples two dominoes onto a pin. Without it the ball runs straight on into three bottles.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005007",
+"variant": "prism_triangle_pair",
+"dir": "media/guide/prism_triangle_pair/00005007",
+"caption": "Remove the triangular deflector. A triangular deflector turns the ball into a pin triangle. Without it the ball runs straight on into a pin pair.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005000",
+"variant": "splitter_bottles_cans",
+"dir": "media/guide/splitter_bottles_cans/00005000",
+"caption": "Remove the apex splitter. An apex splitter turns the ball into three bottles. Without it the ball runs straight on into three cans.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005001",
+"variant": "splitter_bottles_relay",
+"dir": "media/guide/splitter_bottles_relay/00005001",
+"caption": "Remove the apex splitter. An apex splitter turns the ball into three bottles. Without it the ball runs straight on into a lead pin that topples two dominoes onto a pin.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005000",
+"variant": "splitter_can_column",
+"dir": "media/guide/splitter_can_column/00005000",
+"caption": "Remove the apex splitter. An apex splitter turns the ball into a can. Without it the ball runs straight on into a two-pin column.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005005",
+"variant": "splitter_cans_pair",
+"dir": "media/guide/splitter_cans_pair/00005005",
+"caption": "Remove the apex splitter. An apex splitter turns the ball into three cans. Without it the ball runs straight on into a pin pair.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005000",
+"variant": "splitter_chain_bottles",
+"dir": "media/guide/splitter_chain_bottles/00005000",
+"caption": "Remove the apex splitter. An apex splitter turns the ball into a resting ball in front of a pin pair. Without it the ball runs straight on into three bottles.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005000",
+"variant": "splitter_column_cans",
+"dir": "media/guide/splitter_column_cans/00005000",
+"caption": "Remove the apex splitter. An apex splitter turns the ball into a two-pin column. Without it the ball runs straight on into three cans.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005001",
+"variant": "splitter_late_column_cans",
+"dir": "media/guide/splitter_late_column_cans/00005001",
+"caption": "Remove the apex splitter. A fixed curved bend turns the ball, then an apex splitter turns it again into a two-pin column. Without it the ball runs on along the bend's line into three cans.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005003",
+"variant": "splitter_mediate_cans_column",
+"dir": "media/guide/splitter_mediate_cans_column/00005003",
+"caption": "Remove the apex splitter. An apex splitter turns the ball into a resting ball, which rolls on into three cans. Without it the ball runs straight on into a two-pin column.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005002",
+"variant": "splitter_pair_column",
+"dir": "media/guide/splitter_pair_column/00005002",
+"caption": "Remove the apex splitter. An apex splitter turns the ball into a pin pair. Without it the ball runs straight on into a two-pin column.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "other_target",
+"id": "00005007",
+"variant": "splitter_triangle_pair",
+"dir": "media/guide/splitter_triangle_pair/00005007",
+"caption": "Remove the apex splitter. An apex splitter turns the ball into a pin triangle. Without it the ball runs straight on into a pin pair.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "more_fall",
+"id": "00005000",
+"variant": "bevel_shield_bottles",
+"dir": "media/guide/bevel_shield_bottles/00005000",
+"caption": "Remove the beveled block. A beveled block turns the ball aside to a stop before it reaches three bottles. Without it the ball runs straight into three bottles.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "more_fall",
+"id": "00005000",
+"variant": "bevel_shield_cans",
+"dir": "media/guide/bevel_shield_cans/00005000",
+"caption": "Remove the beveled block. A beveled block turns the ball aside to a stop before it reaches three cans. Without it the ball runs straight into three cans.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "more_fall",
+"id": "00005016",
+"variant": "bumper_shield_pyramid",
+"dir": "media/guide/bumper_shield_pyramid/00005016",
+"caption": "Remove the round bumper. A round bumper turns the ball aside to a stop before it reaches a can pyramid. Without it the ball runs straight into a can pyramid.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "more_fall",
+"id": "00005000",
+"variant": "cup_shield_chain",
+"dir": "media/guide/cup_shield_chain/00005000",
+"caption": "Remove the U-turn cup. A U-turn cup turns the ball aside to a stop before it reaches a resting ball in front of a pin pair. Without it the ball runs straight into a resting ball in front of a pin pair.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "more_fall",
+"id": "00005001",
+"variant": "cup_shield_relay",
+"dir": "media/guide/cup_shield_relay/00005001",
+"caption": "Remove the U-turn cup. A U-turn cup turns the ball aside to a stop before it reaches a lead pin that topples two dominoes onto a pin. Without it the ball runs straight into a lead pin that topples two dominoes onto a pin.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "more_fall",
+"id": "00005001",
+"variant": "cup_shield_triangle",
+"dir": "media/guide/cup_shield_triangle/00005001",
+"caption": "Remove the U-turn cup. A U-turn cup turns the ball aside to a stop before it reaches a pin triangle. Without it the ball runs straight into a pin triangle.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "more_fall",
+"id": "00005001",
+"variant": "curve_shield_chain",
+"dir": "media/guide/curve_shield_chain/00005001",
+"caption": "Remove the curved wedge. A curved wedge turns the ball aside to a stop before it reaches a resting ball in front of a pin pair. Without it the ball runs straight into a resting ball in front of a pin pair.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "more_fall",
+"id": "00005006",
+"variant": "curve_shield_relay_bottle",
+"dir": "media/guide/curve_shield_relay_bottle/00005006",
+"caption": "Remove the curved wedge. A curved wedge turns the ball aside to a stop before it reaches a lead pin that topples a domino and a tall domino onto a bottle. Without it the ball runs straight into a lead pin that topples a domino and a tall domino onto a bottle.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "more_fall",
+"id": "00005003",
+"variant": "curve_shield_triangle",
+"dir": "media/guide/curve_shield_triangle/00005003",
+"caption": "Remove the curved wedge. A curved wedge turns the ball aside to a stop before it reaches a pin triangle. Without it the ball runs straight into a pin triangle.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "more_fall",
+"id": "00005102",
+"variant": "diagonal_shield_cans",
+"dir": "media/guide/diagonal_shield_cans/00005102",
+"caption": "Remove the long diagonal wedge. A long diagonal wedge turns the ball aside to a stop before it reaches three cans. Without it the ball runs straight into three cans.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "more_fall",
+"id": "00005000",
+"variant": "diagonal_shield_relay",
+"dir": "media/guide/diagonal_shield_relay/00005000",
+"caption": "Remove the long diagonal wedge. A long diagonal wedge turns the ball aside to a stop before it reaches a lead pin that topples two dominoes onto a pin. Without it the ball runs straight into a lead pin that topples two dominoes onto a pin.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "more_fall",
+"id": "00005000",
+"variant": "plug_block_bottles",
+"dir": "media/guide/plug_block_bottles/00005000",
+"caption": "Remove the broad blocker. A broad blocker stops the ball short of three bottles. Without it the ball rolls on into three bottles.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "more_fall",
+"id": "00005000",
+"variant": "plug_block_cans",
+"dir": "media/guide/plug_block_cans/00005000",
+"caption": "Remove the broad blocker. A broad blocker stops the ball short of three cans. Without it the ball rolls on into three cans.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "more_fall",
+"id": "00005000",
+"variant": "plug_block_chain",
+"dir": "media/guide/plug_block_chain/00005000",
+"caption": "Remove the broad blocker. A broad blocker stops the ball short of a resting ball in front of a pin pair. Without it the ball rolls on into a resting ball in front of a pin pair.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "more_fall",
+"id": "00005000",
+"variant": "plug_block_pyramid",
+"dir": "media/guide/plug_block_pyramid/00005000",
+"caption": "Remove the broad blocker. A broad blocker stops the ball short of a can pyramid. Without it the ball rolls on into a can pyramid.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "more_fall",
+"id": "00005000",
+"variant": "plug_block_relay",
+"dir": "media/guide/plug_block_relay/00005000",
+"caption": "Remove the broad blocker. A broad blocker stops the ball short of a lead pin that topples two dominoes onto a pin. Without it the ball rolls on into a lead pin that topples two dominoes onto a pin.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "more_fall",
+"id": "00005000",
+"variant": "plug_block_triangle",
+"dir": "media/guide/plug_block_triangle/00005000",
+"caption": "Remove the broad blocker. A broad blocker stops the ball short of a pin triangle. Without it the ball rolls on into a pin triangle.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "more_fall",
+"id": "00005000",
+"variant": "prism_shield_bottles",
+"dir": "media/guide/prism_shield_bottles/00005000",
+"caption": "Remove the triangular deflector. A triangular deflector turns the ball aside to a stop before it reaches three bottles. Without it the ball runs straight into three bottles.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "more_fall",
+"id": "00005000",
+"variant": "prism_shield_pair",
+"dir": "media/guide/prism_shield_pair/00005000",
+"caption": "Remove the triangular deflector. A triangular deflector turns the ball aside to a stop before it reaches a pin pair. Without it the ball runs straight into a pin pair.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "more_fall",
+"id": "00005000",
+"variant": "prism_shield_relay",
+"dir": "media/guide/prism_shield_relay/00005000",
+"caption": "Remove the triangular deflector. A triangular deflector turns the ball aside to a stop before it reaches a lead pin that topples two dominoes onto a pin. Without it the ball runs straight into a lead pin that topples two dominoes onto a pin.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "more_fall",
+"id": "00005003",
+"variant": "splitter_shield_column",
+"dir": "media/guide/splitter_shield_column/00005003",
+"caption": "Remove the apex splitter. An apex splitter turns the ball aside to a stop before it reaches a two-pin column. Without it the ball runs straight into a two-pin column.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "more_fall",
+"id": "00005001",
+"variant": "splitter_shield_relay_bottle",
+"dir": "media/guide/splitter_shield_relay_bottle/00005001",
+"caption": "Remove the apex splitter. An apex splitter turns the ball aside to a stop before it reaches a lead pin that topples a domino and a tall domino onto a bottle. Without it the ball runs straight into a lead pin that topples a domino and a tall domino onto a bottle.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "unchanged",
+"id": "00005011",
+"variant": "curve_redundant_triangle",
+"dir": "media/guide/curve_redundant_triangle/00005011",
+"caption": "Remove the curved wedge. A curved wedge turns the ball into a pin triangle, with a fixed twin just behind it. Without it the twin turns the ball into a pin triangle all the same.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "unchanged",
+"id": "00005000",
+"variant": "diagonal_redundant_bottles",
+"dir": "media/guide/diagonal_redundant_bottles/00005000",
+"caption": "Remove the long diagonal wedge. A long diagonal wedge turns the ball into three bottles, with a fixed twin just behind it. Without it the twin turns the ball into three bottles all the same.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "unchanged",
+"id": "00005007",
+"variant": "prism_redundant_triangle",
+"dir": "media/guide/prism_redundant_triangle/00005007",
+"caption": "Remove the triangular deflector. A triangular deflector turns the ball into a pin triangle, with a fixed twin just behind it. Without it the twin turns the ball into a pin triangle all the same.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "muted",
+"id": "00005000",
+"variant": "bevel_enable_bottles",
+"dir": "media/guide/bevel_enable_bottles/00005000",
+"caption": "Remove the beveled block. A beveled block turns the ball into three bottles. Without it the ball rolls past everything and comes to rest in silence.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "muted",
+"id": "00005000",
+"variant": "curve_enable_triangle",
+"dir": "media/guide/curve_enable_triangle/00005000",
+"caption": "Remove the curved wedge. A curved wedge turns the ball into a pin triangle. Without it the ball rolls past everything and comes to rest in silence.",
+"only_gt": true
+},
+{
+"cat": "guide",
+"sub": "muted",
+"id": "00005000",
+"variant": "prism_enable_pair",
+"dir": "media/guide/prism_enable_pair/00005000",
+"caption": "Remove the triangular deflector. A triangular deflector turns the ball into a pin pair. Without it the ball rolls past everything and comes to rest in silence.",
+"only_gt": true
+},
+{
 "cat": "collision",
 "sub": "fork",
 "id": "00300064",
