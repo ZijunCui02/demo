@@ -2031,3 +2031,38 @@ body.wall-page main.wall-main {
   object-fit: cover;
   background: #000;
 }
+
+/* ===================== CASE STUDY ===================== */
+.cs-intro {
+  color: hsl(var(--fg-light));
+  margin: -0.5rem 0 1.25rem;
+}
+
+.case-body.cs-body {
+  grid-template-columns: minmax(0, 2fr) minmax(0, 3fr);
+}
+
+.block.right.three {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+@media (max-width: 1000px) {
+  .case-body.cs-body {
+    grid-template-columns: 1fr;
+  }
+}
+
+.cs-placeholder {
+  aspect-ratio: 768 / 448;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px dashed hsl(var(--border-strong));
+  border-radius: 4px;
+  color: hsl(var(--fg-light));
+  font-size: 0.85rem;
+}
+
+.cs-placeholder-spec {
+  aspect-ratio: 1000 / 384;
+}
