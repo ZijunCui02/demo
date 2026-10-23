@@ -1980,6 +1980,11 @@ html.dark .t-val.val-warn {
   margin: 0.25rem 0 1.75rem;
 }
 
+/* A second row of statistics (the splits) sits directly below the first; its top border overlaps the bottom border of the row above, so the line stays single and also spans a wrapped, partly empty row. */
+.stats + .stats {
+  margin-top: calc(-1.75rem - 1px);
+}
+
 .stat {
   background: hsl(var(--bg));
   border-right: 1px solid hsl(var(--border));

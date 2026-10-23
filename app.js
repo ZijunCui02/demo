@@ -21,7 +21,7 @@
 
   // Case Study: selected validation cases, in this order, listed below the categories; each card keeps its own category and subcategory in the headline.
   const CASE_STUDY_CAT = "case_study";
-  const CASE_STUDY = ["collision/fork/00300333", "falling/overshoot/00005112", "collision/overshoot/00300096"];
+  const CASE_STUDY = [];
   const caseStudy = CASE_STUDY.map(k => catalog.find(c => `${c.cat}/${c.sub}/${c.id}` === k)).filter(Boolean);
 
   // Category titles that the key alone does not spell.
@@ -35,14 +35,17 @@
   });
   if (caseStudy.length) { cats.push(CASE_STUDY_CAT); subsOf.set(CASE_STUDY_CAT, ["all"]); }
 
+  // The first subcategory chip of every category shows all of its cases; a category opens with it selected.
+  const ALL = "all";
+
   function casesOf(cat, sub) {
     if (cat === CASE_STUDY_CAT) return caseStudy;
-    return catalog.filter(x => x.cat === cat && (sub === undefined || x.sub === sub));
+    return catalog.filter(x => x.cat === cat && (sub === undefined || sub === ALL || x.sub === sub));
   }
 
   const params = new URLSearchParams(window.location.search);
   let activeCat = cats.includes(params.get("cat")) ? params.get("cat") : cats[0];
-  let activeSub = (subsOf.get(activeCat) || []).includes(params.get("sub")) ? params.get("sub") : (subsOf.get(activeCat) || [])[0];
+  let activeSub = (subsOf.get(activeCat) || []).includes(params.get("sub")) ? params.get("sub") : ALL;
 
   function title(s) { return s.replace(/_/g, " ").replace(/\b\w/g, m => m.toUpperCase()); }
   function catTitle(c) { return CAT_TITLES[c] || title(c); }
@@ -63,7 +66,7 @@
     }).join("");
     el.querySelectorAll(".cat-btn").forEach(b => b.addEventListener("click", () => {
       activeCat = b.dataset.cat;
-      activeSub = subsOf.get(activeCat)[0];
+      activeSub = ALL;
       syncUrl();
       render();
     }));
@@ -72,8 +75,8 @@
   function renderChips() {
     const row = document.getElementById("sub-chip-row");
     if (activeCat === CASE_STUDY_CAT) { row.innerHTML = ""; return; }
-    row.innerHTML = subsOf.get(activeCat).map(s => {
-      const n = catalog.filter(x => x.cat === activeCat && x.sub === s).length;
+    row.innerHTML = [ALL, ...subsOf.get(activeCat)].map(s => {
+      const n = casesOf(activeCat, s).length;
       return `<button class="sub-chip${s === activeSub ? " on" : ""}" data-sub="${s}">${title(s)}<span class="count">${n}</span></button>`;
     }).join("");
     row.querySelectorAll(".sub-chip").forEach(b => b.addEventListener("click", () => {

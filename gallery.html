@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html lang="en" class="theme-auto">
+<head>
+<meta charset="UTF-8">
+<title>AV-PhysRemove | Gallery</title>
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="robots" content="noindex">
+<link rel="stylesheet" href="style.css?v=71fba1e6">
+<script>
+(function () {
+  var s = localStorage.getItem("color-scheme") || "auto";
+  var prefersDark = window.matchMedia && window.matchMedia("(prefers-color-scheme: dark)").matches;
+  var useDark = s === "dark" || (s !== "light" && prefersDark);
+  var r = document.documentElement;
+  r.classList.remove("theme-auto","theme-light","theme-dark");
+  r.classList.add("theme-" + s);
+  r.classList.toggle("dark", useDark);
+})();
+</script>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<defs>
+<symbol id="i-sun" viewBox="0 0 32 32"><path fill="currentColor" d="M16 12.005a4 4 0 1 1-4 4a4.005 4.005 0 0 1 4-4m0-2a6 6 0 1 0 6 6a6 6 0 0 0-6-6M5.394 6.813L6.81 5.399l3.505 3.506L8.9 10.319zM2 15.005h5v2H2zm3.394 10.193L8.9 21.692l1.414 1.414l-3.505 3.506zM15 25.005h2v5h-2zm6.687-1.9l1.414-1.414l3.506 3.505l-1.414 1.414zm2.924-8.1h5v2h-5zm-2.924-6.792l3.506-3.505l1.414 1.414l-3.506 3.505zM15 2.005h2v5h-2z"/></symbol>
+<symbol id="i-moon" viewBox="0 0 32 32"><path fill="currentColor" d="M13.503 5.414a15.076 15.076 0 0 0 11.593 18.194a11.1 11.1 0 0 1-7.975 3.39c-.138 0-.278.005-.418 0a11.094 11.094 0 0 1-3.2-21.584M14.98 3a1 1 0 0 0-.175.016a13.096 13.096 0 0 0 1.825 25.981c.164.006.328 0 .49 0a13.07 13.07 0 0 0 10.703-5.555a1.01 1.01 0 0 0-.783-1.565A13.08 13.08 0 0 1 15.89 4.38A1.015 1.015 0 0 0 14.98 3"/></symbol>
+<symbol id="i-auto" viewBox="0 0 24 24"><path fill="currentColor" d="M11 21q-3.35 0-5.675-2.325T3 13q0-1.45.475-2.762T4.8 7.888t2.037-1.725T9.426 5.3q.625-.075.975.438t.025 1.062q-.3.5-.363 1.063T10 9q0 2.5 1.75 4.25T16 15q.3 0 .6-.012t.6-.113q.525-.2.938.188t.237.912q-.725 2.35-2.8 3.688T11 21m5.4-8q-.1-.7-.363-1.35t-.687-1.2l-1.1.825q.225.4.363.813T14.8 13zm-1.9-3.9l.825-1.1q-.55-.425-1.2-.687T12.75 7l.3 1.4q.425.125.838.288t.612.412M18 7l-.3-1.6l-1.6-.3l1.6-.3l.3-1.6l.3 1.6l1.6.3l-1.6.3zm2.5 5.5l-.5-2l-2-.5l2-.5l.5-2l.5 2l2 .5l-2 .5z"/></symbol>
+<symbol id="i-play" viewBox="0 0 24 24"><path fill="currentColor" d="M8 5v14l11-7z"/></symbol>
+<symbol id="i-pause" viewBox="0 0 24 24"><path fill="currentColor" d="M6 5h4v14H6zm8 0h4v14h-4z"/></symbol>
+</defs>
+</svg>
+
+<header class="nav" id="navbar">
+  <a class="logo" href="./" aria-label="Home">
+    <span>&gt;_AV-PhysRemove</span><span class="blink">_</span>
+  </a>
+  <nav class="nav-links">
+      <a class="nav-item" href="./">Preview</a>
+      <a class="nav-item nav-active" href="gallery.html">Gallery</a>
+      <button class="nav-item nav-static" type="button">Coming Soon...</button>
+      <button class="theme-toggle" id="theme-toggle" aria-label="Toggle theme">
+        <svg class="icon icon-auto" aria-hidden="true"><use href="#i-auto"/></svg>
+        <svg class="icon icon-light" aria-hidden="true"><use href="#i-sun"/></svg>
+        <svg class="icon icon-dark" aria-hidden="true"><use href="#i-moon"/></svg>
+      </button>
+  </nav>
+</header>
+
+<main>
+<article class="content wide">
+
+<h1 style="font-size:1.8em;margin-top:0;">Gallery</h1>
+<div class="stats" aria-label="Dataset statistics">
+  <div class="stat"><span class="num">19,419</span><span class="lbl">total pairs</span></div>
+  <div class="stat"><span class="num">11,391</span><span class="lbl">simulated scenes</span></div>
+  <div class="stat"><span class="num">38,838</span><span class="lbl">videos</span></div>
+  <div class="stat"><span class="num">49.6</span><span class="lbl">hours of video</span></div>
+  <div class="stat"><span class="num">7</span><span class="lbl">categories</span></div>
+  <div class="stat"><span class="num">690</span><span class="lbl">variants</span></div>
+</div>
+<div class="stats" aria-label="Dataset splits">
+  <div class="stat"><span class="num">18,159</span><span class="lbl">train pairs</span></div>
+  <div class="stat"><span class="num">420</span><span class="lbl">val pairs</span></div>
+  <div class="stat"><span class="num">70</span><span class="lbl">val subset pairs (part of val, shown here)</span></div>
+  <div class="stat"><span class="num">840</span><span class="lbl">test pairs</span></div>
+</div>
+
+<div class="gallery cases">
+  <aside class="category-picker">
+    <div class="cat-list" id="cat-picker"></div>
+    <div class="case-nav" id="case-nav">
+      <span class="pos" id="case-pos"></span>
+      <button type="button" id="case-prev" aria-label="Previous case">&lsaquo; Previous</button>
+      <button type="button" id="case-next" aria-label="Next case">Next &rsaquo;</button>
+    </div>
+  </aside>
+  <section>
+    <div class="sub-chip-row" id="sub-chip-row"></div>
+    <div class="case-list" id="case-list"></div>
+  </section>
+</div>
+
+</article>
+<footer class="footer">
+  <span>© AV-PhysRemove 2026. Theme forked from <a href="https://github.com/Renovamen/renovamen.github.io" target="_blank" rel="noopener noreferrer">renovamen</a>.</span>
+</footer>
+</main>
+<script src="catalog.js?v=8ba5ec77"></script>
+<script src="app.js?v=f784a1a7"></script>
+<script src="theme.js?v=c2d9b2fa"></script>
+</body>
+</html>
