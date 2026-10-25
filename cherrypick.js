@@ -15,7 +15,7 @@
   const CAT_ORDER = ["bridge", "guide", "bowling", "bowling_dominoes", "dominoes", "collision", "falling"];
   const CAT_TITLES = { bowling_dominoes: "Bowling + Dominoes" };
   const GROUPS = [
-    { key: "top", name: "Top 50", of: p => p.tier === "top" },
+    { key: "top", name: "Picks", of: p => p.tier === "top" },
     { key: "spare", name: "Spares", of: p => p.tier === "spare" },
     ...CAT_ORDER.filter(c => picks.some(p => p.cat === c)).map(c => ({ key: c, name: catTitle(c), of: p => p.cat === c }))
   ];
@@ -27,11 +27,11 @@
 
   function groupOf(key) { return GROUPS.find(g => g.key === key) || GROUPS[0]; }
   function chipsOf(group) {
-    // Top 50 and Spares filter by category; a category filters by tier.
+    // Picks and Spares filter by category; a category filters by tier.
     if (group.key === "top" || group.key === "spare") return [ALL, ...CAT_ORDER.filter(c => picks.some(p => group.of(p) && p.cat === c))];
     return [ALL, "top", "spare"].filter(s => s === ALL || picks.some(p => group.of(p) && p.tier === s));
   }
-  function chipName(s) { return s === ALL ? "All" : s === "top" ? "Top 50" : s === "spare" ? "Spares" : catTitle(s); }
+  function chipName(s) { return s === ALL ? "All" : s === "top" ? "Picks" : s === "spare" ? "Spares" : catTitle(s); }
   function itemsOf(group, chip) {
     return picks.filter(p => group.of(p) && (chip === ALL || p.cat === chip || p.tier === chip)).sort((a, b) => a.rank - b.rank);
   }
