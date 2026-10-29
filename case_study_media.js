@@ -8,7 +8,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"omni"
+"amask"
 ],
 "media/bowling/bank_cut_pair/00005002": [
 "vmask",
@@ -18,7 +18,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/bowling/bank_direct_column/00005001": [
 "vmask",
@@ -28,7 +29,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/bowling/can_stun_triangle/00007007": [
 "vmask",
@@ -38,7 +40,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/bowling/carom/00005003": [
 "vmask",
@@ -48,7 +51,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/bowling/cut_carom/00008010": [
 "vmask",
@@ -58,7 +62,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/bowling/cut_victim/00005006": [
 "vmask",
@@ -68,7 +73,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/bowling/rail_rm_carom_column/00005004": [
 "vmask",
@@ -78,7 +84,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/bowling/split/00005006": [
 "vmask",
@@ -88,7 +95,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/bowling/t_bone/00008001": [
 "vmask",
@@ -98,7 +106,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/bridge/catch__bottle_on_can__can_cluster/00010001": [
 "vmask",
@@ -108,7 +117,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/bridge/kicker__ball_then_cans__bottle_row/00010003": [
 "vmask",
@@ -118,7 +128,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/bridge/plank__gate_posts__plank_table/00010304": [
 "vmask",
@@ -128,7 +139,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/bridge/plank_cans_triangle/00010003": [
 "vmask",
@@ -138,7 +150,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/bridge/plank_column_triangle/00010004": [
 "vmask",
@@ -148,7 +161,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/bridge/plug__can_pocket__ball_dominoes_pin/00010006": [
 "vmask",
@@ -158,7 +172,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/bridge/plug__slab_onto_can__domino_row5/00010005": [
 "vmask",
@@ -168,7 +183,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/bridge/plug__tray_pins__block_tower4/00010002": [
 "vmask",
@@ -178,7 +194,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/bridge/roof__dominoes_to_tower__pin_triangle/00010002": [
 "vmask",
@@ -188,7 +205,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/bridge/roof_cans_triangle/00010003": [
 "vmask",
@@ -198,7 +216,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/dominoes/bottle_backstop/00005005": [
 "vmask",
@@ -208,7 +227,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/dominoes/corner/00005001": [
 "vmask",
@@ -218,7 +238,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/dominoes/deck_pillar/00005000": [
 "vmask",
@@ -228,7 +249,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/dominoes/descender/00005004": [
 "vmask",
@@ -238,7 +260,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/dominoes/gap_decks/00005004": [
 "vmask",
@@ -248,7 +271,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/dominoes/hourglass/00005001": [
 "vmask",
@@ -258,7 +282,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/dominoes/ramp_block/00005002": [
 "vmask",
@@ -268,7 +293,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/dominoes/ramp_pins/00005023": [
 "vmask",
@@ -278,7 +304,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/dominoes/reach_up/00005002": [
 "vmask",
@@ -288,7 +315,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/dominoes/tall_link/00005001": [
 "vmask",
@@ -298,7 +326,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/guide/bevel_column_cans/00005003": [
 "vmask",
@@ -308,7 +337,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/guide/bumper_bottles_cans/00005003": [
 "vmask",
@@ -318,7 +348,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/guide/curve_can_bottles/00005013": [
 "vmask",
@@ -328,7 +359,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/guide/curve_enable_triangle/00005018": [
 "vmask",
@@ -338,7 +370,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/guide/diagonal_column_pair/00005020": [
 "vmask",
@@ -348,7 +381,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/guide/plug_block_bottles/00005018": [
 "vmask",
@@ -358,7 +392,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/guide/plug_block_pyramid/00005108": [
 "vmask",
@@ -368,7 +403,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/guide/prism_shield_relay/00005004": [
 "vmask",
@@ -378,7 +414,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/guide/splitter_shield_relay_bottle/00005019": [
 "vmask",
@@ -388,7 +425,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/guide/splitter_triangle_pair/00005012": [
 "vmask",
@@ -398,7 +436,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/bowling_dominoes/bank_s_column/00008024": [
 "vmask",
@@ -408,7 +447,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/bowling_dominoes/carom_hook_pin/00005007": [
 "vmask",
@@ -418,7 +458,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/bowling_dominoes/fork/00008002": [
 "vmask",
@@ -428,7 +469,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/bowling_dominoes/full_s_column/00005002": [
 "vmask",
@@ -438,7 +480,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/bowling_dominoes/rack_straight_pin/00008007": [
 "vmask",
@@ -448,7 +491,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/bowling_dominoes/spiral/00008003": [
 "vmask",
@@ -458,7 +502,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/bowling_dominoes/split_long_row/00005002": [
 "vmask",
@@ -468,7 +513,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/bowling_dominoes/stop_bend_row/00005009": [
 "vmask",
@@ -478,7 +524,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/bowling_dominoes/stun_straight_vpair/00008000": [
 "vmask",
@@ -488,7 +535,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/bowling_dominoes/zigzag_row/00005020": [
 "vmask",
@@ -498,7 +546,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/collision/fork/v10_00400046": [
 "vmask",
@@ -508,7 +557,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/collision/fork/v10_00400571": [
 "vmask",
@@ -518,7 +568,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/collision/overshoot/v10_00400504": [
 "vmask",
@@ -528,7 +579,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/collision/preserve/v10_00400591": [
 "vmask",
@@ -538,7 +590,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/collision/reroute/v10_00400518": [
 "vmask",
@@ -548,7 +601,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/collision/reroute/v10_00400529": [
 "vmask",
@@ -558,7 +612,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/falling/preserve/v10_00052927": [
 "vmask",
@@ -568,7 +623,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/falling/preserve/v10_00058487": [
 "vmask",
@@ -578,7 +634,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/falling/solo_preserve/v10_00010040": [
 "vmask",
@@ -588,7 +645,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/falling/solo_preserve/v10_00028195": [
 "vmask",
@@ -598,7 +656,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/falling/solo_reroute/v10_00058735": [
 "vmask",
@@ -608,7 +667,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/falling/solo_reroute/v10_00071417": [
 "vmask",
@@ -618,7 +678,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/collision/overshoot/v7_00300208": [
 "vmask",
@@ -628,7 +689,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/collision/overshoot/v7_00300276": [
 "vmask",
@@ -638,7 +700,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/collision/overshoot/v7_00300372": [
 "vmask",
@@ -648,7 +711,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/collision/trim/v7_00300777": [
 "vmask",
@@ -658,7 +722,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/falling/overshoot/v7_00005041": [
 "vmask",
@@ -668,7 +733,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/falling/preserve/v7_00005222": [
 "vmask",
@@ -678,7 +744,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/falling/spared/v7_00002101": [
 "vmask",
@@ -688,7 +755,8 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ],
 "media/falling/spared/v7_00005088": [
 "vmask",
@@ -698,6 +766,7 @@ window.CASE_STUDY_MEDIA = {
 "h3",
 "void_rel",
 "objwiper",
-"ltx"
+"ltx",
+"amask"
 ]
 };
