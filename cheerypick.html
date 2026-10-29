@@ -25,6 +25,9 @@
 .case-head .pick-split { opacity:.65; font-weight:400; }
 .pick-intro { max-width:1100px; line-height:1.55; }
 .pick-note .pick-ends { margin:2px 0 6px; font-size:.9em; }
+.case-body-gt-only.three { max-width:1240px; }
+.block.left.gt-only.three { grid-template-columns: repeat(3, minmax(0, 1fr)); }
+.block.left.gt-only.three .pick-note { grid-column: 1 / -1; }
 </style>
 </head>
 <body>
@@ -59,12 +62,12 @@
 <article class="content wide">
 
 <h1 style="font-size:1.8em;margin-top:0;">Cherry-Pick</h1>
-<p class="pick-intro">Teaser shortlist: 11 picks and 3 spares kept from the 50 ranked candidates and 20 spares of the 1,260 val and test pairs; each keeps its rank in that list. The candidates passed a hard filter from the simulation's own records: the two states must end on different materials (the bodies struck only with the object present against those struck only without it, from each pair's recipe and contact events), which drops same-material endings and edits that only take something away (335 pairs remain). Every pair was also reviewed by a subagent from its key frames and spectrograms (28 reviewers), and the strongest of each category were compared again side by side by one judge per category. Interest means a designed change of world state that leads to a different, still eventful outcome, two clearly different soundtracks of good quality, a readable picture and a causal chain a model can learn; the most difficult scenes were not preferred. Bridge and Guide come first, Bowling, Bowling + Dominoes and Dominoes follow, and Collision and Falling enter only with exceptional sound.</p>
+<p class="pick-intro">Teaser candidates in two groups. <b>Val</b>: the 26 val pairs of the ranked teaser list (50 candidates and 20 spares from the 1,260 val and test pairs; each keeps its rank in that list), the 6 of the October 25 shortlist marked; every val card shows the amask model at epoch 12 beside the target (its render with the clip's own masks and caption, seed 42, the setup of the subset validation renders). <b>Test</b>: the 8 test pairs of the shortlist. The candidates passed a hard filter from the simulation's own records: the two states must end on different materials (the bodies struck only with the object present against those struck only without it, from each pair's recipe and contact events), which drops same-material endings and edits that only take something away (335 pairs remain). Every pair was also reviewed by a subagent from its key frames and spectrograms (28 reviewers), and the strongest of each category were compared again side by side by one judge per category. Interest means a designed change of world state that leads to a different, still eventful outcome, two clearly different soundtracks of good quality, a readable picture and a causal chain a model can learn; the most difficult scenes were not preferred.</p>
 <div class="stats" aria-label="Cherry-pick statistics">
-  <div class="stat"><span class="num">1,260</span><span class="lbl">val + test pairs reviewed</span></div>
-  <div class="stat"><span class="num">335</span><span class="lbl">end on different materials</span></div>
-  <div class="stat"><span class="num">11</span><span class="lbl">picks</span></div>
-  <div class="stat"><span class="num">3</span><span class="lbl">spares</span></div>
+  <div class="stat"><span class="num">26</span><span class="lbl">val candidates</span></div>
+  <div class="stat"><span class="num">6</span><span class="lbl">val on the shortlist</span></div>
+  <div class="stat"><span class="num">8</span><span class="lbl">with amask, epoch 12</span></div>
+  <div class="stat"><span class="num">8</span><span class="lbl">test on the shortlist</span></div>
 </div>
 
 <div class="gallery cases">
@@ -87,8 +90,8 @@
   <span>© AV-PhysRemove 2026. Theme forked from <a href="https://github.com/Renovamen/renovamen.github.io" target="_blank" rel="noopener noreferrer">renovamen</a>.</span>
 </footer>
 </main>
-<script src="cherrypick_catalog.js?v=db097a1a"></script>
-<script src="cherrypick.js?v=d12431f4"></script>
+<script src="cherrypick_catalog.js?v=d1e29ab0"></script>
+<script src="cherrypick.js?v=f165463b"></script>
 <script src="theme.js?v=c2d9b2fa"></script>
 </body>
 </html>

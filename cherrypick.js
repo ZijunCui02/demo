@@ -1,4 +1,4 @@
-/* Cherry-pick: teaser candidates from the val and test sets, ranked; group picker, category chips, one card per pair with the reviewers' scores, video and spectrogram players. */
+/* Cherry-pick: teaser candidates from the val and test sets, ranked; a Val and a Test group (October 29, 2026, owner: the teaser is picked from val), chips for the shortlist and each category, one card per pair with the reviewers' scores, video and spectrogram players; val cards add the amask model at epoch 12 beside the target. */
 
 (function () {
   const picks = window.CHERRYPICK || [];
@@ -6,7 +6,8 @@
 
   const LABELS = {
     ref: { name: "Reference", code: "" },
-    tar: { name: "Target", code: "" }
+    tar: { name: "Target", code: "" },
+    amask: { name: "AV-PhysRemove (amask, epoch 12)", code: "" }
   };
 
   // Mel-scale positions (fraction of the plot height from the bottom) of the frequency ticks.
@@ -15,11 +16,11 @@
   const CAT_ORDER = ["bridge", "guide", "bowling", "bowling_dominoes", "dominoes", "collision", "falling"];
   const CAT_TITLES = { bowling_dominoes: "Bowling + Dominoes" };
   const GROUPS = [
-    { key: "top", name: "Picks", of: p => p.tier === "top" },
-    { key: "spare", name: "Spares", of: p => p.tier === "spare" },
-    ...CAT_ORDER.filter(c => picks.some(p => p.cat === c)).map(c => ({ key: c, name: catTitle(c), of: p => p.cat === c }))
+    { key: "val", name: "Val", of: p => p.split === "val" },
+    { key: "test", name: "Test", of: p => p.split === "test" }
   ];
   const ALL = "all";
+  const SHORT = "shortlist";
 
   function title(s) { return s.replace(/_/g, " ").replace(/\b\w/g, m => m.toUpperCase()); }
   function catTitle(c) { return CAT_TITLES[c] || title(c); }
@@ -27,13 +28,14 @@
 
   function groupOf(key) { return GROUPS.find(g => g.key === key) || GROUPS[0]; }
   function chipsOf(group) {
-    // Picks and Spares filter by category; a category filters by tier.
-    if (group.key === "top" || group.key === "spare") return [ALL, ...CAT_ORDER.filter(c => picks.some(p => group.of(p) && p.cat === c))];
-    return [ALL, "top", "spare"].filter(s => s === ALL || picks.some(p => group.of(p) && p.tier === s));
+    // Each split filters by the teaser shortlist, by tier or by category.
+    const has = f => picks.some(p => group.of(p) && f(p));
+    return [ALL, ...(has(p => p.shortlist) && has(p => !p.shortlist) ? [SHORT] : []), ...["top", "spare"].filter(s => has(p => p.tier === s)),
+            ...CAT_ORDER.filter(c => has(p => p.cat === c))];
   }
-  function chipName(s) { return s === ALL ? "All" : s === "top" ? "Picks" : s === "spare" ? "Spares" : catTitle(s); }
+  function chipName(s) { return s === ALL ? "All" : s === SHORT ? "Shortlist" : s === "top" ? "Picks" : s === "spare" ? "Spares" : catTitle(s); }
   function itemsOf(group, chip) {
-    return picks.filter(p => group.of(p) && (chip === ALL || p.cat === chip || p.tier === chip)).sort((a, b) => a.rank - b.rank);
+    return picks.filter(p => group.of(p) && (chip === ALL || (chip === SHORT && p.shortlist) || p.cat === chip || p.tier === chip)).sort((a, b) => a.rank - b.rank);
   }
 
   const params = new URLSearchParams(window.location.search);
@@ -124,12 +126,15 @@
 
   function caseCard(p) {
     const tier = p.tier === "top" ? `#${p.rank}` : `spare ${p.rank - 50}`;
+    const keys = p.amask ? ["ref", "tar", "amask"] : ["ref", "tar"];
+    const three = p.amask ? " three" : "";
+    const short = p.shortlist ? ` <span class="pick-split">· shortlist</span>` : "";
     return `<article class="case case-gt-only" id="pick-${p.rank}">
-      <div class="case-head"><span class="case-idx">${esc(tier)}</span><span class="case-idx">${esc(p.id)}</span><span class="case-path">${esc(p.label)} <span class="pick-split">(${esc(p.split)})</span></span></div>
-      <div class="case-body case-body-gt-only">
-        <div class="block left gt-only">
-          ${videoCell(p.dir, "ref")}${videoCell(p.dir, "tar")}
-          ${specCell(p.dir, "ref")}${specCell(p.dir, "tar")}
+      <div class="case-head"><span class="case-idx">${esc(tier)}</span><span class="case-idx">${esc(p.id)}</span><span class="case-path">${esc(p.label)} <span class="pick-split">(${esc(p.split)})</span>${short}</span></div>
+      <div class="case-body case-body-gt-only${three}">
+        <div class="block left gt-only${three}">
+          ${keys.map(k => videoCell(p.dir, k)).join("")}
+          ${keys.map(k => specCell(p.dir, k)).join("")}
           ${noteCell(p)}${captionCell(p.caption)}
         </div>
       </div>
