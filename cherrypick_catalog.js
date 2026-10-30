@@ -29,7 +29,8 @@ window.CHERRYPICK = [
 "flags": [],
 "why": "Blue guide bar sends ball into a cyan glass block tower that collapses; without it the ball rolls straight into red ceramic mugs. Distinct colours, materials and ringing.",
 "moment": "Glass tower collapses versus ball sliding red mugs into the barrier.",
-"final": "Blue bank bar sends the steel ball into a blue glass tower that topples; without it the ball hits ringing red ceramic mugs. Moment: tower falls versus mugs slide."
+"final": "Blue bank bar sends the steel ball into a blue glass tower that topples; without it the ball hits ringing red ceramic mugs. Moment: tower falls versus mugs slide.",
+"amask": true
 },
 {
 "rank": 2,
@@ -61,7 +62,8 @@ window.CHERRYPICK = [
 "flags": [],
 "why": "Blue wedge sends the steel ball into white ceramic pins; without it red glass pins fall instead. Distinct colours and materials, one clear chain on each side.",
 "moment": "Red glass pins topple on the left while the white pins stay standing.",
-"final": "Blue wedge steers the steel ball into white ceramic pins; removed, it rolls straight into red glass pins. Show 0.83 s: white pins falling versus red glass toppling."
+"final": "Blue wedge steers the steel ball into white ceramic pins; removed, it rolls straight into red glass pins. Show 0.83 s: white pins falling versus red glass toppling.",
+"amask": true
 },
 {
 "rank": 9,
@@ -93,7 +95,8 @@ window.CHERRYPICK = [
 "flags": [],
 "why": "Yellow curve removed: steel ball topples pale ceramic bottles instead of dark blue glass pins. Both outcomes eventful, distinct colours and materials, clean ringing.",
 "moment": "The blue glass pins stay standing; a pale green bottle tips over instead.",
-"final": "Yellow curve sends the steel ball into blue glass pins; removed, it topples pale ceramic bottles instead. Show 1.07 s: blue pins down versus a bottle tipping."
+"final": "Yellow curve sends the steel ball into blue glass pins; removed, it topples pale ceramic bottles instead. Show 1.07 s: blue pins down versus a bottle tipping.",
+"amask": true
 },
 {
 "rank": 12,
@@ -162,7 +165,8 @@ window.CHERRYPICK = [
 ],
 "why": "Without the blue glass bank block the steel ball hits the yellow plastic pin group instead of the cyan glass pins at the back: designed rerouting, glass-to-plastic timbre change.",
 "moment": "Ball deflects to the back glass pins in reference; rolls straight into yellow plastic pins in target.",
-"final": "Vivid blue glass bank removed: the steel ball skips the cyan glass pins at the back and topples the front yellow plastic row; glass ringing becomes plastic clatter."
+"final": "Vivid blue glass bank removed: the steel ball skips the cyan glass pins at the back and topples the front yellow plastic row; glass ringing becomes plastic clatter.",
+"amask": true
 },
 {
 "rank": 14,
@@ -396,7 +400,8 @@ window.CHERRYPICK = [
 ],
 "why": "Blue gutter guides brass ball into a red glass domino arc; without it the ball rolls into brass pins. Top view, distinct colours, glass cascade versus metallic ring.",
 "moment": "Red domino arc falls versus brass pins struck.",
-"final": "Blue gutter channels the brass ball into a red glass domino arc; without it the ball rolls left into brass pins. Top view; moment: arc topples versus pins ring."
+"final": "Blue gutter channels the brass ball into a red glass domino arc; without it the ball rolls left into brass pins. Top view; moment: arc topples versus pins ring.",
+"amask": true
 },
 {
 "rank": 21,
@@ -699,7 +704,8 @@ window.CHERRYPICK = [
 ],
 "why": "Yellow curve removed: glass ball topples silver metal pins instead of purple glass pins; true flip with distinct materials, metallic rings versus glass clatter; ball is faint.",
 "moment": "Purple glass pins stay up; a silver pin falls with a metallic ring.",
-"final": "Yellow curve sends the glass ball into purple glass pins; removed, it topples silver steel pins instead. Show 1.03-1.37 s; the clear ball is faint."
+"final": "Yellow curve sends the glass ball into purple glass pins; removed, it topples silver steel pins instead. Show 1.03-1.37 s; the clear ball is faint.",
+"amask": true
 },
 {
 "rank": 44,
@@ -836,7 +842,8 @@ window.CHERRYPICK = [
 "flags": [],
 "why": "Yellow kicker diverts iron ball into a ball cradle; without it the ball drops and smashes the ceramic pin rack. Largest sound distance in batch (7.4 dB), clean top view.",
 "moment": "Ball cradle nudged versus the whole pin rack scattering.",
-"final": "Yellow kicker diverts the iron ball into the ball cradle (quiet ending); without it the ball smashes the ceramic pin rack. Huge sound contrast, but the reference ending is mild."
+"final": "Yellow kicker diverts the iron ball into the ball cradle (quiet ending); without it the ball smashes the ceramic pin rack. Huge sound contrast, but the reference ending is mild.",
+"amask": true
 },
 {
 "rank": 56,
@@ -870,7 +877,8 @@ window.CHERRYPICK = [
 ],
 "why": "Large aqua cup turns the ball back with a rolling hum; without it the ball scatters clear glass pins with bright clinks. Readable overhead view, pins slightly faint.",
 "moment": "Ball rolls straight across and the glass pins burst apart.",
-"final": "Overhead: the large aqua cup turns the ball back; removed, it rolls on and scatters clear glass pins. Show 0.87-1.07 s; pins faint on dark stone."
+"final": "Overhead: the large aqua cup turns the ball back; removed, it rolls on and scatters clear glass pins. Show 0.87-1.07 s; pins faint on dark stone.",
+"amask": true
 },
 {
 "rank": 58,
