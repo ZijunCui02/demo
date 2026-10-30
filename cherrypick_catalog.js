@@ -173,7 +173,7 @@ window.CHERRYPICK = [
 "tier": "top",
 "cat": "collision",
 "sub": "reroute",
-"label": "Collision / Reroute",
+"label": "Collision / Reroute \u00b7 brass look (teaser version)",
 "id": "00400529",
 "ends": {
 "ref": [
@@ -186,7 +186,7 @@ window.CHERRYPICK = [
 "split": "val",
 "shortlist": true,
 "dir": "media/cherrypick/collision_reroute_00400529_v0",
-"caption": "Remove the dark-grey bowl with a light interior from the scene, which eliminates its clattering collision sound with the sliding white plastic pail. Consequently, the white plastic pail slides uninterrupted across the polished wood floor until it strikes the hollow brown metal geosphere, producing a solid dull impact sound before both objects settle to rest.",
+"caption": "Remove the polished brass bowl from the scene, which eliminates its clattering collision sound with the sliding white plastic pail. Consequently, the white plastic pail slides uninterrupted across the polished wood floor until it strikes the hollow brown metal geosphere, producing a solid dull impact sound before both objects settle to rest.",
 "scores": {
 "overall": 9,
 "causal": 5,
