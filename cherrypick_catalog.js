@@ -326,7 +326,8 @@ window.CHERRYPICK = [
 "flags": [],
 "why": "Brass plug lets ball scatter golden metal pins with ringing; without it the ball falls down the chute and topples the tall green cylinder tower. Distinct materials and outcomes.",
 "moment": "Gold pins scatter versus the lime-green tower collapsing below.",
-"final": "Brass plug carries the ball onto the deck to scatter golden pins; without it the ball drops through the chute and topples the green cylinder tower. Moment: pins versus tower."
+"final": "Brass plug carries the ball onto the deck to scatter golden pins; without it the ball drops through the chute and topples the green cylinder tower. Moment: pins versus tower.",
+"amask": true
 },
 {
 "rank": 19,
@@ -360,7 +361,8 @@ window.CHERRYPICK = [
 ],
 "why": "Lilac prism removed: ball skips the glass pins and scatters the gold brass pins. Distinct materials (glass versus brass), both sides eventful, bright metallic ringing.",
 "moment": "Gold brass pins fly apart instead of the glass pins being clinked.",
-"final": "Lilac prism steers the ball into clear glass pins; removed, it scatters brass pins with bright ringing. Show 0.97-1.2 s: gold pins flying, glass pins untouched."
+"final": "Lilac prism steers the ball into clear glass pins; removed, it scatters brass pins with bright ringing. Show 0.97-1.2 s: gold pins flying, glass pins untouched.",
+"amask": true
 },
 {
 "rank": 20,
@@ -426,7 +428,8 @@ window.CHERRYPICK = [
 "flags": [],
 "why": "Bevel removal flips the target: instead of wooden cylinders toppling, the ball fells a black pin, domino and bottle onto the cork block; wood clacks become ringing clatter.",
 "moment": "Ball rolls straight past the missing bevel and topples the black pin, domino and bottle instead of the cylinders.",
-"final": "Wooden bevel turns the ball into oak cylinders; without it, the ball fells a black pin, dominoes and bottle. Show 1.07-1.3 s: black row collapsing, cylinders still."
+"final": "Wooden bevel turns the ball into oak cylinders; without it, the ball fells a black pin, dominoes and bottle. Show 1.07-1.3 s: black row collapsing, cylinders still.",
+"amask": true
 },
 {
 "rank": 24,
@@ -458,7 +461,8 @@ window.CHERRYPICK = [
 "flags": [],
 "why": "Falling case hits a brass bowl on the tote and tumbles to the floor; without the bowl it lands stacked on the tote. Rich bowl ringing versus one hollow impact.",
 "moment": "The case lands neatly stacked on the tote instead of tumbling off beside it.",
-"final": "Case strikes the ringing brass bowl and tumbles onto the sand; without the bowl it lands stacked on the tote with one hollow knock. Large, clear objects."
+"final": "Case strikes the ringing brass bowl and tumbles onto the sand; without the bowl it lands stacked on the tote with one hollow knock. Large, clear objects.",
+"amask": true
 },
 {
 "rank": 27,
@@ -524,7 +528,8 @@ window.CHERRYPICK = [
 "flags": [],
 "why": "Lilac curve removed: red ball strikes blue glass pins instead of nudging a block; vivid colours, ringing glass clatter replaces a rolling hum and one thud.",
 "moment": "Blue glass pins scatter under the red ball where before they stayed untouched.",
-"final": "Lilac curve diverts the red ball to a quiet nudge; removed, it hits the blue glass pins head-on. Show 0.7 s: pins scattering versus pins standing."
+"final": "Lilac curve diverts the red ball to a quiet nudge; removed, it hits the blue glass pins head-on. Show 0.7 s: pins scattering versus pins standing.",
+"amask": true
 },
 {
 "rank": 31,
@@ -557,7 +562,8 @@ window.CHERRYPICK = [
 "flags": [],
 "why": "Ceramic guard block stops the steel ball; removing it lets the ball hit the ceramic pin, toppling red glass dominoes and bottle. Designed guard; near silence becomes rich glass ringing.",
 "moment": "Ball stops dead at the guard in reference; red glass dominoes cascade around the hook in target.",
-"final": "Ceramic guard removed: the steel ball fells the pale pin and the red glass hook of dominoes and bottle topples. Silence versus rich glass ringing."
+"final": "Ceramic guard removed: the steel ball fells the pale pin and the red glass hook of dominoes and bottle topples. Silence versus rich glass ringing.",
+"amask": true
 },
 {
 "rank": 33,
@@ -591,7 +597,8 @@ window.CHERRYPICK = [
 ],
 "why": "Large blue kicker removed: brass ball no longer topples the black dominoes but crashes into a stack of red glass cubes; distinct colours and materials, both outcomes eventful.",
 "moment": "Black dominoes fall with the kicker; without it red glass cubes scatter in the tray.",
-"final": "Blue kicker block deflects the brass ball into black dominoes; without it the ball crashes into the red glass cube stack. Top view; moment: dominoes fall versus cubes scatter."
+"final": "Blue kicker block deflects the brass ball into black dominoes; without it the ball crashes into the red glass cube stack. Top view; moment: dominoes fall versus cubes scatter.",
+"amask": true
 },
 {
 "rank": 34,
@@ -624,7 +631,8 @@ window.CHERRYPICK = [
 "flags": [],
 "why": "Without the wedge the ball strikes a brass pin that topples red glass dominoes and a red bottle; the reference is one scrape. Huge contrast, rich glassy ringing.",
 "moment": "Red glass dominoes and bottle crash down in a glassy cascade where nothing happened before.",
-"final": "Brass curve parks the steel ball; removed, it fells a brass pin, red glass dominoes and bottle in a ringing crash. Show 1.3 s: red glass collapsing versus stillness."
+"final": "Brass curve parks the steel ball; removed, it fells a brass pin, red glass dominoes and bottle in a ringing crash. Show 1.3 s: red glass collapsing versus stillness.",
+"amask": true
 },
 {
 "rank": 40,
@@ -656,7 +664,8 @@ window.CHERRYPICK = [
 "flags": [],
 "why": "Ceramic plank removal: steel ball skips the navy ceramic bottles on the glass table and scatters teal glass pins in the floor tray; distinct colours, ringing glass clinks.",
 "moment": "Navy bottles wobble on the table versus teal glass pins scattering in the tray.",
-"final": "Plank carries the steel ball onto the glass table into navy ceramic bottles; without it the ball drops and scatters teal glass pins in the tray. Moment: bottles versus pins."
+"final": "Plank carries the steel ball onto the glass table into navy ceramic bottles; without it the ball drops and scatters teal glass pins in the tray. Moment: bottles versus pins.",
+"amask": true
 },
 {
 "rank": 43,
@@ -724,7 +733,8 @@ window.CHERRYPICK = [
 ],
 "why": "Lilac channel guides silver ball into blue glass dominoes; without it the ball drops and bowls into ceramic vases with strong ringing. Clear flip, vases slightly cluttered.",
 "moment": "Blue dominoes fall versus ceramic vases knocked into the wooden block.",
-"final": "Large lilac channel sends the silver ball into a blue glass domino fork; without it the ball bowls into the patterned ceramic vases. Moment: dominoes versus vases topple."
+"final": "Large lilac channel sends the silver ball into a blue glass domino fork; without it the ball bowls into the patterned ceramic vases. Moment: dominoes versus vases topple.",
+"amask": true
 },
 {
 "rank": 45,
@@ -757,7 +767,8 @@ window.CHERRYPICK = [
 "flags": [],
 "why": "Lime plug removed: red ball no longer stops dead; it relays through the white ball into clear pins with long ringing tails. Clean, colourful, short chain.",
 "moment": "Red ball pushes the white ball, which knocks the clear pins into the cork block.",
-"final": "Lime plug stops the red ball; removed, it relays through the white ball into clear pins with long ringing tails. Show 0.8-1.03 s: pins toppling onto the cork block."
+"final": "Lime plug stops the red ball; removed, it relays through the white ball into clear pins with long ringing tails. Show 0.8-1.03 s: pins toppling onto the cork block.",
+"amask": true
 },
 {
 "rank": 47,
@@ -792,7 +803,8 @@ window.CHERRYPICK = [
 ],
 "why": "Without the wooden bank block the red glass ball hits the black bottles instead of the wooden pins: designed rerouting, distinct targets and timbres; dark objects read less well.",
 "moment": "Ball veers left into wooden pins in reference, rolls straight into black bottles in target.",
-"final": "Bank switch: without the wooden block the red glass ball reaches the black bottles at the back instead of the wooden pins. Strong reroute, dark objects read less well."
+"final": "Bank switch: without the wooden block the red glass ball reaches the black bottles at the back instead of the wooden pins. Strong reroute, dark objects read less well.",
+"amask": true
 },
 {
 "rank": 51,
@@ -892,7 +904,8 @@ window.CHERRYPICK = [
 ],
 "why": "Clear catch flip: ball crosses the red shelf to scatter white pins on the glass table, or falls and knocks red bottles below; distinct colours and timing.",
 "moment": "White pins on the table stay up; red bottles on the floor topple instead.",
-"final": "Red shelf carries the black ball onto the glass table to scatter white pins; without it the ball knocks red glass bottles, partly behind the table legs."
+"final": "Red shelf carries the black ball onto the glass table to scatter white pins; without it the ball knocks red glass bottles, partly behind the table legs.",
+"amask": true
 },
 {
 "rank": 60,
@@ -999,7 +1012,8 @@ window.CHERRYPICK = [
 ],
 "why": "Gray block stops the brass ball; removing it releases a pin, red glass dominoes and a second pin, a ringing cascade versus one clink. Vivid, though the chain is busy.",
 "moment": "Black pin falls into the red glass dominoes, which topple the second pin.",
-"final": "Gray block stops the brass ball; removed, a black pin, red glass dominoes and a second pin fall. Show 0.6-1.03 s; objects small, chain busy."
+"final": "Gray block stops the brass ball; removed, a black pin, red glass dominoes and a second pin fall. Show 0.6-1.03 s; objects small, chain busy.",
+"amask": true
 },
 {
 "rank": 64,
@@ -1033,7 +1047,8 @@ window.CHERRYPICK = [
 ],
 "why": "White channel sends green glass ball right into metallic pins with ringing; without it the ball drops and rolls left into wooden pins. Clean left/right flip, metal versus wood timbre.",
 "moment": "Ball exits right into steel pins versus rolling left to topple wooden pins.",
-"final": "White channel sends the green glass ball right into ringing steel pins; without it the ball rolls left into wooden pins. Clean flip, but small objects."
+"final": "White channel sends the green glass ball right into ringing steel pins; without it the ball rolls left into wooden pins. Clean flip, but small objects.",
+"amask": true
 },
 {
 "rank": 65,
@@ -1067,7 +1082,8 @@ window.CHERRYPICK = [
 ],
 "why": "True material swap: brass pins tumble in the reference, clear glass pins in the target. Distinct timbres, but the transparent glass pins are small and faint.",
 "moment": "Steel ball goes straight into the glass pins while the brass pins stay standing.",
-"final": "Brass prism sends the ball into copper pins that scatter widely; removed, clear glass pins tip instead. Show 0.73-1.0 s; glass pins faint."
+"final": "Brass prism sends the ball into copper pins that scatter widely; removed, clear glass pins tip instead. Show 0.73-1.0 s; glass pins faint.",
+"amask": true
 },
 {
 "rank": 66,
@@ -1102,7 +1118,8 @@ window.CHERRYPICK = [
 ],
 "why": "Guard removal turns a dead stop at the green block into a full strike on the yellow pin rack; huge sound and visual contrast, though only additive.",
 "moment": "Purple ball smashes the yellow pin rack instead of stopping at the green block.",
-"final": "Most readable edit: green guard stops the ball dead; removed, a full strike on the yellow pins. But one side is uneventful and the strike is a pile-up."
+"final": "Most readable edit: green guard stops the ball dead; removed, a full strike on the yellow pins. But one side is uneventful and the strike is a pile-up.",
+"amask": true
 },
 {
 "rank": 69,
@@ -1136,6 +1153,7 @@ window.CHERRYPICK = [
 ],
 "why": "Pumpkin hits the hollow bronze geosphere with rich ringing vs rolls on into the power drill with a different tonal knock; clean reroute like the owner's example.",
 "moment": "Pumpkin rings the metal geosphere vs rolls on and knocks the drill.",
-"final": "Pumpkin's bouncing bright geosphere ring becomes a tonal knock on the power drill. Clean reroute and two good sounds, but the pumpkin is small."
+"final": "Pumpkin's bouncing bright geosphere ring becomes a tonal knock on the power drill. Clean reroute and two good sounds, but the pumpkin is small.",
+"amask": true
 }
 ];
