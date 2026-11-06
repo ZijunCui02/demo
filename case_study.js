@@ -10,8 +10,8 @@
     tar: { name: "Target", code: "" },
     aud_mask: { name: "Audio Mask", code: "" },
     vid_mask: { name: "Video Mask", code: "" },
-    vmask: { name: "vmask epoch 25", code: "" },
-    amask: { name: "amask epoch 18", code: "" },
+    stage2: { name: "Stage 2 epoch 14", code: "" },
+    stage1: { name: "Stage 1 epoch 25", code: "" },
     iav2av_ft: { name: "InstructAV2AV fine-tuned", code: "" },
     void_ft: { name: "VOID Pass 1 + MMAudio w/ fine-tune", code: "" },
     aved: { name: "AVED", code: "" },
@@ -22,7 +22,7 @@
   };
 
   // The 3x3 grid of methods, row by row; a method without media for a case shows a placeholder.
-  const ROWS = [["vmask", "amask", "iav2av_ft"], ["void_ft", "aved", "h3"], ["void_rel", "objwiper", "ltx"]];
+  const ROWS = [["stage2", "stage1", "iav2av_ft"], ["void_ft", "aved", "h3"], ["void_rel", "objwiper", "ltx"]];
   const MEDIA_OF = window.CASE_STUDY_MEDIA || {};
 
   // Mel-scale positions (fraction of the plot height from the bottom) of the frequency ticks.
