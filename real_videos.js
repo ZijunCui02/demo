@@ -23,12 +23,13 @@
     objwiper_mmaudio: { name: "Object-WIPER + MMAudio", code: "" }
   };
 
-  // The methods, three per row in this order; a method without media for a pair shows a placeholder, a short last row is filled with empty cells.
-  const METHODS = ["stages12", "stages12_agentic", "baseline", "void_stages12", "instructav2av_e19", "void_mmaudio", "instructav2av",
-    "ltx_iclora_samaudio", "minimax_h3", "aved", "objwiper_mmaudio"];
+  // The method grid: our three models together in the first row, the eight other methods in the rows below, three per row, in this order.
+  // A method without media for a pair shows a placeholder; a short last row is filled with empty cells.
+  const OURS = ["stages12", "stages12_agentic", "baseline"];
+  const OTHERS = ["void_stages12", "instructav2av_e19", "void_mmaudio", "instructav2av", "ltx_iclora_samaudio", "minimax_h3", "aved", "objwiper_mmaudio"];
   const COLS = 3;
-  const ROWS = [];
-  for (let i = 0; i < METHODS.length; i += COLS) ROWS.push(METHODS.slice(i, i + COLS));
+  const ROWS = [OURS];
+  for (let i = 0; i < OTHERS.length; i += COLS) ROWS.push(OTHERS.slice(i, i + COLS));
 
   // Mel-scale positions (fraction of the plot height from the bottom) of the frequency ticks.
   const FTICKS = [[500, 0.1356], [2000, 0.4533], [8000, 0.8178]];
@@ -109,7 +110,7 @@
       row.map(k => has(k) ? specCell(dir, k, c.dur) : placeholderSpec()).join("") + pad(row)).join(`<div class="rule"></div>`);
     const [img, num, ...rest] = c.id.split("_");
     const masks = ["", "_agentic"];
-    // Left: the input and the reference, the caption, the recorded and the agentic masks (video above audio). Right: the eleven methods, three per row.
+    // Left: the input and the reference, the caption, the recorded and the agentic masks (video above audio). Right: the method grid, our three models in the first row and the eight other methods three per row below (stacked under the left block on narrow screens).
     return `<article class="case" id="${esc(c.id)}">
       <div class="case-head"><span class="case-idx">${esc(img + "_" + num)}</span><span class="case-path">Real Recording / ${esc(title(rest.join("_")))}</span></div>
       <div class="case-body cs-body">
