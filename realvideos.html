@@ -7,9 +7,13 @@
 <meta name="robots" content="noindex">
 <link rel="stylesheet" href="style.css?v=5ab3a62d">
 <style>
-/* Real Videos: the caption spans the left block above the two mask columns; a missing audio mask keeps the 16:9 strip shape. */
+/* Real Videos: the caption spans the left block above the video mask and the audio mask; a missing audio mask keeps the 16:9 strip shape. */
 .block.left .caption-cell.rv-caption { grid-column: 1 / -1; grid-row: auto; }
 .rv-placeholder-mask { aspect-ratio: 16 / 9; }
+/* Four methods a row on the right, each cell as wide as an input cell on the left (November 10, 2026: our four models in the first row). */
+.case-body.cs-body.rv-body { grid-template-columns: minmax(0, 2fr) minmax(0, 4fr); }
+.block.right.four { grid-template-columns: repeat(4, minmax(0, 1fr)); }
+@media (max-width: 1000px) { .case-body.cs-body.rv-body { grid-template-columns: 1fr; } }
 </style>
 <script>
 (function () {
@@ -56,7 +60,7 @@
 <article class="content wide">
 
 <h1 style="font-size:1.8em;margin-top:0;">Real Videos</h1>
-<p class="cs-intro">The 43 real-world pairs we recorded. Each case: the input (the recording with the object) and the reference (recorded after the object was taken away) with the caption and the masks, those of the recordings and those our agent placed, on the left; eleven methods on the right, video above sound.</p>
+<p class="cs-intro">The 57 real-world pairs we recorded. Each case: the input (the recording with the object) and the reference (recorded after the object was taken away) with the caption and the recordings' masks on the left; twelve methods on the right, video above sound: our four models in the first row (Stage 1 at epoch 25, Stages 1-2 at epoch 25, Stages 1-2-3 at epoch 23.9, the newest checkpoint of the run still in training, and the baseline at epoch 25), the eight other methods below.</p>
 
 <div class="gallery cases">
   <aside class="category-picker">
@@ -78,8 +82,8 @@
   <span>© IsaacWave 2026. Theme forked from <a href="https://github.com/Renovamen/renovamen.github.io" target="_blank" rel="noopener noreferrer">renovamen</a>.</span>
 </footer>
 </main>
-<script src="real_videos_media.js?v=513b8364"></script>
-<script src="real_videos.js?v=ef3fc0e1"></script>
+<script src="real_videos_media.js?v=6eb420a8"></script>
+<script src="real_videos.js?v=7791f155"></script>
 <script src="theme.js?v=c2d9b2fa"></script>
 </body>
 </html>

@@ -1,4 +1,4 @@
-/* Real Videos: the Case Study page's card, players and previous / next navigation for the 43 recorded real-world pairs, with the eleven methods of the real-pair comparison. */
+/* Real Videos: the Case Study page's card, players and previous / next navigation for the 57 recorded real-world pairs, with the twelve methods of the real-pair comparison (November 10, 2026: our four models of the real-pair table, Stage 1 at epoch 25, Stages 1-2 at epoch 25, Stages 1-2-3 and the baseline; the epoch-12 Stages 1-2 model, its agentic-mask variant and the agentic masks left the page). */
 
 (function () {
   const pairs = window.REAL_VIDEOS_MEDIA || [];
@@ -7,12 +7,12 @@
     before: { name: "Input (with the object)", code: "" },
     after: { name: "Reference (recorded without it)", code: "" },
     vid_mask: { name: "Masks (recorded)", code: "" },
-    vid_mask_agentic: { name: "Masks (agentic)", code: "" },
     aud_mask: { name: "Audio mask (recorded)", code: "" },
-    aud_mask_agentic: { name: "Audio mask (agentic)", code: "" },
-    stages12: { name: "Ours, Stages 1-2", code: "" },
-    stages12_agentic: { name: "Ours, Stages 1-2 + agentic masks", code: "" },
-    baseline: { name: "Ours, baseline", code: "" },
+    stage1_e25: { name: "Ours, Stage 1 (epoch 25)", code: "" },
+    stages12_e25: { name: "Ours, Stages 1-2 (epoch 25)", code: "" },
+    stages123_u6750: { name: "Ours, Stages 1-2-3 (epoch 23.9)", code: "" },
+    stages123_e25: { name: "Ours, Stages 1-2-3 (epoch 25)", code: "" },
+    baseline: { name: "Ours, baseline (epoch 25)", code: "" },
     void_stages12: { name: "VOID Stages 1-2 (retrained) + MMAudio", code: "" },
     instructav2av_e19: { name: "InstructAV2AV (fine-tuned, epoch 19)", code: "" },
     void_mmaudio: { name: "VOID + MMAudio", code: "" },
@@ -23,11 +23,12 @@
     objwiper_mmaudio: { name: "Object-WIPER + MMAudio", code: "" }
   };
 
-  // The method grid: our three models together in the first row, the eight other methods in the rows below, three per row, in this order.
+  // The method grid: our four models together in the first row, the eight other methods in the two rows below, four per row, in this order.
+  // "stages123" is the pair's newest Stages 1-2-3 result: epoch 25 once it exists, else update 6,750 (epoch 23.9) of the run still in training.
   // A method without media for a pair shows a placeholder; a short last row is filled with empty cells.
-  const OURS = ["stages12", "stages12_agentic", "baseline"];
+  const OURS = ["stage1_e25", "stages12_e25", "stages123", "baseline"];
   const OTHERS = ["void_stages12", "instructav2av_e19", "void_mmaudio", "instructav2av", "ltx_iclora_samaudio", "minimax_h3", "aved", "objwiper_mmaudio"];
-  const COLS = 3;
+  const COLS = 4;
   const ROWS = [OURS];
   for (let i = 0; i < OTHERS.length; i += COLS) ROWS.push(OTHERS.slice(i, i + COLS));
 
@@ -80,10 +81,10 @@
     return `<div class="cell caption-cell rv-caption"><div class="cell-label"><span class="name">Caption</span></div><div class="caption">${esc(text)}</div></div>`;
   }
 
-  // The audio-mask strip sits below its video mask without a label of its own, as a spectrogram sits below its video.
+  // The audio-mask strip sits beside its video mask with a label of its own.
   function maskImageCell(dir, key) {
     const src = `${dir}/${key}.webp`;
-    return `<div class="cell cell-audio"><a class="mask-img" href="${src}" target="_blank" rel="noopener"><img src="${src}" alt="${esc(LABELS[key].name)}" loading="lazy"></a></div>`;
+    return `<div class="cell">${label(key)}<a class="mask-img" href="${src}" target="_blank" rel="noopener"><img src="${src}" alt="${esc(LABELS[key].name)}" loading="lazy"></a></div>`;
   }
 
   function placeholderVideo(key) {
@@ -94,8 +95,8 @@
     return `<div class="cell cell-audio"><div class="cs-placeholder cs-placeholder-spec"></div></div>`;
   }
 
-  function placeholderMaskImage() {
-    return `<div class="cell cell-audio"><div class="cs-placeholder rv-placeholder-mask"></div></div>`;
+  function placeholderMaskImage(key) {
+    return `<div class="cell">${label(key)}<div class="cs-placeholder rv-placeholder-mask"></div></div>`;
   }
 
   const EMPTY = `<div class="cell"></div>`;
@@ -105,23 +106,23 @@
     const have = c.keys || [];
     const has = k => have.includes(k);
     const pad = row => EMPTY.repeat(COLS - row.length);
-    const rows = ROWS.map(row =>
+    const s3 = has("stages123_e25") ? "stages123_e25" : "stages123_u6750";
+    const rows = ROWS.map(keys => keys.map(k => k === "stages123" ? s3 : k)).map(row =>
       row.map(k => has(k) ? videoCell(dir, k) : placeholderVideo(k)).join("") + pad(row) +
       row.map(k => has(k) ? specCell(dir, k, c.dur) : placeholderSpec()).join("") + pad(row)).join(`<div class="rule"></div>`);
     const [img, num, ...rest] = c.id.split("_");
-    const masks = ["", "_agentic"];
-    // Left: the input and the reference, the caption, the recorded and the agentic masks (video above audio). Right: the method grid, our three models in the first row and the eight other methods three per row below (stacked under the left block on narrow screens).
+    // Left: the input and the reference, the caption, the recordings' masks (video beside audio). Right: the method grid, our four models in the first row and the eight other methods four per row below (stacked under the left block on narrow screens).
     return `<article class="case" id="${esc(c.id)}">
       <div class="case-head"><span class="case-idx">${esc(img + "_" + num)}</span><span class="case-path">Real Recording / ${esc(title(rest.join("_")))}</span></div>
-      <div class="case-body cs-body">
+      <div class="case-body cs-body rv-body">
         <div class="block left">
           ${["before", "after"].map(k => has(k) ? videoCell(dir, k) : placeholderVideo(k)).join("")}
           ${["before", "after"].map(k => has(k) ? specCell(dir, k, c.dur) : placeholderSpec()).join("")}
           ${captionCell(c.caption || "")}
-          ${masks.map(s => has("vid_mask" + s) ? videoCell(dir, "vid_mask" + s) : placeholderVideo("vid_mask" + s)).join("")}
-          ${masks.map(s => has("aud_mask" + s) ? maskImageCell(dir, "aud_mask" + s) : placeholderMaskImage()).join("")}
+          ${has("vid_mask") ? videoCell(dir, "vid_mask") : placeholderVideo("vid_mask")}
+          ${has("aud_mask") ? maskImageCell(dir, "aud_mask") : placeholderMaskImage("aud_mask")}
         </div>
-        <div class="block right three">${rows}</div>
+        <div class="block right four">${rows}</div>
       </div>
     </article>`;
   }

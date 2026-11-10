@@ -1,15 +1,16 @@
 window.REAL_VIDEOS_MEDIA = [
 {
 "id": "IMG_2601_book_glass_jar",
-"batch": "real_pairs_results_20261102",
+"batch": "real_pairs_results",
 "dir": "media/real/IMG_2601_book_glass_jar",
 "dur": 4.0,
 "caption": "Remove the orange paperback standing upright on the counter, along with the papery slap of the glass jar knocking it flat. The empty glass jar still rolls down the teal cutting board, but it no longer bounces back toward the wall; it rolls on and strikes the clear whiskey glass with a bright glass-on-glass clink, nudging the glass and turning toward the camera.",
 "keys": [
 "before",
 "after",
-"stages12",
-"stages12_agentic",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -20,22 +21,21 @@ window.REAL_VIDEOS_MEDIA = [
 "aved",
 "objwiper_mmaudio",
 "vid_mask",
-"aud_mask",
-"vid_mask_agentic",
-"aud_mask_agentic"
+"aud_mask"
 ]
 },
 {
 "id": "IMG_2610_steel_lid_bucket",
-"batch": "real_pairs_results_20261102",
+"batch": "real_pairs_results",
 "dir": "media/real/IMG_2610_steel_lid_bucket",
 "dur": 3.2,
 "caption": "Remove the stainless steel dome lid from the foot of the teal cutting board, along with the metallic ring of the yellow tennis ball glancing off it. The ball no longer rolls away toward the camera; it now rolls straight on and hits the side of the red plastic bucket with a hollow plastic thump, then bounces back toward the cutting board.",
 "keys": [
 "before",
 "after",
-"stages12",
-"stages12_agentic",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -46,22 +46,21 @@ window.REAL_VIDEOS_MEDIA = [
 "aved",
 "objwiper_mmaudio",
 "vid_mask",
-"aud_mask",
-"vid_mask_agentic",
-"aud_mask_agentic"
+"aud_mask"
 ]
 },
 {
 "id": "IMG_2630_plate_jar",
-"batch": "real_pairs_results_20261102",
+"batch": "real_pairs_results",
 "dir": "media/real/IMG_2630_plate_jar",
 "dur": 5.0,
 "caption": "Remove the flat aluminum plate bridging the gap between the two cardboard boxes, along with the clank of the wooden ball rolling onto it and the glassy clinks of the ball knocking the glass jar on the right box. The ball still rolls down the tilted aluminum ramp, but now drops off its end into the white ceramic bowl below with a hollow ceramic clunk and rattles to a stop, leaving the glass jar untouched.",
 "keys": [
 "before",
 "after",
-"stages12",
-"stages12_agentic",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -72,22 +71,21 @@ window.REAL_VIDEOS_MEDIA = [
 "aved",
 "objwiper_mmaudio",
 "vid_mask",
-"aud_mask",
-"vid_mask_agentic",
-"aud_mask_agentic"
+"aud_mask"
 ]
 },
 {
 "id": "IMG_2637_plate_dome",
-"batch": "real_pairs_results_20261102",
+"batch": "real_pairs_results",
 "dir": "media/real/IMG_2637_plate_dome",
 "dur": 5.0,
 "caption": "Remove the flat aluminum plate bridging the gap between the two cardboard boxes, along with the clank of the wooden ball rolling onto it and the bright metallic rings of the ball striking the stainless steel dome lid. The ball still rolls down the tilted aluminum ramp, but now drops off its end into the white ceramic bowl below with a hollow ceramic clunk, and the dome lid stays silent and still.",
 "keys": [
 "before",
 "after",
-"stages12",
-"stages12_agentic",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -98,22 +96,21 @@ window.REAL_VIDEOS_MEDIA = [
 "aved",
 "objwiper_mmaudio",
 "vid_mask",
-"aud_mask",
-"vid_mask_agentic",
-"aud_mask_agentic"
+"aud_mask"
 ]
 },
 {
 "id": "IMG_2639_plate_bowl",
-"batch": "real_pairs_results_20261102",
+"batch": "real_pairs_results",
 "dir": "media/real/IMG_2639_plate_bowl",
 "dur": 5.0,
 "caption": "Remove the flat aluminum plate bridging the gap between the two cardboard boxes, along with the clank of the wooden ball rolling onto it. The ball still rolls down the tilted aluminum ramp, but instead of crossing the plate and coming to rest near the white bowl, it drops off the end of the ramp into the black-lined cooker pot below with a hollow metallic thud and rattles around inside.",
 "keys": [
 "before",
 "after",
-"stages12",
-"stages12_agentic",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -124,22 +121,21 @@ window.REAL_VIDEOS_MEDIA = [
 "aved",
 "objwiper_mmaudio",
 "vid_mask",
-"aud_mask",
-"vid_mask_agentic",
-"aud_mask_agentic"
+"aud_mask"
 ]
 },
 {
 "id": "IMG_2642_plate_bucket",
-"batch": "real_pairs_results_20261102",
+"batch": "real_pairs_results",
 "dir": "media/real/IMG_2642_plate_bucket",
 "dur": 3.5,
 "caption": "Remove the flat aluminum plate bridging the gap between the two cardboard boxes above the cooker pot, along with the clank of the wooden ball rolling onto it and the hollow plastic thump of the ball striking the red bucket. The ball still rolls down the tilted aluminum ramp, but now drops off its end into the black-lined cooker pot below with a dull metallic thud and rattles around inside, and the red bucket stays still and silent.",
 "keys": [
 "before",
 "after",
-"stages12",
-"stages12_agentic",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -150,22 +146,21 @@ window.REAL_VIDEOS_MEDIA = [
 "aved",
 "objwiper_mmaudio",
 "vid_mask",
-"aud_mask",
-"vid_mask_agentic",
-"aud_mask_agentic"
+"aud_mask"
 ]
 },
 {
 "id": "IMG_2649_box_blocks",
-"batch": "real_pairs_results_20261102",
+"batch": "real_pairs_results",
 "dir": "media/real/IMG_2649_box_blocks",
 "dur": 5.0,
 "caption": "Remove the cardboard box standing on the wooden board, along with the dull cardboard thump of the wooden ball striking it. The ball still rolls down the tilted aluminum ramp onto the board, but instead of bouncing off the box toward the camera, it rolls on across the board and knocks over the three upright wooden blocks at the back with a clatter of wooden clacks.",
 "keys": [
 "before",
 "after",
-"stages12",
-"stages12_agentic",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -176,22 +171,21 @@ window.REAL_VIDEOS_MEDIA = [
 "aved",
 "objwiper_mmaudio",
 "vid_mask",
-"aud_mask",
-"vid_mask_agentic",
-"aud_mask_agentic"
+"aud_mask"
 ]
 },
 {
 "id": "IMG_2650_jar_dominoes",
-"batch": "real_pairs_results_20261102",
+"batch": "real_pairs_results",
 "dir": "media/real/IMG_2650_jar_dominoes",
 "dur": 5.0,
 "caption": "Remove the small glass jar standing on the wooden board at the foot of the ramp, along with the glassy clink of the wooden ball stopping against it. The ball still rolls down the tilted aluminum ramp, but now rolls on into the first wooden domino, and the whole curving row topples in sequence with a rapid cascade of wooden clacks.",
 "keys": [
 "before",
 "after",
-"stages12",
-"stages12_agentic",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -202,22 +196,21 @@ window.REAL_VIDEOS_MEDIA = [
 "aved",
 "objwiper_mmaudio",
 "vid_mask",
-"aud_mask",
-"vid_mask_agentic",
-"aud_mask_agentic"
+"aud_mask"
 ]
 },
 {
 "id": "IMG_2653_dumbbell_blocks",
-"batch": "real_pairs_results_20261102",
+"batch": "real_pairs_results",
 "dir": "media/real/IMG_2653_dumbbell_blocks",
 "dur": 5.0,
 "caption": "Remove the black hexagonal dumbbell standing among the wooden blocks, along with the knock of the toppling wooden block coming to rest against its handle. The wooden ball still rolls down the tilted aluminum ramp and strikes the first upright block, but with nothing to hold it the block falls into the next ones, and the blocks topple in a chain onto the floor with a run of wooden clacks.",
 "keys": [
 "before",
 "after",
-"stages12",
-"stages12_agentic",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -228,22 +221,21 @@ window.REAL_VIDEOS_MEDIA = [
 "aved",
 "objwiper_mmaudio",
 "vid_mask",
-"aud_mask",
-"vid_mask_agentic",
-"aud_mask_agentic"
+"aud_mask"
 ]
 },
 {
 "id": "IMG_2654_glass_dish_pot",
-"batch": "real_pairs_results_20261102",
+"batch": "real_pairs_results",
 "dir": "media/real/IMG_2654_glass_dish_pot",
 "dur": 5.0,
 "caption": "Remove the glass baking dish sitting inside the cooker pot, along with the sharp glassy clink of the wooden ball landing in it. The ball is still dropped from the kitchen tongs above the black case, but now falls straight into the pot itself, landing on its black non-stick bottom with a dull metallic thud and bouncing a few times before it settles.",
 "keys": [
 "before",
 "after",
-"stages12",
-"stages12_agentic",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -254,22 +246,21 @@ window.REAL_VIDEOS_MEDIA = [
 "aved",
 "objwiper_mmaudio",
 "vid_mask",
-"aud_mask",
-"vid_mask_agentic",
-"aud_mask_agentic"
+"aud_mask"
 ]
 },
 {
 "id": "IMG_2669_plate_slats",
-"batch": "real_pairs_results_20261102",
+"batch": "real_pairs_results",
 "dir": "media/real/IMG_2669_plate_slats",
 "dur": 5.0,
 "caption": "Remove the aluminum plate leaning against the glass container behind it, together with the container, along with the bright metallic clang of the wooden ball dropping onto the plate and rolling down it past the three upright wooden slats. The ball still rolls down the tilted aluminum ramp, but now drops onto the floor with a dull wooden thud and rolls on into the three slats, knocking them flat with a clatter of wooden clacks, then rolls back toward the camera.",
 "keys": [
 "before",
 "after",
-"stages12",
-"stages12_agentic",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -280,22 +271,21 @@ window.REAL_VIDEOS_MEDIA = [
 "aved",
 "objwiper_mmaudio",
 "vid_mask",
-"aud_mask",
-"vid_mask_agentic",
-"aud_mask_agentic"
+"aud_mask"
 ]
 },
 {
 "id": "IMG_2673_plate_bowl_slats",
-"batch": "real_pairs_results_20261102",
+"batch": "real_pairs_results",
 "dir": "media/real/IMG_2673_plate_bowl_slats",
 "dur": 4.833,
 "caption": "Remove the aluminum plate leaning against the glass container behind it, together with the container, along with the bright metallic clang of the wooden ball dropping onto the plate, which turned the ball into the three upright wooden slats and toppled them with a clatter of wooden clacks. The ball still rolls down the tilted aluminum ramp, but now drops onto the floor with a dull wooden thud, rolls into the side of the glass bowl with a glassy clink and bounces back toward the camera, while the three slats stay standing.",
 "keys": [
 "before",
 "after",
-"stages12",
-"stages12_agentic",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -306,22 +296,21 @@ window.REAL_VIDEOS_MEDIA = [
 "aved",
 "objwiper_mmaudio",
 "vid_mask",
-"aud_mask",
-"vid_mask_agentic",
-"aud_mask_agentic"
+"aud_mask"
 ]
 },
 {
 "id": "IMG_2677_plate_two_rows",
-"batch": "real_pairs_results_20261102",
+"batch": "real_pairs_results",
 "dir": "media/real/IMG_2677_plate_two_rows",
 "dur": 5.0,
 "caption": "Remove the aluminum plate leaning against the glass container behind it, together with the container, along with the bright metallic clang of the wooden ball dropping onto the plate, which turned the ball into the front row of three wooden slats and knocked them down. The ball still rolls down the tilted aluminum ramp, but now drops onto the floor with a dull wooden thud and rolls on into the back row of three slats, toppling them with a clatter of wooden clacks while the front row stays standing.",
 "keys": [
 "before",
 "after",
-"stages12",
-"stages12_agentic",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -332,22 +321,21 @@ window.REAL_VIDEOS_MEDIA = [
 "aved",
 "objwiper_mmaudio",
 "vid_mask",
-"aud_mask",
-"vid_mask_agentic",
-"aud_mask_agentic"
+"aud_mask"
 ]
 },
 {
 "id": "IMG_2696_box_domino",
-"batch": "real_pairs_results_20261102",
+"batch": "real_pairs_results",
 "dir": "media/real/IMG_2696_box_domino",
 "dur": 3.0,
 "caption": "Remove the cardboard speaker box standing on the counter, along with the dull cardboard thump of the wooden ball striking it and bouncing back toward the glass bowl. The ball still rolls down the tilted aluminum ramp, but now rolls on past where the box stood into the upright wooden domino, knocking it flat with a sharp wooden clack, and keeps rolling to the right.",
 "keys": [
 "before",
 "after",
-"stages12",
-"stages12_agentic",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -358,22 +346,21 @@ window.REAL_VIDEOS_MEDIA = [
 "aved",
 "objwiper_mmaudio",
 "vid_mask",
-"aud_mask",
-"vid_mask_agentic",
-"aud_mask_agentic"
+"aud_mask"
 ]
 },
 {
 "id": "IMG_2750_box_plate",
-"batch": "real_pairs_results_20261104",
+"batch": "real_pairs_results",
 "dir": "media/real/IMG_2750_box_plate",
 "dur": 3.0,
 "caption": "Remove the cardboard speaker box standing at the back of the board, along with the dull cardboard thump of the wooden ball glancing off it toward the front of the board, where it knocked a small clear acrylic block onto the counter with a light clatter. The ball still rolls down the tilted aluminum ramp onto the wooden board, but now rolls straight along the board into the upright clear acrylic plate at its far end, knocking it flat with a sharp click and a slap, while the small block at the front stays standing, and the ball drops off the end of the board onto the counter with a dull thud.",
 "keys": [
 "before",
 "after",
-"stages12",
-"stages12_agentic",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -384,22 +371,21 @@ window.REAL_VIDEOS_MEDIA = [
 "aved",
 "objwiper_mmaudio",
 "vid_mask",
-"aud_mask",
-"vid_mask_agentic",
-"aud_mask_agentic"
+"aud_mask"
 ]
 },
 {
 "id": "IMG_2753_box_pins",
-"batch": "real_pairs_results_20261104",
+"batch": "real_pairs_results",
 "dir": "media/real/IMG_2753_box_pins",
 "dur": 3.0,
 "caption": "Remove the cardboard speaker box standing at the back of the board, along with the dull cardboard thump of the wooden ball glancing off it into the three small wooden bowling pins, which it scattered off the front of the board. The ball still rolls down the tilted aluminum ramp onto the wooden board, but now rolls past behind the pins, which stay standing, to the far end of the board into the cluster of upright wooden cylinders, knocking them over with a clatter of wooden clacks.",
 "keys": [
 "before",
 "after",
-"stages12",
-"stages12_agentic",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -410,22 +396,21 @@ window.REAL_VIDEOS_MEDIA = [
 "aved",
 "objwiper_mmaudio",
 "vid_mask",
-"aud_mask",
-"vid_mask_agentic",
-"aud_mask_agentic"
+"aud_mask"
 ]
 },
 {
 "id": "IMG_2754_box_cylinders",
-"batch": "real_pairs_results_20261104",
+"batch": "real_pairs_results",
 "dir": "media/real/IMG_2754_box_cylinders",
 "dur": 3.0,
 "caption": "Remove the cardboard speaker box standing at the back of the board, along with the dull cardboard thump of the wooden ball glancing off it into the small orange plastic block, which it knocked off the front of the board onto the counter. The ball still rolls down the tilted aluminum ramp onto the wooden board, but now rolls past behind the orange block, which stays in place, to the far end of the board into the pair of upright wooden cylinders, knocking them over with sharp wooden clacks as they fall onto the counter.",
 "keys": [
 "before",
 "after",
-"stages12",
-"stages12_agentic",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -436,22 +421,21 @@ window.REAL_VIDEOS_MEDIA = [
 "aved",
 "objwiper_mmaudio",
 "vid_mask",
-"aud_mask",
-"vid_mask_agentic",
-"aud_mask_agentic"
+"aud_mask"
 ]
 },
 {
 "id": "IMG_2755_car_sheet",
-"batch": "real_pairs_results_20261104",
+"batch": "real_pairs_results",
 "dir": "media/real/IMG_2755_car_sheet",
 "dur": 3.0,
 "caption": "Remove the yellow toy sports car parked at the foot of the ramp, along with the soft plastic knock of the wooden ball striking it and bouncing away toward the camera. The ball still rolls down the tilted aluminum ramp onto the wooden board, but now rolls straight along the board into the upright aluminum plate at its far end, knocking it flat with a bright metallic clank and a slap of metal on wood, then rolls back toward the camera and drops off the board onto the counter with a dull thud.",
 "keys": [
 "before",
 "after",
-"stages12",
-"stages12_agentic",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -462,22 +446,21 @@ window.REAL_VIDEOS_MEDIA = [
 "aved",
 "objwiper_mmaudio",
 "vid_mask",
-"aud_mask",
-"vid_mask_agentic",
-"aud_mask_agentic"
+"aud_mask"
 ]
 },
 {
 "id": "IMG_2756_car_sheet",
-"batch": "real_pairs_results_20261104",
+"batch": "real_pairs_results",
 "dir": "media/real/IMG_2756_car_sheet",
 "dur": 3.0,
 "caption": "Remove the yellow toy sports car parked at the foot of the ramp, along with the soft plastic tap of the wooden ball rolling into its rear and stopping against it. The ball still rolls down the tilted aluminum ramp onto the wooden board, but now rolls on along the board into the upright aluminum plate at its far end, knocking it flat with a metallic clink and a slap of metal on wood, and rolls off the far edge of the board onto the counter with a dull thud.",
 "keys": [
 "before",
 "after",
-"stages12",
-"stages12_agentic",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -488,22 +471,21 @@ window.REAL_VIDEOS_MEDIA = [
 "aved",
 "objwiper_mmaudio",
 "vid_mask",
-"aud_mask",
-"vid_mask_agentic",
-"aud_mask_agentic"
+"aud_mask"
 ]
 },
 {
 "id": "IMG_2757_bowl_cylinders",
-"batch": "real_pairs_results_20261104",
+"batch": "real_pairs_results",
 "dir": "media/real/IMG_2757_bowl_cylinders",
 "dur": 3.0,
 "caption": "Remove the white ceramic bowl sitting on the board, along with the ringing ceramic clink of the wooden ball striking it and glancing off the front of the board. The ball still rolls down the tilted aluminum ramp onto the wooden board, but now rolls on into the pair of upright wooden cylinders at the back, knocking one of them flat with sharp wooden clacks, and bounces away toward the front, dropping off the board onto the counter with a dull thud.",
 "keys": [
 "before",
 "after",
-"stages12",
-"stages12_agentic",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -514,22 +496,21 @@ window.REAL_VIDEOS_MEDIA = [
 "aved",
 "objwiper_mmaudio",
 "vid_mask",
-"aud_mask",
-"vid_mask_agentic",
-"aud_mask_agentic"
+"aud_mask"
 ]
 },
 {
 "id": "IMG_2758_sphere_car",
-"batch": "real_pairs_results_20261104",
+"batch": "real_pairs_results",
 "dir": "media/real/IMG_2758_sphere_car",
 "dur": 3.0,
 "caption": "Remove the chrome sphere resting on a small clear stand in the middle of the board, along with the soft click of the wooden ball striking it and glancing off toward the camera. The ball still rolls down the tilted aluminum ramp onto the wooden board, but now rolls on into the yellow toy sports car behind it, nudging the car forward with a soft plastic knock, then rolls back across the board and drops off its front edge onto the counter with a dull thud.",
 "keys": [
 "before",
 "after",
-"stages12",
-"stages12_agentic",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -540,22 +521,21 @@ window.REAL_VIDEOS_MEDIA = [
 "aved",
 "objwiper_mmaudio",
 "vid_mask",
-"aud_mask",
-"vid_mask_agentic",
-"aud_mask_agentic"
+"aud_mask"
 ]
 },
 {
 "id": "IMG_2759_car_bottle",
-"batch": "real_pairs_results_20261104",
+"batch": "real_pairs_results",
 "dir": "media/real/IMG_2759_car_bottle",
 "dur": 3.0,
 "caption": "Remove the yellow toy sports car parked at the foot of the ramp, along with the soft plastic knock of the wooden ball pushing it forward across the board. The ball still rolls down the tilted aluminum ramp onto the wooden board, but now rolls on into the base of the dark glass wine bottle, striking it with a sharp glassy knock that leaves the bottle standing, and bounces back toward the camera, dropping off the front edge of the board onto the counter with a dull thud.",
 "keys": [
 "before",
 "after",
-"stages12",
-"stages12_agentic",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -566,22 +546,21 @@ window.REAL_VIDEOS_MEDIA = [
 "aved",
 "objwiper_mmaudio",
 "vid_mask",
-"aud_mask",
-"vid_mask_agentic",
-"aud_mask_agentic"
+"aud_mask"
 ]
 },
 {
 "id": "IMG_2760_sheet_bowl",
-"batch": "real_pairs_results_20261104",
+"batch": "real_pairs_results",
 "dir": "media/real/IMG_2760_sheet_bowl",
 "dur": 3.0,
 "caption": "Remove the upright aluminum plate standing on the board, along with the metallic slap of the plate falling flat when the wooden ball strikes it. The ball still rolls down the tilted aluminum ramp onto the wooden board, but now rolls on into the speckled ceramic bowl, striking it with two bright, ringing ceramic clinks, and bounces past behind the bowl, which stays in place, rolling off the far side of the board.",
 "keys": [
 "before",
 "after",
-"stages12",
-"stages12_agentic",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -592,22 +571,21 @@ window.REAL_VIDEOS_MEDIA = [
 "aved",
 "objwiper_mmaudio",
 "vid_mask",
-"aud_mask",
-"vid_mask_agentic",
-"aud_mask_agentic"
+"aud_mask"
 ]
 },
 {
 "id": "IMG_2761_stapler_mug",
-"batch": "real_pairs_results_20261104",
+"batch": "real_pairs_results",
 "dir": "media/real/IMG_2761_stapler_mug",
 "dur": 3.0,
 "caption": "Remove the black stapler lying on the board, along with the hard plastic knock of the wooden ball striking it and turning it aside. The ball still rolls down the tilted aluminum ramp onto the wooden board, but now rolls on into the gray ceramic mug at the far end, striking it with a bright ceramic clink, and bounces back toward the camera, dropping off the front edge of the board onto the counter with a dull thud.",
 "keys": [
 "before",
 "after",
-"stages12",
-"stages12_agentic",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -618,22 +596,21 @@ window.REAL_VIDEOS_MEDIA = [
 "aved",
 "objwiper_mmaudio",
 "vid_mask",
-"aud_mask",
-"vid_mask_agentic",
-"aud_mask_agentic"
+"aud_mask"
 ]
 },
 {
 "id": "IMG_2763_controller_cylinder",
-"batch": "real_pairs_results_20261104",
+"batch": "real_pairs_results",
 "dir": "media/real/IMG_2763_controller_cylinder",
 "dur": 3.0,
 "caption": "Remove the white game controller lying on the board, along with the hard plastic knock of the wooden ball striking it and bouncing back toward the camera. The ball still rolls down the tilted aluminum ramp onto the wooden board, but now rolls on into the upright wooden cylinder at the back, knocking it over with a sharp wooden clack and a thud of wood on wood, and the cylinder rolls away toward the far end of the board.",
 "keys": [
 "before",
 "after",
-"stages12",
-"stages12_agentic",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -644,22 +621,21 @@ window.REAL_VIDEOS_MEDIA = [
 "aved",
 "objwiper_mmaudio",
 "vid_mask",
-"aud_mask",
-"vid_mask_agentic",
-"aud_mask_agentic"
+"aud_mask"
 ]
 },
 {
 "id": "IMG_2764_drill_sheet",
-"batch": "real_pairs_results_20261104",
+"batch": "real_pairs_results",
 "dir": "media/real/IMG_2764_drill_sheet",
 "dur": 3.0,
 "caption": "Remove the red cordless drill standing upright on its battery in the middle of the board, along with the dull plastic thunk of the wooden ball striking its battery and stopping against it. The ball still rolls down the tilted aluminum ramp onto the wooden board, but now rolls on into the upright aluminum plate at the far end, striking it with a bright metallic clang that leaves it standing, and bounces off toward the camera, dropping off the front edge of the board onto the counter with a dull thud.",
 "keys": [
 "before",
 "after",
-"stages12",
-"stages12_agentic",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -670,22 +646,21 @@ window.REAL_VIDEOS_MEDIA = [
 "aved",
 "objwiper_mmaudio",
 "vid_mask",
-"aud_mask",
-"vid_mask_agentic",
-"aud_mask_agentic"
+"aud_mask"
 ]
 },
 {
 "id": "IMG_2766_plate_bowl",
-"batch": "real_pairs_results_20261104",
+"batch": "real_pairs_results",
 "dir": "media/real/IMG_2766_plate_bowl",
 "dur": 3.0,
 "caption": "Remove the large aluminum plate standing on the counter, together with the glass dish behind it that holds it up, along with the bright metallic clang of the wooden ball striking the plate and dropping to the counter in front of it. The ball still rolls down the tilted aluminum ramp on top of the cardboard speaker boxes and drops onto the counter with a dull thud, but now bounces on toward the small speckled ceramic bowl at the back, striking it with two ringing ceramic clinks and coming to rest against it, while the white bowl in front stays untouched.",
 "keys": [
 "before",
 "after",
-"stages12",
-"stages12_agentic",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -696,22 +671,21 @@ window.REAL_VIDEOS_MEDIA = [
 "aved",
 "objwiper_mmaudio",
 "vid_mask",
-"aud_mask",
-"vid_mask_agentic",
-"aud_mask_agentic"
+"aud_mask"
 ]
 },
 {
 "id": "IMG_2767_plank_bowl",
-"batch": "real_pairs_results_20261104",
+"batch": "real_pairs_results",
 "dir": "media/real/IMG_2767_plank_bowl",
 "dur": 3.0,
 "caption": "Remove the long wooden plank standing on edge beside the ramp, along with the hollow wooden knock of the wooden ball striking its face and dropping back onto the counter in front of the white bowl. The ball still rolls down the tilted aluminum ramp on top of the cardboard speaker boxes, but now flies off its end onto the counter with a dull thud and bounces on into the small speckled ceramic bowl at the back, striking it with two bright ceramic clinks, then rolls off toward the camera past the white bowl.",
 "keys": [
 "before",
 "after",
-"stages12",
-"stages12_agentic",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -722,22 +696,21 @@ window.REAL_VIDEOS_MEDIA = [
 "aved",
 "objwiper_mmaudio",
 "vid_mask",
-"aud_mask",
-"vid_mask_agentic",
-"aud_mask_agentic"
+"aud_mask"
 ]
 },
 {
 "id": "IMG_2774_plank_slats",
-"batch": "real_pairs_results_20261104",
+"batch": "real_pairs_results",
 "dir": "media/real/IMG_2774_plank_slats",
 "dur": 3.0,
 "caption": "Remove the long wooden plank standing on edge beside the ramp, along with the hollow wooden knock of the wooden ball striking it and the clatter of the three wooden slats it then knocked over. The ball still rolls down the tilted aluminum ramp on top of the cardboard speaker boxes, but now flies off its end onto the counter with a dull thud, bounces past the three wooden slats, which stay standing, and strikes the small speckled ceramic bowl at the back with a ringing ceramic clink before rolling away to the right.",
 "keys": [
 "before",
 "after",
-"stages12",
-"stages12_agentic",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -748,22 +721,21 @@ window.REAL_VIDEOS_MEDIA = [
 "aved",
 "objwiper_mmaudio",
 "vid_mask",
-"aud_mask",
-"vid_mask_agentic",
-"aud_mask_agentic"
+"aud_mask"
 ]
 },
 {
 "id": "IMG_2776_plank_angles",
-"batch": "real_pairs_results_20261104",
+"batch": "real_pairs_results",
 "dir": "media/real/IMG_2776_plank_angles",
 "dur": 3.0,
 "caption": "Remove the long wooden plank standing on edge beside the ramp, along with the hollow wooden knock of the wooden ball striking it and dropping into the pair of aluminum plates in front, which it knocked flat with a metallic clatter. The ball still rolls down the tilted aluminum ramp on top of the cardboard speaker boxes, but now flies off its end onto the counter with a dull thud and bounces on past the front pair of plates, which stay standing, into the pair of upright aluminum plates at the back, knocking one of them flat with a metallic clank and slap.",
 "keys": [
 "before",
 "after",
-"stages12",
-"stages12_agentic",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -774,22 +746,21 @@ window.REAL_VIDEOS_MEDIA = [
 "aved",
 "objwiper_mmaudio",
 "vid_mask",
-"aud_mask",
-"vid_mask_agentic",
-"aud_mask_agentic"
+"aud_mask"
 ]
 },
 {
 "id": "IMG_2777_plank_gate",
-"batch": "real_pairs_results_20261104",
+"batch": "real_pairs_results",
 "dir": "media/real/IMG_2777_plank_gate",
 "dur": 3.0,
 "caption": "Remove the long wooden plank standing on edge beside the ramp, along with the hollow wooden knock of the wooden ball striking it and dropping onto the little gate of two wooden cylinders below, whose orange plastic crossbar it knocked to the counter with a clatter. The ball still rolls down the tilted aluminum ramp on top of the cardboard speaker box, but now flies off its end over the gate, which stays standing, lands on the counter with a dull thud, and rolls into the upright wooden cylinder at the back, knocking it over with a sharp wooden clack and a thud as it falls.",
 "keys": [
 "before",
 "after",
-"stages12",
-"stages12_agentic",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -800,22 +771,21 @@ window.REAL_VIDEOS_MEDIA = [
 "aved",
 "objwiper_mmaudio",
 "vid_mask",
-"aud_mask",
-"vid_mask_agentic",
-"aud_mask_agentic"
+"aud_mask"
 ]
 },
 {
 "id": "IMG_2779_plank_can",
-"batch": "real_pairs_results_20261104",
+"batch": "real_pairs_results",
 "dir": "media/real/IMG_2779_plank_can",
 "dur": 3.0,
 "caption": "Remove the long wooden plank standing on edge beside the ramp, along with the deep wooden knock of the steel ball striking it and dropping toward the purple soda can. The steel ball still rolls down the tilted aluminum ramp on top of the cardboard speaker boxes, but now flies off its end onto the counter with a heavy thud, rolls on past the soda can into the small wooden slat standing at the right, knocking it flat with a sharp clack, and comes to rest beside it.",
 "keys": [
 "before",
 "after",
-"stages12",
-"stages12_agentic",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -826,22 +796,21 @@ window.REAL_VIDEOS_MEDIA = [
 "aved",
 "objwiper_mmaudio",
 "vid_mask",
-"aud_mask",
-"vid_mask_agentic",
-"aud_mask_agentic"
+"aud_mask"
 ]
 },
 {
 "id": "IMG_2780_bowl_pins",
-"batch": "real_pairs_results_20261104",
+"batch": "real_pairs_results",
 "dir": "media/real/IMG_2780_bowl_pins",
 "dur": 3.0,
 "caption": "Remove the white ceramic bowl sitting on the board, along with the ringing ceramic clink of the wooden ball striking it and glancing off the front of the board. The ball still rolls down the tilted aluminum ramp onto the wooden board, but now rolls on to the far end of the board into the three small wooden bowling pins, scattering them off the board with a clatter of sharp wooden clacks.",
 "keys": [
 "before",
 "after",
-"stages12",
-"stages12_agentic",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -852,22 +821,21 @@ window.REAL_VIDEOS_MEDIA = [
 "aved",
 "objwiper_mmaudio",
 "vid_mask",
-"aud_mask",
-"vid_mask_agentic",
-"aud_mask_agentic"
+"aud_mask"
 ]
 },
 {
 "id": "IMG_2781_glass_pot",
-"batch": "real_pairs_results_20261104",
+"batch": "real_pairs_results",
 "dir": "media/real/IMG_2781_glass_pot",
 "dur": 3.0,
 "caption": "Remove the small clear drinking glass standing on the counter, along with the light glassy tap of the adjustable wrench sliding into it. The steel adjustable wrench still slides down the tilted aluminum ramp and lands on the counter with a bright metallic clatter, but now slides on past where the glass stood into the base of the copper-colored pot, striking it with a dull metallic knock and coming to rest against it.",
 "keys": [
 "before",
 "after",
-"stages12",
-"stages12_agentic",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -878,22 +846,21 @@ window.REAL_VIDEOS_MEDIA = [
 "aved",
 "objwiper_mmaudio",
 "vid_mask",
-"aud_mask",
-"vid_mask_agentic",
-"aud_mask_agentic"
+"aud_mask"
 ]
 },
 {
 "id": "IMG_2784_mug_pot",
-"batch": "real_pairs_results_20261104",
+"batch": "real_pairs_results",
 "dir": "media/real/IMG_2784_mug_pot",
 "dur": 3.0,
 "caption": "Remove the glass mug with the cartoon print standing on the counter, along with the bright glassy clink of the wooden ball striking it and bouncing off toward the back wall. The ball still rolls down the tilted aluminum ramp onto the counter with a dull thud, but now rolls on into the side of the copper-colored pot, striking it with a soft metallic ring, and bounces off toward the back of the counter.",
 "keys": [
 "before",
 "after",
-"stages12",
-"stages12_agentic",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -904,22 +871,21 @@ window.REAL_VIDEOS_MEDIA = [
 "aved",
 "objwiper_mmaudio",
 "vid_mask",
-"aud_mask",
-"vid_mask_agentic",
-"aud_mask_agentic"
+"aud_mask"
 ]
 },
 {
 "id": "IMG_2785_grinder_bowl",
-"batch": "real_pairs_results_20261104",
+"batch": "real_pairs_results",
 "dir": "media/real/IMG_2785_grinder_bowl",
 "dur": 3.0,
 "caption": "Remove the black pepper grinder standing on the counter, along with the hard glassy knock of the wooden ball striking it and bouncing back toward the wall. The ball still rolls down the tilted aluminum ramp onto the counter, but now rolls on into the white ceramic bowl, striking it with a bright, ringing ceramic clink, and bounces off toward the back of the counter, rolling away to the right.",
 "keys": [
 "before",
 "after",
-"stages12",
-"stages12_agentic",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -930,22 +896,21 @@ window.REAL_VIDEOS_MEDIA = [
 "aved",
 "objwiper_mmaudio",
 "vid_mask",
-"aud_mask",
-"vid_mask_agentic",
-"aud_mask_agentic"
+"aud_mask"
 ]
 },
 {
 "id": "IMG_2786_red_sheet",
-"batch": "real_pairs_results_20261104",
+"batch": "real_pairs_results",
 "dir": "media/real/IMG_2786_red_sheet",
 "dur": 3.0,
 "caption": "Remove the red round gadget with a black face and a white cap standing between the two wooden cylinders, along with the hard plastic knock of the wooden ball striking it and bouncing back behind it. The ball still rolls down the tilted aluminum ramp onto the counter, but now rolls on between the two upright wooden cylinders into the upright aluminum plate beyond them, knocking it flat with a bright metallic clank and a slap on the counter, and rolls back to rest beside the front cylinder.",
 "keys": [
 "before",
 "after",
-"stages12",
-"stages12_agentic",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -956,22 +921,21 @@ window.REAL_VIDEOS_MEDIA = [
 "aved",
 "objwiper_mmaudio",
 "vid_mask",
-"aud_mask",
-"vid_mask_agentic",
-"aud_mask_agentic"
+"aud_mask"
 ]
 },
 {
 "id": "IMG_2789_plate_dominoes",
-"batch": "real_pairs_results_20261104",
+"batch": "real_pairs_results",
 "dir": "media/real/IMG_2789_plate_dominoes",
 "dur": 3.0,
 "caption": "Remove the first of the three upright aluminum plates standing in a row, along with the bright metallic clink of the wooden ball striking it and the chain of clanging plates that knocked all three flat. The ball still rolls down the tilted aluminum ramp onto the counter, but now rolls on into the next plate, knocking it flat with a sharp metallic clink and a light slap of metal on the counter, while the last plate stays standing and the ball rolls back toward the ramp.",
 "keys": [
 "before",
 "after",
-"stages12",
-"stages12_agentic",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -982,22 +946,21 @@ window.REAL_VIDEOS_MEDIA = [
 "aved",
 "objwiper_mmaudio",
 "vid_mask",
-"aud_mask",
-"vid_mask_agentic",
-"aud_mask_agentic"
+"aud_mask"
 ]
 },
 {
 "id": "IMG_2791_jar_jar",
-"batch": "real_pairs_results_20261104",
+"batch": "real_pairs_results",
 "dir": "media/real/IMG_2791_jar_jar",
 "dur": 3.0,
 "caption": "Remove the large empty glass jar standing on the counter, along with the deep, hollow glass thunk of the wooden ball striking it and bouncing back toward the ramp. The ball still rolls down the tilted aluminum ramp onto the counter, but now rolls on past where the large jar stood into the smaller glass jar behind it, striking it with a bright glass clink, and rolls off toward the camera while the small jar stays standing.",
 "keys": [
 "before",
 "after",
-"stages12",
-"stages12_agentic",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -1008,22 +971,21 @@ window.REAL_VIDEOS_MEDIA = [
 "aved",
 "objwiper_mmaudio",
 "vid_mask",
-"aud_mask",
-"vid_mask_agentic",
-"aud_mask_agentic"
+"aud_mask"
 ]
 },
 {
 "id": "IMG_2792_plank_glasses",
-"batch": "real_pairs_results_20261104",
+"batch": "real_pairs_results",
 "dir": "media/real/IMG_2792_plank_glasses",
 "dur": 3.0,
 "caption": "Remove the wooden plank leaning on the black hexagonal dumbbell, together with the dumbbell, along with the hollow wooden knock of the wooden ball glancing off the plank and the light glass tap as it rolls into the short glasses in front. The ball still rolls down the tilted aluminum ramp onto the counter with a dull thud, but now rolls straight on across the counter into the tall stacked glasses at the right, striking them with a bright glass clink, while the two short glasses in front stay untouched.",
 "keys": [
 "before",
 "after",
-"stages12",
-"stages12_agentic",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -1034,22 +996,21 @@ window.REAL_VIDEOS_MEDIA = [
 "aved",
 "objwiper_mmaudio",
 "vid_mask",
-"aud_mask",
-"vid_mask_agentic",
-"aud_mask_agentic"
+"aud_mask"
 ]
 },
 {
 "id": "IMG_2793_plates_stand",
-"batch": "real_pairs_results_20261104",
+"batch": "real_pairs_results",
 "dir": "media/real/IMG_2793_plates_stand",
 "dur": 3.0,
 "caption": "Remove the two small aluminum plates standing side by side on the counter, along with the bright metallic clinks of the wooden ball knocking them flat. The ball still rolls down the tilted aluminum ramp onto the counter, but now rolls on into the base of the black Z-shaped metal stand, striking it with a ringing metallic clang, and comes to rest against it.",
 "keys": [
 "before",
 "after",
-"stages12",
-"stages12_agentic",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -1060,22 +1021,21 @@ window.REAL_VIDEOS_MEDIA = [
 "aved",
 "objwiper_mmaudio",
 "vid_mask",
-"aud_mask",
-"vid_mask_agentic",
-"aud_mask_agentic"
+"aud_mask"
 ]
 },
 {
 "id": "IMG_2794_gadget_bowl",
-"batch": "real_pairs_results_20261104",
+"batch": "real_pairs_results",
 "dir": "media/real/IMG_2794_gadget_bowl",
 "dur": 3.0,
 "caption": "Remove the black cone-shaped desk gadget with the chrome top, along with the hard plastic knock of the wooden ball striking it and glancing off toward the camera. The ball still rolls down the tilted aluminum ramp onto the counter, but now rolls on into the speckled ceramic bowl, striking it with a bright, ringing ceramic clink, and comes to rest against its rim.",
 "keys": [
 "before",
 "after",
-"stages12",
-"stages12_agentic",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -1086,22 +1046,21 @@ window.REAL_VIDEOS_MEDIA = [
 "aved",
 "objwiper_mmaudio",
 "vid_mask",
-"aud_mask",
-"vid_mask_agentic",
-"aud_mask_agentic"
+"aud_mask"
 ]
 },
 {
 "id": "IMG_2795_sheet_bowl_spoon",
-"batch": "real_pairs_results_20261104",
+"batch": "real_pairs_results",
 "dir": "media/real/IMG_2795_sheet_bowl_spoon",
 "dur": 3.0,
 "caption": "Remove the upright aluminum plate standing on the counter, along with the metallic tap of the sliding spoon striking it and the slap of the plate falling flat. The steel spoon still slides down the tilted aluminum ramp with a bright metallic scrape and onto the counter, but now slides on past where the plate stood into the speckled ceramic bowl, striking it with a bright ceramic clink and coming to rest against it.",
 "keys": [
 "before",
 "after",
-"stages12",
-"stages12_agentic",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -1112,9 +1071,357 @@ window.REAL_VIDEOS_MEDIA = [
 "aved",
 "objwiper_mmaudio",
 "vid_mask",
-"aud_mask",
-"vid_mask_agentic",
-"aud_mask_agentic"
+"aud_mask"
+]
+},
+{
+"id": "IMG_2969_car_brass_bowl",
+"batch": "real_pairs_results",
+"dir": "media/real/IMG_2969_car_brass_bowl",
+"dur": 3.0,
+"caption": "Remove the yellow and black plastic toy sports car. The ball rolls off the ramp onto the board with a solid wooden knock. The ball rolls to the right and hits the side of the brass bowl with a ringing metal tone. The bowl slides a little to the right. The ball bounces back a little to the left. The ball rolls back against the bowl with a short metal click. The ball is still rolling at the end.",
+"keys": [
+"before",
+"after",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
+"baseline",
+"void_stages12",
+"instructav2av_e19",
+"void_mmaudio",
+"instructav2av",
+"ltx_iclora_samaudio",
+"minimax_h3",
+"aved",
+"objwiper_mmaudio",
+"vid_mask",
+"aud_mask"
+]
+},
+{
+"id": "IMG_2979_car_steel_bowl",
+"batch": "real_pairs_results",
+"dir": "media/real/IMG_2979_car_steel_bowl",
+"dur": 3.0,
+"caption": "Remove the yellow and black plastic toy sports car. The ball rolls to the right and hits the left side of the steel bowl with a ringing metal clang. The bowl slides a little to the right. The ball bounces back to the left and rolls toward the wall. The ball bounces off the wall with a dull wooden thump. The ball rolls to the left and toward the bottom of the frame and is still rolling at the end.",
+"keys": [
+"before",
+"after",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
+"baseline",
+"void_stages12",
+"instructav2av_e19",
+"void_mmaudio",
+"instructav2av",
+"ltx_iclora_samaudio",
+"minimax_h3",
+"aved",
+"objwiper_mmaudio",
+"vid_mask",
+"aud_mask"
+]
+},
+{
+"id": "IMG_2990_plush_plate",
+"batch": "real_pairs_results",
+"dir": "media/real/IMG_2990_plush_plate",
+"dur": 3.0,
+"caption": "Remove the brown plush toy animal with a red Santa hat. The wooden ball rolls to the right and hits the upright aluminum plate with a ringing metal clink. The plate tilts a little to the right. The ball rolls to the right and taps the plate again with a sharp metal click. The plate wobbles and stays upright. The ball rocks a little against the left side of the plate. Both are still moving at the end.",
+"keys": [
+"before",
+"after",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
+"baseline",
+"void_stages12",
+"instructav2av_e19",
+"void_mmaudio",
+"instructav2av",
+"ltx_iclora_samaudio",
+"minimax_h3",
+"aved",
+"objwiper_mmaudio",
+"vid_mask",
+"aud_mask"
+]
+},
+{
+"id": "IMG_2994_car_block",
+"batch": "real_pairs_results",
+"dir": "media/real/IMG_2994_car_block",
+"dur": 3.0,
+"caption": "Remove the yellow and black plastic toy sports car. The ball rolls to the right with a run of wooden taps. The ball hits the upright wooden block with a sharp wooden knock. The block tips over to the right and falls flat with a solid wooden clack. The ball rolls slowly toward the bottom right of the frame and is still rolling at the end.",
+"keys": [
+"before",
+"after",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
+"baseline",
+"void_stages12",
+"instructav2av_e19",
+"void_mmaudio",
+"instructav2av",
+"ltx_iclora_samaudio",
+"minimax_h3",
+"aved",
+"objwiper_mmaudio",
+"vid_mask",
+"aud_mask"
+]
+},
+{
+"id": "IMG_2996_box_block",
+"batch": "real_pairs_results",
+"dir": "media/real/IMG_2996_box_block",
+"dur": 3.0,
+"caption": "Remove the green cardboard box. The wooden ball rolls to the right and hits the upright wooden block with a sharp wooden knock. The block tips over to the right and falls flat with a solid wooden clack. The ball rolls slowly to the right along the lower edge of the fallen block and bumps it with a dull wooden thump. The ball is still rolling at the end.",
+"keys": [
+"before",
+"after",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
+"baseline",
+"void_stages12",
+"instructav2av_e19",
+"void_mmaudio",
+"instructav2av",
+"ltx_iclora_samaudio",
+"minimax_h3",
+"aved",
+"objwiper_mmaudio",
+"vid_mask",
+"aud_mask"
+]
+},
+{
+"id": "IMG_2999_headphones_stand",
+"batch": "real_pairs_results",
+"dir": "media/real/IMG_2999_headphones_stand",
+"dur": 3.0,
+"caption": "Remove the grey plastic headphones. The wooden ball rolls to the right and hits the black metal stand with a ringing metal clang. The stand shakes and shifts a little to the right with a short metal rattle. The ball rolls back a little to the left. The ball rolls back against the stand and is still rolling at the end.",
+"keys": [
+"before",
+"after",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
+"baseline",
+"void_stages12",
+"instructav2av_e19",
+"void_mmaudio",
+"instructav2av",
+"ltx_iclora_samaudio",
+"minimax_h3",
+"aved",
+"objwiper_mmaudio",
+"vid_mask",
+"aud_mask"
+]
+},
+{
+"id": "IMG_3006_bucket_bowls",
+"batch": "real_pairs_results",
+"dir": "media/real/IMG_3006_bucket_bowls",
+"dur": 3.0,
+"caption": "Remove the orange plastic bucket. The ball rolls off the end of the ramp and drops onto the board with a solid wooden knock. The ball rolls to the right across the board. The ball hits the left side of the lower bowl with a ringing ceramic clink. The lower bowl stays in place. The ball comes to rest between the two bowls.",
+"keys": [
+"before",
+"after",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
+"baseline",
+"void_stages12",
+"instructav2av_e19",
+"void_mmaudio",
+"instructav2av",
+"ltx_iclora_samaudio",
+"minimax_h3",
+"aved",
+"objwiper_mmaudio",
+"vid_mask",
+"aud_mask"
+]
+},
+{
+"id": "IMG_3007_jar_bowls",
+"batch": "real_pairs_results",
+"dir": "media/real/IMG_3007_jar_bowls",
+"dur": 3.0,
+"caption": "Remove the clear glass bowl, together with the light wooden block. The ball rolls off the ramp onto the board with a solid wooden knock. The ball rolls to the right and hits the left side of the lower white ceramic bowl with a ringing ceramic tone. The ball rolls into the gap between the bowls and back a little to the left. The ball rolls toward the lower bowl again and is still rolling at the end.",
+"keys": [
+"before",
+"after",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
+"baseline",
+"void_stages12",
+"instructav2av_e19",
+"void_mmaudio",
+"instructav2av",
+"ltx_iclora_samaudio",
+"minimax_h3",
+"aved",
+"objwiper_mmaudio",
+"vid_mask",
+"aud_mask"
+]
+},
+{
+"id": "IMG_3011_mug_glass",
+"batch": "real_pairs_results",
+"dir": "media/real/IMG_3011_mug_glass",
+"dur": 3.0,
+"caption": "Remove the white ceramic mug. The ball rolls right across the board with quick wooden taps. The ball hits the glass with a ringing glass clink. The glass slides a little to the right, wobbles slightly and stays upright. The ball bounces off the glass and rolls toward the bottom of the frame. The ball drops onto the counter with a solid wooden knock. The ball bounces with quick wooden taps and rolls out of the bottom of the frame.",
+"keys": [
+"before",
+"after",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
+"baseline",
+"void_stages12",
+"instructav2av_e19",
+"void_mmaudio",
+"instructav2av",
+"ltx_iclora_samaudio",
+"minimax_h3",
+"aved",
+"objwiper_mmaudio",
+"vid_mask",
+"aud_mask"
+]
+},
+{
+"id": "IMG_3013_block_disc",
+"batch": "real_pairs_results",
+"dir": "media/real/IMG_3013_block_disc",
+"dur": 3.0,
+"caption": "Remove the upright light wooden block. The wooden ball rolls to the right across the board and hits the left edge of the grey perforated metal disc with a sharp metal clang. The disc slides a little to the right. The ball rolls up onto the disc and across it to the right with a ringing metal rattle. The ball reaches the right edge of the disc and is still rolling at the end.",
+"keys": [
+"before",
+"after",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
+"baseline",
+"void_stages12",
+"instructav2av_e19",
+"void_mmaudio",
+"instructav2av",
+"ltx_iclora_samaudio",
+"minimax_h3",
+"aved",
+"objwiper_mmaudio",
+"vid_mask",
+"aud_mask"
+]
+},
+{
+"id": "IMG_3018_foam_drop",
+"batch": "real_pairs_results",
+"dir": "media/real/IMG_3018_foam_drop",
+"dur": 3.0,
+"caption": "Remove the cream foam block. The steel ball drops onto the board with a sharp wooden knock. The ball bounces up a little and lands again with a crisp wooden tap. The ball rolls slowly toward the top of the frame and curves to the left. The ball reaches the side of the box and is still rolling at the end.",
+"keys": [
+"before",
+"after",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
+"baseline",
+"void_stages12",
+"instructav2av_e19",
+"void_mmaudio",
+"instructav2av",
+"ltx_iclora_samaudio",
+"minimax_h3",
+"aved",
+"objwiper_mmaudio",
+"vid_mask",
+"aud_mask"
+]
+},
+{
+"id": "IMG_3020_glass_drop",
+"batch": "real_pairs_results",
+"dir": "media/real/IMG_3020_glass_drop",
+"dur": 3.0,
+"caption": "Remove the clear drinking glass. The wooden ball falls onto the board with a sharp wooden knock. The ball bounces up and lands again with a sharp wooden knock. The ball makes a few small bounces with a quick run of wooden taps. The ball rolls a little to the right and rocks back and forth. The ball is still rocking a little at the end.",
+"keys": [
+"before",
+"after",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
+"baseline",
+"void_stages12",
+"instructav2av_e19",
+"void_mmaudio",
+"instructav2av",
+"ltx_iclora_samaudio",
+"minimax_h3",
+"aved",
+"objwiper_mmaudio",
+"vid_mask",
+"aud_mask"
+]
+},
+{
+"id": "IMG_3021_plate_drop",
+"batch": "real_pairs_results",
+"dir": "media/real/IMG_3021_plate_drop",
+"dur": 3.0,
+"caption": "Remove the silver metal plate, together with the pale chipboard block under it. The steel ball drops straight onto the wooden board with a heavy wooden thud. The ball bounces up a little and lands again with a solid wooden knock. The ball comes to rest on the board.",
+"keys": [
+"before",
+"after",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
+"baseline",
+"void_stages12",
+"instructav2av_e19",
+"void_mmaudio",
+"instructav2av",
+"ltx_iclora_samaudio",
+"minimax_h3",
+"aved",
+"objwiper_mmaudio",
+"vid_mask",
+"aud_mask"
+]
+},
+{
+"id": "IMG_3024_box_glass_block",
+"batch": "real_pairs_results",
+"dir": "media/real/IMG_3024_box_glass_block",
+"dur": 3.0,
+"caption": "Remove the brown cardboard box. The ball rolls to the right across the board and hits the upright wooden slat with a sharp wooden knock. The slat tips over to the right and falls flat on the board with a solid wooden clack. The ball rolls on to the right toward the bottom right corner of the board and is still rolling at the end.",
+"keys": [
+"before",
+"after",
+"stage1_e25",
+"stages12_e25",
+"stages123_u6750",
+"baseline",
+"void_stages12",
+"instructav2av_e19",
+"void_mmaudio",
+"instructav2av",
+"ltx_iclora_samaudio",
+"minimax_h3",
+"aved",
+"objwiper_mmaudio",
+"vid_mask",
+"aud_mask"
 ]
 }
 ];
