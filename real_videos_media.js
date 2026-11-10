@@ -4,7 +4,7 @@ window.REAL_VIDEOS_MEDIA = [
 "batch": "real_pairs_results",
 "dir": "media/real/IMG_2601_book_glass_jar",
 "dur": 4.0,
-"caption": "Remove the orange paperback standing upright on the counter, along with the papery slap of the glass jar knocking it flat. The empty glass jar still rolls down the teal cutting board, but it no longer bounces back toward the wall; it rolls on and strikes the clear whiskey glass with a bright glass-on-glass clink, nudging the glass and turning toward the camera.",
+"caption": "Remove the orange paperback book standing upright on its end. The glass jar rolls off the end of the ramp, crosses the counter, and hits the clear glass tumbler with a bright glassy clink, pushing it a little to the right. The jar then swings round onto its side just left of the tumbler and rolls slowly away from it.",
 "keys": [
 "before",
 "after",
@@ -29,7 +29,7 @@ window.REAL_VIDEOS_MEDIA = [
 "batch": "real_pairs_results",
 "dir": "media/real/IMG_2610_steel_lid_bucket",
 "dur": 3.2,
-"caption": "Remove the stainless steel dome lid from the foot of the teal cutting board, along with the metallic ring of the yellow tennis ball glancing off it. The ball no longer rolls away toward the camera; it now rolls straight on and hits the side of the red plastic bucket with a hollow plastic thump, then bounces back toward the cutting board.",
+"caption": "Remove the silver stainless-steel dome cover with a knob on top. The yellow tennis ball rolls off the end of the board, straight across the counter, and hits the orange plastic bucket with a hollow plastic thud, shoving it a little to the right. The ball then rebounds to the left and comes to rest beside the bottom corner of the board.",
 "keys": [
 "before",
 "after",
@@ -54,7 +54,7 @@ window.REAL_VIDEOS_MEDIA = [
 "batch": "real_pairs_results",
 "dir": "media/real/IMG_2630_plate_jar",
 "dur": 5.0,
-"caption": "Remove the flat aluminum plate bridging the gap between the two cardboard boxes, along with the clank of the wooden ball rolling onto it and the glassy clinks of the ball knocking the glass jar on the right box. The ball still rolls down the tilted aluminum ramp, but now drops off its end into the white ceramic bowl below with a hollow ceramic clunk and rattles to a stop, leaving the glass jar untouched.",
+"caption": "Remove the flat grey metal sheet lying across the tops of the two cardboard boxes. The wooden ball flies off the end of the ramp and strikes the side of the right cardboard box with a dull thud. It then falls into the white ceramic bowl with a ringing clatter, rattles around, and comes to rest at the bottom.",
 "keys": [
 "before",
 "after",
@@ -79,7 +79,7 @@ window.REAL_VIDEOS_MEDIA = [
 "batch": "real_pairs_results",
 "dir": "media/real/IMG_2637_plate_dome",
 "dur": 5.0,
-"caption": "Remove the flat aluminum plate bridging the gap between the two cardboard boxes, along with the clank of the wooden ball rolling onto it and the bright metallic rings of the ball striking the stainless steel dome lid. The ball still rolls down the tilted aluminum ramp, but now drops off its end into the white ceramic bowl below with a hollow ceramic clunk, and the dome lid stays silent and still.",
+"caption": "Remove the flat grey metal sheet that lies level beyond the end of the ramp and reaches over to the steel dome. The wooden ball drops off the end of the ramp into the white ceramic bowl and lands with a sharp ceramic clatter. It rolls around the inside wall with a ringing rattle, gives one more ceramic clink, and keeps rolling back and forth across the bottom.",
 "keys": [
 "before",
 "after",
@@ -104,7 +104,7 @@ window.REAL_VIDEOS_MEDIA = [
 "batch": "real_pairs_results",
 "dir": "media/real/IMG_2639_plate_bowl",
 "dur": 5.0,
-"caption": "Remove the flat aluminum plate bridging the gap between the two cardboard boxes, along with the clank of the wooden ball rolling onto it. The ball still rolls down the tilted aluminum ramp, but instead of crossing the plate and coming to rest near the white bowl, it drops off the end of the ramp into the black-lined cooker pot below with a hollow metallic thud and rattles around inside.",
+"caption": "Remove the flat grey metal sheet lying across the two cardboard boxes above the pot. The wooden ball flies off the end of the ramp and strikes the right inner wall of the black-lined metal pot with a bright metallic clang. It drops to the bottom, bounces up and down with a rapid run of metallic clatters, and comes to rest there, hidden below the rim.",
 "keys": [
 "before",
 "after",
@@ -129,7 +129,7 @@ window.REAL_VIDEOS_MEDIA = [
 "batch": "real_pairs_results",
 "dir": "media/real/IMG_2642_plate_bucket",
 "dur": 3.5,
-"caption": "Remove the flat aluminum plate bridging the gap between the two cardboard boxes above the cooker pot, along with the clank of the wooden ball rolling onto it and the hollow plastic thump of the ball striking the red bucket. The ball still rolls down the tilted aluminum ramp, but now drops off its end into the black-lined cooker pot below with a dull metallic thud and rattles around inside, and the red bucket stays still and silent.",
+"caption": "Remove the flat grey metal sheet lying across the two cardboard boxes above the pot. The wooden ball drops off the end of the ramp and strikes the right rim of the metal pot with a ringing clang. It falls inside, bounces rapidly up and down on the bottom of the pot with bright metallic clinks, and comes to rest there.",
 "keys": [
 "before",
 "after",
@@ -154,7 +154,7 @@ window.REAL_VIDEOS_MEDIA = [
 "batch": "real_pairs_results",
 "dir": "media/real/IMG_2649_box_blocks",
 "dur": 5.0,
-"caption": "Remove the cardboard box standing on the wooden board, along with the dull cardboard thump of the wooden ball striking it. The ball still rolls down the tilted aluminum ramp onto the board, but instead of bouncing off the box toward the camera, it rolls on across the board and knocks over the three upright wooden blocks at the back with a clatter of wooden clacks.",
+"caption": "Remove the brown cardboard box standing on the board. The wooden ball rolls across the board to the right, drops off the right end onto the counter with a dull thud, and strikes the leftmost of the three upright wooden slats with a wooden knock. All three slats topple together, pressed against one another, and land flat in a stack with a solid wooden clatter. The ball rolls out of the frame on the right.",
 "keys": [
 "before",
 "after",
@@ -179,7 +179,7 @@ window.REAL_VIDEOS_MEDIA = [
 "batch": "real_pairs_results",
 "dir": "media/real/IMG_2650_jar_dominoes",
 "dur": 5.0,
-"caption": "Remove the small glass jar standing on the wooden board at the foot of the ramp, along with the glassy clink of the wooden ball stopping against it. The ball still rolls down the tilted aluminum ramp, but now rolls on into the first wooden domino, and the whole curving row topples in sequence with a rapid cascade of wooden clacks.",
+"caption": "Remove the clear glass jar standing on the board. The wooden ball rolls off the right end of the board into the leftmost of eight upright wooden blocks. Each block topples into the next, and all eight fall flat in a chain with a rapid run of wooden clacks. The ball then rolls out of the bottom of the frame.",
 "keys": [
 "before",
 "after",
@@ -204,7 +204,7 @@ window.REAL_VIDEOS_MEDIA = [
 "batch": "real_pairs_results",
 "dir": "media/real/IMG_2653_dumbbell_blocks",
 "dur": 5.0,
-"caption": "Remove the black hexagonal dumbbell standing among the wooden blocks, along with the knock of the toppling wooden block coming to rest against its handle. The wooden ball still rolls down the tilted aluminum ramp and strikes the first upright block, but with nothing to hold it the block falls into the next ones, and the blocks topple in a chain onto the floor with a run of wooden clacks.",
+"caption": "Remove the black hexagonal rubber dumbbell with a steel handle, standing upright on one end. The three pine slats at the top of the frame fall flat to the right one after another with wooden clacks. The last one strikes the bottom three, which all topple flat toward the bottom of the frame with a sharp wooden clatter. The ball rolls along the wall and out of the frame on the right.",
 "keys": [
 "before",
 "after",
@@ -229,7 +229,7 @@ window.REAL_VIDEOS_MEDIA = [
 "batch": "real_pairs_results",
 "dir": "media/real/IMG_2654_glass_dish_pot",
 "dur": 5.0,
-"caption": "Remove the glass baking dish sitting inside the cooker pot, along with the sharp glassy clink of the wooden ball landing in it. The ball is still dropped from the kitchen tongs above the black case, but now falls straight into the pot itself, landing on its black non-stick bottom with a dull metallic thud and bouncing a few times before it settles.",
+"caption": "Remove the clear rectangular glass dish in the pot. The wooden ball drops onto the dark metal floor of the pot with a ringing clang, bounces straight up, and strikes the rim at the top of the frame with a clang. It bounces up and down on the floor several times, with a clang at each landing. The ball rolls to the wall at the bottom right with a run of short metallic taps, then rolls left and stops on the left side of the floor.",
 "keys": [
 "before",
 "after",
@@ -253,8 +253,8 @@ window.REAL_VIDEOS_MEDIA = [
 "id": "IMG_2669_plate_slats",
 "batch": "real_pairs_results",
 "dir": "media/real/IMG_2669_plate_slats",
-"dur": 5.0,
-"caption": "Remove the aluminum plate leaning against the glass container behind it, together with the container, along with the bright metallic clang of the wooden ball dropping onto the plate and rolling down it past the three upright wooden slats. The ball still rolls down the tilted aluminum ramp, but now drops onto the floor with a dull wooden thud and rolls on into the three slats, knocking them flat with a clatter of wooden clacks, then rolls back toward the camera.",
+"dur": 3.0,
+"caption": "Remove the flat aluminium sheet and the clear glass dish propping it up. The ball drops off the end of the ramp onto the counter with a dull thud and strikes the left one of three upright wooden slats. The three slats topple with sharp wooden clacks and all lie flat. The ball rolls out of the bottom of the frame.",
 "keys": [
 "before",
 "after",
@@ -279,7 +279,7 @@ window.REAL_VIDEOS_MEDIA = [
 "batch": "real_pairs_results",
 "dir": "media/real/IMG_2673_plate_bowl_slats",
 "dur": 4.833,
-"caption": "Remove the aluminum plate leaning against the glass container behind it, together with the container, along with the bright metallic clang of the wooden ball dropping onto the plate, which turned the ball into the three upright wooden slats and toppled them with a clatter of wooden clacks. The ball still rolls down the tilted aluminum ramp, but now drops onto the floor with a dull wooden thud, rolls into the side of the glass bowl with a glassy clink and bounces back toward the camera, while the three slats stay standing.",
+"caption": "Remove the aluminium sheet leaning upright, together with the clear rectangular glass dish just above it. The wooden ball drops onto the counter with a crisp wooden knock and bounces into the left side of the glass bowl with a ringing glass clink, leaving the bowl in place. It then bounces to the left with short wooden taps and rolls toward the bottom of the frame, still moving at the end.",
 "keys": [
 "before",
 "after",
@@ -304,7 +304,7 @@ window.REAL_VIDEOS_MEDIA = [
 "batch": "real_pairs_results",
 "dir": "media/real/IMG_2677_plate_two_rows",
 "dur": 5.0,
-"caption": "Remove the aluminum plate leaning against the glass container behind it, together with the container, along with the bright metallic clang of the wooden ball dropping onto the plate, which turned the ball into the front row of three wooden slats and knocked them down. The ball still rolls down the tilted aluminum ramp, but now drops onto the floor with a dull wooden thud and rolls on into the back row of three slats, toppling them with a clatter of wooden clacks while the front row stays standing.",
+"caption": "Remove the flat aluminium sheet leaning below the ramp and the clear glass dish at its top edge. The wooden ball drops off the ramp, bounces on the counter with a dull thud, and strikes the leftmost of the three blocks at the top of the frame with a sharp knock. All three blocks topple flat with a wooden clatter. The ball rolls out of the frame on the right.",
 "keys": [
 "before",
 "after",
@@ -329,7 +329,7 @@ window.REAL_VIDEOS_MEDIA = [
 "batch": "real_pairs_results",
 "dir": "media/real/IMG_2696_box_domino",
 "dur": 3.0,
-"caption": "Remove the cardboard speaker box standing on the counter, along with the dull cardboard thump of the wooden ball striking it and bouncing back toward the glass bowl. The ball still rolls down the tilted aluminum ramp, but now rolls on past where the box stood into the upright wooden domino, knocking it flat with a sharp wooden clack, and keeps rolling to the right.",
+"caption": "Remove the brown cardboard box. The ball rolls into the upright wooden block, which tips over onto the ball and drops flat with a hollow wooden clatter. The ball keeps rolling slowly, bumps the corner of the fallen block closest to the camera with a wooden knock, and rolls out of the frame on the right.",
 "keys": [
 "before",
 "after",
@@ -354,7 +354,7 @@ window.REAL_VIDEOS_MEDIA = [
 "batch": "real_pairs_results",
 "dir": "media/real/IMG_2750_box_plate",
 "dur": 3.0,
-"caption": "Remove the cardboard speaker box standing at the back of the board, along with the dull cardboard thump of the wooden ball glancing off it toward the front of the board, where it knocked a small clear acrylic block onto the counter with a light clatter. The ball still rolls down the tilted aluminum ramp onto the wooden board, but now rolls straight along the board into the upright clear acrylic plate at its far end, knocking it flat with a sharp click and a slap, while the small block at the front stays standing, and the ball drops off the end of the board onto the counter with a dull thud.",
+"caption": "Remove the brown cardboard speaker box. The ball rolls along the board, drops off the right end onto the counter, and strikes the standing thick aluminium plate with a ringing metallic clang. The plate tips over and falls flat with a solid metallic clank. The ball rolls slowly to the right edge of the frame.",
 "keys": [
 "before",
 "after",
@@ -379,7 +379,7 @@ window.REAL_VIDEOS_MEDIA = [
 "batch": "real_pairs_results",
 "dir": "media/real/IMG_2753_box_pins",
 "dur": 3.0,
-"caption": "Remove the cardboard speaker box standing at the back of the board, along with the dull cardboard thump of the wooden ball glancing off it into the three small wooden bowling pins, which it scattered off the front of the board. The ball still rolls down the tilted aluminum ramp onto the wooden board, but now rolls past behind the pins, which stay standing, to the far end of the board into the cluster of upright wooden cylinders, knocking them over with a clatter of wooden clacks.",
+"caption": "Remove the brown cardboard box above the pins. The ball rolls to the right, drops off the board onto the counter with a dull wooden thud, and knocks the cylinder at the top of the frame flat with a hollow wooden clack, nudging the middle cylinder a little to the right. The middle cylinder rolls to the right, and the ball rolls slowly after it. The cylinder at the bottom of the frame stays still.",
 "keys": [
 "before",
 "after",
@@ -404,7 +404,7 @@ window.REAL_VIDEOS_MEDIA = [
 "batch": "real_pairs_results",
 "dir": "media/real/IMG_2754_box_cylinders",
 "dur": 3.0,
-"caption": "Remove the cardboard speaker box standing at the back of the board, along with the dull cardboard thump of the wooden ball glancing off it into the small orange plastic block, which it knocked off the front of the board onto the counter. The ball still rolls down the tilted aluminum ramp onto the wooden board, but now rolls past behind the orange block, which stays in place, to the far end of the board into the pair of upright wooden cylinders, knocking them over with sharp wooden clacks as they fall onto the counter.",
+"caption": "Remove the brown cardboard speaker box. The ball rolls to the right and strikes the cylinder at the bottom of the frame with a hollow wooden knock. The cylinder on top tips over, the ball drops onto the counter with a dull thud, and both cylinders fall flat with sharp wooden clatters. The cylinder at the top of the frame stays upright. The ball rolls out of the frame on the right.",
 "keys": [
 "before",
 "after",
@@ -429,7 +429,7 @@ window.REAL_VIDEOS_MEDIA = [
 "batch": "real_pairs_results",
 "dir": "media/real/IMG_2755_car_sheet",
 "dur": 3.0,
-"caption": "Remove the yellow toy sports car parked at the foot of the ramp, along with the soft plastic knock of the wooden ball striking it and bouncing away toward the camera. The ball still rolls down the tilted aluminum ramp onto the wooden board, but now rolls straight along the board into the upright aluminum plate at its far end, knocking it flat with a bright metallic clank and a slap of metal on wood, then rolls back toward the camera and drops off the board onto the counter with a dull thud.",
+"caption": "Remove the yellow plastic toy sports car. The wooden ball rolls across the board into the upright aluminium plate with a ringing metallic clink and rebounds. The plate tips over to the right and lands flat with a heavy metallic clang. The ball rolls back toward the ramp, drops off the edge of the board closest to the camera onto the counter with a dull thud, and rolls toward the bottom of the frame.",
 "keys": [
 "before",
 "after",
@@ -454,7 +454,7 @@ window.REAL_VIDEOS_MEDIA = [
 "batch": "real_pairs_results",
 "dir": "media/real/IMG_2756_car_sheet",
 "dur": 3.0,
-"caption": "Remove the yellow toy sports car parked at the foot of the ramp, along with the soft plastic tap of the wooden ball rolling into its rear and stopping against it. The ball still rolls down the tilted aluminum ramp onto the wooden board, but now rolls on along the board into the upright aluminum plate at its far end, knocking it flat with a metallic clink and a slap of metal on wood, and rolls off the far edge of the board onto the counter with a dull thud.",
+"caption": "Remove the yellow and black plastic toy sports car. The wooden ball rolls across the board into the upright clear acrylic slab and knocks it flat with a sharp plastic clack. The ball then drops off the right end of the board onto the counter with a wooden thud, bounces with dull knocks, and rolls out of the frame on the right.",
 "keys": [
 "before",
 "after",
@@ -479,7 +479,7 @@ window.REAL_VIDEOS_MEDIA = [
 "batch": "real_pairs_results",
 "dir": "media/real/IMG_2757_bowl_cylinders",
 "dur": 3.0,
-"caption": "Remove the white ceramic bowl sitting on the board, along with the ringing ceramic clink of the wooden ball striking it and glancing off the front of the board. The ball still rolls down the tilted aluminum ramp onto the wooden board, but now rolls on into the pair of upright wooden cylinders at the back, knocking one of them flat with sharp wooden clacks, and bounces away toward the front, dropping off the board onto the counter with a dull thud.",
+"caption": "Remove the white ceramic bowl with a speckled grey outside. The ball rolls into the cylinder at the bottom of the frame with a sharp wooden clack and knocks it flat to the right with a hollow knock. The other cylinder stays standing. The ball then rolls to the bottom right, drops off the board onto the counter with a dull thud, and keeps rolling to the right.",
 "keys": [
 "before",
 "after",
@@ -504,7 +504,7 @@ window.REAL_VIDEOS_MEDIA = [
 "batch": "real_pairs_results",
 "dir": "media/real/IMG_2758_sphere_car",
 "dur": 3.0,
-"caption": "Remove the chrome sphere resting on a small clear stand in the middle of the board, along with the soft click of the wooden ball striking it and glancing off toward the camera. The ball still rolls down the tilted aluminum ramp onto the wooden board, but now rolls on into the yellow toy sports car behind it, nudging the car forward with a soft plastic knock, then rolls back across the board and drops off its front edge onto the counter with a dull thud.",
+"caption": "Remove the chrome steel ball, together with the white plastic cap it sits on. The wooden ball rolls to the right into the left end of the yellow plastic toy car with a sharp plastic clack, shoving the car a little to the right. The car keeps its shape. The wooden ball rebounds a little, rests, then rolls slowly off the bottom edge of the board onto the counter with a dull wooden thud.",
 "keys": [
 "before",
 "after",
@@ -529,7 +529,7 @@ window.REAL_VIDEOS_MEDIA = [
 "batch": "real_pairs_results",
 "dir": "media/real/IMG_2759_car_bottle",
 "dur": 3.0,
-"caption": "Remove the yellow toy sports car parked at the foot of the ramp, along with the soft plastic knock of the wooden ball pushing it forward across the board. The ball still rolls down the tilted aluminum ramp onto the wooden board, but now rolls on into the base of the dark glass wine bottle, striking it with a sharp glassy knock that leaves the bottle standing, and bounces back toward the camera, dropping off the front edge of the board onto the counter with a dull thud.",
+"caption": "Remove the yellow and black plastic toy sports car. The wooden ball lands on the board with a wooden knock, rolls to the green glass bottle, and hits its base with a bright glassy clink. The bottle wobbles slightly and stays upright. The ball bounces off to the left, drops off the bottom edge of the board onto the counter with a dull thud, and rolls out of the bottom of the frame.",
 "keys": [
 "before",
 "after",
@@ -554,7 +554,7 @@ window.REAL_VIDEOS_MEDIA = [
 "batch": "real_pairs_results",
 "dir": "media/real/IMG_2760_sheet_bowl",
 "dur": 3.0,
-"caption": "Remove the upright aluminum plate standing on the board, along with the metallic slap of the plate falling flat when the wooden ball strikes it. The ball still rolls down the tilted aluminum ramp onto the wooden board, but now rolls on into the speckled ceramic bowl, striking it with two bright, ringing ceramic clinks, and bounces past behind the bowl, which stays in place, rolling off the far side of the board.",
+"caption": "Remove the silver aluminium block standing upright on the board. The wooden ball strikes the side of the speckled ceramic bowl with a ringing ceramic clink. The bowl wobbles slightly and stays in place. The ball glances off toward the top of the frame, drops off the top edge of the board onto the counter with a dull wooden thud, and rolls on, ending up to the right of the bowl.",
 "keys": [
 "before",
 "after",
@@ -579,7 +579,7 @@ window.REAL_VIDEOS_MEDIA = [
 "batch": "real_pairs_results",
 "dir": "media/real/IMG_2761_stapler_mug",
 "dur": 3.0,
-"caption": "Remove the black stapler lying on the board, along with the hard plastic knock of the wooden ball striking it and turning it aside. The ball still rolls down the tilted aluminum ramp onto the wooden board, but now rolls on into the gray ceramic mug at the far end, striking it with a bright ceramic clink, and bounces back toward the camera, dropping off the front edge of the board onto the counter with a dull thud.",
+"caption": "Remove the black plastic stapler standing on the board. The ball rolls to the grey ceramic mug and glances off its side with a ringing ceramic clink. The mug wobbles slightly and stays upright. The ball veers toward the bottom of the frame, drops off the board onto the counter with a dull wooden thud, and rolls out of the frame on the right.",
 "keys": [
 "before",
 "after",
@@ -604,7 +604,7 @@ window.REAL_VIDEOS_MEDIA = [
 "batch": "real_pairs_results",
 "dir": "media/real/IMG_2763_controller_cylinder",
 "dur": 3.0,
-"caption": "Remove the white game controller lying on the board, along with the hard plastic knock of the wooden ball striking it and bouncing back toward the camera. The ball still rolls down the tilted aluminum ramp onto the wooden board, but now rolls on into the upright wooden cylinder at the back, knocking it over with a sharp wooden clack and a thud of wood on wood, and the cylinder rolls away toward the far end of the board.",
+"caption": "Remove the white and black plastic game controller. The ball rolls into the upright wooden cylinder with a wooden knock. The cylinder tips over flat onto the board with a hollow wooden clack. The ball drops off the right end of the board onto the counter with a dull thud and leaves the frame on the right. The cylinder follows it off the same end with a wooden knock.",
 "keys": [
 "before",
 "after",
@@ -629,7 +629,7 @@ window.REAL_VIDEOS_MEDIA = [
 "batch": "real_pairs_results",
 "dir": "media/real/IMG_2764_drill_sheet",
 "dur": 3.0,
-"caption": "Remove the red cordless drill standing upright on its battery in the middle of the board, along with the dull plastic thunk of the wooden ball striking its battery and stopping against it. The ball still rolls down the tilted aluminum ramp onto the wooden board, but now rolls on into the upright aluminum plate at the far end, striking it with a bright metallic clang that leaves it standing, and bounces off toward the camera, dropping off the front edge of the board onto the counter with a dull thud.",
+"caption": "Remove the red and black cordless drill standing upright on its battery. The ball rolls into the lower right corner of the upright metal plate with a ringing metallic clank and pushes it a little. The plate wobbles slightly and stays upright. The ball veers right, drops off the right end of the board onto the counter with a dull wooden thud, and rolls out of the frame on the right.",
 "keys": [
 "before",
 "after",
@@ -654,7 +654,7 @@ window.REAL_VIDEOS_MEDIA = [
 "batch": "real_pairs_results",
 "dir": "media/real/IMG_2766_plate_bowl",
 "dur": 3.0,
-"caption": "Remove the large aluminum plate standing on the counter, together with the glass dish behind it that holds it up, along with the bright metallic clang of the wooden ball striking the plate and dropping to the counter in front of it. The ball still rolls down the tilted aluminum ramp on top of the cardboard speaker boxes and drops onto the counter with a dull thud, but now bounces on toward the small speckled ceramic bowl at the back, striking it with two ringing ceramic clinks and coming to rest against it, while the white bowl in front stays untouched.",
+"caption": "Remove the upright aluminium sheet, together with the clear glass dish propping it up. The wooden ball drops off the end of the ramp onto the counter with a dull wooden knock. It bounces to the speckled ceramic bowl, strikes it with a ringing clink, and nudges it slightly to the right. The ball rebounds, bounces with short wooden taps, and stops a little to the left of the bowl.",
 "keys": [
 "before",
 "after",
@@ -679,7 +679,7 @@ window.REAL_VIDEOS_MEDIA = [
 "batch": "real_pairs_results",
 "dir": "media/real/IMG_2767_plank_bowl",
 "dur": 3.0,
-"caption": "Remove the long wooden plank standing on edge beside the ramp, along with the hollow wooden knock of the wooden ball striking its face and dropping back onto the counter in front of the white bowl. The ball still rolls down the tilted aluminum ramp on top of the cardboard speaker boxes, but now flies off its end onto the counter with a dull thud and bounces on into the small speckled ceramic bowl at the back, striking it with two bright ceramic clinks, then rolls off toward the camera past the white bowl.",
+"caption": "Remove the pale pine plank leaning across the counter, together with the black object propping up its upper end. The wooden ball drops onto the counter with a dull thud and bounces against the yellow-green speckled Japanese porcelain bowl on the right with a bright ringing clink, nudging it slightly. The ball then rebounds and rolls out of the bottom of the frame on the right.",
 "keys": [
 "before",
 "after",
@@ -704,7 +704,7 @@ window.REAL_VIDEOS_MEDIA = [
 "batch": "real_pairs_results",
 "dir": "media/real/IMG_2774_plank_slats",
 "dur": 3.0,
-"caption": "Remove the long wooden plank standing on edge beside the ramp, along with the hollow wooden knock of the wooden ball striking it and the clatter of the three wooden slats it then knocked over. The ball still rolls down the tilted aluminum ramp on top of the cardboard speaker boxes, but now flies off its end onto the counter with a dull thud, bounces past the three wooden slats, which stay standing, and strikes the small speckled ceramic bowl at the back with a ringing ceramic clink before rolling away to the right.",
+"caption": "Remove the pale pine plank leaning across the scene, together with the black faceted object propping it up. The ball rolls off the ramp and bounces twice on the counter with dull thuds. It strikes the yellow-green speckled Japanese porcelain bowl with a ringing clink, nudging the bowl slightly to the right, and rolls out of the frame on the right.",
 "keys": [
 "before",
 "after",
@@ -729,7 +729,7 @@ window.REAL_VIDEOS_MEDIA = [
 "batch": "real_pairs_results",
 "dir": "media/real/IMG_2776_plank_angles",
 "dur": 3.0,
-"caption": "Remove the long wooden plank standing on edge beside the ramp, along with the hollow wooden knock of the wooden ball striking it and dropping into the pair of aluminum plates in front, which it knocked flat with a metallic clatter. The ball still rolls down the tilted aluminum ramp on top of the cardboard speaker boxes, but now flies off its end onto the counter with a dull thud and bounces on past the front pair of plates, which stay standing, into the pair of upright aluminum plates at the back, knocking one of them flat with a metallic clank and slap.",
+"caption": "Remove the pine board standing on edge, together with the black block propping it up. The ball bounces twice on the counter with dull thuds and hits the left plate of the pair at the top of the frame with a sharp metallic clack. Both plates fall flat to the right, one onto the other, with a ringing clatter. The ball bounces back toward the box and stops.",
 "keys": [
 "before",
 "after",
@@ -754,7 +754,7 @@ window.REAL_VIDEOS_MEDIA = [
 "batch": "real_pairs_results",
 "dir": "media/real/IMG_2777_plank_gate",
 "dur": 3.0,
-"caption": "Remove the long wooden plank standing on edge beside the ramp, along with the hollow wooden knock of the wooden ball striking it and dropping onto the little gate of two wooden cylinders below, whose orange plastic crossbar it knocked to the counter with a clatter. The ball still rolls down the tilted aluminum ramp on top of the cardboard speaker box, but now flies off its end over the gate, which stays standing, lands on the counter with a dull thud, and rolls into the upright wooden cylinder at the back, knocking it over with a sharp wooden clack and a thud as it falls.",
+"caption": "Remove the pine plank standing on edge. The ball bounces twice on the counter with dull thuds and strikes the one of the two wooden cylinders on the right that is closest to the camera with a hollow clack. That cylinder falls flat to the right with a wooden clatter, and the other one stays standing. The ball keeps rolling slowly toward the bottom of the frame.",
 "keys": [
 "before",
 "after",
@@ -779,7 +779,7 @@ window.REAL_VIDEOS_MEDIA = [
 "batch": "real_pairs_results",
 "dir": "media/real/IMG_2779_plank_can",
 "dur": 3.0,
-"caption": "Remove the long wooden plank standing on edge beside the ramp, along with the deep wooden knock of the steel ball striking it and dropping toward the purple soda can. The steel ball still rolls down the tilted aluminum ramp on top of the cardboard speaker boxes, but now flies off its end onto the counter with a heavy thud, rolls on past the soda can into the small wooden slat standing at the right, knocking it flat with a sharp clack, and comes to rest beside it.",
+"caption": "Remove the long pine plank, together with the black hexagonal dumbbell partly hidden by it. The steel ball rolls to the right into the upright pine block and knocks it flat with a hollow wooden clack. The ball rolls on into the blue cardboard box with a dull thud, rebounds, and stops against the corner of the fallen block.",
 "keys": [
 "before",
 "after",
@@ -804,7 +804,7 @@ window.REAL_VIDEOS_MEDIA = [
 "batch": "real_pairs_results",
 "dir": "media/real/IMG_2780_bowl_pins",
 "dur": 3.0,
-"caption": "Remove the white ceramic bowl sitting on the board, along with the ringing ceramic clink of the wooden ball striking it and glancing off the front of the board. The ball still rolls down the tilted aluminum ramp onto the wooden board, but now rolls on to the far end of the board into the three small wooden bowling pins, scattering them off the board with a clatter of sharp wooden clacks.",
+"caption": "Remove the white speckled ceramic bowl on the board. The wooden ball rolls across the board into the wooden pins with sharp wooden clacks and knocks the bottom and middle pins off the right end onto the counter. The pin at the top of the frame stays standing. The ball drops off the right end with a dull thud and rolls to the right edge of the frame.",
 "keys": [
 "before",
 "after",
@@ -829,7 +829,7 @@ window.REAL_VIDEOS_MEDIA = [
 "batch": "real_pairs_results",
 "dir": "media/real/IMG_2781_glass_pot",
 "dur": 3.0,
-"caption": "Remove the small clear drinking glass standing on the counter, along with the light glassy tap of the adjustable wrench sliding into it. The steel adjustable wrench still slides down the tilted aluminum ramp and lands on the counter with a bright metallic clatter, but now slides on past where the glass stood into the base of the copper-colored pot, striking it with a dull metallic knock and coming to rest against it.",
+"caption": "Remove the clear cut-glass tumbler standing on the counter. The steel wrench slides across the counter and hits the lower left side of the copper-coloured metal pot with a ringing metallic clang. The pot shifts a little to the right and stays upright. The wrench ends up lying on the counter with its head resting against the base of the pot.",
 "keys": [
 "before",
 "after",
@@ -854,7 +854,7 @@ window.REAL_VIDEOS_MEDIA = [
 "batch": "real_pairs_results",
 "dir": "media/real/IMG_2784_mug_pot",
 "dur": 3.0,
-"caption": "Remove the glass mug with the cartoon print standing on the counter, along with the bright glassy clink of the wooden ball striking it and bouncing off toward the back wall. The ball still rolls down the tilted aluminum ramp onto the counter with a dull thud, but now rolls on into the side of the copper-colored pot, striking it with a soft metallic ring, and bounces off toward the back of the counter.",
+"caption": "Remove the white ceramic mug with a blue rim, a blue handle and a lemon pattern. The wooden ball rolls into the left side of the copper-coloured metal pot with a ringing metallic clang, nudging the pot a little to the right. The ball then rolls along the left side of the pot toward the top of the frame and stops against the wall at the top of the frame with a dull wooden knock.",
 "keys": [
 "before",
 "after",
@@ -879,7 +879,7 @@ window.REAL_VIDEOS_MEDIA = [
 "batch": "real_pairs_results",
 "dir": "media/real/IMG_2785_grinder_bowl",
 "dur": 3.0,
-"caption": "Remove the black pepper grinder standing on the counter, along with the hard glassy knock of the wooden ball striking it and bouncing back toward the wall. The ball still rolls down the tilted aluminum ramp onto the counter, but now rolls on into the white ceramic bowl, striking it with a bright, ringing ceramic clink, and bounces off toward the back of the counter, rolling away to the right.",
+"caption": "Remove the clear glass pepper grinder with a black plastic top, filled with black peppercorns. The wooden ball rolls into the left side of the white ceramic bowl with a bright ceramic clink, nudging the bowl slightly to the right. The ball glances off toward the top of the frame, hits the wall with a dull wooden knock, and rolls slowly to the right.",
 "keys": [
 "before",
 "after",
@@ -904,7 +904,7 @@ window.REAL_VIDEOS_MEDIA = [
 "batch": "real_pairs_results",
 "dir": "media/real/IMG_2786_red_sheet",
 "dur": 3.0,
-"caption": "Remove the red round gadget with a black face and a white cap standing between the two wooden cylinders, along with the hard plastic knock of the wooden ball striking it and bouncing back behind it. The ball still rolls down the tilted aluminum ramp onto the counter, but now rolls on between the two upright wooden cylinders into the upright aluminum plate beyond them, knocking it flat with a bright metallic clank and a slap on the counter, and rolls back to rest beside the front cylinder.",
+"caption": "Remove the round red plastic clock with a white button on top. The wooden ball rolls to the right into the upright metal plate with a sharp metallic clink. The plate tips over to the right and lands flat with a ringing metallic clatter. The ball bounces back toward the ramp and is still rolling slowly at the end.",
 "keys": [
 "before",
 "after",
@@ -929,7 +929,7 @@ window.REAL_VIDEOS_MEDIA = [
 "batch": "real_pairs_results",
 "dir": "media/real/IMG_2789_plate_dominoes",
 "dur": 3.0,
-"caption": "Remove the first of the three upright aluminum plates standing in a row, along with the bright metallic clink of the wooden ball striking it and the chain of clanging plates that knocked all three flat. The ball still rolls down the tilted aluminum ramp onto the counter, but now rolls on into the next plate, knocking it flat with a sharp metallic clink and a light slap of metal on the counter, while the last plate stays standing and the ball rolls back toward the ramp.",
+"caption": "Remove the middle one of the three upright grey aluminium slabs. The first slab tips into the gap and lands flat on the counter with a heavy metallic clank, its right edge at the foot of the last slab. The last slab stays standing. The wooden ball rolls back toward the fallen slab, bumps its edge with a dull wooden knock, and stops a little away from it.",
 "keys": [
 "before",
 "after",
@@ -954,7 +954,7 @@ window.REAL_VIDEOS_MEDIA = [
 "batch": "real_pairs_results",
 "dir": "media/real/IMG_2791_jar_jar",
 "dur": 3.0,
-"caption": "Remove the large empty glass jar standing on the counter, along with the deep, hollow glass thunk of the wooden ball striking it and bouncing back toward the ramp. The ball still rolls down the tilted aluminum ramp onto the counter, but now rolls on past where the large jar stood into the smaller glass jar behind it, striking it with a bright glass clink, and rolls off toward the camera while the small jar stays standing.",
+"caption": "Remove the tall clear plastic jar, the left one of the two jars. The ball rolls to the glass jar, strikes its lower left side with a bright glass clink, and slides it a little to the right. The jar wobbles slightly and stays upright. The ball then bounces off and rolls out of the bottom of the frame, and a sharp knock follows.",
 "keys": [
 "before",
 "after",
@@ -979,7 +979,7 @@ window.REAL_VIDEOS_MEDIA = [
 "batch": "real_pairs_results",
 "dir": "media/real/IMG_2792_plank_glasses",
 "dur": 3.0,
-"caption": "Remove the wooden plank leaning on the black hexagonal dumbbell, together with the dumbbell, along with the hollow wooden knock of the wooden ball glancing off the plank and the light glass tap as it rolls into the short glasses in front. The ball still rolls down the tilted aluminum ramp onto the counter with a dull thud, but now rolls straight on across the counter into the tall stacked glasses at the right, striking them with a bright glass clink, while the two short glasses in front stay untouched.",
+"caption": "Remove the upright wooden board, together with the two black hexagonal dumbbells propping it up. The ball rolls to the right into the lower of the two tall clear glasses in the frame with a bright glass clink and pushes it into the upper one. The upper glass slides away to the right and stays upright. The ball rebounds, taps the lower glass again with another clink, and rests against it.",
 "keys": [
 "before",
 "after",
@@ -1004,7 +1004,7 @@ window.REAL_VIDEOS_MEDIA = [
 "batch": "real_pairs_results",
 "dir": "media/real/IMG_2793_plates_stand",
 "dur": 3.0,
-"caption": "Remove the two small aluminum plates standing side by side on the counter, along with the bright metallic clinks of the wooden ball knocking them flat. The ball still rolls down the tilted aluminum ramp onto the counter, but now rolls on into the base of the black Z-shaped metal stand, striking it with a ringing metallic clang, and comes to rest against it.",
+"caption": "Remove the two aluminium blocks standing upright side by side on the counter. The ball rolls across the counter into the base of the black metal stand with a sharp metallic clank and bounces a little toward the ramp. It rolls toward the stand again and comes to rest against its base with a second metallic tap that rings on.",
 "keys": [
 "before",
 "after",
@@ -1029,7 +1029,7 @@ window.REAL_VIDEOS_MEDIA = [
 "batch": "real_pairs_results",
 "dir": "media/real/IMG_2794_gadget_bowl",
 "dur": 3.0,
-"caption": "Remove the black cone-shaped desk gadget with the chrome top, along with the hard plastic knock of the wooden ball striking it and glancing off toward the camera. The ball still rolls down the tilted aluminum ramp onto the counter, but now rolls on into the speckled ceramic bowl, striking it with a bright, ringing ceramic clink, and comes to rest against its rim.",
+"caption": "Remove the black cone-shaped plastic audio recorder with a silver microphone head. The wooden ball rolls into the left side of the speckled ceramic bowl with a ringing ceramic clink, sliding the bowl a little to the right. The ball rebounds a little to the left, rolls back toward the bowl, touches it again with a crisp ceramic tick, and comes to rest against its left side, toward the top of the frame.",
 "keys": [
 "before",
 "after",
@@ -1054,7 +1054,7 @@ window.REAL_VIDEOS_MEDIA = [
 "batch": "real_pairs_results",
 "dir": "media/real/IMG_2795_sheet_bowl_spoon",
 "dur": 3.0,
-"caption": "Remove the upright aluminum plate standing on the counter, along with the metallic tap of the sliding spoon striking it and the slap of the plate falling flat. The steel spoon still slides down the tilted aluminum ramp with a bright metallic scrape and onto the counter, but now slides on past where the plate stood into the speckled ceramic bowl, striking it with a bright ceramic clink and coming to rest against it.",
+"caption": "Remove the rectangular aluminium slab standing upright on its edge on the counter. The spoon slides off the end of the ramp, skids across the counter, and strikes the side of the speckled ceramic bowl with a ringing ceramic clink. The bowl stays in place, and the spoon comes to rest with its head against the bowl.",
 "keys": [
 "before",
 "after",

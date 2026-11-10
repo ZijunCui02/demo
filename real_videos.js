@@ -6,8 +6,8 @@
   const LABELS = {
     before: { name: "Input (with the object)", code: "" },
     after: { name: "Reference (recorded without it)", code: "" },
-    vid_mask: { name: "Masks (recorded)", code: "" },
-    aud_mask: { name: "Audio mask (recorded)", code: "" },
+    vid_mask: { name: "Masks (agentic)", code: "" },
+    aud_mask: { name: "Audio mask (agentic)", code: "" },
     stage1_e25: { name: "Ours, Stage 1 (epoch 25)", code: "" },
     stages12_e25: { name: "Ours, Stages 1-2 (epoch 25)", code: "" },
     stages123_u6750: { name: "Ours, Stages 1-2-3 (epoch 23.9)", code: "" },
@@ -78,7 +78,7 @@
   }
 
   function captionCell(text) {
-    return `<div class="cell caption-cell rv-caption"><div class="cell-label"><span class="name">Caption</span></div><div class="caption">${esc(text)}</div></div>`;
+    return `<div class="cell caption-cell rv-caption"><div class="cell-label"><span class="name">Prompt</span></div><div class="caption">${esc(text)}</div></div>`;
   }
 
   // The audio-mask strip sits beside its video mask with a label of its own.
@@ -111,7 +111,7 @@
       row.map(k => has(k) ? videoCell(dir, k) : placeholderVideo(k)).join("") + pad(row) +
       row.map(k => has(k) ? specCell(dir, k, c.dur) : placeholderSpec()).join("") + pad(row)).join(`<div class="rule"></div>`);
     const [img, num, ...rest] = c.id.split("_");
-    // Left: the input and the reference, the caption, the recordings' masks (video beside audio). Right: the method grid, our four models in the first row and the eight other methods four per row below (stacked under the left block on narrow screens).
+    // Left: the input and the reference, the prompt, the masks our agent placed (video beside audio). Right: the method grid, our four models in the first row and the eight other methods four per row below (stacked under the left block on narrow screens).
     return `<article class="case" id="${esc(c.id)}">
       <div class="case-head"><span class="case-idx">${esc(img + "_" + num)}</span><span class="case-path">Real Recording / ${esc(title(rest.join("_")))}</span></div>
       <div class="case-body cs-body rv-body">
