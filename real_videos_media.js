@@ -8,6 +8,7 @@ window.REAL_VIDEOS_MEDIA = [
 "keys": [
 "before",
 "after",
+"stage1_e25",
 "stages12_e25",
 "stages123_u6750",
 "baseline",
@@ -273,6 +274,7 @@ window.REAL_VIDEOS_MEDIA = [
 "before",
 "after",
 "stages12_e25",
+"stages123_u6750",
 "baseline",
 "void_stages12",
 "instructav2av_e19",
@@ -345,6 +347,7 @@ window.REAL_VIDEOS_MEDIA = [
 "keys": [
 "before",
 "after",
+"stage1_e25",
 "stages12_e25",
 "stages123_u6750",
 "baseline",
@@ -369,6 +372,7 @@ window.REAL_VIDEOS_MEDIA = [
 "keys": [
 "before",
 "after",
+"stage1_e25",
 "stages12_e25",
 "stages123_u6750",
 "baseline",
@@ -613,6 +617,7 @@ window.REAL_VIDEOS_MEDIA = [
 "keys": [
 "before",
 "after",
+"stage1_e25",
 "stages12_e25",
 "stages123_u6750",
 "baseline",
@@ -637,6 +642,7 @@ window.REAL_VIDEOS_MEDIA = [
 "keys": [
 "before",
 "after",
+"stage1_e25",
 "stages12_e25",
 "stages123_u6750",
 "baseline",
@@ -833,6 +839,7 @@ window.REAL_VIDEOS_MEDIA = [
 "keys": [
 "before",
 "after",
+"stage1_e25",
 "stages12_e25",
 "stages123_u6750",
 "baseline",
@@ -857,6 +864,7 @@ window.REAL_VIDEOS_MEDIA = [
 "keys": [
 "before",
 "after",
+"stage1_e25",
 "stages12_e25",
 "stages123_u6750",
 "baseline",
@@ -1053,6 +1061,7 @@ window.REAL_VIDEOS_MEDIA = [
 "keys": [
 "before",
 "after",
+"stage1_e25",
 "stages12_e25",
 "stages123_u6750",
 "baseline",
@@ -1077,6 +1086,7 @@ window.REAL_VIDEOS_MEDIA = [
 "keys": [
 "before",
 "after",
+"stage1_e25",
 "stages12_e25",
 "stages123_u6750",
 "baseline",
@@ -1223,6 +1233,7 @@ window.REAL_VIDEOS_MEDIA = [
 "keys": [
 "before",
 "after",
+"stage1_e25",
 "stages12_e25",
 "stages123_u6750",
 "baseline",
