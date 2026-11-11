@@ -133,6 +133,7 @@ window.REAL_VIDEOS_MEDIA = [
 "keys": [
 "before",
 "after",
+"stage1_e25",
 "stages12_e25",
 "stages123_u6750",
 "baseline",
@@ -157,6 +158,7 @@ window.REAL_VIDEOS_MEDIA = [
 "keys": [
 "before",
 "after",
+"stage1_e25",
 "stages12_e25",
 "stages123_u6750",
 "baseline",
@@ -501,6 +503,7 @@ window.REAL_VIDEOS_MEDIA = [
 "keys": [
 "before",
 "after",
+"stage1_e25",
 "stages12_e25",
 "stages123_u6750",
 "baseline",
@@ -1375,6 +1378,7 @@ window.REAL_VIDEOS_MEDIA = [
 "keys": [
 "before",
 "after",
+"stage1_e25",
 "stages12_e25",
 "stages123_u6750",
 "baseline",
@@ -1399,6 +1403,7 @@ window.REAL_VIDEOS_MEDIA = [
 "keys": [
 "before",
 "after",
+"stage1_e25",
 "stages12_e25",
 "stages123_u6750",
 "baseline",
