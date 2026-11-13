@@ -7,8 +7,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/bowling/bank_cut_pair/00005002": [
 "iav2av_ft",
@@ -18,8 +17,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/bowling/bank_direct_column/00005001": [
 "iav2av_ft",
@@ -29,8 +27,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/bowling/can_stun_triangle/00007007": [
 "iav2av_ft",
@@ -40,8 +37,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/bowling/carom/00005003": [
 "iav2av_ft",
@@ -51,8 +47,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/bowling/cut_carom/00008010": [
 "iav2av_ft",
@@ -62,8 +57,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/bowling/cut_victim/00005006": [
 "iav2av_ft",
@@ -73,8 +67,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/bowling/rail_rm_carom_column/00005004": [
 "iav2av_ft",
@@ -84,8 +77,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/bowling/split/00005006": [
 "iav2av_ft",
@@ -95,8 +87,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/bowling/t_bone/00008001": [
 "iav2av_ft",
@@ -106,8 +97,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/bridge/catch__bottle_on_can__can_cluster/00010001": [
 "iav2av_ft",
@@ -117,8 +107,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/bridge/kicker__ball_then_cans__bottle_row/00010003": [
 "iav2av_ft",
@@ -128,8 +117,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/bridge/plank__gate_posts__plank_table/00010304": [
 "iav2av_ft",
@@ -139,8 +127,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/bridge/plank_cans_triangle/00010003": [
 "iav2av_ft",
@@ -150,8 +137,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/bridge/plank_column_triangle/00010004": [
 "iav2av_ft",
@@ -161,8 +147,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/bridge/plug__can_pocket__ball_dominoes_pin/00010006": [
 "iav2av_ft",
@@ -172,8 +157,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/bridge/plug__slab_onto_can__domino_row5/00010005": [
 "iav2av_ft",
@@ -183,8 +167,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/bridge/plug__tray_pins__block_tower4/00010002": [
 "iav2av_ft",
@@ -194,8 +177,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/bridge/roof__dominoes_to_tower__pin_triangle/00010002": [
 "iav2av_ft",
@@ -205,8 +187,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/bridge/roof_cans_triangle/00010003": [
 "iav2av_ft",
@@ -216,8 +197,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/dominoes/bottle_backstop/00005005": [
 "iav2av_ft",
@@ -227,8 +207,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/dominoes/corner/00005001": [
 "iav2av_ft",
@@ -238,8 +217,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/dominoes/deck_pillar/00005000": [
 "iav2av_ft",
@@ -249,8 +227,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/dominoes/descender/00005004": [
 "iav2av_ft",
@@ -260,8 +237,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/dominoes/gap_decks/00005004": [
 "iav2av_ft",
@@ -271,8 +247,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/dominoes/hourglass/00005001": [
 "iav2av_ft",
@@ -282,8 +257,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/dominoes/ramp_block/00005002": [
 "iav2av_ft",
@@ -293,8 +267,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/dominoes/ramp_pins/00005023": [
 "iav2av_ft",
@@ -304,8 +277,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/dominoes/reach_up/00005002": [
 "iav2av_ft",
@@ -315,8 +287,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/dominoes/tall_link/00005001": [
 "iav2av_ft",
@@ -326,8 +297,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/guide/bevel_column_cans/00005003": [
 "iav2av_ft",
@@ -337,8 +307,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/guide/bumper_bottles_cans/00005003": [
 "iav2av_ft",
@@ -348,8 +317,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/guide/curve_can_bottles/00005013": [
 "iav2av_ft",
@@ -359,8 +327,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/guide/curve_enable_triangle/00005018": [
 "iav2av_ft",
@@ -370,8 +337,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/guide/diagonal_column_pair/00005020": [
 "iav2av_ft",
@@ -381,8 +347,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/guide/plug_block_bottles/00005018": [
 "iav2av_ft",
@@ -392,8 +357,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/guide/plug_block_pyramid/00005108": [
 "iav2av_ft",
@@ -403,8 +367,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/guide/prism_shield_relay/00005004": [
 "iav2av_ft",
@@ -414,8 +377,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/guide/splitter_shield_relay_bottle/00005019": [
 "iav2av_ft",
@@ -425,8 +387,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/guide/splitter_triangle_pair/00005012": [
 "iav2av_ft",
@@ -436,8 +397,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/bowling_dominoes/bank_s_column/00008024": [
 "iav2av_ft",
@@ -447,8 +407,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/bowling_dominoes/carom_hook_pin/00005007": [
 "iav2av_ft",
@@ -458,8 +417,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/bowling_dominoes/fork/00008002": [
 "iav2av_ft",
@@ -469,8 +427,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/bowling_dominoes/full_s_column/00005002": [
 "iav2av_ft",
@@ -480,8 +437,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/bowling_dominoes/rack_straight_pin/00008007": [
 "iav2av_ft",
@@ -491,8 +447,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/bowling_dominoes/spiral/00008003": [
 "iav2av_ft",
@@ -502,8 +457,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/bowling_dominoes/split_long_row/00005002": [
 "iav2av_ft",
@@ -513,8 +467,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/bowling_dominoes/stop_bend_row/00005009": [
 "iav2av_ft",
@@ -524,8 +477,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/bowling_dominoes/stun_straight_vpair/00008000": [
 "iav2av_ft",
@@ -535,8 +487,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/bowling_dominoes/zigzag_row/00005020": [
 "iav2av_ft",
@@ -546,8 +497,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/collision/fork/v10_00400046": [
 "iav2av_ft",
@@ -557,8 +507,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/collision/fork/v10_00400571": [
 "iav2av_ft",
@@ -568,8 +517,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/collision/overshoot/v10_00400504": [
 "iav2av_ft",
@@ -579,8 +527,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/collision/preserve/v10_00400591": [
 "iav2av_ft",
@@ -590,8 +537,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/collision/reroute/v10_00400518": [
 "iav2av_ft",
@@ -601,8 +547,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/collision/reroute/v10_00400529": [
 "iav2av_ft",
@@ -612,8 +557,8 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3",
+"gemini"
 ],
 "media/falling/preserve/v10_00052927": [
 "iav2av_ft",
@@ -623,8 +568,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/falling/preserve/v10_00058487": [
 "iav2av_ft",
@@ -634,8 +578,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/falling/solo_preserve/v10_00010040": [
 "iav2av_ft",
@@ -645,8 +588,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/falling/solo_preserve/v10_00028195": [
 "iav2av_ft",
@@ -656,8 +598,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/falling/solo_reroute/v10_00058735": [
 "iav2av_ft",
@@ -667,8 +608,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/falling/solo_reroute/v10_00071417": [
 "iav2av_ft",
@@ -678,8 +618,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/collision/overshoot/v7_00300208": [
 "iav2av_ft",
@@ -689,8 +628,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/collision/overshoot/v7_00300276": [
 "iav2av_ft",
@@ -700,8 +638,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/collision/overshoot/v7_00300372": [
 "iav2av_ft",
@@ -711,8 +648,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/collision/trim/v7_00300777": [
 "iav2av_ft",
@@ -722,8 +658,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/falling/overshoot/v7_00005041": [
 "iav2av_ft",
@@ -733,8 +668,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/falling/preserve/v7_00005222": [
 "iav2av_ft",
@@ -744,8 +678,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/falling/spared/v7_00002101": [
 "iav2av_ft",
@@ -755,8 +688,7 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ],
 "media/falling/spared/v7_00005088": [
 "iav2av_ft",
@@ -766,7 +698,6 @@ window.CASE_STUDY_MEDIA = {
 "void_rel",
 "objwiper",
 "ltx",
-"stage2",
-"stage1"
+"stage3"
 ]
 };
