@@ -13,9 +13,9 @@
     stages123_u6750: { name: "Ours, Stages 1-2-3 (epoch 23.9)", code: "" },
     stages123_e25: { name: "Ours, Stages 1-2-3 (epoch 25)", code: "" },
     baseline: { name: "Ours, baseline (epoch 25)", code: "" },
-    void_stages12: { name: "VOID Stages 1-2 (retrained) + MMAudio", code: "" },
+    void_stages12_am: { name: "VOID Stages 1-2 (retrained) + MMAudio", code: "" },
     instructav2av_e19: { name: "InstructAV2AV (fine-tuned, epoch 19)", code: "" },
-    void_mmaudio: { name: "VOID + MMAudio", code: "" },
+    void_mmaudio_am: { name: "VOID + MMAudio", code: "" },
     instructav2av: { name: "InstructAV2AV", code: "" },
     gemini_omni: { name: "Gemini Omni Flash", code: "" },
     minimax_h3: { name: "MiniMax H3 Ref2VA", code: "" },
@@ -27,7 +27,7 @@
   // "stages123" is the pair's newest Stages 1-2-3 result: epoch 25 once it exists, else update 6,750 (epoch 23.9) of the run still in training.
   // A method without media for a pair shows a placeholder; a short last row is filled with empty cells.
   const OURS = ["stage1_e25", "stages12_e25", "stages123", "baseline"];
-  const OTHERS = ["void_stages12", "instructav2av_e19", "void_mmaudio", "instructav2av", "gemini_omni", "minimax_h3", "aved", "objwiper_mmaudio"];
+  const OTHERS = ["void_stages12_am", "instructav2av_e19", "void_mmaudio_am", "instructav2av", "gemini_omni", "minimax_h3", "aved", "objwiper_mmaudio"];
   const COLS = 4;
   const ROWS = [OURS];
   for (let i = 0; i < OTHERS.length; i += COLS) ROWS.push(OTHERS.slice(i, i + COLS));
