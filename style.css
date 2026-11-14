@@ -2066,3 +2066,13 @@ body.wall-page main.wall-main {
 .cs-placeholder-spec {
   aspect-ratio: 1000 / 384;
 }
+
+/* Demo menu (November 14, 2026): the nav item Demo with its two sections, Simulation and Real Videos, in a drop-down */
+.nav-drop { position: relative; display: inline-flex; align-items: center; }
+.nav-drop .nav-sub { display: none; position: absolute; top: calc(100% + 8px); left: 50%; transform: translateX(-50%); flex-direction: column; min-width: 9.5rem; padding: 0.35rem 0;
+  background: hsl(var(--bg)); border: 1px solid hsl(var(--border)); border-radius: 6px; box-shadow: 0 4px 14px hsl(0 0% 0% / 0.12); z-index: 40; }
+.nav-drop .nav-sub::before { content: ""; position: absolute; left: 0; right: 0; top: -10px; height: 10px; }
+.nav-drop:hover .nav-sub, .nav-drop:focus-within .nav-sub { display: flex; }
+.nav-drop .nav-sub a { padding: 0.35rem 0.95rem; color: hsl(var(--fg-light)); font-size: 0.9rem; white-space: nowrap; transition: color 0.15s ease, background 0.15s ease; }
+.nav-drop .nav-sub a:hover { color: hsl(var(--fg-dark)); background: hsl(var(--bg-elevated)); }
+html.dark .nav-drop .nav-sub { box-shadow: 0 4px 14px hsl(0 0% 0% / 0.45); }
