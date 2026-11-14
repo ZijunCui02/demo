@@ -9,8 +9,9 @@
 <style>
 /* Demo: the Case Study card; the prompt spans the left block above the video mask and the audio mask. */
 .block.left .caption-cell.demo-caption { grid-column: 1 / -1; grid-row: auto; }
-/* A method's name stays on one line, so the videos of a row stay level on a narrow screen (the full name on hover). */
-.block.right .cell-label .name { display: block; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+/* A long method name wraps to a second line; the players of a row stay level (the room a short name leaves goes above its player). */
+.case-body .cell { display: flex; flex-direction: column; }
+.case-body .cell > .pl.vid, .case-body .cell > .cs-placeholder { margin-top: auto; }
 </style>
 <script>
 (function () {
@@ -85,7 +86,7 @@
   <span>© IsaacWave 2026. Theme forked from <a href="https://github.com/Renovamen/renovamen.github.io" target="_blank" rel="noopener noreferrer">renovamen</a>.</span>
 </footer>
 </main>
-<script src="demo_media.js?v=dc840d6e"></script>
+<script src="demo_media.js?v=e420442b"></script>
 <script src="demo.js?v=ea5f0da9"></script>
 <script src="theme.js?v=c2d9b2fa"></script>
 </body>

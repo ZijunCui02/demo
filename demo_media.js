@@ -45,6 +45,10 @@ window.DEMO = {
      "gemini"
     ],
     [
+     "MiniMax H3 Ref2VA",
+     "h3"
+    ],
+    [
      "InstructAV2AV fine-tuned",
      "iav2av_ft"
     ],
@@ -55,10 +59,6 @@ window.DEMO = {
     [
      "AVED",
      "aved"
-    ],
-    [
-     "MiniMax H3 Ref2VA",
-     "h3"
     ],
     [
      "VOID + MMAudio w/o fine-tune",
@@ -109,6 +109,10 @@ window.DEMO = {
      "gemini"
     ],
     [
+     "MiniMax H3 Ref2VA",
+     "h3"
+    ],
+    [
      "InstructAV2AV fine-tuned",
      "iav2av_ft"
     ],
@@ -119,10 +123,6 @@ window.DEMO = {
     [
      "AVED",
      "aved"
-    ],
-    [
-     "MiniMax H3 Ref2VA",
-     "h3"
     ],
     [
      "VOID + MMAudio w/o fine-tune",
@@ -173,6 +173,10 @@ window.DEMO = {
      "gemini"
     ],
     [
+     "MiniMax H3 Ref2VA",
+     "h3"
+    ],
+    [
      "InstructAV2AV fine-tuned",
      "iav2av_ft"
     ],
@@ -183,10 +187,6 @@ window.DEMO = {
     [
      "AVED",
      "aved"
-    ],
-    [
-     "MiniMax H3 Ref2VA",
-     "h3"
     ],
     [
      "VOID + MMAudio w/o fine-tune",
@@ -237,6 +237,10 @@ window.DEMO = {
      "gemini"
     ],
     [
+     "MiniMax H3 Ref2VA",
+     "h3"
+    ],
+    [
      "InstructAV2AV fine-tuned",
      "iav2av_ft"
     ],
@@ -247,10 +251,6 @@ window.DEMO = {
     [
      "AVED",
      "aved"
-    ],
-    [
-     "MiniMax H3 Ref2VA",
-     "h3"
     ],
     [
      "VOID + MMAudio w/o fine-tune",
@@ -301,6 +301,10 @@ window.DEMO = {
      "gemini"
     ],
     [
+     "MiniMax H3 Ref2VA",
+     "h3"
+    ],
+    [
      "InstructAV2AV fine-tuned",
      "iav2av_ft"
     ],
@@ -311,10 +315,6 @@ window.DEMO = {
     [
      "AVED",
      "aved"
-    ],
-    [
-     "MiniMax H3 Ref2VA",
-     "h3"
     ],
     [
      "VOID + MMAudio w/o fine-tune",
@@ -365,6 +365,10 @@ window.DEMO = {
      "gemini"
     ],
     [
+     "MiniMax H3 Ref2VA",
+     "h3"
+    ],
+    [
      "InstructAV2AV fine-tuned",
      "iav2av_ft"
     ],
@@ -375,10 +379,6 @@ window.DEMO = {
     [
      "AVED",
      "aved"
-    ],
-    [
-     "MiniMax H3 Ref2VA",
-     "h3"
     ],
     [
      "VOID + MMAudio w/o fine-tune",
@@ -429,6 +429,10 @@ window.DEMO = {
      "gemini_omni"
     ],
     [
+     "MiniMax H3 Ref2VA",
+     "minimax_h3"
+    ],
+    [
      "InstructAV2AV fine-tuned",
      "instructav2av_e19"
     ],
@@ -439,10 +443,6 @@ window.DEMO = {
     [
      "AVED",
      "aved"
-    ],
-    [
-     "MiniMax H3 Ref2VA",
-     "minimax_h3"
     ],
     [
      "VOID + MMAudio w/o fine-tune",
@@ -493,6 +493,10 @@ window.DEMO = {
      "gemini_omni"
     ],
     [
+     "MiniMax H3 Ref2VA",
+     "minimax_h3"
+    ],
+    [
      "InstructAV2AV fine-tuned",
      "instructav2av_e19"
     ],
@@ -503,10 +507,6 @@ window.DEMO = {
     [
      "AVED",
      "aved"
-    ],
-    [
-     "MiniMax H3 Ref2VA",
-     "minimax_h3"
     ],
     [
      "VOID + MMAudio w/o fine-tune",
@@ -557,6 +557,10 @@ window.DEMO = {
      "gemini_omni"
     ],
     [
+     "MiniMax H3 Ref2VA",
+     "minimax_h3"
+    ],
+    [
      "InstructAV2AV fine-tuned",
      "instructav2av_e19"
     ],
@@ -567,10 +571,6 @@ window.DEMO = {
     [
      "AVED",
      "aved"
-    ],
-    [
-     "MiniMax H3 Ref2VA",
-     "minimax_h3"
     ],
     [
      "VOID + MMAudio w/o fine-tune",
@@ -621,6 +621,10 @@ window.DEMO = {
      "gemini_omni"
     ],
     [
+     "MiniMax H3 Ref2VA",
+     "minimax_h3"
+    ],
+    [
      "InstructAV2AV fine-tuned",
      "instructav2av_e19"
     ],
@@ -631,10 +635,6 @@ window.DEMO = {
     [
      "AVED",
      "aved"
-    ],
-    [
-     "MiniMax H3 Ref2VA",
-     "minimax_h3"
     ],
     [
      "VOID + MMAudio w/o fine-tune",
