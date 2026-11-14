@@ -37,7 +37,7 @@ window.DEMO = {
    },
    "methods": [
     [
-     "GRAVITY",
+     "GRAVITY (ours)",
      "stage3"
     ],
     [
@@ -101,7 +101,7 @@ window.DEMO = {
    },
    "methods": [
     [
-     "GRAVITY",
+     "GRAVITY (ours)",
      "stage3"
     ],
     [
@@ -165,7 +165,7 @@ window.DEMO = {
    },
    "methods": [
     [
-     "GRAVITY",
+     "GRAVITY (ours)",
      "stage3"
     ],
     [
@@ -229,7 +229,7 @@ window.DEMO = {
    },
    "methods": [
     [
-     "GRAVITY",
+     "GRAVITY (ours)",
      "stage3"
     ],
     [
@@ -293,7 +293,7 @@ window.DEMO = {
    },
    "methods": [
     [
-     "GRAVITY",
+     "GRAVITY (ours)",
      "stage3"
     ],
     [
@@ -357,7 +357,7 @@ window.DEMO = {
    },
    "methods": [
     [
-     "GRAVITY",
+     "GRAVITY (ours)",
      "stage3"
     ],
     [
@@ -421,7 +421,7 @@ window.DEMO = {
    },
    "methods": [
     [
-     "GRAVITY",
+     "GRAVITY (ours)",
      "stages123_e25"
     ],
     [
@@ -485,7 +485,7 @@ window.DEMO = {
    },
    "methods": [
     [
-     "GRAVITY",
+     "GRAVITY (ours)",
      "stages123_e25"
     ],
     [
@@ -549,7 +549,7 @@ window.DEMO = {
    },
    "methods": [
     [
-     "GRAVITY",
+     "GRAVITY (ours)",
      "stages123_e25"
     ],
     [
@@ -613,7 +613,7 @@ window.DEMO = {
    },
    "methods": [
     [
-     "GRAVITY",
+     "GRAVITY (ours)",
      "stages123_e25"
     ],
     [
