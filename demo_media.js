@@ -53,7 +53,7 @@ window.DEMO = {
      "iav2av_ft"
     ],
     [
-     "VOID Pass 1 + MMAudio w/ fine-tune",
+     "VOID fine-tuned + MMAudio",
      "void_ft"
     ],
     [
@@ -61,7 +61,7 @@ window.DEMO = {
      "aved"
     ],
     [
-     "VOID + MMAudio w/o fine-tune",
+     "VOID w/o fine-tune + MMAudio",
      "void_rel"
     ],
     [
@@ -117,7 +117,7 @@ window.DEMO = {
      "iav2av_ft"
     ],
     [
-     "VOID Pass 1 + MMAudio w/ fine-tune",
+     "VOID fine-tuned + MMAudio",
      "void_ft"
     ],
     [
@@ -125,7 +125,7 @@ window.DEMO = {
      "aved"
     ],
     [
-     "VOID + MMAudio w/o fine-tune",
+     "VOID w/o fine-tune + MMAudio",
      "void_rel"
     ],
     [
@@ -181,7 +181,7 @@ window.DEMO = {
      "iav2av_ft"
     ],
     [
-     "VOID Pass 1 + MMAudio w/ fine-tune",
+     "VOID fine-tuned + MMAudio",
      "void_ft"
     ],
     [
@@ -189,7 +189,7 @@ window.DEMO = {
      "aved"
     ],
     [
-     "VOID + MMAudio w/o fine-tune",
+     "VOID w/o fine-tune + MMAudio",
      "void_rel"
     ],
     [
@@ -245,7 +245,7 @@ window.DEMO = {
      "iav2av_ft"
     ],
     [
-     "VOID Pass 1 + MMAudio w/ fine-tune",
+     "VOID fine-tuned + MMAudio",
      "void_ft"
     ],
     [
@@ -253,7 +253,7 @@ window.DEMO = {
      "aved"
     ],
     [
-     "VOID + MMAudio w/o fine-tune",
+     "VOID w/o fine-tune + MMAudio",
      "void_rel"
     ],
     [
@@ -309,7 +309,7 @@ window.DEMO = {
      "iav2av_ft"
     ],
     [
-     "VOID Pass 1 + MMAudio w/ fine-tune",
+     "VOID fine-tuned + MMAudio",
      "void_ft"
     ],
     [
@@ -317,7 +317,7 @@ window.DEMO = {
      "aved"
     ],
     [
-     "VOID + MMAudio w/o fine-tune",
+     "VOID w/o fine-tune + MMAudio",
      "void_rel"
     ],
     [
@@ -373,7 +373,7 @@ window.DEMO = {
      "iav2av_ft"
     ],
     [
-     "VOID Pass 1 + MMAudio w/ fine-tune",
+     "VOID fine-tuned + MMAudio",
      "void_ft"
     ],
     [
@@ -381,7 +381,7 @@ window.DEMO = {
      "aved"
     ],
     [
-     "VOID + MMAudio w/o fine-tune",
+     "VOID w/o fine-tune + MMAudio",
      "void_rel"
     ],
     [
@@ -437,7 +437,7 @@ window.DEMO = {
      "instructav2av_e19"
     ],
     [
-     "VOID Pass 1+2 + MMAudio fine-tuned",
+     "VOID fine-tuned + MMAudio",
      "void_stages12_am"
     ],
     [
@@ -445,7 +445,7 @@ window.DEMO = {
      "aved"
     ],
     [
-     "VOID + MMAudio w/o fine-tune",
+     "VOID w/o fine-tune + MMAudio",
      "void_mmaudio_am"
     ],
     [
@@ -501,7 +501,7 @@ window.DEMO = {
      "instructav2av_e19"
     ],
     [
-     "VOID Pass 1+2 + MMAudio fine-tuned",
+     "VOID fine-tuned + MMAudio",
      "void_stages12_am"
     ],
     [
@@ -509,7 +509,7 @@ window.DEMO = {
      "aved"
     ],
     [
-     "VOID + MMAudio w/o fine-tune",
+     "VOID w/o fine-tune + MMAudio",
      "void_mmaudio_am"
     ],
     [
@@ -565,7 +565,7 @@ window.DEMO = {
      "instructav2av_e19"
     ],
     [
-     "VOID Pass 1+2 + MMAudio fine-tuned",
+     "VOID fine-tuned + MMAudio",
      "void_stages12_am"
     ],
     [
@@ -573,7 +573,7 @@ window.DEMO = {
      "aved"
     ],
     [
-     "VOID + MMAudio w/o fine-tune",
+     "VOID w/o fine-tune + MMAudio",
      "void_mmaudio_am"
     ],
     [
@@ -629,7 +629,7 @@ window.DEMO = {
      "instructav2av_e19"
     ],
     [
-     "VOID Pass 1+2 + MMAudio fine-tuned",
+     "VOID fine-tuned + MMAudio",
      "void_stages12_am"
     ],
     [
@@ -637,7 +637,7 @@ window.DEMO = {
      "aved"
     ],
     [
-     "VOID + MMAudio w/o fine-tune",
+     "VOID w/o fine-tune + MMAudio",
      "void_mmaudio_am"
     ],
     [
